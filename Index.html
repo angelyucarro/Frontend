@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucarro Analytics | Fleet Manager</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <!-- Chart.js Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    
+    <!-- PapaParse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="backend.preload.js"></script>
+    <script src="users.vault.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; }
+        .nav-btn { color: #64748b; border-bottom: 3px solid transparent; font-weight: 600; font-size: 0.9rem; padding: 1rem 1.5rem; transition: all 0.2s; cursor: pointer; }
+        .nav-btn:hover { color: #334155; background-color: #f1f5f9; }
+        .nav-btn.active-blue { color: #2563eb; border-bottom-color: #2563eb; background-color: #eff6ff; }
+        .nav-btn.active-slate { color: #475569; border-bottom-color: #475569; background-color: #f1f5f9; }
+        .nav-btn.active-purple { color: #9333ea; border-bottom-color: #9333ea; background-color: #f3e8ff; }
+        .nav-btn.active-cyan { color: #0891b2; border-bottom-color: #0891b2; background-color: #ecfeff; }
+        .nav-btn.active-teal { color: #0d9488; border-bottom-color: #0d9488; background-color: #f0fdfa; }
+        .nav-btn.active-amber { color: #b45309; border-bottom-color: #b45309; background-color: #fff7ed; }
+        .filter-btn.active { background-color: #334155; color: white; border-color: #334155; }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        .modal { transition: opacity 0.25s ease; }
+        body.modal-active { overflow-x: hidden; overflow-y: hidden !important; }
+        .scrollbar-thin::-webkit-scrollbar { width: 6px; }
+        .scrollbar-thin::-webkit-scrollbar-track { background: #f1f1f1; }
+        .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        .segment-header { background-color: #e2e8f0; color: #475569; font-weight: 700; letter-spacing: 0.05em; }
+        .checkbox-dropdown { display: none; position: absolute; background-color: #fff; min-width: 200px; box-shadow: 0px 4px 12px rgba(0,0,0,0.15); z-index: 60; border-radius: 0.5rem; border: 1px solid #e2e8f0; padding: 0.5rem; margin-top: 0.25rem; max-height: 300px; overflow-y: auto; right: 0; }
+        .checkbox-dropdown.show { display: block; }
+        .year-group-title { font-size: 0.75rem; font-weight: 800; color: #64748b; padding: 0.5rem 0.5rem 0.25rem 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; background-color: #f8fafc; border-bottom: 1px solid #f1f5f9; margin-top: 0.5rem; }
+        .smart-hint { font-size: 0.75rem; color: #059669; background-color: #ecfdf5; padding: 2px 8px; border-radius: 999px; border: 1px solid #a7f3d0; display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; font-weight: 600; }
+        .smart-hint i { font-size: 0.8rem; }
+        .perf-status-btn { font-size: 0.72rem; font-weight: 700; padding: 0.35rem 0.7rem; border-radius: 999px; border: 1px solid #cbd5e1; color: #475569; background: white; transition: all 0.2s; }
+        .perf-status-btn:hover { background: #f8fafc; }
+        .perf-status-btn.active { background: #1d4ed8; color: white; border-color: #1d4ed8; }
+        
+        /* Lock Screen Styles */
+        #mainLockScreen {
+            background-image: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            z-index: 9999; /* Highest priority */
+        }
+    </style>
+</head>
+<body class="text-slate-800 relative bg-slate-50" onclick="window.closeDropdowns(event)">
+
+    <!-- PANTALLA DE BLOQUEO PRINCIPAL -->
+    <div id="mainLockScreen" class="fixed inset-0 flex items-center justify-center transition-opacity duration-500">
+        <div class="bg-white w-96 rounded-2xl shadow-2xl p-8 transform scale-100 transition-transform duration-300 relative overflow-hidden">
+            <!-- Barra de estado de carga (Superior) -->
+            <div id="bootStatusContainer" class="absolute top-0 left-0 w-full bg-indigo-50 border-b border-indigo-100 p-2 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-circle-notch fa-spin text-indigo-500 text-xs" id="bootSpinner"></i>
+                <span class="text-[10px] font-bold text-indigo-700 uppercase tracking-wider" id="bootStatusText">Iniciando sistema...</span>
+            </div>
+
+            <div class="text-center mb-8 mt-4">
+                <!-- LOGO YUCARRO TRANSPORTES -->
+                <img src="logo Yucarro.png" alt="Yucarro Transportes" class="h-20 mx-auto mb-4 object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=Yucarro'">
+                <h2 class="text-2xl font-bold text-slate-800">Acceso Seguro</h2>
+                <p class="text-sm text-slate-500">Ingeniería de Campo</p>
+            </div>
+            
+            <div id="mainLoginError" class="hidden mb-4 bg-red-50 text-red-600 text-xs p-3 rounded border border-red-200 flex items-center gap-2 justify-center">
+                <i class="fa-solid fa-circle-exclamation"></i> Acceso denegado.
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1 ml-1">Usuario</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-user absolute left-3 top-3 text-slate-400"></i>
+                        <input type="text" id="mainUser" class="w-full pl-10 p-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-sm font-semibold text-slate-700" placeholder="Usuario">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1 ml-1">Contraseña</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-key absolute left-3 top-3 text-slate-400"></i>
+                        <input type="password" id="mainPass" class="w-full pl-10 p-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-sm font-semibold text-slate-700" placeholder="••••••••">
+                    </div>
+                </div>
+                <button onclick="window.attemptMainLogin()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg shadow-lg transition transform hover:-translate-y-0.5 mt-2">
+                    INICIAR SESIÓN
+                </button>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-[10px] text-slate-400">v37.41 • Sistema Privado</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                 <!-- LOGO NAVBAR -->
+                 <img src="logo Yucarro.png" alt="Yucarro" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=Yucarro'">
+                <div class="hidden md:block pl-2 border-l border-slate-300 ml-2">
+                    <h1 class="text-sm font-bold text-slate-700 uppercase tracking-wide">INGENIERÍA DE CAMPO</h1>
+                    <p class="text-[10px] text-slate-400">v37.41</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <!-- BOTÓN MODO CONTRASTE (SIN TEXTO) -->
+                <button aria-label="Modo Contraste" onclick="window.toggleColorblindMode()" id="btnColorblind" class="hidden text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 border border-slate-300 px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-sm" title="Activar Modo Alto Contraste">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+                <button id="btnLinksAccess" aria-label="Abrir configuración de enlaces" onclick="window.handleLinksClick()" class="hidden text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-md"><i class="fa-solid fa-lock"></i> <span class="hidden sm:inline">Enlaces</span></button>
+                <button id="btnUsersAdmin" aria-label="Administrar usuarios" onclick="window.toggleModal('usersModal')" class="hidden text-xs bg-slate-700 hover:bg-slate-800 text-white px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-md"><i class="fa-solid fa-users-gear"></i> <span class="hidden sm:inline">Usuarios</span></button>
+                <span id="sessionUserBadge" class="hidden text-[11px] bg-slate-100 text-slate-600 border border-slate-300 px-2 py-1 rounded-lg font-bold"></span>
+                <button id="btnChangePassword" aria-label="Cambiar contraseña" onclick="window.openChangePasswordModal()" class="hidden text-xs bg-white border border-slate-300 text-slate-600 hover:text-indigo-700 px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-sm"><i class="fa-solid fa-key"></i> <span class="hidden sm:inline">Cambiar clave</span></button>
+                <button id="btnLogout" aria-label="Cerrar sesión" onclick="window.logoutSession()" class="hidden text-xs bg-white border border-slate-300 text-slate-600 hover:text-red-600 px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-sm"><i class="fa-solid fa-right-from-bracket"></i> <span class="hidden sm:inline">Cerrar sesión</span></button>
+                <button aria-label="Refrescar datos manualmente" id="btnRefreshCloud" onclick="window.manualRefresh()" class="text-xs bg-white border border-slate-300 text-slate-600 hover:text-indigo-600 px-3 py-2 rounded-lg transition flex items-center gap-2 shadow-sm"><i class="fa-solid fa-sync"></i></button>
+            </div>
+        </div>
+        <div class="bg-white border-b border-slate-200 shadow-[0_2px_10px_-5px_rgba(0,0,0,0.1)]">
+            <div class="container mx-auto px-4 md:px-6 flex overflow-x-auto no-scrollbar" role="tablist">
+                <button role="tab" aria-selected="true" onclick="window.switchTab('performance')" id="tab-performance" class="nav-btn active-blue flex items-center gap-2 whitespace-nowrap"><i class="fa-solid fa-chart-column"></i> 1. CPK Llantas</button>
+                <button role="tab" aria-selected="false" onclick="window.switchTab('scrap')" id="tab-scrap" class="nav-btn flex items-center gap-2 whitespace-nowrap"><i class="fa-solid fa-recycle"></i> 2. Desecho</button>
+                <button role="tab" aria-selected="false" onclick="window.switchTab('washing')" id="tab-washing" class="nav-btn flex items-center gap-2 whitespace-nowrap"><i class="fa-solid fa-soap"></i> 3. Lavadero</button>
+                <button role="tab" aria-selected="false" onclick="window.switchTab('extra')" id="tab-extra" class="nav-btn flex items-center gap-2 whitespace-nowrap"><i class="fa-solid fa-gas-pump"></i> 4. Rendimiento Comb.</button>
+                <button role="tab" aria-selected="false" onclick="window.switchTab('loss')" id="tab-loss" class="nav-btn flex items-center gap-2 whitespace-nowrap"><i class="fa-solid fa-fill-drip"></i> 5. Faltante Producto</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filtros Inteligentes -->
+    <div id="categoryFilterContainer" class="hidden bg-white border-b border-slate-200 py-3 sticky top-0 z-30 shadow-sm opacity-95 backdrop-blur-sm">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="relative w-full md:w-auto">
+                <button aria-haspopup="true" aria-expanded="false" onclick="window.toggleYearDropdown(event)" class="text-sm bg-slate-50 border border-slate-300 text-slate-700 rounded-lg px-4 py-2 hover:bg-slate-100 flex items-center justify-between w-full md:w-64 font-semibold shadow-sm">
+                    <span><i class="fa-solid fa-calendar-days mr-2 text-indigo-500"></i> <span id="yearFilterLabel">Periodo: Todos</span></span>
+                    <i class="fa-solid fa-chevron-down text-xs ml-2"></i>
+                </button>
+                <div id="yearDropdown" class="checkbox-dropdown" style="left:0; right:auto;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="container mx-auto px-4 md:px-6 py-8">
+        <div id="statusMessage" class="hidden mb-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded text-sm text-blue-700 flex justify-between items-center shadow-sm">
+            <span id="statusText">Sistema listo.</span>
+            <button onclick="this.parentElement.classList.add('hidden')" class="text-blue-400 hover:text-blue-600"><i class="fa-solid fa-times"></i></button>
+        </div>
+
+        <!-- 1. CPK -->
+        <div id="view-performance" class="fade-in space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-2 pb-2 border-b border-slate-200">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">CPK Llantas</h2>
+                    <p class="text-slate-500 text-sm flex items-center flex-wrap gap-2">
+                        Costo por Kilómetro. <span class="font-bold text-indigo-600">Registros: <span id="perfCount">0</span></span>
+                        <span class="smart-hint"><i class="fa-solid fa-circle-info"></i> Menor CPK + Mayor Rendimiento = Mejor Llanta</span>
+                    </p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="perf-status-ALL" onclick="window.setPerformanceStatusFilter('ALL')" class="perf-status-btn active">AMBOS</button>
+                    <button id="perf-status-ACTIVA" onclick="window.setPerformanceStatusFilter('ACTIVA')" class="perf-status-btn">ACTIVOS</button>
+                    <button id="perf-status-CONCLUIDA" onclick="window.setPerformanceStatusFilter('CONCLUIDA')" class="perf-status-btn">CONCLUIDOS</button>
+                </div>
+            </div>
+
+            <!-- NEW: UNIVERSE SECTION -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Chart Card -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:col-span-1">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Universo de Evaluación</h3>
+                    <div class="h-48 relative">
+                        <canvas id="cpkUniverseChart"></canvas>
+                    </div>
+                    <p class="text-[10px] text-center text-slate-400 mt-2 italic">Llantas por Marca (Click o Hover para detalle)</p>
+                </div>
+                <!-- Stats Card -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 lg:col-span-2 flex flex-col justify-center">
+                     <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Métricas Globales</h3>
+                     <!-- ACTUALIZADO: Grid de 3x3 para 9 métricas -->
+                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                         
+                         <!-- 1. TOTAL LLANTAS -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-slate-700 break-words" id="kpiTotalTires">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Total Llantas</div>
+                         </div>
+
+                         <!-- 2. KPI COBERTURA -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-slate-700 break-words" id="kpiUnivPct">0.0%</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">% Cobertura (4,999)</div>
+                         </div>
+
+                         <!-- 3. Marcas -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-indigo-600 break-words" id="kpiUnivBrands">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Marcas</div>
+                         </div>
+
+                         <!-- 4. Diseños -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-blue-600 break-words" id="kpiUnivModels">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Diseños</div>
+                         </div>
+
+                         <!-- 5. Km Monitoreados -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-emerald-600 break-words" id="kpiUnivKm">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Km Monitoreados</div>
+                         </div>
+
+                         <!-- 6. CPK TRACCIÓN -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-slate-700 break-words" id="kpiCpkTraction">$0.0000</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">CPK Tracción</div>
+                         </div>
+
+                         <!-- 7. CPK TODA POSICIÓN -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-slate-700 break-words" id="kpiCpkAllPos">$0.0000</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">CPK Toda Pos.</div>
+                         </div>
+
+                         <!-- 8. NUEVO: EFICIENCIA GLOBAL (Tracción + TP) -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-amber-600 break-words" id="kpiGlobalEff">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Km/mm (Trac/TP)</div>
+                         </div>
+
+                         <!-- 9. NUEVO: CONTEO UNIDADES (ECO) -->
+                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center flex flex-col justify-center min-h-[80px]">
+                             <div class="text-xl md:text-2xl lg:text-3xl font-bold text-purple-600 break-words" id="kpiUniqueUnits">0</div>
+                             <div class="text-[10px] md:text-xs text-slate-400 uppercase font-bold mt-1 leading-tight">Unidades (ECO)</div>
+                         </div>
+
+                         <!-- ELIMINADO: Contador Total Articulación -->
+
+                     </div>
+                </div>
+            </div>
+
+            <div id="cpkGoalSummaryContainer" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-4 border-b border-slate-100 bg-indigo-50 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div>
+                        <h3 class="font-bold text-indigo-800 text-sm uppercase"><i class="fa-solid fa-bullseye mr-2"></i>Resumen de Avance Global (Activas)</h3>
+                        <p class="text-[11px] text-indigo-700">Comparativo por diseño entre meta esperada y resultado actual en llantas activas.</p>
+                        <p id="cpkGoalSummaryRuleText" class="text-[10px] text-indigo-600 mt-1">Filtros aplicados: Se excluyen Delanteras. Tracción: Km &gt; 280k (Top 30 por diseño). Toda Posición: Km &gt; 300k (Top 30 por diseño).</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] text-indigo-700 bg-indigo-100 border border-indigo-200 px-2 py-1 rounded">Registros: <span id="cpkGoalSummaryCount">0</span></span>
+                        <button id="btnCpkGoalsAdmin" onclick="window.openCpkGoalsModal()" class="hidden text-xs bg-indigo-700 hover:bg-indigo-800 text-white px-3 py-1.5 rounded-lg transition flex items-center gap-1"><i class="fa-solid fa-pen-to-square"></i> Editar Metas</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-4 border-b border-slate-100 bg-white">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50">
+                        <div class="text-[10px] uppercase font-bold text-slate-500">Diseños En Meta (Km)</div>
+                        <div id="cpkGoalKpiMetaKm" class="text-lg font-bold text-emerald-700">0/0 (0%)</div>
+                    </div>
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50">
+                        <div class="text-[10px] uppercase font-bold text-slate-500">Diseños En Meta (KPK)</div>
+                        <div id="cpkGoalKpiMetaKpk" class="text-lg font-bold text-emerald-700">0/0 (0%)</div>
+                    </div>
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50">
+                        <div class="text-[10px] uppercase font-bold text-slate-500">Fuera De Meta (Ambos)</div>
+                        <div id="cpkGoalKpiRiskHigh" class="text-lg font-bold text-red-700">0</div>
+                    </div>
+                </div>
+                <div class="overflow-x-auto max-h-[360px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead id="cpkGoalSummaryHead" class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                            <tr>
+                                <th class="p-2">Tipo de llanta</th>
+                                <th class="p-2">Marca</th>
+                                <th class="p-2">Diseño</th>
+                                <th class="p-2 text-right">Km x Mm Esp.</th>
+                                <th class="p-2 text-right">Km Prom. Act.</th>
+                                <th class="p-2 text-right">Diferencia Km (%)</th>
+                                <th class="p-2 text-right">$ x Km Esp.</th>
+                                <th class="p-2 text-right">K P K Act.</th>
+                                <th class="p-2 text-right">Diferencia $/Km (%)</th>
+                                <th class="p-2 text-right">Activas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cpkGoalSummaryBody" class="divide-y divide-slate-100"></tbody>
+                    </table>
+                </div>
+                <p id="cpkGoalSummaryEmpty" class="hidden text-[11px] text-slate-400 p-3">Sin datos para mostrar en este resumen.</p>
+            </div>
+
+            <div id="cpkGoalSummaryDrillContainer" class="hidden bg-indigo-50 rounded-xl shadow-lg border-2 border-indigo-200 overflow-hidden fade-in">
+                <div class="p-4 bg-indigo-100 border-b border-indigo-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-indigo-900 text-sm uppercase flex items-center gap-2"><i class="fa-solid fa-list-check"></i> Detalle de Llantas (Resumen Global)</h3>
+                        <p class="text-xs text-indigo-600" id="cpkGoalSummaryDrillTitle">Selecciona un diseño en la tabla superior.</p>
+                    </div>
+                    <button onclick="document.getElementById('cpkGoalSummaryDrillContainer').classList.add('hidden')" class="text-indigo-400 hover:text-indigo-700 transition"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="overflow-x-auto max-h-[360px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-indigo-50 text-indigo-500 font-bold uppercase border-b border-indigo-200 sticky top-0 z-10 shadow-sm">
+                            <tr><th class="p-3 text-center">#</th><th class="p-3 text-center">ECO Nuevo</th><th class="p-3 text-center">Folio</th><th class="p-3">Marca</th><th class="p-3">Diseño</th><th class="p-3 text-center">Tipo</th><th class="p-3 text-center">Km</th><th class="p-3 text-center">Km/mm</th><th class="p-3 text-right">CPK</th></tr>
+                        </thead>
+                        <tbody id="cpkGoalSummaryDrillBody" class="bg-white divide-y divide-indigo-50 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="dynamicChartsContainer" class="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
+            
+            <!-- DETALLE DE MODELO (Drill Down) -->
+            <div id="drillDownContainer" class="hidden bg-indigo-50 rounded-xl shadow-lg border-2 border-indigo-200 overflow-hidden mt-8 mb-8 fade-in">
+                <div class="p-4 bg-indigo-100 border-b border-indigo-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-indigo-900 text-sm uppercase flex items-center gap-2"><i class="fa-solid fa-magnifying-glass"></i> Detalle de Modelo</h3>
+                        <p class="text-xs text-indigo-600" id="drillDownTitle">...</p>
+                    </div>
+                    <button onclick="document.getElementById('drillDownContainer').classList.add('hidden')" class="text-indigo-400 hover:text-indigo-700 transition"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="overflow-x-auto max-h-[400px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead id="drillDownHead" class="bg-indigo-50 text-indigo-500 font-bold uppercase border-b border-indigo-200 sticky top-0 z-10 shadow-sm">
+                            <tr><th class="p-3 text-center">#</th><th class="p-3 text-center">1. ECO Nuevo</th><th class="p-3 text-center">2. Folio</th><th class="p-3">3. Marca</th><th class="p-3">4. Modelo</th><th class="p-3 text-center">5. MM Actual</th><th class="p-3 text-center">6. KM Rec.</th><th class="p-3 text-center">7. Km/mm</th><th class="p-3 text-right">8. CPK Indiv.</th></tr>
+                        </thead>
+                        <tbody id="drillDownBody" class="bg-white divide-y divide-indigo-50 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RANKING DE EFICIENCIA (KM/MM) -->
+            <div class="mt-8 mb-6">
+                <h3 class="font-bold text-slate-700 text-sm uppercase mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-ruler-combined text-indigo-600"></i> Ranking de Rendimiento (Km/mm)
+                    <span class="text-[10px] font-normal text-slate-400 normal-case ml-2 bg-slate-100 px-2 py-0.5 rounded-full">Mayor es mejor</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="efficiencyRankingGrid">
+                    <!-- Se llena dinámicamente con JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. SCRAP -->
+        <div id="view-scrap" class="hidden fade-in space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-2 pb-2 border-b border-slate-200"><div><h2 class="text-2xl font-bold text-slate-800">Pila de Desecho</h2><p class="text-slate-500 text-sm flex items-center gap-2">Histórico: <span id="scrapCountDisplay" class="font-bold text-slate-700">0</span>.<span class="smart-hint text-amber-700 bg-amber-50 border-amber-200"><i class="fa-solid fa-recycle"></i> Objetivo: Reducir desperdicio (mm)</span></p></div></div>
+            
+            <!-- Grid ajustado a 3 columnas para 9 KPIs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <!-- 1. Total Desechadas -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-slate-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Total Desechadas</div>
+                    <div class="text-3xl font-bold text-slate-700 mt-1" id="scrapTotalCount">0</div>
+                    <div class="text-[10px] text-slate-400 mt-1" id="scrapTotalPeriod">-</div>
+                </div>
+
+                <!-- 2. PROMEDIO MENSUAL LLANTAS -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">PROMEDIO MENSUAL LLANTAS DESECHADAS</div>
+                    <div class="text-3xl font-bold text-blue-600 mt-1" id="monthlyScrapRate">0</div>
+                    <div class="text-[10px] text-slate-400 mt-1">Llantas por mes</div>
+                </div>
+
+                <!-- 3. Promedio Desp. (MM) -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Promedio Desp. (MM)</div>
+                    <div class="text-xl font-bold text-red-600 mt-2" id="scrapWastedMm">0 mm</div>
+                    <div class="text-lg font-bold text-red-500 mt-1" id="scrapWastedMoney">$0</div>
+                </div>
+                
+                <!-- KPI 4: % Desecho vs Rodando -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-purple-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">% Desecho vs Rodando</div>
+                    <div class="text-3xl font-bold text-purple-600 mt-1" id="scrapRollingPct">0.00%</div>
+                    <div class="text-[10px] text-slate-400 mt-1 flex items-center gap-1"><i class="fa-solid fa-database"></i> Base: 4,999 llantas</div>
+                </div>
+
+                <!-- KPI 5: Mayor Desecho (Modelo) -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Mayor Desecho</div>
+                    <div class="text-lg font-bold text-orange-600 mt-1 truncate" id="scrapTopModel">-</div>
+                    <div class="text-sm font-semibold text-slate-600" id="scrapTopModelCount">0</div>
+                    <div class="text-[10px] text-slate-400 mt-0.5">Unidades retiradas</div>
+                </div>
+
+                <!-- KPI 6 (NUEVO): Causa Principal -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-pink-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Causa Principal</div>
+                    <div class="text-sm font-bold text-pink-600 mt-1 leading-tight" id="scrapTopReason">-</div>
+                    <div class="text-sm font-semibold text-slate-600" id="scrapTopReasonCount">0</div>
+                    <div class="text-[10px] text-slate-400 mt-0.5">Eventos registrados</div>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-emerald-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Notas de Crédito</div>
+                    <div class="text-lg font-bold text-emerald-700 mt-2" id="scrapCreditMoney">$0</div>
+                    <div class="text-[10px] text-slate-400 mt-1" id="scrapCreditCount">0 eventos</div>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">% Cobertura Reembolsos</div>
+                    <div class="text-3xl font-bold text-green-600 mt-1" id="scrapCreditCoverage">0.00%</div>
+                    <div class="text-[10px] text-slate-400 mt-1">Reembolso vs desperdicio estimado</div>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-rose-500">
+                    <div class="text-slate-400 text-xs font-bold uppercase">Pérdida Neta Estimada</div>
+                    <div class="text-lg font-bold text-rose-600 mt-2" id="scrapNetLossMoney">$0</div>
+                    <div class="text-[10px] text-slate-400 mt-1">Desperdicio menos reembolsos</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-2">Ingreso Acumulado - Notas de Crédito</h3>
+                    <p class="text-[11px] text-slate-500">Total acumulado global: <span id="creditLegalTotalAmount" class="font-bold text-slate-700">$0</span></p>
+                    <div id="creditProviderTotals" class="mt-2 mb-4 text-[11px] text-slate-600 flex flex-wrap gap-2"></div>
+                    <div class="h-64 flex justify-center w-full"><canvas id="creditProviderChart"></canvas></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Top Llantas - Notas de Crédito</h3>
+                <div class="h-64 w-full"><canvas id="creditDescriptionChart"></canvas></div>
+            </div>
+
+            <div id="creditLegalDrillDownContainer" class="hidden bg-slate-50 rounded-xl shadow-lg border-2 border-slate-200 overflow-hidden mt-2 mb-6 fade-in">
+                <div class="p-4 bg-slate-100 border-b border-slate-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-700 text-sm uppercase" id="creditLegalDrillDownTitle"><i class="fa-solid fa-table-list"></i> Detalle por Razón Social</h3>
+                        <p class="text-xs text-slate-500">Se despliega al hacer clic en una barra.</p>
+                    </div>
+                    <button onclick="document.getElementById('creditLegalDrillDownContainer').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 transition"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="overflow-x-auto max-h-[300px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-slate-50 text-slate-500 font-bold uppercase border-b border-slate-200 sticky top-0" id="creditLegalDrillDownHead">
+                            <tr><th class="p-3">Fecha</th><th class="p-3">Proveedor</th><th class="p-3">Razón Social</th><th class="p-3 text-center">Cantidad</th><th class="p-3">Descripción</th><th class="p-3 text-right">Importe</th></tr>
+                        </thead>
+                        <tbody id="creditLegalDrillDownBody" class="bg-white divide-y divide-slate-100 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <!-- ACTUALIZADO: Contador añadido al título -->
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">
+                        Retiros Mensuales 
+                        <span class="text-[10px] normal-case font-normal text-slate-400 ml-1">(Total: <span id="monthlyRetireCount">0</span>)</span>
+                    </h3>
+                    <div class="h-64 flex justify-center w-full"><canvas id="monthlyRetireChart"></canvas></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Gestión General por Proveedor</h3><div class="h-64 flex justify-center w-full"><canvas id="providerChart"></canvas></div></div>
+            </div>
+
+            <!-- NUEVO: TOP 5 MODELOS DESECHADOS -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mt-6">
+                <div class="p-4 border-b border-slate-100 bg-orange-50 flex justify-between items-center">
+                    <h3 class="font-bold text-orange-800 text-sm uppercase"><i class="fa-solid fa-ranking-star mr-2"></i>Top 5 Modelos Más Desechados</h3>
+                    <p class="text-xs text-orange-600">Desglose de daños más frecuentes.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-slate-50 text-slate-500 font-semibold uppercase">
+                            <tr>
+                                <th class="p-3 text-center">#</th>
+                                <th class="p-3">Modelo</th>
+                                <th class="p-3 text-center">Total Desechadas</th>
+                                <th class="p-3">Principales Causas (Top 2)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="topScrapModelsBody" class="divide-y divide-slate-100"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Causas</h3><div class="h-64 flex justify-center"><canvas id="scrapReasonChart"></canvas></div></div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Total MM Desperdiciados por Marca <span class="text-[10px] font-normal normal-case text-indigo-500 ml-1 bg-indigo-50 px-2 py-0.5 rounded-full"><i class="fa-solid fa-hand-pointer mr-1"></i>Click para ver diseños</span></h3><div class="h-64 w-full"><canvas id="wasteChart"></canvas></div></div>
+            </div>
+
+            <div class="bg-gradient-to-r from-indigo-900 to-slate-800 rounded-xl p-6 text-white shadow-lg mt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold flex items-center gap-2"><i class="fa-solid fa-chess"></i> Estrategia Integrada</h3>
+                        <p class="text-indigo-100 text-xs mt-1">Resumen ejecutivo CPK vs Desecho dentro del mismo módulo.</p>
+                    </div>
+                    <div class="text-xs bg-white/20 border border-white/30 px-3 py-1 rounded-full font-semibold">Fusionado</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Cobertura Match</div>
+                    <div class="text-2xl font-bold text-indigo-700" id="scrapStrategyMatchPct">0.0%</div>
+                    <div class="text-[10px] text-slate-400">Desecho con CPK vinculado</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Modelos Matcheados</div>
+                    <div class="text-2xl font-bold text-slate-700" id="scrapStrategyMatchModels">0</div>
+                    <div class="text-[10px] text-slate-400">Con datos en ambos módulos</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Desecho Sin Match</div>
+                    <div class="text-2xl font-bold text-amber-600" id="scrapStrategyUnmatchedScrap">0</div>
+                    <div class="text-[10px] text-slate-400">Registros no vinculados</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Modelo Prioritario</div>
+                    <div class="text-sm font-bold text-rose-700 truncate" id="scrapStrategyTopRiskModel">-</div>
+                    <div class="text-[10px] text-slate-400" id="scrapStrategyTopRiskScore">Score 0</div>
+                </div>
+            </div>
+
+            <div id="scrapStrategyUnmatchedPanel" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-4 border-b border-slate-100 bg-amber-50 flex justify-between items-center">
+                    <h3 class="font-bold text-amber-800 text-sm uppercase"><i class="fa-solid fa-link-slash mr-2"></i>No Emparejados (CPK vs Desecho)</h3>
+                    <p class="text-xs text-amber-700">Visible solo para administrador.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4 border-b lg:border-b-0 lg:border-r border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-600 uppercase mb-3">Existe en Desecho, no en CPK</h4>
+                        <div class="overflow-x-auto max-h-64 overflow-y-auto scrollbar-thin">
+                            <table class="w-full text-xs text-left">
+                                <thead class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                                    <tr>
+                                        <th class="p-2">Modelo (Desecho)</th>
+                                        <th class="p-2 text-center">Reg.</th>
+                                        <th class="p-2">Posible Match CPK</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="scrapStrategyUnmatchedScrapBody" class="divide-y divide-slate-100"></tbody>
+                            </table>
+                        </div>
+                        <p id="scrapStrategyUnmatchedScrapEmpty" class="text-[11px] text-slate-400 mt-2 hidden">Sin registros no emparejados en Desecho.</p>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-xs font-bold text-slate-600 uppercase mb-3">Existe en CPK, no en Desecho</h4>
+                        <div class="overflow-x-auto max-h-64 overflow-y-auto scrollbar-thin">
+                            <table class="w-full text-xs text-left">
+                                <thead class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                                    <tr>
+                                        <th class="p-2">Modelo (CPK)</th>
+                                        <th class="p-2 text-center">Reg.</th>
+                                        <th class="p-2">Posible Match Desecho</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="scrapStrategyUnmatchedCpkBody" class="divide-y divide-slate-100"></tbody>
+                            </table>
+                        </div>
+                        <p id="scrapStrategyUnmatchedCpkEmpty" class="text-[11px] text-slate-400 mt-2 hidden">Sin registros no emparejados en CPK.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <div class="flex justify-between items-center mb-4"><h3 class="text-sm font-bold text-slate-600 uppercase flex items-center gap-2"><i class="fa-solid fa-chart-line text-blue-600"></i> Frecuencia vs CPK (Top 10)</h3><span class="text-[10px] text-slate-400 bg-slate-100 px-2 py-1 rounded">Estrategia</span></div>
+                <div class="h-72 w-full relative"><canvas id="scrapStrategyParetoModelsChart"></canvas></div>
+            </div>
+
+            <div id="scrapDrillDownContainer" class="hidden bg-slate-50 rounded-xl shadow-lg border-2 border-slate-200 overflow-hidden mt-6 mb-6 fade-in">
+                <div class="p-4 bg-slate-100 border-b border-slate-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-slate-700 text-sm uppercase" id="scrapDrillDownTitle"><i class="fa-solid fa-list-ul"></i> Detalle</h3>
+                        <p class="text-xs text-slate-500">Desglose de información seleccionada.</p>
+                    </div>
+                    <button onclick="document.getElementById('scrapDrillDownContainer').classList.add('hidden')" class="text-slate-400 hover:text-slate-700 transition"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="overflow-x-auto max-h-[300px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-slate-50 text-slate-500 font-bold uppercase border-b border-slate-200 sticky top-0" id="scrapDrillDownHead">
+                            <tr><th class="p-3">Causa</th><th class="p-3 text-center">Cantidad</th><th class="p-3 text-right">% del Total</th></tr>
+                        </thead>
+                        <tbody id="scrapDrillDownBody" class="bg-white divide-y divide-slate-100 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. STRATEGY -->
+        <div id="view-strategy" class="hidden fade-in space-y-6">
+            <div class="bg-gradient-to-r from-purple-800 to-indigo-900 rounded-xl p-6 text-white shadow-lg"><div class="flex flex-col md:flex-row justify-between items-center gap-6"><div><h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-crosshairs"></i> Análisis de Equilibrio</h2><p class="text-indigo-200 text-sm mt-1">Comparativa: <span id="strategySegmentLabel" class="font-bold text-white">TODOS</span></p></div><div class="flex gap-6 text-center"><div><div class="text-xs text-indigo-300 uppercase font-bold">CPK Objetivo</div><div class="text-3xl font-bold text-green-400" id="targetCPK">$0.00</div></div><div><div class="text-xs text-indigo-300 uppercase font-bold">CPK Promedio</div><div class="text-3xl font-bold" id="currentAvgCPK">$0.00</div></div></div></div></div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Cobertura Match</div>
+                    <div class="text-2xl font-bold text-indigo-700" id="strategyMatchPct">0.0%</div>
+                    <div class="text-[10px] text-slate-400">Desecho con CPK vinculado</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Modelos Matcheados</div>
+                    <div class="text-2xl font-bold text-slate-700" id="strategyMatchModels">0</div>
+                    <div class="text-[10px] text-slate-400">Con datos en ambos módulos</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Desecho Sin Match</div>
+                    <div class="text-2xl font-bold text-amber-600" id="strategyUnmatchedScrap">0</div>
+                    <div class="text-[10px] text-slate-400">Registros no vinculados</div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Modelo Prioritario</div>
+                    <div class="text-sm font-bold text-rose-700 truncate" id="strategyTopRiskModel">-</div>
+                    <div class="text-[10px] text-slate-400" id="strategyTopRiskScore">Score 0</div>
+                </div>
+            </div>
+
+            <div id="strategyUnmatchedPanel" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-4 border-b border-slate-100 bg-amber-50 flex justify-between items-center">
+                    <h3 class="font-bold text-amber-800 text-sm uppercase"><i class="fa-solid fa-link-slash mr-2"></i>No Emparejados (CPK vs Desecho)</h3>
+                    <p class="text-xs text-amber-700">Ayuda para detectar errores de nombre entre módulos.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-4 border-b lg:border-b-0 lg:border-r border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-600 uppercase mb-3">Existe en Desecho, no en CPK</h4>
+                        <div class="overflow-x-auto max-h-64 overflow-y-auto scrollbar-thin">
+                            <table class="w-full text-xs text-left">
+                                <thead class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                                    <tr>
+                                        <th class="p-2">Modelo (Desecho)</th>
+                                        <th class="p-2 text-center">Reg.</th>
+                                        <th class="p-2">Posible Match CPK</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="strategyUnmatchedScrapBody" class="divide-y divide-slate-100"></tbody>
+                            </table>
+                        </div>
+                        <p id="strategyUnmatchedScrapEmpty" class="text-[11px] text-slate-400 mt-2 hidden">Sin registros no emparejados en Desecho.</p>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="text-xs font-bold text-slate-600 uppercase mb-3">Existe en CPK, no en Desecho</h4>
+                        <div class="overflow-x-auto max-h-64 overflow-y-auto scrollbar-thin">
+                            <table class="w-full text-xs text-left">
+                                <thead class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                                    <tr>
+                                        <th class="p-2">Modelo (CPK)</th>
+                                        <th class="p-2 text-center">Reg.</th>
+                                        <th class="p-2">Posible Match Desecho</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="strategyUnmatchedCpkBody" class="divide-y divide-slate-100"></tbody>
+                            </table>
+                        </div>
+                        <p id="strategyUnmatchedCpkEmpty" class="text-[11px] text-slate-400 mt-2 hidden">Sin registros no emparejados en CPK.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-6 mt-6">
+                
+                <!-- PARETO 1: CAUSAS (Existente - MM) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="flex justify-between items-center mb-4"><h3 class="text-sm font-bold text-slate-600 uppercase flex items-center gap-2"><i class="fa-solid fa-chart-simple text-purple-600"></i> Pareto: Causas (Impacto MM)</h3><span class="text-[10px] text-slate-400 bg-slate-100 px-2 py-1 rounded">Top 10</span></div>
+                    <div class="h-72 w-full relative"><canvas id="strategyParetoChart"></canvas></div>
+                    <div class="mt-4 p-4 bg-slate-50 rounded-lg text-xs text-slate-600 border border-slate-100 flex items-start gap-3"><i class="fa-solid fa-lightbulb text-yellow-500 text-sm"></i><div><p class="font-bold mb-1">Interpretación:</p><p>Causas que generan mayor volumen de desperdicio (mm). Enfócate en reducir estas fallas para ahorrar dinero.</p></div></div>
+                </div>
+
+                <!-- PARETO 2: MODELOS (Modificado - Frecuencia vs CPK) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="flex justify-between items-center mb-4"><h3 class="text-sm font-bold text-slate-600 uppercase flex items-center gap-2"><i class="fa-solid fa-chart-line text-blue-600"></i> Análisis: Frecuencia vs CPK</h3><span class="text-[10px] text-slate-400 bg-slate-100 px-2 py-1 rounded">Top 10 Fallas</span></div>
+                    <div class="h-72 w-full relative"><canvas id="strategyParetoModelsChart"></canvas></div>
+                    <div class="mt-4 p-4 bg-slate-50 rounded-lg text-xs text-slate-600 border border-slate-100 flex items-start gap-3"><i class="fa-solid fa-lightbulb text-yellow-500 text-sm"></i><div><p class="font-bold mb-1">Interpretación:</p><p>Las <strong>barras</strong> indican cuántas llantas fallaron. La <strong>línea</strong> indica el costo (CPK) de ese modelo. <br>⚠️ Alerta si ves barras altas con la línea alta.</p></div></div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="flex justify-between items-center mb-4"><h3 class="text-sm font-bold text-slate-600 uppercase">Matriz: Tracción</h3><div class="smart-hint bg-indigo-50 text-indigo-700 border-indigo-200"><i class="fa-solid fa-bullseye"></i> Ideal: Abajo-Izquierda</div></div><div class="h-80 w-full relative"><canvas id="strategyChartTraction"></canvas></div></div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="flex justify-between items-center mb-4"><h3 class="text-sm font-bold text-slate-600 uppercase">Matriz: Arrastre / TP / Otros</h3><div class="smart-hint bg-purple-50 text-purple-700 border-purple-200"><i class="fa-solid fa-bullseye"></i> Ideal: Abajo-Izquierda</div></div><div class="h-80 w-full relative"><canvas id="strategyChartTrailer"></canvas></div></div>
+            </div>
+        </div>
+
+        <!-- 4. WASHING -->
+        <div id="view-washing" class="hidden fade-in space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-2 pb-2 border-b border-slate-200"><div><h2 class="text-2xl font-bold text-slate-800">Control de Lavado</h2><p class="text-slate-500 text-sm flex items-center gap-2">Higiene. <span class="font-bold text-cyan-600">Registros: <span id="washCount">0</span></span><span class="smart-hint"><i class="fa-solid fa-check-circle"></i> Objetivo: < 30 días</span></p></div></div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase">Filtro Unidad</label>
+                    <span class="text-[10px] text-slate-400">Se aplica a estatus actual e histórico mensual.</span>
+                </div>
+                <div class="flex flex-wrap items-start gap-2">
+                    <div class="relative w-44">
+                        <input id="washFilterUnit" type="text" onfocus="window.renderWashSuggestions()" oninput="window.renderWashSuggestions()" class="w-full text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-white text-slate-700 outline-none focus:ring-2 focus:ring-cyan-200" placeholder="Unidad">
+                        <div id="washSuggestUnit" class="checkbox-dropdown" style="left:0; right:auto; width:100%; min-width:280px;"></div>
+                        <p id="washSelectedUnitInfo" class="text-[10px] text-slate-500 mt-1"></p>
+                    </div>
+                    <button onclick="window.applyWashSearchFilters()" class="text-xs bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm">Aplicar</button>
+                    <button onclick="window.clearWashSearchFilters()" class="text-xs bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 px-3 py-1.5 rounded-lg">Limpiar</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-green-500"><div class="text-slate-400 text-xs font-bold uppercase">Limpias</div><div class="text-[10px] text-slate-400 mb-1">(&le; 45 días)</div><div class="text-3xl font-bold text-green-600 mt-1" id="washCleanCount">0</div></div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-yellow-500"><div class="text-slate-400 text-xs font-bold uppercase">Alerta</div><div class="text-[10px] text-slate-400 mb-1">(46 - 99 días)</div><div class="text-3xl font-bold text-yellow-600 mt-1" id="washAlertCount">0</div></div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><div class="text-slate-400 text-xs font-bold uppercase">Críticas</div><div class="text-[10px] text-slate-400 mb-1">(&ge; 100 días)</div><div class="text-3xl font-bold text-red-600 mt-1" id="washCriticalCount">0</div></div>
+            </div>
+            
+            <!-- GRAFICOS RESTAURADOS (Grid Superior) -->
+            <div class="grid grid-cols-1 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h3 class="text-xs font-bold text-slate-500 mb-4 uppercase">Estatus General</h3><div class="h-64 flex justify-center"><canvas id="washStatusChart"></canvas></div></div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h3 class="text-xs font-bold text-slate-500 mb-4 uppercase">Limpieza por Empresa</h3><div class="h-64 w-full"><canvas id="washCompanyChart"></canvas></div></div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mt-6"><div class="flex justify-between items-center mb-4"><h3 class="text-xs font-bold text-slate-500 uppercase flex items-center gap-2">Histórico Mensual<span class="text-[10px] normal-case font-normal text-slate-400 ml-1">(Total: <span id="washHistoryCount">0</span>)</span></h3><select id="localWashHistoryFilter" onchange="window.renderWashMonthlyChart()" class="text-xs border border-slate-300 rounded px-2 py-1 outline-none text-slate-600 bg-slate-50 cursor-pointer"><option value="L12M">Últimos 12 Meses</option><option value="ALL">Todos los Años</option></select></div><div class="h-64 w-full"><canvas id="washMonthlyChart"></canvas></div></div>
+            <div id="washMonthlyDetailContainer" class="hidden bg-cyan-50 rounded-xl shadow-lg border-2 border-cyan-200 overflow-hidden mt-6 mb-6 fade-in">
+                <div class="p-4 bg-cyan-100 border-b border-cyan-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-cyan-900 text-sm uppercase">Detalle Mensual de Lavados</h3>
+                        <p class="text-xs text-cyan-600" id="washMonthlyDetailTitle">Selecciona un mes en el gráfico histórico.</p>
+                    </div>
+                    <button onclick="document.getElementById('washMonthlyDetailContainer').classList.add('hidden')" class="text-cyan-600 hover:text-cyan-800"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="px-4 py-2 bg-cyan-50 border-b border-cyan-100 text-[10px] text-cyan-700">Ordena haciendo clic en los encabezados: Unidad, Empresa o Fecha.</div>
+                <div class="overflow-x-auto max-h-[320px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead id="washMonthlyDetailHead" class="bg-cyan-50 text-cyan-700 font-bold uppercase border-b border-cyan-200 sticky top-0">
+                            <tr><th class="p-3">Unidad</th><th class="p-3">Empresa</th><th class="p-3">Fecha de Lavado</th><th class="p-3 text-center">Mes</th></tr>
+                        </thead>
+                        <tbody id="washMonthlyDetailBody" class="bg-white divide-y divide-cyan-50 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="washDrillDownContainer" class="hidden bg-cyan-50 rounded-xl shadow-lg border-2 border-cyan-200 overflow-hidden mt-6 mb-6 fade-in">
+                <div class="p-4 bg-cyan-100 border-b border-cyan-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-cyan-900 text-sm uppercase">Detalle de Lavados</h3>
+                        <p class="text-xs text-cyan-600" id="washDrillDownTitle">Mostrando registros seleccionados.</p>
+                    </div>
+                    <button onclick="document.getElementById('washDrillDownContainer').classList.add('hidden')" class="text-cyan-600 hover:text-cyan-800"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="px-4 py-2 bg-cyan-50 border-b border-cyan-100 text-[10px] text-cyan-700">Orden por defecto: mayor a menor días sin lavar. Haz clic en encabezados para reordenar.</div>
+                <div class="overflow-x-auto max-h-[300px] overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <!-- ID AÑADIDO PARA MANIPULACIÓN DINÁMICA -->
+                        <thead id="washDrillDownHead" class="bg-cyan-50 text-cyan-700 font-bold uppercase border-b border-cyan-200 sticky top-0">
+                            <tr><th class="p-3">Unidad</th><th class="p-3">Empresa</th><th class="p-3">Fecha</th><th class="p-3">Días Trans.</th><th class="p-3">Estado</th></tr>
+                        </thead>
+                        <tbody id="washDrillDownBody" class="bg-white divide-y divide-cyan-50 text-slate-700"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+                <div id="washTopDirtyContainer" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden"><div class="p-4 border-b border-slate-100 bg-red-50 flex justify-between items-center"><h3 class="font-bold text-red-800 text-sm uppercase">Top 10 Más Sucias</h3></div><div class="overflow-x-auto max-h-96 overflow-y-auto scrollbar-thin"><table class="w-full text-xs text-left"><thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Unidad</th><th class="p-3">Empresa</th><th class="p-3 text-center">Días</th></tr></thead><tbody id="washCriticalTableBody" class="divide-y divide-slate-100"></tbody></table></div></div>
+                <div id="washHighFreqContainer" class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xs font-bold text-slate-500 uppercase">Lavado Frecuente (&lt; 30 días)</h3>
+                        <span class="text-[10px] text-slate-400">Unidades detectadas: <span id="washHighFreqCount" class="font-bold text-slate-600">0</span></span>
+                    </div>
+                    <p class="text-[10px] text-slate-400 mb-2">Visible para Admin/Editor. Detecta unidades con ciclos de lavado muy cortos.</p>
+                    <div class="overflow-x-auto max-h-[220px] overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase sticky top-0">
+                                <tr><th class="p-2 text-center">Semáforo</th><th class="p-2">Unidad</th><th class="p-2">Empresa</th><th class="p-2 text-center">Eventos &lt;30d</th><th class="p-2 text-center">Prom. Intervalo</th><th class="p-2 text-center">Último Intervalo</th><th class="p-2 text-center">Lavados</th></tr>
+                            </thead>
+                            <tbody id="washHighFreqBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="washHistorySummaryContainer" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden"><div class="p-4 border-b border-slate-100 bg-cyan-50 flex justify-between items-center"><div><h3 class="font-bold text-cyan-800 text-sm uppercase">Resumen Histórico de Lavados</h3><p id="washHistorySummaryTitle" class="text-[11px] text-cyan-700 mt-1">Unidad seleccionada</p></div></div><div class="overflow-x-auto max-h-96 overflow-y-auto scrollbar-thin"><table class="w-full text-xs text-left"><thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Unidad</th><th class="p-3">Empresa</th><th class="p-3">Fecha Lavado</th><th class="p-3 text-center">Mes</th></tr></thead><tbody id="washHistorySummaryBody" class="divide-y divide-slate-100"></tbody></table></div></div>
+            </div>
+        </div>
+
+        <!-- 5. NEW MODULE (FUEL) -->
+        <div id="view-extra" class="hidden fade-in space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-2 pb-2 border-b border-slate-200">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">Rendimiento de Combustible</h2>
+                    <p class="text-slate-500 text-sm">Tractocamiones (Servicio Pesado). <span class="font-bold text-teal-600">Registros: <span id="fuelCount">0</span></span></p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase">Filtro General (Unidad / Operador)</label>
+                    <span class="text-[10px] text-slate-400">Se aplica a los análisis del módulo de combustible.</span>
+                </div>
+                <div class="flex flex-wrap items-start gap-2">
+                    <div class="relative w-44">
+                        <input id="fuelFilterUnit" type="text" onfocus="window.renderFuelSuggestions('UNIT')" oninput="window.renderFuelSuggestions('UNIT')" class="w-full text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-white text-slate-700 outline-none focus:ring-2 focus:ring-teal-200" placeholder="Unidad">
+                        <div id="fuelSuggestUnit" class="checkbox-dropdown" style="left:0; right:auto; width:100%; min-width:280px;"></div>
+                        <p id="fuelSelectedUnitInfo" class="text-[10px] text-slate-500 mt-1"></p>
+                    </div>
+                    <div class="relative w-44">
+                        <input id="fuelFilterOperator" type="text" onfocus="window.renderFuelSuggestions('OP')" oninput="window.renderFuelSuggestions('OP')" class="w-full text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-white text-slate-700 outline-none focus:ring-2 focus:ring-teal-200" placeholder="Operador">
+                        <div id="fuelSuggestOperator" class="checkbox-dropdown" style="left:0; right:auto; width:100%; min-width:280px;"></div>
+                        <p id="fuelSelectedOperatorInfo" class="text-[10px] text-slate-500 mt-1"></p>
+                    </div>
+                    <button onclick="window.applyFuelSearchFilters()" class="text-xs bg-teal-600 hover:bg-teal-700 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm">Aplicar</button>
+                    <button onclick="window.clearFuelSearchFilters()" class="text-xs bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 px-3 py-1.5 rounded-lg">Limpiar</button>
+                </div>
+            </div>
+
+            <!-- KPIs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                 <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-teal-500"><div class="text-slate-400 text-xs font-bold uppercase">Rendimiento Global</div><div class="text-3xl font-bold text-teal-600 mt-1" id="fuelGlobalYield">0.00 <span class="text-sm font-normal text-slate-400">km/L</span></div></div>
+                 <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-pink-500"><div class="text-slate-400 text-xs font-bold uppercase">Rendimiento Pipitas</div><div class="text-3xl font-bold text-pink-600 mt-1" id="pipitasYieldTop">0.00 <span class="text-sm font-normal text-slate-400">km/L</span></div></div>
+                 <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-500"><div class="text-slate-400 text-xs font-bold uppercase">Mejor Motor</div><div class="text-xl font-bold text-blue-700 mt-2 truncate" id="fuelBestEngine">-</div><div class="text-xs text-slate-400" id="fuelBestEngineVal">0.00 km/L</div></div>
+                 <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><div class="text-slate-400 text-xs font-bold uppercase">Empresa Menor Rend</div><div class="text-xl font-bold text-red-600 mt-2 truncate" id="fuelWorstCompany">-</div><div class="text-xs text-slate-400" id="fuelWorstCompanyVal">0.00 km/L</div></div>
+            </div>
+
+            <!-- GRÁFICOS (Heavy Duty Only) -->
+            <div class="grid grid-cols-1 gap-6">
+                <!-- UPDATED CHART CONTAINER WITH FILTER -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xs font-bold text-slate-500 uppercase">Evolución Mensual (Km/L)</h3>
+                        <select id="fuelTrendFilter" onchange="window.runFuelAnalysis()" class="text-xs border border-slate-300 rounded px-2 py-1 outline-none text-slate-600 bg-slate-50 cursor-pointer">
+                            <option value="L12M">Últimos 12 Meses</option>
+                            <option value="ALL">Todos los Años</option>
+                        </select>
+                    </div>
+                    <div class="h-64 w-full"><canvas id="fuelEngineTrendChart"></canvas></div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 cursor-pointer"><h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Rendimiento por Empresa <span class="text-[10px] font-normal normal-case text-indigo-500 ml-1 bg-indigo-50 px-2 py-0.5 rounded-full"><i class="fa-solid fa-hand-pointer mr-1"></i>Click para detalle</span></h3><div class="h-64 w-full"><canvas id="fuelCompanyBarChart"></canvas></div></div>
+            </div>
+
+            <!-- CONTENEDOR DE DETALLE (DRILL DOWN CHART) -->
+            <div id="fuelDrillDownContainer" class="hidden bg-teal-50 rounded-xl shadow-lg border-2 border-teal-200 overflow-hidden mt-6 mb-6 fade-in">
+                <div class="p-4 bg-teal-100 border-b border-teal-200 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-teal-900 text-sm uppercase"><i class="fa-solid fa-chart-line"></i> Tendencia Mensual por Segmento</h3>
+                        <p class="text-xs text-teal-600" id="fuelDrillDownTitle">Selecciona una empresa en el gráfico.</p>
+                    </div>
+                    <button onclick="document.getElementById('fuelDrillDownContainer').classList.add('hidden')" class="text-teal-500 hover:text-teal-800 transition"><i class="fa-solid fa-times-circle text-xl"></i></button>
+                </div>
+                <div class="h-80 w-full p-4 bg-white">
+                    <canvas id="fuelDrillDownChart"></canvas>
+                </div>
+            </div>
+
+            <!-- NEW: MANUFACTURER ANALYSIS (MULTI-SELECT) -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-visible p-6 mt-6 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 z-20 relative">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase mb-2 md:mb-0"><i class="fa-solid fa-industry mr-2 text-indigo-600"></i> Rendimiento Mensual por Fabricante</h3>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <div class="relative">
+                            <button id="btnManufEngine" onclick="window.toggleFilterDropdown('dropdownManufEngine', event)" class="border border-slate-300 rounded px-3 py-1.5 bg-slate-50 text-slate-600 font-bold flex items-center gap-2 hover:bg-slate-100">
+                                Motores: Todos <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                            </button>
+                            <div id="dropdownManufEngine" class="checkbox-dropdown"></div>
+                        </div>
+                        <div class="relative">
+                            <button id="btnManufCompany" onclick="window.toggleFilterDropdown('dropdownManufCompany', event)" class="border border-slate-300 rounded px-3 py-1.5 bg-slate-50 text-slate-600 font-bold flex items-center gap-2 hover:bg-slate-100">
+                                Sociedades: Todas <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                            </button>
+                            <div id="dropdownManufCompany" class="checkbox-dropdown"></div>
+                        </div>
+                        <div class="relative">
+                            <button id="btnManufSegment" onclick="window.toggleFilterDropdown('dropdownManufSegment', event)" class="border border-slate-300 rounded px-3 py-1.5 bg-slate-50 text-slate-600 font-bold flex items-center gap-2 hover:bg-slate-100">
+                                Segmentos: Todos <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                            </button>
+                            <div id="dropdownManufSegment" class="checkbox-dropdown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-72 w-full z-10 relative">
+                    <canvas id="manufacturerTrendChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SEMÁFORO DE MOTORES -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-6"><div class="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center"><h3 class="font-bold text-slate-700 text-sm uppercase">Ranking de Eficiencia por Motor</h3><div class="smart-hint bg-green-100 text-green-700 border-green-200 text-[10px]"><i class="fa-solid fa-check"></i> Meta: > 2.80 km/L</div></div><div class="overflow-x-auto max-h-96 overflow-y-auto scrollbar-thin"><table class="w-full text-xs text-left"><thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Motor</th><th class="p-3 text-center">Km Recorridos</th><th class="p-3 text-center">Litros</th><th class="p-3 text-center">Rendimiento</th><th class="p-3 text-center">Ranking</th></tr></thead><tbody id="fuelEngineTableBody" class="divide-y divide-slate-100"></tbody></table></div></div>
+
+            <div id="fuelTopRankingsContainer">
+            <!-- OPERADORES RANKING -->
+            <div class="grid grid-cols-1 gap-4 mb-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex flex-col gap-3">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase"><i class="fa-solid fa-users-gear mr-2 text-indigo-600"></i> Clasificación de Operadores <span id="activeFilterDisplay" class="ml-2 text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full hidden">Filtro Activo</span></h3>
+                    <div class="flex flex-col md:flex-row md:items-center gap-2">
+                        <label class="text-xs font-bold text-slate-500">Filtrar por Grupo Operativo:</label>
+                        <select id="operatorGroupFilter" onchange="window.runFuelAnalysis()" class="text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-slate-50 text-slate-700 font-bold outline-none focus:ring-2 focus:ring-indigo-200">
+                            <option value="ALL">Todos los Grupos</option>
+                            <option value="FZS">FZS</option>
+                            <option value="Viaje Local">Viaje Local</option>
+                            <option value="PR MID">PR MID</option>
+                            <option value="CR LPZ">CR LPZ (La Paz)</option>
+                            <option value="Pipas Chicas">Pipas Chicas</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="p-4 border-b border-slate-100 bg-green-50 flex justify-between items-center">
+                        <h3 class="font-bold text-green-800 text-sm uppercase"><i class="fa-solid fa-trophy mr-2"></i>Top 3 Mejores Operadores</h3>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Operador</th><th class="p-3 text-right">Km</th><th class="p-3 text-center">Rend</th></tr></thead>
+                            <tbody id="topOperatorsBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="p-4 border-b border-slate-100 bg-red-50 flex justify-between items-center">
+                        <h3 class="font-bold text-red-800 text-sm uppercase"><i class="fa-solid fa-triangle-exclamation mr-2"></i>Top 3 Operadores Críticos</h3>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Operador</th><th class="p-3 text-right">Km</th><th class="p-3 text-center">Rend</th></tr></thead>
+                            <tbody id="bottomOperatorsBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIDADES RANKING (NUEVO BLOQUE) -->
+            <div class="grid grid-cols-1 gap-4 mb-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-center">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase"><i class="fa-solid fa-truck-fast mr-2 text-blue-600"></i> Clasificación de Unidades</h3>
+                    <div class="text-xs text-slate-400 italic mt-1 md:mt-0">
+                        *Se aplica el mismo filtro de grupo operativo seleccionado arriba
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="p-4 border-b border-slate-100 bg-blue-50 flex justify-between items-center">
+                        <h3 class="font-bold text-blue-800 text-sm uppercase"><i class="fa-solid fa-medal mr-2"></i>Top 3 Mejores Unidades</h3>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Unidad</th><th class="p-3 text-right">Km</th><th class="p-3 text-center">Rend</th></tr></thead>
+                            <tbody id="topUnitsBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="p-4 border-b border-slate-100 bg-orange-50 flex justify-between items-center">
+                        <h3 class="font-bold text-orange-800 text-sm uppercase"><i class="fa-solid fa-wrench mr-2"></i>Top 3 Unidades Críticas</h3>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase"><tr><th class="p-3">Unidad</th><th class="p-3 text-right">Km</th><th class="p-3 text-center">Rend</th></tr></thead>
+                            <tbody id="bottomUnitsBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div id="fuelSpecificSummaryContainer" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-8">
+                <div class="p-4 border-b border-slate-100 bg-teal-50 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                    <h3 id="fuelSpecificSummaryTitle" class="font-bold text-teal-800 text-sm uppercase">Resumen por selección</h3>
+                    <span id="fuelSpecificSummarySubtitle" class="text-[10px] text-teal-700"></span>
+                </div>
+                <div class="overflow-x-auto max-h-96 overflow-y-auto scrollbar-thin">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-slate-50 text-slate-500 font-semibold uppercase">
+                            <tr>
+                                <th id="fuelSpecificHeaderEntity" class="p-3">Entidad</th>
+                                <th class="p-3 text-right">Km</th>
+                                <th class="p-3 text-right">Litros</th>
+                                <th class="p-3 text-center">Rend. Prom.</th>
+                                <th class="p-3 text-center">Registros</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fuelSpecificSummaryBody" class="divide-y divide-slate-100"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 6. PRODUCT LOSS -->
+        <div id="view-loss" class="hidden fade-in space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-2 pb-2 border-b border-slate-200">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-800">Faltante de Producto</h2>
+                    <p class="text-slate-500 text-sm">Consolidado de 3 empresas (CR MID / CR LPZ). <span class="font-bold text-amber-700">Registros: <span id="lossCount">0</span></span></p>
+                </div>
+                <div class="flex flex-col items-stretch gap-2 w-full md:w-auto">
+                    <div class="flex flex-wrap items-center gap-2 justify-start md:justify-end">
+                        <button id="loss-company-ALL" onclick="window.setLossCompanyFilter('ALL')" class="perf-status-btn active">TODAS</button>
+                        <button id="loss-company-YUCARRO" onclick="window.setLossCompanyFilter('Yucarro')" class="perf-status-btn">YUC</button>
+                        <button id="loss-company-T2020" onclick="window.setLossCompanyFilter('T2020')" class="perf-status-btn">T2020</button>
+                        <button id="loss-company-CRMID" onclick="window.setLossCompanyFilter('CR MID')" class="perf-status-btn">CR MID</button>
+                        <button id="loss-company-CRLPZ" onclick="window.setLossCompanyFilter('CR LPZ')" class="perf-status-btn">CR LPZ</button>
+                    </div>
+                    <div class="flex flex-wrap items-start gap-2 justify-start md:justify-end">
+                        <div class="relative w-44">
+                            <input id="lossFilterTU" type="text" onfocus="window.renderLossSuggestions('TU')" oninput="window.renderLossSuggestions('TU')" class="w-full text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-white text-slate-700 outline-none focus:ring-2 focus:ring-amber-200" placeholder="Tractor o Unidad">
+                            <div id="lossSuggestTU" class="checkbox-dropdown" style="left:0; right:auto; width:100%; min-width:280px;"></div>
+                            <p id="lossSelectedTUInfo" class="text-[10px] text-slate-500 mt-1"></p>
+                        </div>
+                        <div class="relative w-44">
+                            <input id="lossFilterOperator" type="text" onfocus="window.renderLossSuggestions('OP')" oninput="window.renderLossSuggestions('OP')" class="w-full text-xs border border-slate-300 rounded-lg px-3 py-1.5 bg-white text-slate-700 outline-none focus:ring-2 focus:ring-amber-200" placeholder="Operador">
+                            <div id="lossSuggestOperator" class="checkbox-dropdown" style="left:0; right:auto; width:100%; min-width:280px;"></div>
+                            <p id="lossSelectedOperatorInfo" class="text-[10px] text-slate-500 mt-1"></p>
+                        </div>
+                        <button onclick="window.applyLossSearchFilters()" class="text-xs bg-amber-600 hover:bg-amber-700 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm">Aplicar</button>
+                        <button onclick="window.clearLossSearchFilters()" class="text-xs bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 px-3 py-1.5 rounded-lg">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-slate-500 uppercase">Modo Litros:</span>
+                <button id="loss-liters-mode-ABS" onclick="window.setLossLitersMode('ABS')" class="perf-status-btn">Absoluto</button>
+                <button id="loss-liters-mode-PCT" onclick="window.setLossLitersMode('PCT')" class="perf-status-btn active">% sobre transportado</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-500"><div class="text-slate-400 text-[10px] font-bold uppercase">Litros Transportados</div><div class="text-xl font-bold text-blue-700 mt-1" id="lossKpiTransported">0</div></div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-500"><div class="text-slate-400 text-[10px] font-bold uppercase">LTS Faltante SIIC</div><div class="text-xl font-bold text-red-700 mt-1" id="lossKpiSiic">0</div></div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-amber-500"><div class="text-slate-400 text-[10px] font-bold uppercase">% Faltante SIIC</div><div class="text-xl font-bold text-amber-700 mt-1" id="lossKpiPct">0.000%</div></div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-indigo-500"><div class="text-slate-400 text-[10px] font-bold uppercase">LTS Desc Pemex</div><div class="text-xl font-bold text-indigo-700 mt-1" id="lossKpiDescPemex">0</div></div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-purple-500"><div class="text-slate-400 text-[10px] font-bold uppercase">LTS Desc Operador</div><div class="text-xl font-bold text-purple-700 mt-1" id="lossKpiDescOper">0</div></div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-emerald-500"><div class="text-slate-400 text-[10px] font-bold uppercase">Importe Desc Total</div><div class="text-xl font-bold text-emerald-700 mt-1" id="lossKpiImporte">$0</div></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h3 id="lossCompanyChartTitle" class="text-xs font-bold text-slate-500 uppercase mb-4">Comparativo por Empresa</h3>
+                    <div class="h-72 w-full"><canvas id="lossCompanyChart"></canvas></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h3 id="lossMonthlyChartTitle" class="text-xs font-bold text-slate-500 uppercase mb-4">Tendencia Mensual % Faltante SIIC</h3>
+                    <div class="h-72 w-full"><canvas id="lossMonthlyChart"></canvas></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h3 id="lossLitersBreakdownTitle" class="text-xs font-bold text-slate-500 uppercase mb-4">Desglose de Litros (Pemex / Absorción / Operador)</h3>
+                    <div class="h-72 w-full"><canvas id="lossLitersBreakdownChart"></canvas></div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Desglose de Importes (Pemex / Absorción / Operador)</h3>
+                    <div class="h-72 w-full"><canvas id="lossAmountBreakdownChart"></canvas></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="text-xs font-bold text-slate-500 uppercase mb-4">Tendencia Mensual de Importes de Faltante</h3>
+                <div class="h-72 w-full"><canvas id="lossMonthlyAmountChart"></canvas></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+                        <h3 id="lossOperatorChartTitle" class="text-xs font-bold text-slate-500 uppercase">Top Operadores con Menos LTS Faltante SIIC</h3>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Top por:</span>
+                            <select id="lossLowRankBy" onchange="window.setLossLowRankBy(this.value)" class="text-xs border border-slate-300 rounded-lg px-2 py-1 bg-white text-slate-700 font-semibold outline-none focus:ring-2 focus:ring-amber-200">
+                                <option value="OPERADOR">Operadores</option>
+                                <option value="UNIDAD">Unidades</option>
+                            </select>
+                            <select id="lossTopOrder" onchange="window.setLossTopOrder(this.value)" class="text-xs border border-slate-300 rounded-lg px-2 py-1 bg-white text-slate-700 font-semibold outline-none focus:ring-2 focus:ring-amber-200">
+                                <option value="MENOR">Menor faltante</option>
+                                <option value="MAYOR">Mayor faltante</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="h-72 w-full"><canvas id="lossOperatorChart"></canvas></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="p-4 border-b border-slate-100 bg-amber-50 flex justify-between items-center">
+                        <h3 class="font-bold text-amber-800 text-sm uppercase">Top Rutas Críticas</h3>
+                        <span class="text-[10px] text-amber-700">Por LTS faltante SIIC</span>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 overflow-y-auto scrollbar-thin">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-50 text-slate-500 font-semibold uppercase">
+                                <tr>
+                                    <th class="p-3">Ruta</th>
+                                    <th class="p-3 text-center">Viajes</th>
+                                    <th class="p-3 text-right">LTS Faltante</th>
+                                    <th class="p-3 text-right">% Faltante</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lossRoutesBody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="container mx-auto px-4 py-4 text-xs text-slate-400">Dashboard diseñado por Angel Bailey B.</footer>
+
+    <!-- Modal Cambio de Contraseña -->
+    <div id="changePasswordModal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[115]">
+        <div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-70"></div>
+        <div class="modal-container bg-white w-96 mx-auto rounded-xl shadow-2xl z-50 overflow-hidden transform transition-all scale-95 opacity-0">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-5">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2"><i class="fa-solid fa-key text-indigo-600"></i> Cambiar Contraseña</h3>
+                    <button onclick="window.toggleModal('changePasswordModal')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div id="changePassError" class="hidden mb-3 bg-red-50 text-red-600 text-xs p-3 rounded border border-red-200"></div>
+                <div class="space-y-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Contraseña actual</label>
+                        <input id="changePassCurrent" type="password" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="••••••••">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Nueva contraseña</label>
+                        <input id="changePassNew" type="password" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="Mínimo 6 caracteres">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Confirmar nueva contraseña</label>
+                        <input id="changePassConfirm" type="password" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="••••••••">
+                    </div>
+                    <div class="pt-2 flex gap-2">
+                        <button onclick="window.submitPasswordChange()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-xs">Guardar Cambio</button>
+                        <button onclick="window.toggleModal('changePasswordModal')" class="bg-white border border-slate-300 text-slate-600 py-2 px-4 rounded text-xs">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login (Admin for Links) -->
+    <div id="loginModal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[110]">
+        <div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-70"></div>
+        <div class="modal-container bg-white w-96 mx-auto rounded-xl shadow-2xl z-50 overflow-hidden transform transition-all scale-95 opacity-0 login-anim">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2"><i class="fa-solid fa-user-shield text-indigo-600"></i> Acceso Configuración</h3>
+                    <button onclick="toggleModal('loginModal')" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div id="loginError" class="hidden mb-4 bg-red-50 text-red-600 text-xs p-3 rounded border border-red-200 flex items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Credenciales incorrectas.</div>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Usuario</label>
+                        <input type="text" id="loginUser" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-sm" placeholder="usuario">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Contraseña</label>
+                        <input type="password" id="loginPass" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none text-sm" placeholder="••••••••">
+                    </div>
+                    <button onclick="window.attemptLogin()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 rounded shadow-lg transition transform hover:-translate-y-0.5">Entrar</button>
+                </div>
+            </div>
+            <div class="bg-slate-50 px-6 py-3 text-center">
+                <p class="text-[10px] text-slate-400">Solo personal autorizado de Ingeniería de Campo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Config -->
+    <div id="cloudModal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[100]"><div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-50"></div><div class="modal-container bg-white w-11/12 md:w-3/4 mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-[90vh]"><div class="modal-content py-4 text-left px-6"><div class="flex justify-between items-center pb-3 border-b mb-4"><p class="text-xl font-bold text-slate-800">Conexión de Datos</p><div class="cursor-pointer" onclick="window.toggleModal('cloudModal')"><i class="fa-solid fa-times"></i></div></div><div class="space-y-4 text-sm"><p class="text-slate-500 bg-blue-50 p-3 rounded">Pega aquí los enlaces CSV.</p>
+        <!-- ACTUALIZADO: Value vacíos en HTML para proteger URLs. Se llenan vía JS (startSystem) -->
+        <div id="cloudRowCpk"><label class="block font-bold text-slate-700 mb-1">CPK Llantas</label><input type="text" id="inputUrlCpk" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none" value=""></div>
+        <div id="cloudRowScrap"><label class="block font-bold text-slate-700 mb-1">Pila de Desecho / Estrategia</label><input type="text" id="inputUrlScrap" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none" value=""></div>
+        <div id="cloudRowScrapCredit"><label class="block font-bold text-slate-700 mb-1">Desecho - Notas de Crédito</label><input type="text" id="inputUrlScrapCredit" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none" value=""></div>
+        <div id="cloudRowWash"><label class="block font-bold text-slate-700 mb-1">Lavadero (Status)</label><input type="text" id="inputUrlWash" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none" value=""></div>
+        <div id="cloudRowWashHist"><label class="block font-bold text-slate-700 mb-1">Lavadero (Histórico)</label><input type="text" id="inputUrlWashHistory" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none" value=""></div>
+        <div id="cloudRowExtra"><label class="block font-bold text-teal-700 mb-1">Rendimiento Combustible</label><input type="text" id="inputUrlExtra" class="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 outline-none" placeholder="Pegar Link CSV aquí" value=""></div>
+        <div id="cloudRowLossY"><label class="block font-bold text-amber-700 mb-1">Faltante Producto - Yucarro</label><input type="text" id="inputUrlLossY" class="w-full p-2 border rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Pegar Link CSV aquí" value=""></div>
+        <div id="cloudRowLossT"><label class="block font-bold text-amber-700 mb-1">Faltante Producto - T2020</label><input type="text" id="inputUrlLossT" class="w-full p-2 border rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Pegar Link CSV aquí" value=""></div>
+        <div id="cloudRowLossC"><label class="block font-bold text-amber-700 mb-1">Faltante Producto - Corpored</label><input type="text" id="inputUrlLossC" class="w-full p-2 border rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Pegar Link CSV aquí" value=""></div>
+        
+        <div class="flex justify-between pt-4"><button onclick="window.resetToDefaults()" class="text-xs text-red-400 hover:text-red-600 underline">Restaurar Defaults</button><button onclick="window.saveCloudConfig()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded shadow transition">Guardar</button></div><div class="mt-6"><h4 class="font-bold text-slate-600 mb-2 border-b pb-1">Log de Sistema</h4><div id="statusLog" class="bg-slate-900 border border-slate-700 p-4 rounded-lg text-xs text-green-400 font-mono overflow-x-auto shadow-inner max-h-48 whitespace-pre-wrap leading-relaxed">Esperando...</div></div></div></div></div></div>
+
+    <!-- Modal Metas CPK (Admin) -->
+    <div id="cpkGoalsModal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[118]">
+        <div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-70"></div>
+        <div class="modal-container bg-white w-11/12 md:w-3/4 mx-auto rounded-xl shadow-2xl z-50 overflow-y-auto max-h-[90vh] transform transition-all scale-95 opacity-0">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4 border-b pb-3">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2"><i class="fa-solid fa-bullseye text-indigo-600"></i> Metas Resumen CPK (Local)</h3>
+                    <button onclick="window.toggleModal('cpkGoalsModal')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div id="cpkGoalsEditorError" class="hidden mb-3 bg-red-50 text-red-600 text-xs p-3 rounded border border-red-200"></div>
+                <p class="text-xs text-slate-500 mb-2">Formato por línea: <span class="font-mono">Tipo|Marca|Diseño|Km x Mm Esp.|$ x Km Esp.</span></p>
+                <p class="text-[11px] text-slate-400 mb-3">Tipo permitido: <b>Delantera</b>, <b>Tracción</b> o <b>Toda Posición/Arrastre</b>.</p>
+                <textarea id="cpkGoalsEditorText" class="w-full min-h-[320px] p-3 border border-slate-300 rounded font-mono text-xs leading-5 focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Tracción|MICHELIN|X LINE|32000|0.0180"></textarea>
+                <div class="flex flex-wrap gap-2 pt-4">
+                    <button onclick="window.saveCpkGoalsFromEditor()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-xs">Guardar Metas</button>
+                    <button onclick="window.restoreDefaultCpkGoals()" class="bg-white border border-slate-300 text-slate-700 py-2 px-4 rounded text-xs">Restaurar Plantilla</button>
+                    <button onclick="window.toggleModal('cpkGoalsModal')" class="bg-white border border-slate-300 text-slate-600 py-2 px-4 rounded text-xs">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Usuarios -->
+    <div id="usersModal" class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-[120]">
+        <div class="modal-overlay absolute w-full h-full bg-slate-900 opacity-70"></div>
+        <div class="modal-container bg-white w-11/12 md:w-4/5 mx-auto rounded-xl shadow-2xl z-50 overflow-y-auto max-h-[90vh] transform transition-all scale-95 opacity-0">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4 border-b pb-3">
+                    <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2"><i class="fa-solid fa-users-gear text-slate-700"></i> Gestión de Usuarios</h3>
+                    <button onclick="window.toggleModal('usersModal')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div id="usersAdminError" class="hidden mb-3 bg-red-50 text-red-600 text-xs p-3 rounded border border-red-200"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-2">Usuarios registrados</h4>
+                        <div class="border border-slate-200 rounded-lg overflow-hidden">
+                            <table class="w-full text-xs">
+                                <thead class="bg-slate-50 text-slate-500 uppercase">
+                                    <tr>
+                                        <th class="p-2 text-left">Usuario</th>
+                                        <th class="p-2 text-left">Rol</th>
+                                        <th class="p-2 text-right">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="usersTableBody"></tbody>
+                            </table>
+                        </div>
+                        <div class="mt-3 p-3 bg-white border border-slate-200 rounded-lg">
+                            <p class="text-[11px] font-bold uppercase text-slate-500 mb-2">Respaldo Seguro de Usuarios</p>
+                            <p class="text-[11px] text-slate-500 mb-3">Genera/recupera un archivo cifrado fuera de la obfuscación.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <button onclick="window.downloadSecureUsersBackup()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-1.5 px-3 rounded text-xs">Descargar Respaldo</button>
+                                <button onclick="window.openUsersBackupImport()" class="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 py-1.5 px-3 rounded text-xs">Importar Respaldo</button>
+                                <input id="usersBackupInput" type="file" accept=".yuvault,.json" class="hidden">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                        <h4 id="usersFormTitle" class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-3">Nuevo usuario</h4>
+                        <input type="hidden" id="userEditIndex" value="">
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Usuario</label>
+                                <input id="userFormUsername" type="text" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-500 outline-none text-sm" placeholder="nuevo_usuario">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Contraseña</label>
+                                <input id="userFormPassword" type="password" class="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-slate-500 outline-none text-sm" placeholder="••••••••">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Rol</label>
+                                <select id="userFormRole" class="w-full p-2 border border-slate-300 rounded bg-white text-sm">
+                                    <option value="editor">Editor</option>
+                                    <option value="viewer">Solo lectura</option>
+                                    <option value="admin">Administrador</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase mb-1">Módulos visibles</p>
+                                <div id="userFormModuleAccess" class="grid grid-cols-2 gap-2 text-xs"></div>
+                            </div>
+                            <div id="userFormLinkAccessBlock">
+                                <p class="text-xs font-bold text-slate-500 uppercase mb-1">Edición de enlaces CSV</p>
+                                <div id="userFormLinkAccess" class="grid grid-cols-2 gap-2 text-xs"></div>
+                            </div>
+                            <div class="flex gap-2 pt-2">
+                                <button onclick="window.saveUserFromForm()" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded text-xs">Guardar Usuario</button>
+                                <button onclick="window.resetUserForm()" class="bg-white border border-slate-300 text-slate-600 py-2 px-4 rounded text-xs">Limpiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="dashboard.app.js"></script>
+    <script src="backend.patch.js"></script>
+</body>
+</html>
