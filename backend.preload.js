@@ -50,7 +50,7 @@
   function syncBootstrapSync() {
     try {
       const xhr = new XMLHttpRequest();
-      xhr.open('GET', '/api/bootstrap', false);
+      xhr.open('GET', 'https://dashyucarroback.fly.dev/api/bootstrap', false);
       xhr.setRequestHeader('Accept', 'application/json');
       xhr.send();
       if (xhr.status >= 200 && xhr.status < 300) {
