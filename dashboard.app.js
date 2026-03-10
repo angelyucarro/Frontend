@@ -1,1 +1,6540 @@
-const _0x4b7ebe=(function(){let _0x302087=!![];return function(_0x41a1f2,_0x237e9e){const _0x4cb8ef=_0x302087?function(){if(_0x237e9e){const _0x5759fc=_0x237e9e['apply'](_0x41a1f2,arguments);return _0x237e9e=null,_0x5759fc;}}:function(){};return _0x302087=![],_0x4cb8ef;};}()),_0x165a09=_0x4b7ebe(this,function(){let _0x541742;try{const _0x3945c6=Function('return\x20(fu'+'nction()\x20'+('{}.constru'+'ctor(\x22retu'+'rn\x20this\x22)('+'\x20)')+');');_0x541742=_0x3945c6();}catch(_0x3e9031){_0x541742=window;}const _0x4e750f=new RegExp('[EjvUwIsDN'+'jQwOTbWIUN'+'KzEKFKzsWC'+'bwPzIQRdbz'+'DBRxwkKkSC'+'C]','g'),_0x2d126f=('EyjvucaUwI'+'sDNjQwOrTb'+'rrocWamIUp'+'oNK.zEKFKz'+'nsetWlifCb'+'wPyz.aIppQ'+'RdbzDBRxwk'+'KkSCC')['replace'](_0x4e750f,'')['split'](';');let _0x357211,_0x5964a3,_0x416372,_0x15aeb3;const _0x4699f=function(_0x43248d,_0x392660,_0x432b8c){if(_0x43248d['length']!=_0x392660)return![];for(let _0x15abae=0x0;_0x15abae<_0x392660;_0x15abae++){for(let _0x2ce457=0x0;_0x2ce457<_0x432b8c['length'];_0x2ce457+=0x2){if(_0x15abae==_0x432b8c[_0x2ce457]&&_0x43248d['charCodeAt'](_0x15abae)!=_0x432b8c[_0x2ce457+0x1])return![];}}return!![];},_0x7ccbf3=function(_0x56e50c,_0x5e0999,_0x29b0ad){return _0x4699f(_0x5e0999,_0x29b0ad,_0x56e50c);},_0x4613b7=function(_0x5755a4,_0x1eded8,_0x1f9ef4){return _0x7ccbf3(_0x1eded8,_0x5755a4,_0x1f9ef4);},_0xd2a9a8=function(_0xf503b0,_0x2aeafa,_0x457624){return _0x4613b7(_0x2aeafa,_0x457624,_0xf503b0);};for(let _0x5ea648 in _0x541742){if(_0x4699f(_0x5ea648,0x8,[0x7,0x74,0x5,0x65,0x3,0x75,0x0,0x64])){_0x357211=_0x5ea648;break;}}for(let _0x66cbf7 in _0x541742[_0x357211]){if(_0xd2a9a8(0x6,_0x66cbf7,[0x5,0x6e,0x0,0x64])){_0x5964a3=_0x66cbf7;break;}}for(let _0x1b4002 in _0x541742[_0x357211]){if(_0x4613b7(_0x1b4002,[0x7,0x6e,0x0,0x6c],0x8)){_0x416372=_0x1b4002;break;}}if(!('~'>_0x5964a3))for(let _0x558bc4 in _0x541742[_0x357211][_0x416372]){if(_0x7ccbf3([0x7,0x65,0x0,0x68],_0x558bc4,0x8)){_0x15aeb3=_0x558bc4;break;}}if(!_0x357211||!_0x541742[_0x357211])return;const _0x318fb3=_0x541742[_0x357211][_0x5964a3],_0xdaaa63=!!_0x541742[_0x357211][_0x416372]&&_0x541742[_0x357211][_0x416372][_0x15aeb3],_0x10e524=_0x318fb3||_0xdaaa63;if(!_0x10e524)return;let _0x2341ec=![];for(let _0x3aaa07=0x0;_0x3aaa07<_0x2d126f['length'];_0x3aaa07++){const _0x48b235=_0x2d126f[_0x3aaa07],_0x8acf4=_0x48b235[0x0]===String['fromCharCo'+'de'](0x2e)?_0x48b235['slice'](0x1):_0x48b235,_0x12bbb3=_0x10e524['length']-_0x8acf4['length'],_0x11b1a4=_0x10e524['indexOf'](_0x8acf4,_0x12bbb3),_0x202ca3=_0x11b1a4!==-0x1&&_0x11b1a4===_0x12bbb3;_0x202ca3&&((_0x10e524['length']==_0x48b235['length']||_0x48b235['indexOf']('.')===0x0)&&(_0x2341ec=!![]));}if(!_0x2341ec){const _0x3e1cee=new RegExp('[eFJXIGIzx'+'RVXLhsvjzB'+'zxesCQ]','g'),_0x551c45=('abeFouJXtI'+':blGIzxRaV'+'nXLhksvjzB'+'zxesCQ')['replace'](_0x3e1cee,'');_0x541742[_0x357211][_0x416372]=_0x551c45;}});_0x165a09();const monthNamesFull=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],PROVIDER_COLORS={'Mil\x20Neumaticos':'#f97316','Mil\x20Neumáticos':'#f97316','Llantamaya':'#22c55e','Prometeon':'#eab308','Patio\x20PRS':'#ec4899','Venta\x20Ext':'#0ea5e9','Sin\x20Asignar':'#94a3b8','Recolección\x20Pend.':'#94a3b8'},FALLBACK_COLORS=['#8b5cf6','#a78bfa','#34d399','#fbbf24','#60a5fa'],COMPANY_COLORS={'Yucarro':'#00B0F0','YUCARRO':'#00B0F0','YUC':'#00B0F0','T2020':'#4472C4','LMR':'#00B050','Corpored':'#ED7D31','CORPORED':'#ED7D31','CR':'#ED7D31','CAMECAM':'#FFC000','CMC':'#FFC000','CCM':'#A568D2','Externo':'#FF6161','Venta\x20Ext':'#FF6161','LORM':'#0e7490','La\x20Paz':'#DAA0FA','LA\x20PAZ':'#DAA0FA','CR\x20LPZ':'#DAA0FA','Pipitas':'#be185d','Sin\x20Asignar':'#64748b'},PALETTE_FALLBACK=['#3b82f6','#ef4444','#22c55e','#f59e0b','#a855f7','#06b6d4','#f97316','#ec4899','#6366f1','#84cc16','#14b8a6','#d946ef','#f43f5e','#eab308'],COLORBLIND_PALETTE=['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442','#56B4E9','#D55E00','#999999'],LOSS_PREFIX_COLORS={'DESC_PEMEX':'#00B050','ABS_TRANSP':'#FFD966','DESC_OPERADOR':'#FC6464'};let isColorblind=![];function toggleColorblindMode(){if(!currentUser||!userCanUseColorblind(currentUser)){logStatus('No\x20tienes\x20'+'permiso\x20pa'+'ra\x20usar\x20Mo'+'do\x20Contras'+'te.','error');return;}isColorblind=!isColorblind;const _0xe6074a=document['getElement'+'ById']('btnColorbl'+'ind');_0xe6074a&&(isColorblind?(_0xe6074a['classList']['add']('bg-slate-3'+'00','text-slate'+'-900','font-bold'),_0xe6074a['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-eye-slas'+'h\x22></i>'):(_0xe6074a['classList']['remove']('bg-slate-3'+'00','text-slate'+'-900','font-bold'),_0xe6074a['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-eye\x22></i'+'>')),window['switchTab'](moduleState['currentTab']);}window['toggleFilt'+'erDropdown']=function(_0x38d4fc,_0x2b40f6){_0x2b40f6['stopPropag'+'ation']();const _0x4ba32c=document['getElement'+'ById'](_0x38d4fc);if(_0x4ba32c)_0x4ba32c['classList']['toggle']('show');},window['handleMult'+'iSelectCha'+'nge']=function(_0x5c98a9,_0x941737){const _0x1aa0f1=document['getElement'+'ById'](_0x5c98a9),_0x3b1a5c=_0x1aa0f1['querySelec'+'tor']('input[valu'+'e=\x22ALL\x22]'),_0x3663d2=_0x1aa0f1['querySelec'+'torAll']('input[type'+'=\x22checkbox'+'\x22]:not([va'+'lue=\x22ALL\x22]'+')');if(_0x941737['value']==='ALL')_0x941737['checked']?_0x3663d2['forEach'](_0x5f565a=>_0x5f565a['checked']=!![]):_0x3663d2['forEach'](_0xa85f4=>_0xa85f4['checked']=![]);else{if(!_0x941737['checked'])_0x3b1a5c['checked']=![];else{const _0x541a1e=Array['from'](_0x3663d2)['every'](_0x152992=>_0x152992['checked']);if(_0x541a1e)_0x3b1a5c['checked']=!![];}}const _0xc5c833=Array['from'](_0x3663d2)['filter'](_0x427865=>_0x427865['checked'])['length'],_0x1df0e2=_0x3663d2['length'],_0x5a6aa1=_0x5c98a9['replace']('dropdown','btn'),_0x255465=document['getElement'+'ById'](_0x5a6aa1);let _0x155a19='';if(_0x5a6aa1['includes']('Engine'))_0x155a19='Motores';else{if(_0x5a6aa1['includes']('Company'))_0x155a19='Sociedades';else{if(_0x5a6aa1['includes']('Segment'))_0x155a19='Segmentos';}}_0x3b1a5c['checked']||_0xc5c833===_0x1df0e2?_0x255465['innerHTML']=_0x155a19+(':\x20Todos\x20<i'+'\x20class=\x22fa'+'-solid\x20fa-'+'chevron-do'+'wn\x20text-[1'+'0px]\x22></i>'):_0x255465['innerHTML']=_0x155a19+'\x20('+_0xc5c833+(')\x20<i\x20class'+'=\x22fa-solid'+'\x20fa-chevro'+'n-down\x20tex'+'t-[10px]\x22>'+'</i>'),window['updateManu'+'facturerCh'+'art']();};function populateMultiSelect(_0x2b6a5a,_0xa7c6dd,_0x101a4f){const _0xfcd769=document['getElement'+'ById'](_0x2b6a5a);if(!_0xfcd769)return;if(_0xfcd769['children']['length']>0x0)return;const _0x5e789a=(_0x5b0d9c,_0x3ed734,_0x3f7fd4)=>{const _0x452183=document['createElem'+'ent']('label');_0x452183['className']=_0x3f7fd4;const _0x4b03c0=document['createElem'+'ent']('input');_0x4b03c0['type']='checkbox',_0x4b03c0['value']=_0x5b0d9c,_0x4b03c0['checked']=!![],_0x4b03c0['addEventLi'+'stener']('change',()=>window['handleMult'+'iSelectCha'+'nge'](_0x2b6a5a,_0x4b03c0));const _0x32b851=document['createElem'+'ent']('span');return _0x32b851['className']=_0x5b0d9c==='ALL'?'ml-2\x20font-'+'bold\x20text-'+'slate-700':'ml-2',_0x32b851['innerText']=_0x3ed734,_0x452183['appendChil'+'d'](_0x4b03c0),_0x452183['appendChil'+'d'](_0x32b851),_0x452183;};_0xfcd769['innerHTML']='',_0xfcd769['appendChil'+'d'](_0x5e789a('ALL','Todos','block\x20px-4'+'\x20py-2\x20hove'+'r:bg-slate'+'-100\x20curso'+'r-pointer\x20'+'border-b\x20b'+'order-slat'+'e-100')),_0xa7c6dd['forEach'](_0x3c5395=>{_0xfcd769['appendChil'+'d'](_0x5e789a(normalizeStr(_0x3c5395),normalizeStr(_0x3c5395),'block\x20px-4'+'\x20py-2\x20hove'+'r:bg-slate'+'-50\x20cursor'+'-pointer\x20t'+'ext-xs\x20tex'+'t-slate-60'+'0'));});}function getWashSortIndicator(_0x4d592b,_0x1d3331){if(!_0x4d592b||_0x4d592b['key']!==_0x1d3331)return'<span\x20clas'+'s=\x22text-sl'+'ate-300\x20ml'+'-1\x22>-</spa'+'n>';return _0x4d592b['dir']==='asc'?'<span\x20clas'+'s=\x22text-cy'+'an-600\x20ml-'+'1\x22>^</span'+'>':'<span\x20clas'+'s=\x22text-cy'+'an-600\x20ml-'+'1\x22>v</span'+'>';}function getWashStatusBadgeAndClass(_0x2fb318){if(_0x2fb318<=0x2d)return{'badge':'<span\x20clas'+'s=\x22bg-gree'+'n-100\x20text'+'-green-700'+'\x20px-2\x20py-0'+'.5\x20rounded'+'\x20text-[10p'+'x]\x20font-bo'+'ld\x20upperca'+'se\x22>Limpia'+'</span>','daysClass':'text-green'+'-600'};if(_0x2fb318<0x64)return{'badge':'<span\x20clas'+'s=\x22bg-yell'+'ow-100\x20tex'+'t-yellow-7'+'00\x20px-2\x20py'+'-0.5\x20round'+'ed\x20text-[1'+'0px]\x20font-'+'bold\x20upper'+'case\x22>Aler'+'ta</span>','daysClass':'text-yello'+'w-600'};return{'badge':'<span\x20clas'+'s=\x22bg-red-'+'100\x20text-r'+'ed-700\x20px-'+'2\x20py-0.5\x20r'+'ounded\x20tex'+'t-[10px]\x20f'+'ont-bold\x20u'+'ppercase\x22>'+'Crítica</s'+'pan>','daysClass':'text-red-6'+'00'};}function updateWashDrillDownHead(){const _0x58184d=document['getElement'+'ById']('washDrillD'+'ownHead');if(!_0x58184d)return;_0x58184d['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<th\x20clas'+'s=\x22p-3\x20cur'+'sor-pointe'+'r\x20select-n'+'one\x22\x20oncli'+'ck=\x22window'+'.setWashDr'+'illSort(\x27u'+'nit\x27)\x22>Uni'+'dad\x20'+getWashSortIndicator(currentWashDrillSort,'unit')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20cursor-po'+'inter\x20sele'+'ct-none\x22\x20o'+'nclick=\x22wi'+'ndow.setWa'+'shDrillSor'+'t(\x27company'+'\x27)\x22>Empres'+'a\x20')+getWashSortIndicator(currentWashDrillSort,'company')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20cursor-po'+'inter\x20sele'+'ct-none\x22\x20o'+'nclick=\x22wi'+'ndow.setWa'+'shDrillSor'+'t(\x27lastWas'+'hDate\x27)\x22>F'+'echa\x20')+getWashSortIndicator(currentWashDrillSort,'lastWashDa'+'te')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20cursor-po'+'inter\x20sele'+'ct-none\x20te'+'xt-center\x22'+'\x20onclick=\x22'+'window.set'+'WashDrillS'+'ort(\x27daysW'+'ithoutWash'+'\x27)\x22>Días\x20T'+'rans.\x20')+getWashSortIndicator(currentWashDrillSort,'daysWithou'+'tWash')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x22>Estado'+'</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');}function setWashDrillSort(_0x1fe68b){const _0x50d886={'unit':'asc','company':'asc','lastWashDate':'desc','daysWithoutWash':'desc'};currentWashDrillSort['key']===_0x1fe68b?currentWashDrillSort['dir']=currentWashDrillSort['dir']==='asc'?'desc':'asc':(currentWashDrillSort['key']=_0x1fe68b,currentWashDrillSort['dir']=_0x50d886[_0x1fe68b]||'asc'),renderWashDrillDownRows();}function renderWashDrillDownRows(){const _0x2e1956=document['getElement'+'ById']('washDrillD'+'ownContain'+'er'),_0x20a55a=document['getElement'+'ById']('washDrillD'+'ownBody'),_0x183019=document['getElement'+'ById']('washDrillD'+'ownTitle');if(!_0x2e1956||!_0x20a55a||!_0x183019)return;updateWashDrillDownHead();const _0x4ca093=(Array['isArray'](currentWashDrillRows)?[...currentWashDrillRows]:[])['sort']((_0x153605,_0x1c24df)=>{const _0x3199a3=currentWashDrillSort['key'];let _0x25e533=0x0;if(_0x3199a3==='daysWithou'+'tWash')_0x25e533=(Number(_0x153605['daysWithou'+'tWash'])||0x0)-(Number(_0x1c24df['daysWithou'+'tWash'])||0x0);else{if(_0x3199a3==='lastWashDa'+'te'){const _0x2174fe=_0x153605['rawDate']?_0x153605['rawDate']['getTime']():0x0,_0x2c80d4=_0x1c24df['rawDate']?_0x1c24df['rawDate']['getTime']():0x0;_0x25e533=_0x2174fe-_0x2c80d4;}else _0x3199a3==='company'?_0x25e533=normalizeStr(_0x153605['company'])['localeComp'+'are'](normalizeStr(_0x1c24df['company']),'es',{'sensitivity':'base'}):_0x25e533=normalizeStr(_0x153605['unit'])['localeComp'+'are'](normalizeStr(_0x1c24df['unit']),'es',{'sensitivity':'base'});}if(_0x25e533===0x0)_0x25e533=(Number(_0x1c24df['daysWithou'+'tWash'])||0x0)-(Number(_0x153605['daysWithou'+'tWash'])||0x0);return currentWashDrillSort['dir']==='asc'?_0x25e533:-_0x25e533;});_0x183019['innerHTML']=(currentWashDrillBaseTitle||'Detalle\x20de'+'\x20Lavados')+('\x20<span\x20cla'+'ss=\x22text-c'+'yan-700\x20fo'+'nt-normal\x22'+'>|\x20')+_0x4ca093['length']+('\x20unidades<'+'/span>'),_0x20a55a['innerHTML']='',!_0x4ca093['length']?_0x20a55a['innerHTML']='<tr><td\x20co'+'lspan=\x225\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20registr'+'os\x20para\x20es'+'ta\x20selecci'+'ón.</td></'+'tr>':_0x4ca093['forEach'](_0x54d208=>{const _0x2293da=Number(_0x54d208['daysWithou'+'tWash'])||0x0,_0x35017d=getWashStatusBadgeAndClass(_0x2293da);_0x20a55a['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<tr\x20c'+'lass=\x22hove'+'r:bg-slate'+'-50\x20border'+'-b\x20border-'+'slate-100\x20'+'last:borde'+'r-0\x20transi'+'tion\x22>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<td\x20c'+'lass=\x22p-3\x20'+'font-bold\x20'+'text-slate'+'-700\x20text-'+'xs\x22>'+escapeHtml(normalizeStr(_0x54d208['unit']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-xs\x22>')+escapeHtml(normalizeStr(_0x54d208['company']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-xs\x20tex'+'t-slate-50'+'0\x22>')+escapeHtml(normalizeStr(_0x54d208['lastWashDa'+'te']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20font-mono'+'\x20font-bold'+'\x20text-xs\x20')+_0x35017d['daysClass']+'\x22>'+_0x2293da+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x22>')+_0x35017d['badge']+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'</tr>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20');});}function showWashDrillDown(_0x2b1963,_0x36ad7f){const _0x56a677=document['getElement'+'ById']('washDrillD'+'ownContain'+'er'),_0x37b14c=document['getElement'+'ById']('washMonthl'+'yDetailCon'+'tainer');if(!_0x56a677)return;if(_0x37b14c)_0x37b14c['classList']['add']('hidden');currentWashDrillRows=Array['isArray'](_0x2b1963)?_0x2b1963['slice']():[],currentWashDrillBaseTitle=_0x36ad7f||'Detalle\x20de'+'\x20Lavados',currentWashDrillSort={'key':'daysWithou'+'tWash','dir':'desc'},renderWashDrillDownRows(),_0x56a677['classList']['remove']('hidden'),_0x56a677['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function updateWashMonthlyDetailHead(){const _0x1e3153=document['getElement'+'ById']('washMonthl'+'yDetailHea'+'d');if(!_0x1e3153)return;_0x1e3153['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<th\x20clas'+'s=\x22p-3\x20cur'+'sor-pointe'+'r\x20select-n'+'one\x22\x20oncli'+'ck=\x22window'+'.setWashMo'+'nthlyDetai'+'lSort(\x27uni'+'t\x27)\x22>Unida'+'d\x20'+getWashSortIndicator(currentWashMonthlyDetailSort,'unit')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20cursor-po'+'inter\x20sele'+'ct-none\x22\x20o'+'nclick=\x22wi'+'ndow.setWa'+'shMonthlyD'+'etailSort('+'\x27company\x27)'+'\x22>Empresa\x20')+getWashSortIndicator(currentWashMonthlyDetailSort,'company')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20cursor-po'+'inter\x20sele'+'ct-none\x22\x20o'+'nclick=\x22wi'+'ndow.setWa'+'shMonthlyD'+'etailSort('+'\x27rawDate\x27)'+'\x22>Fecha\x20de'+'\x20Lavado\x20')+getWashSortIndicator(currentWashMonthlyDetailSort,'rawDate')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<th\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20cursor-'+'pointer\x20se'+'lect-none\x22'+'\x20onclick=\x22'+'window.set'+'WashMonthl'+'yDetailSor'+'t(\x27monthId'+'x\x27)\x22>Mes\x20')+getWashSortIndicator(currentWashMonthlyDetailSort,'monthIdx')+('</th>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');}function setWashMonthlyDetailSort(_0x46281b){const _0x227bef={'unit':'asc','company':'asc','rawDate':'desc','monthIdx':'asc'};currentWashMonthlyDetailSort['key']===_0x46281b?currentWashMonthlyDetailSort['dir']=currentWashMonthlyDetailSort['dir']==='asc'?'desc':'asc':(currentWashMonthlyDetailSort['key']=_0x46281b,currentWashMonthlyDetailSort['dir']=_0x227bef[_0x46281b]||'asc'),renderWashMonthlyDetailRows();}function renderWashMonthlyDetailRows(){const _0xc70c86=document['getElement'+'ById']('washMonthl'+'yDetailCon'+'tainer'),_0x3c2be5=document['getElement'+'ById']('washMonthl'+'yDetailBod'+'y'),_0x3b67ad=document['getElement'+'ById']('washMonthl'+'yDetailTit'+'le');if(!_0xc70c86||!_0x3c2be5||!_0x3b67ad)return;updateWashMonthlyDetailHead();const _0x587676=(Array['isArray'](currentWashMonthlyDetailRows)?[...currentWashMonthlyDetailRows]:[])['sort']((_0x7a5ba3,_0x304ffd)=>{const _0xebbe38=currentWashMonthlyDetailSort['key'];let _0x378071=0x0;if(_0xebbe38==='rawDate'){const _0x28b214=_0x7a5ba3['rawDate']?_0x7a5ba3['rawDate']['getTime']():0x0,_0x30c311=_0x304ffd['rawDate']?_0x304ffd['rawDate']['getTime']():0x0;_0x378071=_0x28b214-_0x30c311;}else{if(_0xebbe38==='company')_0x378071=normalizeStr(_0x7a5ba3['company'])['localeComp'+'are'](normalizeStr(_0x304ffd['company']),'es',{'sensitivity':'base'});else _0xebbe38==='monthIdx'?_0x378071=(Number(_0x7a5ba3['monthIdx'])||0x0)-(Number(_0x304ffd['monthIdx'])||0x0):_0x378071=normalizeStr(_0x7a5ba3['unit'])['localeComp'+'are'](normalizeStr(_0x304ffd['unit']),'es',{'sensitivity':'base'});}if(_0x378071===0x0&&_0xebbe38!=='rawDate'){const _0x41953f=_0x7a5ba3['rawDate']?_0x7a5ba3['rawDate']['getTime']():0x0,_0x425ea5=_0x304ffd['rawDate']?_0x304ffd['rawDate']['getTime']():0x0;_0x378071=_0x425ea5-_0x41953f;}return currentWashMonthlyDetailSort['dir']==='asc'?_0x378071:-_0x378071;});_0x3b67ad['innerHTML']=(currentWashMonthlyDetailBaseTitle||'Detalle\x20Hi'+'stórico\x20Me'+'nsual')+('\x20<span\x20cla'+'ss=\x22text-c'+'yan-700\x20fo'+'nt-normal\x22'+'>|\x20')+_0x587676['length']+('\x20lavados</'+'span>'),_0x3c2be5['innerHTML']='',!_0x587676['length']?_0x3c2be5['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20registr'+'os\x20para\x20es'+'ta\x20selecci'+'ón.</td></'+'tr>':_0x587676['forEach'](_0x26027=>{const _0x149ffa=COMPANY_COLORS[_0x26027['company']]||COMPANY_COLORS[normalizeStr(_0x26027['company'])['toUpperCas'+'e']()]||'#64748b';_0x3c2be5['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<tr\x20c'+'lass=\x22hove'+'r:bg-cyan-'+'50\x20border-'+'b\x20border-s'+'late-100\x20l'+'ast:border'+'-0\x20transit'+'ion\x22>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20f'+'ont-bold\x20t'+'ext-slate-'+'700\x20text-x'+'s\x22>'+escapeHtml(normalizeStr(_0x26027['unit']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-xs\x20fon'+'t-bold\x22\x20st'+'yle=\x22color'+':')+_0x149ffa+'\x22>'+escapeHtml(normalizeStr(_0x26027['company']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-xs\x20tex'+'t-slate-60'+'0\x20font-mon'+'o\x22>')+escapeHtml(normalizeStr(_0x26027['dateStr']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20text-xs\x20t'+'ext-slate-'+'400\x20upperc'+'ase\x22>')+escapeHtml(monthNamesFull[_0x26027['monthIdx']]||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'</tr>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20');});}function showWashMonthlyDetail(_0x381070,_0x115240){const _0x286795=document['getElement'+'ById']('washMonthl'+'yDetailCon'+'tainer'),_0x5a5216=document['getElement'+'ById']('washDrillD'+'ownContain'+'er');if(!_0x286795)return;if(_0x5a5216)_0x5a5216['classList']['add']('hidden');currentWashMonthlyDetailRows=Array['isArray'](_0x381070)?_0x381070['slice']():[],currentWashMonthlyDetailBaseTitle=_0x115240||'Detalle\x20Hi'+'stórico\x20Me'+'nsual',currentWashMonthlyDetailSort={'key':'rawDate','dir':'desc'},renderWashMonthlyDetailRows(),_0x286795['classList']['remove']('hidden'),_0x286795['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function showWashHistoryDetail(_0x440a46,_0x3bef5f){showWashMonthlyDetail(_0x440a46,_0x3bef5f);}function showFuelDrillDown(_0xb16903){const _0x415a63=document['getElement'+'ById']('fuelDrillD'+'ownContain'+'er'),_0x3998a8=document['getElement'+'ById']('fuelDrillD'+'ownTitle'),_0x4cce83='fuelDrillD'+'ownChart';if(!_0x415a63)return;_0x415a63['classList']['remove']('hidden');const _0x152020=dbExtra['filter'](_0x3d2f60=>_0x3d2f60['company']===_0xb16903&&_0x3d2f60['company']!=='Pipitas'),_0x510569=[...new Set(_0x152020['map'](_0x149b81=>_0x149b81['segment']))],_0x2bc57c=new Date(),_0x1b4b2b=[],_0x2b1eab=[];for(let _0x340a24=0xc;_0x340a24>=0x1;_0x340a24--){const _0x811057=new Date(_0x2bc57c['getFullYea'+'r'](),_0x2bc57c['getMonth']()-_0x340a24,0x1),_0x3c6918=_0x811057['getFullYea'+'r'](),_0x4e9fc5=_0x811057['getMonth']();_0x1b4b2b['push'](_0x3c6918+'-'+_0x4e9fc5),_0x2b1eab['push'](monthNamesFull[_0x4e9fc5]['substring'](0x0,0x3)+'\x20'+_0x3c6918['toString']()['substr'](0x2));}const _0x21b2b6={};_0x510569['forEach'](_0x42dde0=>{_0x21b2b6[_0x42dde0]=new Array(0xc)['fill'](null)['map'](()=>({'km':0x0,'lit':0x0}));}),_0x152020['forEach'](_0x32261d=>{const _0x36717f=_0x32261d['year']+'-'+_0x32261d['mIdx'],_0x5f43cf=_0x1b4b2b['indexOf'](_0x36717f);_0x5f43cf!==-0x1&&(_0x21b2b6[_0x32261d['segment']][_0x5f43cf]['km']+=_0x32261d['km'],_0x21b2b6[_0x32261d['segment']][_0x5f43cf]['lit']+=_0x32261d['liters']);});const _0x5d97ee=_0x510569['map']((_0x35427a,_0xb81ab1)=>{const _0x23ff95=_0x21b2b6[_0x35427a]['map'](_0x1388f0=>_0x1388f0['lit']>0x0?_0x1388f0['km']/_0x1388f0['lit']:null),_0x14b56c=isColorblind?COLORBLIND_PALETTE[_0xb81ab1%COLORBLIND_PALETTE['length']]:PALETTE_FALLBACK[_0xb81ab1%PALETTE_FALLBACK['length']];return{'label':_0x35427a,'data':_0x23ff95,'borderColor':_0x14b56c,'backgroundColor':'transparen'+'t','tension':0.3,'pointRadius':0x4,'pointHoverRadius':0x6};});_0x3998a8['innerText']=_0xb16903+('\x20-\x20Tendenc'+'ia\x20Mensual'+'\x20por\x20Segme'+'nto'),initChart(_0x4cce83,'line',{'labels':_0x2b1eab,'datasets':_0x5d97ee},{'plugins':{'legend':{'display':!![]},'tooltip':{'callbacks':{'label':_0x531c31=>_0x531c31['dataset']['label']+':\x20'+(_0x531c31['raw']?_0x531c31['raw']['toFixed'](0x2):'-')+'\x20km/L'}},'datalabels':{'display':!![],'align':'top','anchor':'end','offset':0x4,'color':function(_0x55525d){return _0x55525d['dataset']['borderColo'+'r'];},'backgroundColor':'rgba(255,\x20'+'255,\x20255,\x20'+'0.8)','borderRadius':0x3,'font':{'size':0x9,'weight':'bold'},'formatter':_0x30369a=>_0x30369a?_0x30369a['toFixed'](0x2):''}},'scales':{'y':{'title':{'display':!![],'text':'Rendimient'+'o\x20(km/L)'},'beginAtZero':![]}},'layout':{'padding':{'top':0x14}}}),_0x415a63['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function showScrapDrillDown(_0x3ee5f8,_0x3e110f){const _0x4c7dab=document['getElement'+'ById']('scrapDrill'+'DownContai'+'ner'),_0x26ced9=document['getElement'+'ById']('scrapDrill'+'DownBody'),_0x387023=document['getElement'+'ById']('scrapDrill'+'DownTitle'),_0x50220f=document['getElement'+'ById']('scrapDrill'+'DownHead');if(!_0x4c7dab||!_0x26ced9)return;if(_0x387023)_0x387023['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-list-ul\x22'+'></i>\x20Deta'+'lle:\x20Otras'+'\x20Causas';_0x50220f&&(_0x50220f['innerHTML']='<tr><th\x20cl'+'ass=\x22p-3\x22>'+'Causa</th>'+'<th\x20class='+'\x22p-3\x20text-'+'center\x22>Ca'+'ntidad</th'+'><th\x20class'+'=\x22p-3\x20text'+'-right\x22>%\x20'+'del\x20Total<'+'/th></tr>'),_0x26ced9['innerHTML']='',_0x3ee5f8['forEach'](([_0x16659f,_0x26d533])=>{const _0x28095c=(_0x26d533/_0x3e110f*0x64)['toFixed'](0x1);_0x26ced9['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'slate-50\x22>'+'<td\x20class='+'\x22p-3\x20font-'+'bold\x20text-'+'slate-700\x22'+'>'+escapeHtml(normalizeStr(_0x16659f))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20text-sla'+'te-600\x22>')+_0x26d533['toLocaleSt'+'ring']('es-MX')+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-right'+'\x20font-mono'+'\x20text-blue'+'-600\x20font-'+'bold\x22>')+_0x28095c+('%</td></tr'+'>');}),_0x4c7dab['classList']['remove']('hidden'),_0x4c7dab['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function showScrapBrandDetail(_0xe882bc){const _0x357dab=document['getElement'+'ById']('scrapDrill'+'DownContai'+'ner'),_0xa528e3=document['getElement'+'ById']('scrapDrill'+'DownBody'),_0x5a523e=document['getElement'+'ById']('scrapDrill'+'DownTitle'),_0x4f930f=document['getElement'+'ById']('scrapDrill'+'DownHead');if(!_0x357dab||!_0xa528e3)return;if(_0x5a523e)_0x5a523e['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-tags\x20tex'+'t-orange-6'+'00\x22></i>\x20D'+'esglose\x20po'+'r\x20Marca:\x20<'+'span\x20class'+'=\x22text-sla'+'te-800\x22>'+escapeHtml(normalizeStr(_0xe882bc))+'</span>';_0x4f930f&&(_0x4f930f['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<tr>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<th\x20class='+'\x22p-3\x22>Dise'+'ño\x20(Modelo'+')</th>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<th\x20class'+'=\x22p-3\x20text'+'-center\x22>C'+'ant.\x20Llant'+'as</th>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<th\x20clas'+'s=\x22p-3\x20tex'+'t-center\x22>'+'Prom.\x20mm/l'+'lanta</th>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<th\x20c'+'lass=\x22p-3\x20'+'text-right'+'\x22>MM\x20Despe'+'rdiciados\x20'+'Total</th>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20</tr>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20');const _0x32c1a6=dbScrap['filter'](_0x5267fd=>_0x5267fd['brand']===_0xe882bc),_0x560278={};_0x32c1a6['forEach'](_0x58419e=>{const _0x269788=Math['max'](0x0,(_0x58419e['mm']||0x0)-0x3);if(!_0x560278[_0x58419e['model']])_0x560278[_0x58419e['model']]={'count':0x0,'mm':0x0};_0x560278[_0x58419e['model']]['count']++,_0x560278[_0x58419e['model']]['mm']+=_0x269788;});const _0xcf0a6d=Object['entries'](_0x560278)['map'](([_0x5c7c5d,_0x5491e4])=>({'name':_0x5c7c5d,..._0x5491e4}))['sort']((_0x47103d,_0x5c4049)=>_0x5c4049['mm']-_0x47103d['mm']);_0xa528e3['innerHTML']='',_0xcf0a6d['length']===0x0?_0xa528e3['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20datos\x20d'+'e\x20desperdi'+'cio.</td><'+'/tr>':_0xcf0a6d['forEach'](_0x1643e0=>{const _0x5afcef=_0x1643e0['count']>0x0?_0x1643e0['mm']/_0x1643e0['count']:0x0;_0xa528e3['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<tr\x20c'+'lass=\x22hove'+'r:bg-orang'+'e-50\x20borde'+'r-b\x20border'+'-slate-100'+'\x20last:bord'+'er-0\x20trans'+'ition\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20font-bold'+'\x20text-slat'+'e-700\x20text'+'-xs\x22>'+escapeHtml(normalizeStr(_0x1643e0['name']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20text-slat'+'e-600\x20text'+'-xs\x20font-s'+'emibold\x22>')+_0x1643e0['count']+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20font-mono'+'\x20text-oran'+'ge-600\x20fon'+'t-bold\x20tex'+'t-xs\x22>')+_0x5afcef['toFixed'](0x2)+('\x20mm</td>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<td'+'\x20class=\x22p-'+'3\x20text-rig'+'ht\x20font-mo'+'no\x20text-re'+'d-600\x20font'+'-bold\x20text'+'-xs\x22>')+_0x1643e0['mm']['toFixed'](0x1)+('\x20mm</td>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20</tr>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20');}),_0x357dab['classList']['remove']('hidden'),_0x357dab['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function showCreditLegalDrillDown(_0x29c0ff,_0x20ec54,_0x3e7517=''){const _0x424c0e=document['getElement'+'ById']('creditLega'+'lDrillDown'+'Container'),_0xbc5cf0=document['getElement'+'ById']('creditLega'+'lDrillDown'+'Body'),_0x4d35e2=document['getElement'+'ById']('creditLega'+'lDrillDown'+'Title');if(!_0x424c0e||!_0xbc5cf0||!_0x4d35e2)return;const _0x1f5153=normalizeStr(_0x29c0ff),_0x3d4cda=normalizeStr(_0x3e7517),_0x198402=Array['isArray'](_0x20ec54)?_0x20ec54:[],_0x5da31a=_0x198402['filter'](_0x4d25d1=>{if(normalizeStr(_0x4d25d1['legalName'])!==_0x1f5153)return![];if(!_0x3d4cda)return!![];return normalizeStr(_0x4d25d1['provider'])===_0x3d4cda;});_0x5da31a['sort']((_0x54f248,_0xf8f2ae)=>{const _0xb1956e=parseFlexibleDate(_0x54f248['date']),_0x1a6b9d=parseFlexibleDate(_0xf8f2ae['date']);if(_0xb1956e&&_0x1a6b9d)return _0x1a6b9d-_0xb1956e;if(_0xb1956e)return-0x1;if(_0x1a6b9d)return 0x1;return 0x0;});const _0x57b3d5=_0x5da31a['reduce']((_0x4210e3,_0x5f3a3f)=>_0x4210e3+(Number(_0x5f3a3f['amount'])||0x0),0x0),_0x24908f=_0x5da31a['reduce']((_0x34e4f7,_0x54c297)=>_0x34e4f7+(Number(_0x54c297['qty'])||0x0),0x0),_0x3da86f=_0x3d4cda?_0x1f5153+'\x20/\x20'+_0x3d4cda:_0x1f5153;_0x4d35e2['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-table-li'+'st\x22></i>\x20'+escapeHtml(_0x3da86f)+('\x20<span\x20cla'+'ss=\x22text-['+'11px]\x20font'+'-normal\x20te'+'xt-slate-5'+'00\x20ml-2\x22>(')+_0x5da31a['length']+('\x20reg.\x20|\x20Qt'+'y:\x20')+_0x24908f['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x1})+('\x20|\x20Total:\x20'+'$')+_0x57b3d5['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2})+')</span>',!_0x5da31a['length']?_0xbc5cf0['innerHTML']='<tr><td\x20co'+'lspan=\x226\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20detalle'+'\x20disponibl'+'e\x20para\x20est'+'a\x20razón\x20so'+'cial.</td>'+'</tr>':_0xbc5cf0['innerHTML']=_0x5da31a['map'](_0x5ea3f8=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<tr\x20class'+'=\x22hover:bg'+'-slate-50\x22'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-xs\x20t'+'ext-slate-'+'600\x22>'+escapeHtml(normalizeStr(_0x5ea3f8['date'])||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20text-'+'xs\x20text-sl'+'ate-700\x22>')+escapeHtml(normalizeStr(_0x5ea3f8['provider'])||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20text-'+'xs\x20font-se'+'mibold\x20tex'+'t-slate-70'+'0\x22>')+escapeHtml(normalizeStr(_0x5ea3f8['legalName'])||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20text-'+'center\x20tex'+'t-xs\x20text-'+'slate-600\x20'+'font-mono\x22'+'>')+(Number(_0x5ea3f8['qty'])||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x1})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20text-'+'xs\x20text-sl'+'ate-700\x22>')+escapeHtml(normalizeStr(_0x5ea3f8['descriptio'+'n'])||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20text-'+'right\x20text'+'-xs\x20font-m'+'ono\x20font-b'+'old\x20text-e'+'merald-700'+'\x22>$')+(Number(_0x5ea3f8['amount'])||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20</tr'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20'))['join'](''),_0x424c0e['classList']['remove']('hidden'),_0x424c0e['scrollInto'+'View']({'behavior':'smooth','block':'center'});}const DEFAULT_CPK_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vT'+'hc6F_SNxa5'+'JhL897dxyy'+'l7u-g-g2q4'+'QbTHIo8yEk'+'DBJpHXAH9N'+'Zzx3FJFPwx'+'vbg/pub?gi'+'d=58528591'+'2&single=t'+'rue&output'+'=csv',DEFAULT_SCRAP_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vR'+'kZVja7KbAN'+'tJeC2ED5QZ'+'p9QPt9RGV2'+'wp-p8_jhTJ'+'fie0OJw17R'+'FHgjvXPr90'+'teg/pub?gi'+'d=12647726'+'84&single='+'true&outpu'+'t=csv',DEFAULT_SCRAP_CREDIT_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vR'+'kZVja7KbAN'+'tJeC2ED5QZ'+'p9QPt9RGV2'+'wp-p8_jhTJ'+'fie0OJw17R'+'FHgjvXPr90'+'teg/pub?gi'+'d=36234769'+'7&single=t'+'rue&output'+'=csv',DEFAULT_WASH_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vT'+'CaFeNwOTwR'+'uMkQnliCir'+'L04_SiAHFX'+'Azqn_TPe_E'+'vuy6f_xuB9'+'_insuXl3mg'+'vRg/pub?gi'+'d=11033724'+'47&single='+'true&outpu'+'t=csv',DEFAULT_WASH_HISTORY_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vR'+'lZOIwJFJGV'+'OZq2IIY2gM'+'o1DRIwDXQX'+'nJIom29GuK'+'Uw1MOIjCKS'+'mMvhSaoCJg'+'QYg/pub?gi'+'d=17343953'+'70&single='+'true&outpu'+'t=csv',DEFAULT_EXTRA_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vQ'+'sdiL36ZevO'+'m1AY8E-Pfk'+'IhWFzimoVo'+'eQlbWw-wq7'+'mfHU-bE28U'+'ENuWqjLl1y'+'b_A/pub?gi'+'d=61237524'+'1&single=t'+'rue&output'+'=csv',DEFAULT_CPK_GOALS_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vT'+'hc6F_SNxa5'+'JhL897dxyy'+'l7u-g-g2q4'+'QbTHIo8yEk'+'DBJpHXAH9N'+'Zzx3FJFPwx'+'vbg/pub?gi'+'d=58420048'+'2&single=t'+'rue&output'+'=csv',CPK_GOALS_STORAGE_KEY='yucarro_cp'+'k_goals_lo'+'cal_v1',DEFAULT_CPK_GOALS_LOCAL=[],DEFAULT_LOSS_Y_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vQ'+'rVX7KEz9XH'+'q0m50eT6ws'+'F-kSigOp4p'+'NiycGS9mlb'+'Fy3tl_jA-c'+'S7jaeqkt1T'+'tCg/pub?gi'+'d=86968145'+'2&single=t'+'rue&output'+'=csv',DEFAULT_LOSS_T_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vQ'+'rVX7KEz9XH'+'q0m50eT6ws'+'F-kSigOp4p'+'NiycGS9mlb'+'Fy3tl_jA-c'+'S7jaeqkt1T'+'tCg/pub?gi'+'d=23616393'+'6&single=t'+'rue&output'+'=csv',DEFAULT_LOSS_C_URL='https://do'+'cs.google.'+'com/spread'+'sheets/d/e'+'/2PACX-1vQ'+'rVX7KEz9XH'+'q0m50eT6ws'+'F-kSigOp4p'+'NiycGS9mlb'+'Fy3tl_jA-c'+'S7jaeqkt1T'+'tCg/pub?gi'+'d=26647056'+'3&single=t'+'rue&output'+'=csv',COMPANY_MAP={'2000':'T2020','2001':'Corpored','2003':'Yucarro','2005':'CMC','2006':'LMR','2007':'LORM'},LA_PAZ_UNITS=['CR-75','CR-76','CR-77','CR-85','CR-86'],RANKING_RULES={'Delanteras':{'minKm':0x13880,'minEff':0x61a8,'maxEff':0xc350,'label':'Km\x20>\x2080k\x20|'+'\x2025k\x20<\x20Eff'+'\x20<\x2050k'},'Tracción':{'minKm':0x249f0,'minEff':0x4e20,'maxEff':0xd6d8,'label':'Km\x20>\x20150k\x20'+'|\x2020k\x20<\x20Ef'+'f\x20<\x2055k'},'Toda\x20Posición':{'minKm':0x249f0,'minEff':0x6d60,'maxEff':0xea60,'label':'Km\x20>\x20150k\x20'+'|\x2028k\x20<\x20Ef'+'f\x20<\x2060k'}},CPK_GOAL_SUMMARY_RULES={'TRACCION':{'segment':'Tracción','minKm':0x445c0,'topN':0x1e},'TODA_ARRASTRE':{'segment':'Toda\x20Posic'+'ión','minKm':0x493e0,'topN':0x1e}},MOCK_CPK_DATA=[{'FOLIO':'101','MARCA':'MOCK','DISEÑO':'DATA','SEGMENTO':'Delanteras','MM\x20ACTUAL':'10','MM\x20ORIG':'18','KM\x20REC.\x20TOT.':'10000','COSTO':'5000','CPK':'0.5','ECO\x20Nuevo':'M-01'}],MOCK_SCRAP_DATA=[],MOCK_SCRAP_CREDIT_DATA=[],MOCK_WASH_DATA=[],MODULE_CONFIGS={'cpk':{'mapping':{'unit':['Unidad','ECO\x20Nuevo','ECO','Economico','Vehicle','Unit','Vehiculo'],'folio':['FOLIO','Serial','ID','Placa','Tire\x20ID','No.','Serie'],'brand':['MARCA','Marca','Brand','Fabricante'],'model':['DISEÑO','Modelo','Diseño','Patron','Design'],'segment':['SEGMENTO','Segmento','Tipo','Familia','Position','Posicion','Eje','Rodado','Posición'],'mmOrig':['MM\x20ORIG','Original','Profundida'+'d\x20Original','Profundida'+'d\x20Inicial','MM_Orig'],'mmNow':['MM\x20ACTUAL','MM\x20Prom','Remanente','Profundida'+'d\x20Actual','MM','MM_Actual'],'km':['KM\x20REC.\x20TO'+'T.','KM\x20Totales','Rendimient'+'o','Kilometraj'+'e','Recorrido','Odo','Odometro','Km\x20Recorri'+'dos','Km','Kms','Distancia'],'cost':['$','Costo','Importe','Precio','Valor','COSTO'],'date':['Fecha','Date','Fecha\x20Mont'+'aje','F.\x20Montaje'],'cpk_value':['CPK','Costo\x20por\x20'+'Km'],'pos':['POS','Posicion'],'articulation':['Articulaci'+'on','Articulaci'+'ón','Remolque','Caja','Trailer','Dolly'],'status':['Status','STATUS','Estado','Estatus']}},'scrap':{'mapping':{'id':['FOLIO','ID','ECO\x20Nuevo','ECO','Unidad','Economico','Serial','Placa','No.'],'brand':['MARCA','Marca','Brand','Fabricante'],'model':['DISEÑO','Modelo','Diseño','Patron','Design'],'mmOrig':['MM\x20ORIG','Original','Profundida'+'d\x20Original','Profundida'+'d\x20Inicial','MM_Orig'],'mmNow':['MM\x20ACTUAL','MM\x20Prom','Remanente','Profundida'+'d\x20Actual','MM','MM_Actual'],'cost':['$','Costo','Importe','Precio','Valor','COSTO'],'scrapStatus':['STATUS','Estado','Estatus'],'scrapReason':['CAUSA','Motivo','Reason','Falla','Descripcio'+'n'],'scrapProvider':['Prov.\x20Reti'+'ro','Proveedor','Vendor','Patio','Destino'],'date':['F.\x20Salida','F\x20Salida','Fecha\x20Baja','Fecha\x20Reti'+'ro','Fecha','Date','scrapDate']}},'scrapCredit':{'mapping':{'date':['Fecha','FECHA','F.\x20Nota','F\x20Nota','Date'],'provider':['Proveedor','PROVEEDOR','Vendor'],'legalName':['razon\x20soci'+'al','Razon\x20soci'+'al','RAZON\x20SOCI'+'AL','Razón\x20soci'+'al'],'qty':['cantidad','Cantidad','CANTIDAD','Cant.'],'description':['descripcio'+'n','Descripcio'+'n','DESCRIPCIO'+'N','Descripció'+'n','Concepto'],'amount':['importe','Importe','IMPORTE','Monto','$']}},'wash':{'mapping':{'unit':['Unidad','ECO\x20Nuevo','ECO','Economico','Vehicle','Unit','Vehiculo'],'washDate':['FECHA','Fecha','Ultimo\x20Lav'+'ado','Fecha\x20de\x20L'+'avado','Date','Time','Marca\x20temp'+'oral','Timestamp','Fecha\x20Lava'+'do'],'washDays':['Dias','Dias\x20Sin\x20L'+'avar','Días'],'washCompany':['EMPRESA','Empresa','Company','Proveedor','Base','Sociedad']}},'fuel':{'mapping':{'unit':['Nº\x20vehícul'+'o','Nº\x20vehicul'+'o','N°\x20vehícul'+'o','No.\x20vehícu'+'lo','Unidad','ECO\x20Nuevo','ECO','Economico','Vehicle','Unit','Vehiculo','Eco','Económico'],'fuelMonth':['Fecha\x20prog'+'ramada','Mes','Month'],'fuelCompany':['Sociedad','Empresa','Company','Soc.'],'fuelEngine':['Motor','Tipo\x20Motor','Engine'],'fuelManufacturer':['Fabricante','Manufactur'+'er','Marca'],'fuelSegment':['Char\x2015','Segmento','Tipo','Subgrupo','B','Char.\x2015','Grupo'],'fuelOperator':['Nombre','nombre\x20de\x20'+'pila','Operador','Chofer','Conductor','Driver','Operador.'],'fuelKm':['Km\x20reales','Kms','Kilometros','Km','Distancia','Odometer','Odómetro','Recorrido','KM\x20RECORRI'+'DOS','Km.'],'fuelLiters':['Consumo','Litros','Lts','Galones','Volumen','Combustibl'+'e','LITROS\x20CON'+'SUMIDOS','Litros\x20Rea'+'les','Lts.'],'fuelYield':['Rend.\x20Fisi'+'co','Rendimient'+'o','Rend','Km/L','Eficiencia','Rendimient'+'o\x20Real']}},'loss':{'mapping':{'date':['FECHA\x20DE\x20V'+'IAJE','FECHA','Fecha\x20de\x20v'+'iaje','Fecha'],'tractor':['TRACTOR','Tractor','Numero\x20PR','Número\x20PR'],'unit':['UNIDAD','Unidad','Numero\x20Eco','Número\x20Eco','ECO'],'operator':['OPERADOR','Operador','Chofer','Conductor'],'origin':['ORIGEN','Origen'],'destination':['DESTINO','Destino'],'ingresos':['INGRESOS','INGRESOS\x20F'+'LETES','Ingresos'],'ingresosPeajes':['INGRESOS\x20P'+'EAJES','Ingresos\x20p'+'eajes'],'litersTransported':['LTS\x20TRANSP'+'ORTADOS','Litros\x20Tra'+'nsportados'],'litersFaltSabana':['LTS\x20FALT\x20S'+'ABANA','LTS\x20FALTAN'+'TE\x20SABANA','\x20LTS\x20FALTA'+'NTE\x20SABANA'],'diffSiic':['\x20DIF\x20LTS\x20\x20'+'FALTANTE\x20S'+'IIC','Dif\x20Lts\x20fa'+'lt\x20Siic','DIF\x20LTS\x20FA'+'LTANTE\x20SII'+'C'],'importeSiic':['\x20IMPORTE\x20F'+'ALTANTE\x20SI'+'IC','IMPORTE\x20FA'+'LTANTE\x20SII'+'C'],'litersFaltSiic':['LTS\x20FALTAN'+'TE\x20SIIC','\x20LTS\x20FALTA'+'NTE\x20SIIC','Litros\x20Fal'+'tante\x20SIC'],'litersCondonaPemex':['LTS\x20FALTAN'+'TE\x20CONDONA'+'\x20PEMEX'],'litersDescPemex':['LTS\x20FALTAN'+'TE\x20DESC\x20PE'+'MEX','LTS\x20Faltan'+'te\x20Desc\x20Pe'+'mex'],'importeDescPemex':['IMPORTE\x20FA'+'LTANTE\x20DES'+'C\x20PEMEX'],'litersAbsTyuc':['LTS\x20FALTAN'+'TE\x20ABS\x20TYU'+'C','LTS\x20FALTAN'+'TE\x20ABS\x20TVV','LTS\x20FALTAN'+'TE\x20ABS\x20TCO'+'RP','LITROS\x20FAL'+'TANTE\x20ABS\x20'+'TYUC','LTS\x20FALTAN'+'TE\x20ABS\x20TRA'+'NSP','LTS\x20FALTAN'+'TE\x20ABS\x20TRA'+'NPS','LTS\x20FALTAN'+'TE\x20ABS\x20TRA'+'NSP.'],'importeAbsTyuc':['IMPORTE\x20FA'+'LTANTE\x20ABS'+'\x20TYUC','IMPORTE\x20FA'+'LTANTE\x20ABS'+'\x20TVV','IMPORTE\x20FA'+'LTANTE\x20ABS'+'\x20TCORP','IMPORTE\x20FA'+'LTANTE\x20ABS'+'\x20TRANSP','IMPORTE\x20FA'+'LTANTE\x20ABS'+'\x20TRANPS','IMP.\x20FALT\x20'+'ABS\x20TRANSP'+'.','IMP.\x20FALT\x20'+'ABS\x20TRANSP'],'litersDescOperador':['LTS\x20FALTAN'+'TE\x20DESC\x20OP'+'ERADOR','LTS\x20FALTAN'+'TE\x20DESC\x20OP'+'ERADOR'],'importeDescOperador':['IMPORTE\x20FA'+'LTANTE\x20DES'+'C\x20OPERADOR'],'viajes':['Viajes','Viajes\x20']}}};let dbPerformance=[],dbScrap=[],dbScrapCredits=[],dbWashing=[],dbWashHistory=[],dbExtra=[],dbLoss=[],dbCpkGoals=[],currentFilter='ALL',currentPerformanceStatusFilter='ALL',currentWashSearchUnit='',currentWashSelectedUnit=[],currentWashDrillRows=[],currentWashDrillBaseTitle='',currentWashMonthlyDetailRows=[],currentWashMonthlyDetailBaseTitle='',currentWashDrillSort={'key':'daysWithou'+'tWash','dir':'desc'},currentWashMonthlyDetailSort={'key':'rawDate','dir':'desc'},currentFuelSearchUnit='',currentFuelSearchOperator='',currentFuelSelectedUnit=[],currentFuelSelectedOperator=[],currentLossCompanyFilter='ALL',currentLossLitersMode='PCT',currentLossLowRankBy='OPERADOR',currentLossTopOrder='MENOR',currentLossSearchTU='',currentLossSearchOperator='',currentLossSelectedTU=[],currentLossSelectedOperator=[],charts={},moduleState={'performance':{'periods':[]},'scrap':{'periods':[]},'washing':{'periods':[]},'strategy':{'periods':[]},'extra':{'periods':[]},'loss':{'periods':[]},'currentTab':'performanc'+'e'};const MERGE_STRATEGY_IN_SCRAP=!![];function escapeHtml(_0x4840e6){if(!_0x4840e6)return _0x4840e6;return _0x4840e6['replace'](/&/g,'&amp;')['replace'](/</g,'&lt;')['replace'](/>/g,'&gt;')['replace'](/"/g,'&quot;')['replace'](/'/g,'&#039;');}function normalizeStr(_0xb47b11){return(_0xb47b11||'')['toString']()['trim']();}function normalizeCpkStatus(_0x35f520){const _0x3f12b5=normalizeStr(_0x35f520)['toUpperCas'+'e']();if(!_0x3f12b5)return'SIN\x20ESTATU'+'S';if(_0x3f12b5['includes']('ACTIV'))return'ACTIVA';if(_0x3f12b5['includes']('CONCLU')||_0x3f12b5['includes']('FIN')||_0x3f12b5['includes']('BAJA')||_0x3f12b5['includes']('RETIR'))return'CONCLUIDA';return'SIN\x20ESTATU'+'S';}function updatePerformanceStatusButtons(){['ALL','ACTIVA','CONCLUIDA']['forEach'](_0x596401=>{const _0x16fb58=document['getElement'+'ById']('perf-statu'+'s-'+_0x596401);if(!_0x16fb58)return;_0x16fb58['classList']['toggle']('active',currentPerformanceStatusFilter===_0x596401);});}function getFilteredPerformanceData(_0x16688d=!![]){let _0x19d27f=dbPerformance['slice']();currentPerformanceStatusFilter!=='ALL'&&(_0x19d27f=_0x19d27f['filter'](_0x358897=>_0x358897['status']===currentPerformanceStatusFilter));if(_0x16688d){const _0x521f09=moduleState['performanc'+'e']['periods'];_0x521f09['length']>0x0&&(_0x19d27f=_0x19d27f['filter'](_0x24eef2=>{const _0x4b5b80=parseFlexibleDate(_0x24eef2['date']);if(!_0x4b5b80)return![];const _0x2ff33a=_0x4b5b80['getFullYea'+'r']()+'-'+_0x4b5b80['getMonth']();return _0x521f09['includes'](_0x2ff33a);}));}return _0x19d27f;}function setPerformanceStatusFilter(_0x2f985c){const _0x1ae1ea=['ALL','ACTIVA','CONCLUIDA'];currentPerformanceStatusFilter=_0x1ae1ea['includes'](_0x2f985c)?_0x2f985c:'ALL',updatePerformanceStatusButtons();if(moduleState['currentTab']==='performanc'+'e')runCPKAnalysis();}function getAuthConfig(){const _0x22e93f=window['YUCARRO_AU'+'TH']||{};return{'mainUser':normalizeStr(_0x22e93f['mainUser']),'mainPass':normalizeStr(_0x22e93f['mainPass']),'adminPass':normalizeStr(_0x22e93f['adminPass'])};}const USER_STORAGE_KEY='yucarro_us'+'ers_v1',CURRENT_USER_KEY='yucarro_cu'+'rrent_user'+'_v1',MODULE_DEFS=[{'key':'performanc'+'e','label':'CPK\x20Llanta'+'s','inputId':'inputUrlCp'+'k','rowId':'cloudRowCp'+'k','storageKey':'yucarro_cp'+'k_url'},{'key':'scrap','label':'Desecho','inputId':'inputUrlSc'+'rap','rowId':'cloudRowSc'+'rap','storageKey':'yucarro_sc'+'rap_url'},{'key':'strategy','label':'Estrategia','inputId':'inputUrlSc'+'rap','rowId':'cloudRowSc'+'rap','storageKey':'yucarro_sc'+'rap_url'},{'key':'scrapCredi'+'t','label':'Desecho\x20No'+'tas\x20Crédit'+'o','inputId':'inputUrlSc'+'rapCredit','rowId':'cloudRowSc'+'rapCredit','storageKey':'yucarro_sc'+'rap_credit'+'_url'},{'key':'washing','label':'Lavadero','inputId':'inputUrlWa'+'sh','rowId':'cloudRowWa'+'sh','storageKey':'yucarro_wa'+'sh_url'},{'key':'washingHis'+'t','label':'Lavadero\x20H'+'ist.','inputId':'inputUrlWa'+'shHistory','rowId':'cloudRowWa'+'shHist','storageKey':'yucarro_wa'+'sh_hist_ur'+'l'},{'key':'extra','label':'Combustibl'+'e','inputId':'inputUrlEx'+'tra','rowId':'cloudRowEx'+'tra','storageKey':'yucarro_ex'+'tra_url'},{'key':'lossY','label':'Faltante\x20Y'+'ucarro','inputId':'inputUrlLo'+'ssY','rowId':'cloudRowLo'+'ssY','storageKey':'yucarro_lo'+'ss_y_url'},{'key':'lossT','label':'Faltante\x20T'+'2020','inputId':'inputUrlLo'+'ssT','rowId':'cloudRowLo'+'ssT','storageKey':'yucarro_lo'+'ss_t_url'},{'key':'lossC','label':'Faltante\x20C'+'orpored','inputId':'inputUrlLo'+'ssC','rowId':'cloudRowLo'+'ssC','storageKey':'yucarro_lo'+'ss_c_url'}],LINK_ACCESS_DEFS=[{'key':'performanc'+'e','label':'CPK\x20Llanta'+'s'},{'key':'scrap','label':'Desecho'},{'key':'strategy','label':'Estrategia'},{'key':'scrapCredi'+'t','label':'Desecho\x20No'+'tas\x20Crédit'+'o'},{'key':'washing','label':'Lavadero'},{'key':'washingHis'+'t','label':'Lavadero\x20H'+'ist.'},{'key':'extra','label':'Combustibl'+'e'},{'key':'lossY','label':'Faltante\x20Y'+'ucarro'},{'key':'lossT','label':'Faltante\x20T'+'2020'},{'key':'lossC','label':'Faltante\x20C'+'orpored'}],CSV_LINK_KEYS=MODULE_DEFS['map'](_0xd3299c=>_0xd3299c['key']),TAB_TO_MODULE={'performance':'performanc'+'e','scrap':'scrap','strategy':'strategy','washing':'washing','extra':'extra','loss':'loss'};let currentUser=null,linkSessionUser=null;function saveUsers(_0x4f821b){localStorage['setItem'](USER_STORAGE_KEY,JSON['stringify'](_0x4f821b));}function getUsers(){try{const _0x52be1f=localStorage['getItem'](USER_STORAGE_KEY),_0x342704=_0x52be1f?JSON['parse'](_0x52be1f):[];return Array['isArray'](_0x342704)?_0x342704:[];}catch(_0x343121){return[];}}function normalizeImportedUser(_0x5de697){if(!_0x5de697||typeof _0x5de697!=='object')return null;const _0x2ed24c=normalizeStr(_0x5de697['username']),_0x904e1f=normalizeStr(_0x5de697['password']),_0x15d2ba=normalizeStr(_0x5de697['role'])['toLowerCas'+'e'](),_0x5dc6a4=_0x15d2ba==='admin'?'admin':_0x15d2ba==='viewer'?'viewer':'editor';if(!_0x2ed24c||!_0x904e1f)return null;const _0x8e4368=['performanc'+'e','scrap','strategy','washing','extra','loss','colorblind'],_0x2ecbfb=LINK_ACCESS_DEFS['map'](_0x233621=>_0x233621['key']),_0x18e675=Array['isArray'](_0x5de697['modules'])?_0x5de697['modules']['map'](_0x3bf44c=>normalizeStr(_0x3bf44c))['filter'](_0x44f84b=>_0x8e4368['includes'](_0x44f84b)):[],_0x16018b=Array['isArray'](_0x5de697['linkAccess'])?_0x5de697['linkAccess']['map'](_0x6643d2=>normalizeStr(_0x6643d2))['filter'](_0x1241b9=>_0x2ecbfb['includes'](_0x1241b9)):[];return{'username':_0x2ed24c,'password':_0x904e1f,'role':_0x5dc6a4,'modules':_0x5dc6a4==='admin'?_0x8e4368['slice']():Array['from'](new Set(_0x18e675)),'linkAccess':_0x5dc6a4==='admin'?_0x2ecbfb['slice']():_0x5dc6a4==='viewer'?[]:Array['from'](new Set(_0x16018b))};}function sanitizeImportedUsers(_0x5e9ef4){if(!Array['isArray'](_0x5e9ef4))return[];const _0x405761=new Map();return _0x5e9ef4['forEach'](_0x2a4a75=>{const _0x476a92=normalizeImportedUser(_0x2a4a75);if(!_0x476a92)return;_0x405761['set'](_0x476a92['username'],_0x476a92);}),Array['from'](_0x405761['values']());}function getCurrentUser(){const _0x4103b=normalizeStr(localStorage['getItem'](CURRENT_USER_KEY));if(!_0x4103b)return null;return getUsers()['find'](_0x599037=>_0x599037['username']===_0x4103b)||null;}function setCurrentUser(_0x30badf){if(!_0x30badf){localStorage['removeItem'](CURRENT_USER_KEY),currentUser=null;return;}localStorage['setItem'](CURRENT_USER_KEY,_0x30badf),currentUser=getUsers()['find'](_0x1aadad=>_0x1aadad['username']===_0x30badf)||null;}function hideLockScreen(){const _0x113d6f=document['getElement'+'ById']('mainLockSc'+'reen');if(!_0x113d6f)return;_0x113d6f['classList']['add']('opacity-0','pointer-ev'+'ents-none'),_0x113d6f['style']['display']='none';}function showLockScreen(){const _0x224c52=document['getElement'+'ById']('mainLockSc'+'reen');if(!_0x224c52)return;_0x224c52['style']['display']='flex',_0x224c52['classList']['remove']('opacity-0','pointer-ev'+'ents-none');}function updateSessionUi(){const _0x40af10=document['getElement'+'ById']('sessionUse'+'rBadge'),_0x3b5a9d=document['getElement'+'ById']('btnLogout'),_0x5eb014=document['getElement'+'ById']('btnChangeP'+'assword');_0x40af10&&(currentUser&&currentUser['username']?(_0x40af10['innerText']=currentUser['username']+'\x20('+(currentUser['role']||'usuario')+')',_0x40af10['classList']['remove']('hidden')):(_0x40af10['classList']['add']('hidden'),_0x40af10['innerText']=''));if(_0x3b5a9d){if(currentUser)_0x3b5a9d['classList']['remove']('hidden');else _0x3b5a9d['classList']['add']('hidden');}if(_0x5eb014){const _0x19b735=!!(currentUser&&(currentUser['role']==='editor'||currentUser['role']==='viewer'));_0x5eb014['classList']['toggle']('hidden',!_0x19b735);}}function setChangePassError(_0x38a840){const _0x14d6e5=document['getElement'+'ById']('changePass'+'Error');if(!_0x14d6e5)return;if(!_0x38a840){_0x14d6e5['classList']['add']('hidden'),_0x14d6e5['innerText']='';return;}_0x14d6e5['innerText']=_0x38a840,_0x14d6e5['classList']['remove']('hidden');}function resetChangePasswordForm(){const _0x509846=document['getElement'+'ById']('changePass'+'Current'),_0x17292=document['getElement'+'ById']('changePass'+'New'),_0x4dede0=document['getElement'+'ById']('changePass'+'Confirm');if(_0x509846)_0x509846['value']='';if(_0x17292)_0x17292['value']='';if(_0x4dede0)_0x4dede0['value']='';setChangePassError('');}function openChangePasswordModal(){if(!currentUser||currentUser['role']!=='editor'&&currentUser['role']!=='viewer'){logStatus('Solo\x20usuar'+'ios\x20Editor'+'\x20o\x20Solo\x20le'+'ctura\x20pued'+'en\x20cambiar'+'\x20su\x20contra'+'seña\x20aquí.','error');return;}resetChangePasswordForm(),toggleModal('changePass'+'wordModal');}function submitPasswordChange(){if(!currentUser||currentUser['role']!=='editor'&&currentUser['role']!=='viewer'){setChangePassError('No\x20tienes\x20'+'permisos\x20p'+'ara\x20cambia'+'r\x20contrase'+'ña.');return;}const _0x3dd8fe=normalizeStr(document['getElement'+'ById']('changePass'+'Current')?.['value']),_0x16f958=normalizeStr(document['getElement'+'ById']('changePass'+'New')?.['value']),_0x5141f3=normalizeStr(document['getElement'+'ById']('changePass'+'Confirm')?.['value']);if(!_0x3dd8fe||!_0x16f958||!_0x5141f3){setChangePassError('Completa\x20l'+'os\x203\x20campo'+'s.');return;}if(_0x16f958['length']<0x6){setChangePassError('La\x20nueva\x20c'+'ontraseña\x20'+'debe\x20tener'+'\x20al\x20menos\x20'+'6\x20caracter'+'es.');return;}if(_0x16f958!==_0x5141f3){setChangePassError('La\x20confirm'+'ación\x20no\x20c'+'oincide\x20co'+'n\x20la\x20nueva'+'\x20contraseñ'+'a.');return;}const _0x4b0ada=getUsers(),_0x4f8bac=_0x4b0ada['findIndex'](_0x198046=>_0x198046['username']===currentUser['username']);if(_0x4f8bac<0x0){setChangePassError('No\x20se\x20enco'+'ntró\x20el\x20us'+'uario\x20acti'+'vo.');return;}if(_0x4b0ada[_0x4f8bac]['password']!==_0x3dd8fe){setChangePassError('La\x20contras'+'eña\x20actual'+'\x20es\x20incorr'+'ecta.');return;}if(_0x3dd8fe===_0x16f958){setChangePassError('La\x20nueva\x20c'+'ontraseña\x20'+'debe\x20ser\x20d'+'istinta\x20a\x20'+'la\x20actual.');return;}_0x4b0ada[_0x4f8bac]['password']=_0x16f958,saveUsers(_0x4b0ada),setCurrentUser(_0x4b0ada[_0x4f8bac]['username']),setChangePassError(''),toggleModal('changePass'+'wordModal'),logStatus('Contraseña'+'\x20actualiza'+'da\x20correct'+'amente.','info');}function logoutSession(){setCurrentUser(''),linkSessionUser=null;const _0x220ae6=document['getElement'+'ById']('changePass'+'wordModal');_0x220ae6&&!_0x220ae6['classList']['contains']('opacity-0')&&toggleModal('changePass'+'wordModal');applyUserAccessControl(),showLockScreen();const _0x35aee2=document['getElement'+'ById']('mainUser'),_0x1ac92e=document['getElement'+'ById']('mainPass'),_0x61b439=document['getElement'+'ById']('mainLoginE'+'rror');if(_0x35aee2)_0x35aee2['value']='';if(_0x1ac92e)_0x1ac92e['value']='';if(_0x61b439)_0x61b439['classList']['add']('hidden');logStatus('Sesión\x20cer'+'rada.','info');}function userHasModule(_0x4a984f,_0x9ed099){if(!_0x4a984f)return![];if(_0x4a984f['role']==='admin')return!![];if(MERGE_STRATEGY_IN_SCRAP&&_0x9ed099==='scrap'){const _0x92e1e2=Array['isArray'](_0x4a984f['modules'])?_0x4a984f['modules']:[];return _0x92e1e2['includes']('scrap')||_0x92e1e2['includes']('strategy');}if(MERGE_STRATEGY_IN_SCRAP&&_0x9ed099==='strategy')return![];const _0x581c1d=TAB_TO_MODULE[_0x9ed099];if(!_0x581c1d)return![];return Array['isArray'](_0x4a984f['modules'])&&_0x4a984f['modules']['includes'](_0x581c1d);}function userCanEditLink(_0x3445be,_0x449011){if(!_0x3445be)return![];if(_0x3445be['role']==='admin')return!![];return Array['isArray'](_0x3445be['linkAccess'])&&_0x3445be['linkAccess']['includes'](_0x449011);}function userCanEditAnyLink(_0x7efd15){if(!_0x7efd15)return![];if(_0x7efd15['role']==='admin')return!![];return Array['isArray'](_0x7efd15['linkAccess'])&&_0x7efd15['linkAccess']['length']>0x0;}function userCanOpenLinksPanel(_0x374989){if(!_0x374989)return![];if(_0x374989['role']==='admin')return!![];return Array['isArray'](_0x374989['linkAccess'])&&_0x374989['linkAccess']['some'](_0x599562=>CSV_LINK_KEYS['includes'](_0x599562));}function userCanUseColorblind(_0x1deec5){if(!_0x1deec5)return![];if(_0x1deec5['role']==='admin')return!![];return Array['isArray'](_0x1deec5['modules'])&&_0x1deec5['modules']['includes']('colorblind');}function initUserStore(){const _0x565126=getAuthConfig();if(!_0x565126['mainUser']||!_0x565126['mainPass'])return;const _0x5d97f8=getUsers(),_0x1dd5fd=_0x5d97f8['find'](_0x15ef1b=>_0x15ef1b['username']===_0x565126['mainUser']),_0x38c36c=['performanc'+'e','scrap','strategy','washing','extra','loss','colorblind'],_0x51cb23=LINK_ACCESS_DEFS['map'](_0x2f6253=>_0x2f6253['key']);if(!_0x1dd5fd){_0x5d97f8['push']({'username':_0x565126['mainUser'],'password':_0x565126['mainPass'],'role':'admin','modules':_0x38c36c['slice'](),'linkAccess':_0x51cb23['slice']()}),saveUsers(_0x5d97f8);return;}if(_0x1dd5fd['role']!=='admin')_0x1dd5fd['role']='admin';_0x1dd5fd['modules']=_0x38c36c['slice'](),_0x1dd5fd['linkAccess']=_0x51cb23['slice']();if(_0x1dd5fd['password']!==_0x565126['mainPass'])_0x1dd5fd['password']=_0x565126['mainPass'];saveUsers(_0x5d97f8);}function authenticateUser(_0x280cf1,_0x3c2677){const _0x2e3214=normalizeStr(_0x280cf1),_0x225d4f=normalizeStr(_0x3c2677);if(!_0x2e3214||!_0x225d4f)return null;return getUsers()['find'](_0x5b5e0e=>_0x5b5e0e['username']===_0x2e3214&&_0x5b5e0e['password']===_0x225d4f)||null;}function applyUserAccessControl(){const _0x3cdcb3=document['getElement'+'ById']('btnLinksAc'+'cess'),_0x5a2310=document['getElement'+'ById']('btnColorbl'+'ind'),_0xd02125=document['getElement'+'ById']('btnUsersAd'+'min'),_0x3f06d8=document['getElement'+'ById']('btnCpkGoal'+'sAdmin'),_0x3ba49b=document['getElement'+'ById']('strategyUn'+'matchedPan'+'el'),_0x3c5f99=document['getElement'+'ById']('scrapStrat'+'egyUnmatch'+'edPanel'),_0x13423=document['getElement'+'ById']('washHighFr'+'eqContaine'+'r'),_0x5dab27=document['getElement'+'ById']('tab-strate'+'gy'),_0x39fba1=document['getElement'+'ById']('view-strat'+'egy');if(_0x3cdcb3){const _0x58d262=!!(currentUser&&userCanOpenLinksPanel(currentUser));_0x3cdcb3['classList']['toggle']('hidden',!_0x58d262);}if(_0x5a2310){const _0x3fb0f3=!!(currentUser&&userCanUseColorblind(currentUser));_0x5a2310['classList']['toggle']('hidden',!_0x3fb0f3);if(!_0x3fb0f3&&isColorblind)isColorblind=![];}if(_0xd02125){if(currentUser&&currentUser['role']==='admin')_0xd02125['classList']['remove']('hidden');else _0xd02125['classList']['add']('hidden');}if(_0x3f06d8){if(currentUser&&currentUser['role']==='admin')_0x3f06d8['classList']['remove']('hidden');else _0x3f06d8['classList']['add']('hidden');}if(_0x3ba49b){const _0x404ee9=!!(currentUser&&currentUser['role']==='admin');_0x3ba49b['classList']['toggle']('hidden',!_0x404ee9);}if(_0x3c5f99){const _0x246b30=!!(currentUser&&currentUser['role']==='admin');_0x3c5f99['classList']['toggle']('hidden',!_0x246b30);}if(_0x13423){const _0x35a1d6=!!(currentUser&&(currentUser['role']==='admin'||currentUser['role']==='editor'));_0x13423['classList']['toggle']('hidden',!_0x35a1d6);}updateSessionUi(),Object['keys'](TAB_TO_MODULE)['forEach'](_0x2ea639=>{const _0x551e5a=document['getElement'+'ById']('tab-'+_0x2ea639),_0x5e493e=document['getElement'+'ById']('view-'+_0x2ea639),_0x19c1ff=currentUser?userHasModule(currentUser,_0x2ea639):!![];if(_0x551e5a)_0x551e5a['classList']['toggle']('hidden',!_0x19c1ff);if(_0x5e493e&&!_0x19c1ff)_0x5e493e['classList']['add']('hidden');});if(currentUser&&!userHasModule(currentUser,moduleState['currentTab'])){const _0x456561=Object['keys'](TAB_TO_MODULE)['find'](_0x269948=>(!MERGE_STRATEGY_IN_SCRAP||_0x269948!=='strategy')&&userHasModule(currentUser,_0x269948));if(_0x456561)switchTab(_0x456561);}currentUser&&updateCloudInputPermissions(currentUser);if(MERGE_STRATEGY_IN_SCRAP){if(_0x5dab27)_0x5dab27['classList']['add']('hidden');if(_0x39fba1)_0x39fba1['classList']['add']('hidden');if(moduleState['currentTab']==='strategy')switchTab('scrap');}}function getCloudUrls(){return{'cpk':localStorage['getItem']('yucarro_cp'+'k_url')||DEFAULT_CPK_URL,'scrap':localStorage['getItem']('yucarro_sc'+'rap_url')||DEFAULT_SCRAP_URL,'scrapCredit':localStorage['getItem']('yucarro_sc'+'rap_credit'+'_url')||DEFAULT_SCRAP_CREDIT_URL,'wash':localStorage['getItem']('yucarro_wa'+'sh_url')||DEFAULT_WASH_URL,'washHist':localStorage['getItem']('yucarro_wa'+'sh_hist_ur'+'l')||DEFAULT_WASH_HISTORY_URL,'extra':localStorage['getItem']('yucarro_ex'+'tra_url')||DEFAULT_EXTRA_URL,'lossY':localStorage['getItem']('yucarro_lo'+'ss_y_url')||DEFAULT_LOSS_Y_URL,'lossT':localStorage['getItem']('yucarro_lo'+'ss_t_url')||DEFAULT_LOSS_T_URL,'lossC':localStorage['getItem']('yucarro_lo'+'ss_c_url')||DEFAULT_LOSS_C_URL};}function setCloudInputs(_0x1b5a6b){const _0x11062c=document['getElement'+'ById']('inputUrlCp'+'k');if(_0x11062c)_0x11062c['value']=_0x1b5a6b['cpk'];const _0x3f57ba=document['getElement'+'ById']('inputUrlSc'+'rap');if(_0x3f57ba)_0x3f57ba['value']=_0x1b5a6b['scrap'];const _0x55c0bc=document['getElement'+'ById']('inputUrlSc'+'rapCredit');if(_0x55c0bc)_0x55c0bc['value']=_0x1b5a6b['scrapCredi'+'t'];const _0x5792b9=document['getElement'+'ById']('inputUrlWa'+'sh');if(_0x5792b9)_0x5792b9['value']=_0x1b5a6b['wash'];const _0x1ae701=document['getElement'+'ById']('inputUrlWa'+'shHistory');if(_0x1ae701)_0x1ae701['value']=_0x1b5a6b['washHist'];const _0x5e589c=document['getElement'+'ById']('inputUrlEx'+'tra');if(_0x5e589c)_0x5e589c['value']=_0x1b5a6b['extra'];const _0x44ba97=document['getElement'+'ById']('inputUrlLo'+'ssY');if(_0x44ba97)_0x44ba97['value']=_0x1b5a6b['lossY'];const _0x33134b=document['getElement'+'ById']('inputUrlLo'+'ssT');if(_0x33134b)_0x33134b['value']=_0x1b5a6b['lossT'];const _0x1dedaa=document['getElement'+'ById']('inputUrlLo'+'ssC');if(_0x1dedaa)_0x1dedaa['value']=_0x1b5a6b['lossC'];}function updateCloudInputPermissions(_0x412516){const _0x56a231={},_0x3676a7={};MODULE_DEFS['forEach'](_0x4c6f3a=>{if(!_0x56a231[_0x4c6f3a['inputId']])_0x56a231[_0x4c6f3a['inputId']]=![];if(!_0x3676a7[_0x4c6f3a['rowId']])_0x3676a7[_0x4c6f3a['rowId']]=![];if(userCanEditLink(_0x412516,_0x4c6f3a['key']))_0x56a231[_0x4c6f3a['inputId']]=!![];if(userCanEditLink(_0x412516,_0x4c6f3a['key']))_0x3676a7[_0x4c6f3a['rowId']]=!![];}),Object['entries'](_0x3676a7)['forEach'](([_0x9c4ab2,_0xaccb10])=>{const _0x497140=document['getElement'+'ById'](_0x9c4ab2);if(!_0x497140)return;_0x497140['classList']['toggle']('hidden',!_0xaccb10);}),Object['entries'](_0x56a231)['forEach'](([_0x2fb123,_0x26d1da])=>{const _0x1b0c1e=document['getElement'+'ById'](_0x2fb123);if(!_0x1b0c1e)return;_0x1b0c1e['disabled']=!_0x26d1da,_0x1b0c1e['classList']['toggle']('bg-slate-1'+'00',!_0x26d1da),_0x1b0c1e['title']=_0x26d1da?'':'Sin\x20permis'+'o\x20para\x20edi'+'tar\x20este\x20e'+'nlace';});}let linksClickCount=0x0;function handleLinksClick(){linksClickCount++;if(linksClickCount>=0x3){const _0x176844=currentUser||getCurrentUser();_0x176844&&userCanOpenLinksPanel(_0x176844)?(linkSessionUser=_0x176844,updateCloudInputPermissions(_0x176844),window['toggleModa'+'l']('cloudModal')):window['toggleModa'+'l']('loginModal'),linksClickCount=0x0;}}async function attemptMainLogin(){const _0x3356e8=document['getElement'+'ById']('mainUser')['value']['trim'](),_0x720f50=document['getElement'+'ById']('mainPass')['value']['trim'](),_0x2d059d=document['getElement'+'ById']('mainLoginE'+'rror'),_0x1edce7=getUsers();if(_0x1edce7['length']===0x0){_0x2d059d['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-circle-e'+'xclamation'+'\x22></i>\x20Con'+'figura\x20aut'+'h.config.j'+'s\x20para\x20ini'+'cializar\x20e'+'l\x20admin.',_0x2d059d['classList']['remove']('hidden');return;}const _0x9503b1=authenticateUser(_0x3356e8,_0x720f50);if(_0x9503b1)setCurrentUser(_0x9503b1['username']),linkSessionUser=null,applyUserAccessControl(),hideLockScreen();else{_0x2d059d['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-circle-e'+'xclamation'+'\x22></i>\x20Acc'+'eso\x20denega'+'do.',_0x2d059d['classList']['remove']('hidden');const _0x1a5ece=_0x2d059d['parentElem'+'ent'];_0x1a5ece['classList']['add']('animate-pu'+'lse'),setTimeout(()=>_0x1a5ece['classList']['remove']('animate-pu'+'lse'),0x1f4);}}window['attemptMai'+'nLogin']=attemptMainLogin;function attemptLogin(){const _0x47c401=document['getElement'+'ById']('loginUser')['value']['trim'](),_0x239248=document['getElement'+'ById']('loginPass')['value']['trim'](),_0x419505=document['getElement'+'ById']('loginError'),_0x3ae840=authenticateUser(_0x47c401,_0x239248);if(_0x3ae840&&userCanOpenLinksPanel(_0x3ae840))linkSessionUser=_0x3ae840,updateCloudInputPermissions(_0x3ae840),window['toggleModa'+'l']('loginModal'),setTimeout(()=>window['toggleModa'+'l']('cloudModal'),0x12c);else{_0x419505['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-circle-e'+'xclamation'+'\x22></i>\x20Sin'+'\x20permisos\x20'+'o\x20credenci'+'ales\x20incor'+'rectas.',_0x419505['classList']['remove']('hidden');const _0x2b293f=document['querySelec'+'tor']('#loginModa'+'l\x20.modal-c'+'ontainer');_0x2b293f['classList']['add']('animate-pu'+'lse'),setTimeout(()=>_0x2b293f['classList']['remove']('animate-pu'+'lse'),0x1f4);}}document['getElement'+'ById']('loginUser')['addEventLi'+'stener']('keypress',function(_0x50145f){_0x50145f['key']==='Enter'&&attemptLogin();}),document['getElement'+'ById']('loginPass')['addEventLi'+'stener']('keypress',function(_0x4b8fe6){_0x4b8fe6['key']==='Enter'&&attemptLogin();});function safeSetText(_0xcea0da,_0x3633ea){const _0x610413=document['getElement'+'ById'](_0xcea0da);_0x610413&&(typeof _0x3633ea==='number'?_0x610413['innerText']=_0x3633ea['toLocaleSt'+'ring']('es-MX'):_0x610413['innerText']=_0x3633ea);}function toggleModal(_0x32f2c6){const _0x3214c2=document['getElement'+'ById'](_0x32f2c6);if(_0x3214c2){if(_0x3214c2['classList']['contains']('opacity-0')){if(_0x32f2c6==='usersModal'&&(!currentUser||currentUser['role']!=='admin')){logStatus('Solo\x20admin'+'istradores'+'\x20pueden\x20ge'+'stionar\x20us'+'uarios.','error');return;}if(_0x32f2c6==='changePass'+'wordModal'&&(!currentUser||currentUser['role']!=='editor'&&currentUser['role']!=='viewer')){logStatus('Solo\x20usuar'+'ios\x20Editor'+'\x20o\x20Solo\x20le'+'ctura\x20pued'+'en\x20cambiar'+'\x20su\x20contra'+'seña.','error');return;}if(_0x32f2c6==='cpkGoalsMo'+'dal'&&(!currentUser||currentUser['role']!=='admin')){logStatus('Solo\x20admin'+'istradores'+'\x20pueden\x20ed'+'itar\x20metas'+'\x20CPK.','error');return;}_0x32f2c6==='usersModal'&&(renderUsersTable(),resetUserForm()),_0x32f2c6==='changePass'+'wordModal'&&setChangePassError(''),_0x3214c2['classList']['remove']('opacity-0','pointer-ev'+'ents-none'),document['body']['classList']['add']('modal-acti'+'ve'),_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')&&(_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')['classList']['remove']('scale-95','opacity-0'),_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')['classList']['add']('scale-100','opacity-10'+'0'));}else{_0x3214c2['classList']['add']('opacity-0','pointer-ev'+'ents-none'),document['body']['classList']['remove']('modal-acti'+'ve');_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')&&(_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')['classList']['add']('scale-95','opacity-0'),_0x3214c2['querySelec'+'tor']('.modal-con'+'tainer')['classList']['remove']('scale-100','opacity-10'+'0'));_0x32f2c6==='loginModal'&&(document['getElement'+'ById']('loginUser')['value']='',document['getElement'+'ById']('loginPass')['value']='',document['getElement'+'ById']('loginError')['classList']['add']('hidden'),linksClickCount=0x0);if(_0x32f2c6==='cloudModal')linkSessionUser=null;if(_0x32f2c6==='usersModal')resetUserForm();if(_0x32f2c6==='changePass'+'wordModal')resetChangePasswordForm();if(_0x32f2c6==='cpkGoalsMo'+'dal')setCpkGoalsEditorError('');}}}function safeFloat(_0x4644fd){if(!_0x4644fd)return 0x0;if(typeof _0x4644fd==='number')return _0x4644fd;const _0x39754d=_0x4644fd['toString']()['replace'](/[^0-9.-]/g,''),_0x5677de=parseFloat(_0x39754d);return isNaN(_0x5677de)?0x0:_0x5677de;}function logStatus(_0x15b986,_0x14a3dc='info'){const _0x231856=document['getElement'+'ById']('statusLog');if(_0x231856){const _0x4cbb17=_0x14a3dc==='error'?'text-red-4'+'00\x20font-bo'+'ld':'text-green'+'-400',_0x475971=_0x14a3dc==='error'?'❌':'✅';_0x231856['innerHTML']='<div\x20class'+'=\x22mb-1\x20bor'+'der-b\x20bord'+'er-slate-7'+'00\x20pb-1\x22><'+'span\x20class'+'=\x22mr-2\x22>'+_0x475971+('</span><sp'+'an\x20class=\x22')+_0x4cbb17+'\x22>'+_0x15b986+('</span></d'+'iv>')+_0x231856['innerHTML'];}}function getUserByIndex(_0x45db9e){const _0x31627d=getUsers();if(_0x45db9e<0x0||_0x45db9e>=_0x31627d['length'])return null;return _0x31627d[_0x45db9e];}function showUsersError(_0xc873f1){const _0x43c97c=document['getElement'+'ById']('usersAdmin'+'Error');if(!_0x43c97c)return;if(!_0xc873f1){_0x43c97c['classList']['add']('hidden'),_0x43c97c['innerText']='';return;}_0x43c97c['innerText']=_0xc873f1,_0x43c97c['classList']['remove']('hidden');}function downloadTextFile(_0x3ea148,_0x5c7ab2,_0x16a108){const _0x53c5c9=new Blob([_0x3ea148],{'type':_0x16a108||'applicatio'+'n/octet-st'+'ream'}),_0x227cbc=URL['createObje'+'ctURL'](_0x53c5c9),_0x1ddec7=document['createElem'+'ent']('a');_0x1ddec7['href']=_0x227cbc,_0x1ddec7['download']=_0x5c7ab2,document['body']['appendChil'+'d'](_0x1ddec7),_0x1ddec7['click'](),_0x1ddec7['remove'](),URL['revokeObje'+'ctURL'](_0x227cbc);}function nowStamp(){const _0x4e2623=new Date(),_0x28cfbb=_0x208583=>String(_0x208583)['padStart'](0x2,'0');return''+_0x4e2623['getFullYea'+'r']()+_0x28cfbb(_0x4e2623['getMonth']()+0x1)+_0x28cfbb(_0x4e2623['getDate']())+'_'+_0x28cfbb(_0x4e2623['getHours']())+_0x28cfbb(_0x4e2623['getMinutes']());}async function downloadSecureUsersBackup(){if(!currentUser||currentUser['role']!=='admin'){showUsersError('Solo\x20admin'+'istrador\x20p'+'uede\x20desca'+'rgar\x20respa'+'ldos.');return;}if(!window['UsersVault']||!window['UsersVault']['exportEncr'+'ypted']){showUsersError('Módulo\x20de\x20'+'cifrado\x20no'+'\x20disponibl'+'e.');return;}const _0x25084e=prompt('Clave\x20para'+'\x20cifrar\x20re'+'spaldo\x20(mí'+'nimo\x208\x20car'+'acteres):','');if(_0x25084e===null)return;const _0x3ba1c0=prompt('Confirma\x20l'+'a\x20clave\x20de'+'\x20cifrado:','');if(_0x3ba1c0===null)return;if(_0x25084e!==_0x3ba1c0){showUsersError('Las\x20claves'+'\x20no\x20coinci'+'den.');return;}try{const _0x1ee384=await window['UsersVault']['exportEncr'+'ypted'](getUsers(),_0x25084e),_0x131f78='usuarios_y'+'ucarro_'+nowStamp()+'.yuvault';downloadTextFile(JSON['stringify'](_0x1ee384,null,0x2),_0x131f78,'applicatio'+'n/json'),showUsersError(''),logStatus('Respaldo\x20d'+'e\x20usuarios'+'\x20descargad'+'o\x20(cifrado'+').','info');}catch(_0x36aece){showUsersError(_0x36aece&&_0x36aece['message']?_0x36aece['message']:'No\x20se\x20pudo'+'\x20generar\x20r'+'espaldo.');}}function openUsersBackupImport(){if(!currentUser||currentUser['role']!=='admin'){showUsersError('Solo\x20admin'+'istrador\x20p'+'uede\x20impor'+'tar\x20respal'+'dos.');return;}const _0x306e2f=document['getElement'+'ById']('usersBacku'+'pInput');if(!_0x306e2f)return;_0x306e2f['value']='',_0x306e2f['click']();}async function handleUsersBackupImport(_0x3a4880){if(!currentUser||currentUser['role']!=='admin'){showUsersError('Solo\x20admin'+'istrador\x20p'+'uede\x20impor'+'tar\x20respal'+'dos.');return;}const _0x303c9a=_0x3a4880&&_0x3a4880['target']&&_0x3a4880['target']['files']?_0x3a4880['target']['files'][0x0]:null;if(!_0x303c9a)return;if(!window['UsersVault']||!window['UsersVault']['importEncr'+'ypted']){showUsersError('Módulo\x20de\x20'+'cifrado\x20no'+'\x20disponibl'+'e.');return;}const _0xace2f2=prompt('Clave\x20del\x20'+'respaldo\x20p'+'ara\x20descif'+'rar:','');if(_0xace2f2===null)return;try{const _0xfaad96=await _0x303c9a['text'](),_0x1f6720=await window['UsersVault']['importEncr'+'ypted'](_0xfaad96,_0xace2f2),_0x494448=sanitizeImportedUsers(_0x1f6720);if(!_0x494448['length']){showUsersError('Respaldo\x20v'+'álido\x20pero'+'\x20sin\x20usuar'+'ios\x20utiliz'+'ables.');return;}saveUsers(_0x494448),initUserStore(),currentUser=getCurrentUser(),renderUsersTable(),resetUserForm(),applyUserAccessControl(),showUsersError(''),logStatus('Respaldo\x20i'+'mportado:\x20'+_0x494448['length']+('\x20usuario(s'+').'),'info');}catch(_0x58b220){showUsersError(_0x58b220&&_0x58b220['message']?_0x58b220['message']:'No\x20se\x20pudo'+'\x20importar\x20'+'respaldo.');}}function getCheckedValues(_0x49beb7){const _0x33e742=document['getElement'+'ById'](_0x49beb7);if(!_0x33e742)return[];return Array['from'](_0x33e742['querySelec'+'torAll']('input[type'+'=\x22checkbox'+'\x22]:checked'))['map'](_0x60e459=>_0x60e459['value']);}function setCheckedValues(_0x111e6d,_0x408dbc){const _0x571db8=document['getElement'+'ById'](_0x111e6d);if(!_0x571db8)return;_0x571db8['querySelec'+'torAll']('input[type'+'=\x22checkbox'+'\x22]')['forEach'](_0x37d4e5=>{_0x37d4e5['checked']=_0x408dbc['includes'](_0x37d4e5['value']);});}function buildAccessCheckboxes(){const _0x35ff2c=document['getElement'+'ById']('userFormMo'+'duleAccess'),_0x259047=document['getElement'+'ById']('userFormLi'+'nkAccess');if(!_0x35ff2c||!_0x259047)return;_0x35ff2c['innerHTML']='',_0x259047['innerHTML']='';const _0x34589d=[{'key':'performanc'+'e','label':'CPK\x20Llanta'+'s'},{'key':'scrap','label':'Desecho'},{'key':'washing','label':'Lavadero'},{'key':'extra','label':'Combustibl'+'e'},{'key':'loss','label':'Faltante\x20P'+'roducto'},{'key':'colorblind','label':'Modo\x20Contr'+'aste'}];_0x34589d['forEach'](_0xe8480b=>{const _0x39b9e1=document['createElem'+'ent']('label');_0x39b9e1['className']='flex\x20items'+'-center\x20ga'+'p-2',_0x39b9e1['innerHTML']='<input\x20typ'+'e=\x22checkbo'+'x\x22\x20value=\x22'+_0xe8480b['key']+('\x22\x20class=\x22r'+'ounded\x20bor'+'der-slate-'+'300\x22>\x20<spa'+'n>')+_0xe8480b['label']+'</span>',_0x35ff2c['appendChil'+'d'](_0x39b9e1);}),LINK_ACCESS_DEFS['forEach'](_0x337158=>{const _0x532ecd=document['createElem'+'ent']('label');_0x532ecd['className']='flex\x20items'+'-center\x20ga'+'p-2',_0x532ecd['innerHTML']='<input\x20typ'+'e=\x22checkbo'+'x\x22\x20value=\x22'+_0x337158['key']+('\x22\x20class=\x22r'+'ounded\x20bor'+'der-slate-'+'300\x22>\x20<spa'+'n>')+_0x337158['label']+'</span>',_0x259047['appendChil'+'d'](_0x532ecd);}),handleUserRoleChange();}function handleUserRoleChange(){const _0x6e4e5=normalizeStr(document['getElement'+'ById']('userFormRo'+'le')?.['value'])||'editor',_0x28cd6=document['getElement'+'ById']('userFormLi'+'nkAccessBl'+'ock'),_0x58be15=document['getElement'+'ById']('userFormLi'+'nkAccess');if(!_0x58be15)return;const _0xafaa8c=_0x58be15['querySelec'+'torAll']('input[type'+'=\x22checkbox'+'\x22]');if(_0x6e4e5==='viewer'){if(_0x28cd6)_0x28cd6['classList']['add']('opacity-60');_0xafaa8c['forEach'](_0x1f567c=>{_0x1f567c['checked']=![],_0x1f567c['disabled']=!![];});}else{if(_0x28cd6)_0x28cd6['classList']['remove']('opacity-60');_0xafaa8c['forEach'](_0xe3c9a6=>{_0xe3c9a6['disabled']=![];});}}function resetUserForm(){const _0x114bdf=document['getElement'+'ById']('userEditIn'+'dex'),_0x25f4d3=document['getElement'+'ById']('usersFormT'+'itle'),_0x397dee=document['getElement'+'ById']('userFormUs'+'ername'),_0x2567b6=document['getElement'+'ById']('userFormPa'+'ssword'),_0x1ca0d8=document['getElement'+'ById']('userFormRo'+'le');if(_0x114bdf)_0x114bdf['value']='';if(_0x25f4d3)_0x25f4d3['innerText']='Nuevo\x20usua'+'rio';if(_0x397dee)_0x397dee['value']='';if(_0x2567b6)_0x2567b6['value']='';if(_0x1ca0d8)_0x1ca0d8['value']='editor';setCheckedValues('userFormMo'+'duleAccess',[]),setCheckedValues('userFormLi'+'nkAccess',[]),handleUserRoleChange(),showUsersError('');}function editUserFromTable(_0x571e63){const _0x1f8daa=getUserByIndex(_0x571e63);if(!_0x1f8daa)return;const _0x2ad56c=document['getElement'+'ById']('userEditIn'+'dex'),_0x326d6d=document['getElement'+'ById']('usersFormT'+'itle'),_0x499514=document['getElement'+'ById']('userFormUs'+'ername'),_0x3b713a=document['getElement'+'ById']('userFormPa'+'ssword'),_0x282738=document['getElement'+'ById']('userFormRo'+'le');if(_0x2ad56c)_0x2ad56c['value']=String(_0x571e63);if(_0x326d6d)_0x326d6d['innerText']='Editar\x20usu'+'ario:\x20'+_0x1f8daa['username'];if(_0x499514)_0x499514['value']=_0x1f8daa['username'];if(_0x3b713a)_0x3b713a['value']=_0x1f8daa['password'];if(_0x282738)_0x282738['value']=_0x1f8daa['role']||'editor';setCheckedValues('userFormMo'+'duleAccess',_0x1f8daa['modules']||[]),setCheckedValues('userFormLi'+'nkAccess',_0x1f8daa['linkAccess']||[]),handleUserRoleChange(),showUsersError('');}function deleteUserFromTable(_0x4fad9f){const _0x41721c=getUsers(),_0x4eaab8=_0x41721c[_0x4fad9f];if(!_0x4eaab8)return;if(_0x4eaab8['role']==='admin'){showUsersError('No\x20puedes\x20'+'eliminar\x20a'+'l\x20usuario\x20'+'administra'+'dor.');return;}if(!confirm('¿Eliminar\x20'+'usuario\x20'+_0x4eaab8['username']+'?'))return;_0x41721c['splice'](_0x4fad9f,0x1),saveUsers(_0x41721c),renderUsersTable(),resetUserForm();}function saveUserFromForm(){const _0x426302=normalizeStr(document['getElement'+'ById']('userEditIn'+'dex')['value']),_0x5214c8=normalizeStr(document['getElement'+'ById']('userFormUs'+'ername')['value']),_0x435861=normalizeStr(document['getElement'+'ById']('userFormPa'+'ssword')['value']),_0xf8907d=normalizeStr(document['getElement'+'ById']('userFormRo'+'le')['value'])||'editor',_0x3aaaa4=getCheckedValues('userFormMo'+'duleAccess'),_0x50483d=getCheckedValues('userFormLi'+'nkAccess'),_0xf53afe=getUsers();showUsersError('');if(!_0x5214c8||!_0x435861){showUsersError('Usuario\x20y\x20'+'contraseña'+'\x20son\x20oblig'+'atorios.');return;}if(_0xf8907d!=='admin'&&_0x3aaaa4['length']===0x0){showUsersError('Selecciona'+'\x20al\x20menos\x20'+'un\x20módulo\x20'+'visible\x20pa'+'ra\x20el\x20usua'+'rio.');return;}const _0x28941a=_0x426302===''?-0x1:parseInt(_0x426302,0xa),_0x4688f7=_0xf53afe['findIndex']((_0x2bb809,_0x21346d)=>_0x2bb809['username']===_0x5214c8&&_0x21346d!==_0x28941a);if(_0x4688f7>=0x0){showUsersError('Ya\x20existe\x20'+'un\x20usuario'+'\x20con\x20ese\x20n'+'ombre.');return;}const _0x4173de={'username':_0x5214c8,'password':_0x435861,'role':_0xf8907d==='admin'?'admin':_0xf8907d==='viewer'?'viewer':'editor','modules':_0xf8907d==='admin'?['performanc'+'e','scrap','strategy','washing','extra','loss','colorblind']:_0x3aaaa4,'linkAccess':_0xf8907d==='admin'?LINK_ACCESS_DEFS['map'](_0x366eb6=>_0x366eb6['key']):_0xf8907d==='viewer'?[]:_0x50483d};if(_0x28941a>=0x0&&_0x28941a<_0xf53afe['length'])_0xf53afe[_0x28941a]=_0x4173de;else _0xf53afe['push'](_0x4173de);saveUsers(_0xf53afe),renderUsersTable(),resetUserForm();}function renderUsersTable(){const _0x10881f=document['getElement'+'ById']('usersTable'+'Body');if(!_0x10881f)return;const _0x56fa20=getUsers();_0x10881f['innerHTML']='',_0x56fa20['forEach']((_0x5074ee,_0x29c46f)=>{const _0x4063da=_0x5074ee['role']==='admin',_0x5ae51a=_0x4063da?'<button\x20on'+'click=\x22win'+'dow.editUs'+'erFromTabl'+'e('+_0x29c46f+(')\x22\x20class=\x22'+'text-slate'+'-600\x20hover'+':text-slat'+'e-900\x22>Edi'+'tar</butto'+'n>'):'<button\x20on'+'click=\x22win'+'dow.editUs'+'erFromTabl'+'e('+_0x29c46f+(')\x22\x20class=\x22'+'text-slate'+'-600\x20hover'+':text-slat'+'e-900\x20mr-2'+'\x22>Editar</'+'button><bu'+'tton\x20oncli'+'ck=\x22window'+'.deleteUse'+'rFromTable'+'(')+_0x29c46f+(')\x22\x20class=\x22'+'text-red-5'+'00\x20hover:t'+'ext-red-70'+'0\x22>Elimina'+'r</button>');_0x10881f['innerHTML']+='<tr\x20class='+'\x22border-t\x20'+'border-sla'+'te-100\x22><t'+'d\x20class=\x22p'+'-2\x20font-se'+'mibold\x20tex'+'t-slate-70'+'0\x22>'+escapeHtml(_0x5074ee['username'])+('</td><td\x20c'+'lass=\x22p-2\x20'+'text-slate'+'-500\x20upper'+'case\x22>')+escapeHtml(_0x5074ee['role'])+('</td><td\x20c'+'lass=\x22p-2\x20'+'text-right'+'\x22>')+_0x5ae51a+'</td></tr>';});}function startSystem(){console['log']('Iniciando\x20'+'secuencia\x20'+'de\x20arranqu'+'e\x20priorita'+'ria...');if(typeof Chart!=='undefined'){if(window['chartjs-pl'+'ugin-annot'+'ation'])Chart['register'](window['chartjs-pl'+'ugin-annot'+'ation']);if(window['ChartDataL'+'abels'])Chart['register'](window['ChartDataL'+'abels']);}else console['error']('Chart.js\x20f'+'ailed\x20to\x20l'+'oad.');initUserStore(),currentUser=getCurrentUser(),applyUserAccessControl();if(currentUser)hideLockScreen();else showLockScreen();const _0x4f7c53=getCloudUrls();setCloudInputs(_0x4f7c53);if(!localStorage['getItem']('yucarro_cp'+'k_url'))localStorage['setItem']('yucarro_cp'+'k_url',_0x4f7c53['cpk']);if(!localStorage['getItem']('yucarro_sc'+'rap_url'))localStorage['setItem']('yucarro_sc'+'rap_url',_0x4f7c53['scrap']);if(!localStorage['getItem']('yucarro_sc'+'rap_credit'+'_url'))localStorage['setItem']('yucarro_sc'+'rap_credit'+'_url',_0x4f7c53['scrapCredi'+'t']);if(!localStorage['getItem']('yucarro_wa'+'sh_url'))localStorage['setItem']('yucarro_wa'+'sh_url',_0x4f7c53['wash']);if(!localStorage['getItem']('yucarro_wa'+'sh_hist_ur'+'l'))localStorage['setItem']('yucarro_wa'+'sh_hist_ur'+'l',_0x4f7c53['washHist']);if(!localStorage['getItem']('yucarro_ex'+'tra_url'))localStorage['setItem']('yucarro_ex'+'tra_url',_0x4f7c53['extra']);if(!localStorage['getItem']('yucarro_lo'+'ss_y_url'))localStorage['setItem']('yucarro_lo'+'ss_y_url',_0x4f7c53['lossY']);if(!localStorage['getItem']('yucarro_lo'+'ss_t_url'))localStorage['setItem']('yucarro_lo'+'ss_t_url',_0x4f7c53['lossT']);if(!localStorage['getItem']('yucarro_lo'+'ss_c_url'))localStorage['setItem']('yucarro_lo'+'ss_c_url',_0x4f7c53['lossC']);loadLocalCpkGoals(),console['log']('🚀\x20Disparan'+'do\x20descarg'+'a\x20de\x20datos'+'...'),fetchAllFromCloud(_0x4f7c53['cpk'],_0x4f7c53['scrap'],_0x4f7c53['scrapCredi'+'t'],_0x4f7c53['wash'],_0x4f7c53['washHist'],_0x4f7c53['extra'],_0x4f7c53['lossY'],_0x4f7c53['lossT'],_0x4f7c53['lossC']);const _0x2e9ed3=document['getElement'+'ById']('operatorGr'+'oupFilter');_0x2e9ed3&&_0x2e9ed3['addEventLi'+'stener']('change',()=>{console['log']('Filter\x20cha'+'nged\x20to:',_0x2e9ed3['value']);});const _0x193c6a=document['getElement'+'ById']('washFilter'+'Unit');_0x193c6a&&!_0x193c6a['dataset']['boundEnter']&&(_0x193c6a['addEventLi'+'stener']('keypress',_0x40475e=>{if(_0x40475e['key']==='Enter')applyWashSearchFilters();}),_0x193c6a['dataset']['boundEnter']='1');const _0x114659=document['getElement'+'ById']('fuelFilter'+'Unit');_0x114659&&!_0x114659['dataset']['boundEnter']&&(_0x114659['addEventLi'+'stener']('keypress',_0x941902=>{if(_0x941902['key']==='Enter')applyFuelSearchFilters();}),_0x114659['dataset']['boundEnter']='1');const _0x588c6b=document['getElement'+'ById']('fuelFilter'+'Operator');_0x588c6b&&!_0x588c6b['dataset']['boundEnter']&&(_0x588c6b['addEventLi'+'stener']('keypress',_0x1a15e1=>{if(_0x1a15e1['key']==='Enter')applyFuelSearchFilters();}),_0x588c6b['dataset']['boundEnter']='1');const _0x34edaa=document['getElement'+'ById']('lossFilter'+'TU');_0x34edaa&&!_0x34edaa['dataset']['boundEnter']&&(_0x34edaa['addEventLi'+'stener']('keypress',_0x5b98b5=>{if(_0x5b98b5['key']==='Enter')applyLossSearchFilters();}),_0x34edaa['dataset']['boundEnter']='1');const _0x3d2613=document['getElement'+'ById']('lossFilter'+'Operator');_0x3d2613&&!_0x3d2613['dataset']['boundEnter']&&(_0x3d2613['addEventLi'+'stener']('keypress',_0x24720a=>{if(_0x24720a['key']==='Enter')applyLossSearchFilters();}),_0x3d2613['dataset']['boundEnter']='1');const _0x24fcbc=document['getElement'+'ById']('usersBacku'+'pInput');_0x24fcbc&&!_0x24fcbc['dataset']['boundChang'+'e']&&(_0x24fcbc['addEventLi'+'stener']('change',handleUsersBackupImport),_0x24fcbc['dataset']['boundChang'+'e']='1');['changePass'+'Current','changePass'+'New','changePass'+'Confirm']['forEach'](_0x2aa705=>{const _0x1ff3fb=document['getElement'+'ById'](_0x2aa705);_0x1ff3fb&&!_0x1ff3fb['dataset']['boundEnter']&&(_0x1ff3fb['addEventLi'+'stener']('keypress',_0x40c729=>{if(_0x40c729['key']==='Enter')submitPasswordChange();}),_0x1ff3fb['dataset']['boundEnter']='1');}),buildAccessCheckboxes();const _0x5a9191=document['getElement'+'ById']('userFormRo'+'le');_0x5a9191&&!_0x5a9191['dataset']['boundRoleC'+'hange']&&(_0x5a9191['addEventLi'+'stener']('change',handleUserRoleChange),_0x5a9191['dataset']['boundRoleC'+'hange']='1'),updatePerformanceStatusButtons(),updateLossCompanyButtons(),updateLossLitersModeButtons(),syncWashSelectedInfo(),syncFuelExclusiveFilterState(),syncLossExclusiveFilterState(),renderUsersTable(),resetUserForm();};document['readyState']==='loading'?document['addEventLi'+'stener']('DOMContent'+'Loaded',startSystem):startSystem();function fetchCsv(_0x3fa25e){return new Promise((_0x2a5766,_0x23f4a2)=>{Papa['parse'](_0x3fa25e,{'download':!![],'header':!![],'skipEmptyLines':!![],'complete':_0x4d7f9d=>_0x2a5766(_0x4d7f9d['data']),'error':_0x28d4c1=>_0x23f4a2(_0x28d4c1)});});}function loadWithFallback(_0x32f299,_0x1be624,_0x4d77bc){if(!_0x32f299)return Promise['resolve'](_0x4d77bc);const _0x4f7e1a=_0x32f299['trim'](),_0x1241a6=_0x4adf67=>fetchCsv(_0x4adf67)['then'](_0x27d7cc=>{if(_0x27d7cc&&_0x27d7cc['length']>0x0)return _0x27d7cc;throw new Error('El\x20archivo'+'\x20CSV\x20está\x20'+'vacío\x20o\x20il'+'egible.');});return new Promise(_0x2ffe27=>{_0x1241a6(_0x4f7e1a)['then'](_0x4fe928=>{logStatus(_0x1be624+(':\x20Conexión'+'\x20Directa\x20O'+'K\x20(')+_0x4fe928['length']+'\x20reg.)'),_0x2ffe27(_0x4fe928);})['catch'](_0xd2c86d=>{console['warn'](_0x1be624+(':\x20Falló\x20co'+'nexión\x20dir'+'ecta.\x20Inte'+'ntando\x20Pro'+'xy\x201...'));const _0x1cc3b0='https://co'+'rsproxy.io'+'/?'+encodeURIComponent(_0x4f7e1a)+'&_t='+Date['now']();_0x1241a6(_0x1cc3b0)['then'](_0x3a5be9=>{logStatus(_0x1be624+(':\x20Proxy\x201\x20'+'OK\x20(')+_0x3a5be9['length']+'\x20reg.)'),_0x2ffe27(_0x3a5be9);})['catch'](_0x21f716=>{console['warn'](_0x1be624+(':\x20Falló\x20Pr'+'oxy\x201.\x20Int'+'entando\x20Pr'+'oxy\x202...'));const _0x5a1796='https://ap'+'i.allorigi'+'ns.win/raw'+'?url='+encodeURIComponent(_0x4f7e1a);_0x1241a6(_0x5a1796)['then'](_0x5d82d4=>{logStatus(_0x1be624+(':\x20Proxy\x202\x20'+'OK\x20(')+_0x5d82d4['length']+'\x20reg.)'),_0x2ffe27(_0x5d82d4);})['catch'](_0xa86c12=>{logStatus(_0x1be624+('\x20ERROR\x20FAT'+'AL:\x20No\x20se\x20'+'pudo\x20carga'+'r.'),'error'),_0x2ffe27(_0x4d77bc);});});});});}function manualRefresh(){const _0xaaaf0e=document['getElement'+'ById']('inputUrlCp'+'k')['value'],_0xec5f4=document['getElement'+'ById']('inputUrlSc'+'rap')['value'],_0x37a9a8=document['getElement'+'ById']('inputUrlSc'+'rapCredit')['value'],_0x41afb2=document['getElement'+'ById']('inputUrlWa'+'sh')['value'],_0x1d885e=document['getElement'+'ById']('inputUrlWa'+'shHistory')['value'],_0x4aa927=document['getElement'+'ById']('inputUrlEx'+'tra')['value'],_0x1635ae=document['getElement'+'ById']('inputUrlLo'+'ssY')['value'],_0x3d2af7=document['getElement'+'ById']('inputUrlLo'+'ssT')['value'],_0x3de0f1=document['getElement'+'ById']('inputUrlLo'+'ssC')['value'];logStatus('Refrescand'+'o\x20datos\x20ma'+'nualmente.'+'..','info'),fetchAllFromCloud(_0xaaaf0e,_0xec5f4,_0x37a9a8,_0x41afb2,_0x1d885e,_0x4aa927,_0x1635ae,_0x3d2af7,_0x3de0f1);}function resetToDefaults(){const _0x25f5fd=linkSessionUser||currentUser;if(!_0x25f5fd||!userCanOpenLinksPanel(_0x25f5fd)){logStatus('No\x20tienes\x20'+'permisos\x20p'+'ara\x20restau'+'rar\x20enlace'+'s.','error');return;}if(confirm('¿Seguro\x20qu'+'e\x20deseas\x20b'+'orrar\x20las\x20'+'URLs\x20perso'+'nalizadas\x20'+'y\x20usar\x20las'+'\x20por\x20defec'+'to?')){MODULE_DEFS['forEach'](_0x416847=>{if(userCanEditLink(_0x25f5fd,_0x416847['key']))localStorage['removeItem'](_0x416847['storageKey']);});const _0x3abe41=getCloudUrls();setCloudInputs(_0x3abe41),fetchAllFromCloud(_0x3abe41['cpk'],_0x3abe41['scrap'],_0x3abe41['scrapCredi'+'t'],_0x3abe41['wash'],_0x3abe41['washHist'],_0x3abe41['extra'],_0x3abe41['lossY'],_0x3abe41['lossT'],_0x3abe41['lossC']);}}function saveCloudConfig(){const _0x2c6f4d=linkSessionUser||currentUser;if(!_0x2c6f4d||!userCanOpenLinksPanel(_0x2c6f4d)){logStatus('No\x20tienes\x20'+'permisos\x20p'+'ara\x20guarda'+'r\x20enlaces.','error');return;}MODULE_DEFS['forEach'](_0xbeade3=>{const _0x1c8e7e=document['getElement'+'ById'](_0xbeade3['inputId']);if(!_0x1c8e7e)return;userCanEditLink(_0x2c6f4d,_0xbeade3['key'])&&localStorage['setItem'](_0xbeade3['storageKey'],_0x1c8e7e['value']['trim']());});const _0x581e16=getCloudUrls();setCloudInputs(_0x581e16),window['toggleModa'+'l']('cloudModal'),logStatus('Configurac'+'ión\x20guarda'+'da.\x20Recarg'+'ando...','info'),fetchAllFromCloud(_0x581e16['cpk'],_0x581e16['scrap'],_0x581e16['scrapCredi'+'t'],_0x581e16['wash'],_0x581e16['washHist'],_0x581e16['extra'],_0x581e16['lossY'],_0x581e16['lossT'],_0x581e16['lossC']);}function fetchAllFromCloud(_0x41d3df,_0x414464,_0x273ee2,_0x491b40,_0x3a6925,_0x4cd94f,_0x56356c,_0xccf44e,_0x115229){const _0x3a1707=document['getElement'+'ById']('btnRefresh'+'Cloud');if(_0x3a1707)_0x3a1707['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-spinner\x20'+'fa-spin\x22><'+'/i>';const _0x3c0f08=document['getElement'+'ById']('bootStatus'+'Text');if(_0x3c0f08)_0x3c0f08['innerText']='Sincroniza'+'ndo\x20módulo'+'s...';const _0x31cec0=loadLocalCpkGoals(),_0x2b1643=!_0x31cec0,_0x5d2b0a=_0x31cec0&&dbCpkGoals['length']>0x0&&dbCpkGoals['every'](_0x3aa7f3=>!normalizeStr(_0x3aa7f3['brand'])),_0x107b63=[loadWithFallback(_0x41d3df,'CPK',MOCK_CPK_DATA),loadWithFallback(_0x414464,'Desecho',MOCK_SCRAP_DATA),loadWithFallback(_0x273ee2,'Desecho\x20No'+'tas\x20Crédit'+'o',MOCK_SCRAP_CREDIT_DATA),loadWithFallback(_0x491b40,'Lavado\x20(St'+'atus)',MOCK_WASH_DATA),loadWithFallback(_0x3a6925,'Lavado\x20(Hi'+'st)',[]),loadWithFallback(_0x4cd94f,'Combustibl'+'e',[]),loadWithFallback(_0x56356c,'Faltante\x20Y'+'ucarro',[]),loadWithFallback(_0xccf44e,'Faltante\x20T'+'2020',[]),loadWithFallback(_0x115229,'Faltante\x20C'+'orpored',[])];(_0x2b1643||_0x5d2b0a)&&_0x107b63['push'](loadWithFallback(DEFAULT_CPK_GOALS_URL,'Resumen\x20CP'+'K\x20Objetivo'+'\x20(Migració'+'n\x20Inicial)',[])),Promise['all'](_0x107b63)['then'](_0x3910dc=>{const [_0x3b4c4b,_0x5f1c6e,_0x1f9943,_0x31037f,_0x57dd48,_0x3621b0,_0x3f6760,_0x5ea8ea,_0x2b6fef]=_0x3910dc,_0x4dd394=_0x3910dc[0x9];try{processCPKData(_0x3b4c4b);}catch(_0x979f29){logStatus('Error\x20CPK:'+'\x20'+_0x979f29['message'],'error');}try{processScrapData(_0x5f1c6e);}catch(_0x51371d){logStatus('Error\x20Scra'+'p:\x20'+_0x51371d['message'],'error');}try{processScrapCreditData(_0x1f9943);}catch(_0x11df9e){logStatus('Error\x20Nota'+'s\x20Crédito:'+'\x20'+_0x11df9e['message'],'error');}try{processWashData(_0x31037f);}catch(_0x47b565){logStatus('Error\x20Wash'+':\x20'+_0x47b565['message'],'error');}try{processWashHistoryData(_0x57dd48);}catch(_0x234d45){logStatus('Error\x20Wash'+'\x20Hist:\x20'+_0x234d45['message'],'error');}try{processFuelData(_0x3621b0);}catch(_0x245c83){logStatus('Error\x20Comb'+'ustible:\x20'+_0x245c83['message'],'error');}try{processLossData(_0x3f6760,_0x5ea8ea,_0x2b6fef);}catch(_0x3452c4){logStatus('Error\x20Falt'+'ante:\x20'+_0x3452c4['message'],'error');}try{if(_0x2b1643||_0x5d2b0a){processCpkGoalsData(_0x4dd394);if(dbCpkGoals['length']>0x0)saveLocalCpkGoals(dbCpkGoals);}else loadLocalCpkGoals();}catch(_0x38b804){logStatus('Error\x20Resu'+'men\x20CPK:\x20'+_0x38b804['message'],'error');}if(_0x3a1707)_0x3a1707['innerHTML']='<i\x20class=\x22'+'fa-solid\x20f'+'a-sync\x22></'+'i>';_0x3c0f08&&(_0x3c0f08['innerText']='Sistema\x20Si'+'ncronizado',_0x3c0f08['classList']['remove']('text-indig'+'o-700'),_0x3c0f08['classList']['add']('text-green'+'-600'),document['getElement'+'ById']('bootSpinne'+'r')['classList']['remove']('fa-spin','fa-circle-'+'notch'),document['getElement'+'ById']('bootSpinne'+'r')['classList']['add']('fa-check-c'+'ircle','text-green'+'-500')),window['switchTab']('performanc'+'e');});}function setCategoryFilter(_0x43fb38){currentFilter=_0x43fb38,document['querySelec'+'torAll']('.filter-bt'+'n')['forEach'](_0x42f008=>_0x42f008['classList']['remove']('active'));const _0x5ada3c=document['getElement'+'ById']('filter-'+_0x43fb38);if(_0x5ada3c)_0x5ada3c['classList']['add']('active');if(document['getElement'+'ById']('strategySe'+'gmentLabel'))document['getElement'+'ById']('strategySe'+'gmentLabel')['innerText']=_0x43fb38['toUpperCas'+'e']();if(dbPerformance['length']>0x0)runCPKAnalysis();}function toggleYearDropdown(_0x56e78a){_0x56e78a['stopPropag'+'ation'](),document['getElement'+'ById']('yearDropdo'+'wn')['classList']['toggle']('show');}function hideAllCheckboxDropdowns(){const _0x351f61=document['getElement'+'sByClassNa'+'me']('checkbox-d'+'ropdown');for(let _0x17c1e5=0x0;_0x17c1e5<_0x351f61['length'];_0x17c1e5++){_0x351f61[_0x17c1e5]['classList']['remove']('show');}}function closeDropdowns(_0x6bc541){const _0x44cc91=_0x6bc541&&_0x6bc541['target']?_0x6bc541['target']:null;if(!_0x44cc91){hideAllCheckboxDropdowns();return;}const _0x49bb2c=_0x44cc91['closest']('.checkbox-'+'dropdown')||_0x44cc91['closest']('#washFilte'+'rUnit')||_0x44cc91['closest']('#lossFilte'+'rTU')||_0x44cc91['closest']('#lossFilte'+'rOperator')||_0x44cc91['closest']('#fuelFilte'+'rUnit')||_0x44cc91['closest']('#fuelFilte'+'rOperator')||_0x44cc91['closest']('button[onc'+'lick*=\x22tog'+'gleYearDro'+'pdown\x22]')||_0x44cc91['closest']('button[onc'+'lick*=\x22tog'+'gleFilterD'+'ropdown\x22]');if(_0x49bb2c)return;hideAllCheckboxDropdowns();}function parseFlexibleDate(_0x52e172){if(!_0x52e172)return null;if(_0x52e172 instanceof Date)return _0x52e172;let _0x56a136=_0x52e172['toString']()['trim']();if(/^\d{5}$/['test'](_0x56a136)){const _0x1ff8b3=parseInt(_0x56a136,0xa);return new Date(Math['round']((_0x1ff8b3-0x63e1)*0x15180*0x3e8));}if(_0x56a136['includes']('T'))_0x56a136=_0x56a136['split']('T')[0x0];/\s\d{1,2}:/['test'](_0x56a136)&&(_0x56a136=_0x56a136['split'](/\s\d{1,2}:/)[0x0]);const _0x339551={'ene':0x0,'feb':0x1,'mar':0x2,'abr':0x3,'may':0x4,'jun':0x5,'jul':0x6,'ago':0x7,'sep':0x8,'oct':0x9,'nov':0xa,'dic':0xb,'enero':0x0,'febrero':0x1,'marzo':0x2,'abril':0x3,'mayo':0x4,'junio':0x5,'julio':0x6,'agosto':0x7,'septiembre':0x8,'octubre':0x9,'noviembre':0xa,'diciembre':0xb,'jan':0x0,'feb':0x1,'apr':0x3,'aug':0x7,'sep':0x8,'oct':0x9,'nov':0xa,'dec':0xb},_0x106ca9=_0x56a136['replace'](/[-.]/g,'/')['split'](/[\/\s]+/);if(_0x106ca9['length']>=0x3){let _0x3b3edf=_0x106ca9[0x0],_0x18719e=_0x106ca9[0x1],_0x6377d6=_0x106ca9[0x2];const _0x1bab53=_0x2c985c=>{const _0x40969d=_0x2c985c['toLowerCas'+'e']();if(_0x339551[_0x40969d]!==undefined)return{'type':'month','val':_0x339551[_0x40969d]};const _0x92b7b4=parseInt(_0x2c985c,0xa);if(!isNaN(_0x92b7b4))return{'type':'num','val':_0x92b7b4};return{'type':'nan'};},_0x1bcab3=_0x1bab53(_0x3b3edf),_0x3e7aab=_0x1bab53(_0x18719e),_0x3189b5=_0x1bab53(_0x6377d6);let _0x49c09c,_0x65756f,_0x553659;if(_0x3e7aab['type']==='month')_0x65756f=_0x3e7aab['val'],_0x1bcab3['val']>0x1f?(_0x553659=_0x1bcab3['val'],_0x49c09c=_0x3189b5['val']):(_0x49c09c=_0x1bcab3['val'],_0x553659=_0x3189b5['val']);else{if(_0x1bcab3['type']==='num'&&_0x3e7aab['type']==='num'&&_0x3189b5['type']==='num')_0x1bcab3['val']>0x1f?(_0x553659=_0x1bcab3['val'],_0x65756f=_0x3e7aab['val']-0x1,_0x49c09c=_0x3189b5['val']):(_0x49c09c=_0x1bcab3['val'],_0x65756f=_0x3e7aab['val']-0x1,_0x553659=_0x3189b5['val']);else{let _0x2f9c09=new Date(_0x52e172);if(!isNaN(_0x2f9c09['getTime']()))return _0x2f9c09;return null;}}if(_0x553659<0x64)_0x553659+=0x7d0;if(_0x553659>0x76c&&_0x553659<0x834&&_0x65756f>=0x0&&_0x65756f<=0xb&&_0x49c09c>=0x1&&_0x49c09c<=0x1f)return new Date(_0x553659,_0x65756f,_0x49c09c);}let _0x143639=new Date(_0x52e172);if(!isNaN(_0x143639['getTime']()))return _0x143639;return null;}function updatePeriodSelection(_0x5be7b7){const _0x140a7e=moduleState[moduleState['currentTab']]['periods'];if(_0x5be7b7==='ALL')_0x140a7e['length']>0x0?moduleState[moduleState['currentTab']]['periods']=[]:moduleState[moduleState['currentTab']]['periods']=[];else{const _0x456f0a=_0x140a7e['indexOf'](_0x5be7b7);_0x456f0a>-0x1?_0x140a7e['splice'](_0x456f0a,0x1):_0x140a7e['push'](_0x5be7b7);}updateTopBarUI(moduleState['currentTab']);try{if(moduleState['currentTab']==='performanc'+'e')runCPKAnalysis();else{if(moduleState['currentTab']==='scrap')runScrapAnalysis();else{if(moduleState['currentTab']==='washing')window['runWashAna'+'lysis']();else{if(moduleState['currentTab']==='strategy')runStrategyAnalysis();else{if(moduleState['currentTab']==='loss')runLossAnalysis();}}}}}catch(_0xbbb91c){console['warn']('Analysis\x20n'+'ot\x20ready\x20y'+'et',_0xbbb91c);}}function updateTopBarUI(_0x2dd518){const _0x510475=document['getElement'+'ById']('categoryFi'+'lterContai'+'ner'),_0x2280dc=document['getElement'+'ById']('yearDropdo'+'wn'),_0xa0c910=document['getElement'+'ById']('yearFilter'+'Label');if(!_0x510475||!_0x2280dc||!_0xa0c910)return;if(_0x2dd518==='performanc'+'e'||_0x2dd518==='washing'||_0x2dd518==='extra'||_0x2dd518==='loss'){_0x510475['classList']['add']('hidden');return;}else _0x510475['classList']['remove']('hidden');let _0x389245=new Set(),_0x145029=[];if(_0x2dd518==='scrap')_0x145029=dbScrap['map'](_0x20398e=>_0x20398e['date'])['concat'](dbScrapCredits['map'](_0xc99638=>_0xc99638['date']));else{if(_0x2dd518==='strategy')_0x145029=dbScrap['map'](_0x2153d5=>_0x2153d5['date']);}_0x145029['forEach'](_0x1fce6c=>{const _0x4adb9e=parseFlexibleDate(_0x1fce6c);if(_0x4adb9e)_0x389245['add'](_0x4adb9e['getFullYea'+'r']()+'-'+_0x4adb9e['getMonth']());});if(_0x389245['size']===0x0){_0x2280dc['innerHTML']='<div\x20class'+'=\x22px-2\x20py-'+'1\x20text-xs\x20'+'text-slate'+'-400\x20itali'+'c\x22>Datos\x20A'+'ctuales\x20(S'+'in\x20fecha)<'+'/div>',_0xa0c910['innerText']='Periodo:\x20A'+'ctual';return;}const _0x4b80d1=Array['from'](_0x389245)['sort']((_0x37ba64,_0x7031d)=>{const [_0x5c6910,_0x1e5e53]=_0x37ba64['split']('-')['map'](Number),[_0x4686a1,_0x54aff2]=_0x7031d['split']('-')['map'](Number);if(_0x5c6910!==_0x4686a1)return _0x4686a1-_0x5c6910;return _0x54aff2-_0x1e5e53;}),_0x576e5e={};_0x4b80d1['forEach'](_0x175bb0=>{const [_0x244419,_0x9b0192]=_0x175bb0['split']('-');if(!_0x576e5e[_0x244419])_0x576e5e[_0x244419]=[];_0x576e5e[_0x244419]['push']({'key':_0x175bb0,'monthName':monthNamesFull[parseInt(_0x9b0192)]});});let _0x474d6d='<div\x20class'+'=\x22cursor-p'+'ointer\x20px-'+'2\x20py-2\x20hov'+'er:bg-slat'+'e-100\x20flex'+'\x20items-cen'+'ter\x20border'+'-b\x20border-'+'slate-100\x22'+'\x20onclick=\x22'+'updatePeri'+'odSelectio'+'n(\x27ALL\x27)\x22>'+'<input\x20typ'+'e=\x22checkbo'+'x\x22\x20class=\x22'+'mr-2\x22\x20'+(moduleState[_0x2dd518]['periods']['length']===0x0?'checked':'')+('>\x20<span\x20cl'+'ass=\x22font-'+'bold\x20text-'+'slate-700\x22'+'>Todos\x20los'+'\x20Periodos<'+'/span></di'+'v>');Object['keys'](_0x576e5e)['sort']((_0x51ee5c,_0x3c718f)=>_0x3c718f-_0x51ee5c)['forEach'](_0x5e0d05=>{_0x474d6d+='<div\x20class'+'=\x22year-gro'+'up-title\x22>'+_0x5e0d05+'</div>',_0x576e5e[_0x5e0d05]['forEach'](_0x58c99d=>{const _0x1e21bf=moduleState[_0x2dd518]['periods']['includes'](_0x58c99d['key']);_0x474d6d+='<div\x20class'+'=\x22cursor-p'+'ointer\x20px-'+'2\x20py-1\x20pl-'+'4\x20hover:bg'+'-slate-50\x20'+'flex\x20items'+'-center\x20te'+'xt-sm\x20text'+'-slate-600'+'\x22\x20onclick='+'\x22updatePer'+'iodSelecti'+'on(\x27'+_0x58c99d['key']+('\x27)\x22><input'+'\x20type=\x22che'+'ckbox\x22\x20cla'+'ss=\x22mr-2\x22\x20')+(_0x1e21bf?'checked':'')+'>\x20'+_0x58c99d['monthName']+'</div>';});}),_0x2280dc['innerHTML']=_0x474d6d;if(moduleState[_0x2dd518]['periods']['length']===0x0)_0xa0c910['innerText']='Periodo:\x20T'+'odos';else{if(moduleState[_0x2dd518]['periods']['length']===0x1){const [_0x171d47,_0x317890]=moduleState[_0x2dd518]['periods'][0x0]['split']('-');_0xa0c910['innerText']=monthNamesFull[parseInt(_0x317890)]['substring'](0x0,0x3)+'\x20'+_0x171d47;}else _0xa0c910['innerText']=moduleState[_0x2dd518]['periods']['length']+('\x20Seleccion'+'ados');}}function switchTab(_0x55bc3d){if(MERGE_STRATEGY_IN_SCRAP&&_0x55bc3d==='strategy')_0x55bc3d='scrap';if(currentUser&&!userHasModule(currentUser,_0x55bc3d)){logStatus('No\x20tienes\x20'+'acceso\x20a\x20e'+'se\x20módulo.','error');return;}moduleState['currentTab']=_0x55bc3d,document['querySelec'+'torAll']('.nav-btn')['forEach'](_0x1bda15=>_0x1bda15['classList']['remove']('active-blu'+'e','active-sla'+'te','active-pur'+'ple','active-cya'+'n','active-tea'+'l','active-amb'+'er')),['performanc'+'e','scrap','strategy','washing','extra','loss']['forEach'](_0x398756=>{const _0xeff41=document['getElement'+'ById']('view-'+_0x398756);if(_0xeff41)_0xeff41['classList']['add']('hidden');});const _0x2b580c=document['getElement'+'ById']('tab-'+_0x55bc3d),_0x5187bd=document['getElement'+'ById']('view-'+_0x55bc3d);if(_0x5187bd)_0x5187bd['classList']['remove']('hidden');if(_0x55bc3d==='performanc'+'e')_0x2b580c['classList']['add']('active-blu'+'e');else{if(_0x55bc3d==='scrap')_0x2b580c['classList']['add']('active-sla'+'te');else{if(_0x55bc3d==='strategy')_0x2b580c['classList']['add']('active-pur'+'ple');else{if(_0x55bc3d==='washing')_0x2b580c['classList']['add']('active-cya'+'n');else{if(_0x55bc3d==='extra')_0x2b580c['classList']['add']('active-tea'+'l');else{if(_0x55bc3d==='loss')_0x2b580c['classList']['add']('active-amb'+'er');}}}}}updateTopBarUI(_0x55bc3d);try{if(_0x55bc3d==='performanc'+'e'&&dbPerformance['length'])runCPKAnalysis();else{if(_0x55bc3d==='scrap'&&(dbScrap['length']||dbScrapCredits['length']))runScrapAnalysis();else{if(_0x55bc3d==='washing'&&(dbWashing['length']||dbWashHistory['length']))window['runWashAna'+'lysis']();else{if(_0x55bc3d==='strategy'&&dbPerformance['length'])runStrategyAnalysis();else{if(_0x55bc3d==='extra'&&dbExtra['length'])window['runFuelAna'+'lysis']();else{if(_0x55bc3d==='loss'&&dbLoss['length'])runLossAnalysis();}}}}}}catch(_0x1f2b06){console['log']('Tab\x20switch'+'\x20pending\x20d'+'ata\x20load.');}}function getValue(_0x3c645d,_0x11fc3c,_0x3a6fb5,..._0x390e9f){const _0xd8dbc3=MODULE_CONFIGS[_0x3a6fb5];if(!_0xd8dbc3||!_0xd8dbc3['mapping'])return null;let _0x2c65a5=[];_0xd8dbc3['mapping'][_0x11fc3c]&&(_0x2c65a5=_0xd8dbc3['mapping'][_0x11fc3c]);_0x390e9f&&_0x390e9f['length']>0x0&&(_0x2c65a5=[..._0x2c65a5,..._0x390e9f]);const _0x4f1280=Object['keys'](_0x3c645d);for(let _0x255b69 of _0x2c65a5){let _0x35e19e=_0x4f1280['find'](_0x1a3c30=>_0x1a3c30['toUpperCas'+'e']()['trim']()===_0x255b69['toUpperCas'+'e']()['trim']());if(_0x35e19e&&_0x3c645d[_0x35e19e]!==undefined)return _0x3c645d[_0x35e19e];if(_0x255b69['length']>0x2){_0x35e19e=_0x4f1280['find'](_0x39039b=>_0x39039b['toUpperCas'+'e']()['includes'](_0x255b69['toUpperCas'+'e']()));if(_0x11fc3c==='id'&&_0x35e19e&&_0x35e19e['toUpperCas'+'e']()['includes']('ANTERIOR'))continue;if(_0x35e19e&&_0x3c645d[_0x35e19e]!==undefined)return _0x3c645d[_0x35e19e];}}return null;}function processCPKData(_0x4790fe){if(!_0x4790fe||!_0x4790fe['length'])return;let _0x2a40a7=0x0;dbPerformance=_0x4790fe['map']((_0xd427af,_0x4f3ed6)=>{const _0x52f03b=getValue(_0xd427af,'unit','cpk')||'-',_0x163683=getValue(_0xd427af,'folio','cpk')||'-',_0x28423b=_0x52f03b!=='-'?_0x52f03b:_0x163683!=='-'?_0x163683:'F'+_0x4f3ed6,_0x4aed86=safeFloat(getValue(_0xd427af,'mmOrig','cpk'))||0x18,_0x343705=safeFloat(getValue(_0xd427af,'cost','cpk')),_0x35cea4=safeFloat(getValue(_0xd427af,'km','cpk')),_0x2bdd78=safeFloat(getValue(_0xd427af,'mmNow','cpk')),_0x2a8c8e=getValue(_0xd427af,'date','cpk')||'',_0x493a46=getValue(_0xd427af,'articulati'+'on','cpk')||'',_0x2bdf84=getValue(_0xd427af,'status','cpk')||'',_0x400769=normalizeCpkStatus(_0x2bdf84);let _0x2a5170=safeFloat(getValue(_0xd427af,'cpk_value','cpk'));_0x2a5170===0x0&&_0x35cea4>0x0&&_0x343705>0x0&&(_0x2a5170=_0x343705/_0x35cea4);_0x2a40a7+=_0x35cea4;let _0xeddbfa=getValue(_0xd427af,'segment','cpk'),_0x540c3a='Sin\x20Clasif'+'icar';if(_0xeddbfa){const _0x235492=String(_0xeddbfa)['toUpperCas'+'e']();if(_0x235492['includes']('TODA')||_0x235492['includes']('TP'))_0x540c3a='Toda\x20Posic'+'ión';else{if(_0x235492['includes']('DELANTERA')||_0x235492['includes']('FRONT'))_0x540c3a='Delanteras';else{if(_0x235492['includes']('TRACCION')||_0x235492['includes']('DRIVE'))_0x540c3a='Tracción';else{if(_0x235492['includes']('ARRASTRE'))_0x540c3a='Toda\x20Posic'+'ión';}}}}const _0x1def78=_0xeddbfa&&(String(_0xeddbfa)['toUpperCas'+'e']()['includes']('ARRASTRE')||String(_0xeddbfa)['toUpperCas'+'e']()['includes']('REMOLQUE'))?!![]:![];let _0x5b1df1=0x0;if(_0x4aed86-_0x2bdd78>0x0)_0x5b1df1=_0x35cea4/(_0x4aed86-_0x2bdd78);const _0x5895dc=(getValue(_0xd427af,'brand','cpk')||'GEN')['toString']()['trim']()['toUpperCas'+'e'](),_0x4b9180=(getValue(_0xd427af,'model','cpk')||'STD')['toString']()['trim']()['toUpperCas'+'e']();return{'id':_0x28423b,'unit':_0x52f03b,'folio':_0x163683,'brand':_0x5895dc,'model':_0x4b9180,'mm':_0x2bdd78,'originalMm':_0x4aed86,'type':_0x540c3a,'km':_0x35cea4,'efficiency':_0x5b1df1,'cost':_0x343705,'cpk':_0x2a5170,'isTrailer':_0x1def78,'date':_0x2a8c8e,'articulation':_0x493a46,'status':_0x400769,'statusRaw':_0x2bdf84};}),safeSetText('perfCount',dbPerformance['length']);}function normalizeDesignToken(_0x9bcefd){return normalizeStr(_0x9bcefd)['toUpperCas'+'e']()['normalize']('NFD')['replace'](/[\u0300-\u036f]/g,'')['replace'](/[^A-Z0-9]/g,'');}function getRowValueByIndex(_0x1db0c9,_0x4d32e1){const _0x1a1c0e=Object['values'](_0x1db0c9||{});if(_0x4d32e1<0x0||_0x4d32e1>=_0x1a1c0e['length'])return'';return _0x1a1c0e[_0x4d32e1];}function getGoalCell(_0x3ff825,_0x735df4,_0x12d01e){const _0x31fcf7=Object['keys'](_0x3ff825||{}),_0x4fb252=_0x27bab8=>normalizeDesignToken(_0x27bab8)['replace'](/\s+/g,''),_0x2aa773=(Array['isArray'](_0x735df4)?_0x735df4:[])['map'](_0x245486=>_0x4fb252(_0x245486));for(const _0x282dc2 of _0x31fcf7){const _0x5baf0b=_0x4fb252(_0x282dc2);if(_0x2aa773['includes'](_0x5baf0b))return _0x3ff825[_0x282dc2];}for(const _0x1d52e1 of _0x31fcf7){const _0x48f7a2=_0x4fb252(_0x1d52e1);if(_0x2aa773['some'](_0x2e3690=>_0x2e3690&&(_0x48f7a2['includes'](_0x2e3690)||_0x2e3690['includes'](_0x48f7a2))))return _0x3ff825[_0x1d52e1];}return getRowValueByIndex(_0x3ff825,_0x12d01e);}function normalizeGoalTireType(_0x1ce3ac){const _0x3ad1ea=normalizeDesignToken(_0x1ce3ac);if(_0x3ad1ea['includes']('DELANT')||_0x3ad1ea['includes']('DIRECC')||_0x3ad1ea['includes']('FRONT')||_0x3ad1ea['includes']('STEER'))return'DELANTERA';if(_0x3ad1ea['includes']('TRAC'))return'TRACCION';if(_0x3ad1ea['includes']('TODA')||_0x3ad1ea['includes']('POSICION')||_0x3ad1ea['includes']('ARRASTRE')||_0x3ad1ea['includes']('REMOLQUE')||_0x3ad1ea==='TP'||_0x3ad1ea['includes']('TRAILER'))return'TODA_ARRAS'+'TRE';return'TODA_ARRAS'+'TRE';}function goalTireTypeLabel(_0xb73d){if(_0xb73d==='DELANTERA')return'Delantera';if(_0xb73d==='TRACCION')return'Tracción';return'Toda\x20Posic'+'ión\x20/\x20Arra'+'stre';}function mapPerformanceSegmentToGoalType(_0x4b21b4){if(_0x4b21b4==='Delanteras')return'DELANTERA';if(_0x4b21b4==='Tracción')return'TRACCION';return'TODA_ARRAS'+'TRE';}function normalizeGoalBrandKey(_0x306c98){const _0x4c2974=normalizeDesignToken(_0x306c98);if(!_0x4c2974)return'';const _0x11d828={'BFG':'BFGOODRICH','BFGOODRICH':'BFGOODRICH'};return _0x11d828[_0x4c2974]||_0x4c2974;}function buildGoalBrandCandidates(_0x38442b){const _0x4858be=normalizeGoalBrandKey(_0x38442b);if(!_0x4858be)return[];const _0x160a12=new Set([_0x4858be]);if(_0x4858be==='BFGOODRICH')_0x160a12['add']('BFG');if(_0x4858be==='BFG')_0x160a12['add']('BFGOODRICH');return Array['from'](_0x160a12);}function goalTireTypeAllowedByFilter(_0x7dabb8){if(currentFilter==='ALL')return!![];if(currentFilter==='Delanteras')return _0x7dabb8==='DELANTERA';if(currentFilter==='Tracción')return _0x7dabb8==='TRACCION';if(currentFilter==='Toda\x20Posic'+'ión')return _0x7dabb8==='TODA_ARRAS'+'TRE';return![];}function normalizeCpkGoalRecord(_0x17fde7){const _0x2f49f7=normalizeStr((_0x17fde7&&_0x17fde7['tireTypeTe'+'xt'])!=null?_0x17fde7['tireTypeTe'+'xt']:_0x17fde7&&_0x17fde7['tireType']),_0x38bc93=normalizeStr((_0x17fde7&&_0x17fde7['brandText'])!=null?_0x17fde7['brandText']:_0x17fde7&&_0x17fde7['brand']),_0x15645a=normalizeStr(_0x17fde7&&_0x17fde7['design'])['toUpperCas'+'e'](),_0x499b99=safeFloat(_0x17fde7&&_0x17fde7['kmExpected']),_0x55ad64=safeFloat(_0x17fde7&&_0x17fde7['kpkExpecte'+'d']),_0x3caafa=normalizeGoalTireType(_0x2f49f7),_0x515d77=normalizeGoalBrandKey(_0x38bc93);if(!_0x15645a)return null;if(_0x499b99<=0x0&&_0x55ad64<=0x0)return null;return{'tireType':_0x3caafa,'tireTypeLabel':goalTireTypeLabel(_0x3caafa),'tireTypeText':_0x2f49f7||goalTireTypeLabel(_0x3caafa),'brand':_0x38bc93['toUpperCas'+'e'](),'brandKey':_0x515d77,'design':_0x15645a,'matchKey':normalizeDesignToken(_0x15645a),'kmExpected':_0x499b99,'kpkExpected':_0x55ad64};}function processCpkGoalsData(_0x4a19c1){if(!Array['isArray'](_0x4a19c1)||!_0x4a19c1['length']){dbCpkGoals=[];return;}const _0x100371=['TIPO\x20DE\x20LL'+'ANTA','TIPO','GRUPO','B'],_0x460611=['MARCA','BRAND','FABRICANTE','C'],_0x321cea=['DISEÑO','DISENO','DISEÑO\x20LLA'+'NTA','DISENO\x20LLA'+'NTA','MODELO','LLANTA','D'],_0x130136=['KM\x20X\x20MM\x20ES'+'PERADO','KM\x20X\x20MM\x20ES'+'P','KM\x27S\x20ESPER'+'ADOS','KMS\x20ESPERA'+'DOS','KM\x20ESPERAD'+'OS','F'],_0x186d9b=['$\x20X\x20KM\x20ESP'+'ERADO','$\x20X\x20KM\x20ESP','CPK\x20ESPERA'+'DO','K\x20P\x20K\x20ESP','KPK\x20ESP','G'];dbCpkGoals=_0x4a19c1['map'](_0x14215d=>{const _0x310f0e=getGoalCell(_0x14215d,_0x100371,0x1),_0x53e5d1=getGoalCell(_0x14215d,_0x460611,0x2),_0xead01f=getGoalCell(_0x14215d,_0x321cea,0x3),_0x326e3b=getGoalCell(_0x14215d,_0x130136,0x5),_0x4efbd0=getGoalCell(_0x14215d,_0x186d9b,0x6);return normalizeCpkGoalRecord({'tireTypeText':_0x310f0e,'brandText':_0x53e5d1,'design':_0xead01f,'kmExpected':_0x326e3b,'kpkExpected':_0x4efbd0});})['filter'](_0x366f1a=>_0x366f1a!==null);}function exportGoalRows(_0x5845e4){return(Array['isArray'](_0x5845e4)?_0x5845e4:[])['map'](_0x5e33e8=>({'tireTypeText':_0x5e33e8['tireTypeTe'+'xt'],'brand':_0x5e33e8['brand'],'design':_0x5e33e8['design'],'kmExpected':_0x5e33e8['kmExpected'],'kpkExpected':_0x5e33e8['kpkExpecte'+'d']}));}function saveLocalCpkGoals(_0x36458c){const _0x1013ca=(Array['isArray'](_0x36458c)?_0x36458c:[])['map'](normalizeCpkGoalRecord)['filter'](Boolean);dbCpkGoals=_0x1013ca,localStorage['setItem'](CPK_GOALS_STORAGE_KEY,JSON['stringify'](exportGoalRows(_0x1013ca)));}function loadLocalCpkGoals(){let _0x57be16=null;try{_0x57be16=JSON['parse'](localStorage['getItem'](CPK_GOALS_STORAGE_KEY)||'null');}catch(_0x6849ee){_0x57be16=null;}if(Array['isArray'](_0x57be16)&&_0x57be16['length']>0x0){const _0x20ff33=_0x57be16['map'](normalizeCpkGoalRecord)['filter'](Boolean);if(_0x20ff33['length']>0x0)return dbCpkGoals=_0x20ff33,!![];}const _0x59d99e=(Array['isArray'](DEFAULT_CPK_GOALS_LOCAL)?DEFAULT_CPK_GOALS_LOCAL:[])['map'](normalizeCpkGoalRecord)['filter'](Boolean);dbCpkGoals=_0x59d99e;if(_0x59d99e['length']>0x0)return localStorage['setItem'](CPK_GOALS_STORAGE_KEY,JSON['stringify'](exportGoalRows(_0x59d99e))),!![];return![];}function setCpkGoalsEditorError(_0xc9e85f){const _0x5d2b30=document['getElement'+'ById']('cpkGoalsEd'+'itorError');if(!_0x5d2b30)return;if(!_0xc9e85f){_0x5d2b30['classList']['add']('hidden'),_0x5d2b30['innerText']='';return;}_0x5d2b30['classList']['remove']('hidden'),_0x5d2b30['innerText']=_0xc9e85f;}function goalsToEditorText(_0x4ece40){const _0x374ed4=Array['isArray'](_0x4ece40)?_0x4ece40:[],_0x1bb733='Tipo|Marca'+'|Diseño|Km'+'\x20x\x20Mm\x20Esp.'+'|$\x20x\x20Km\x20Es'+'p.';if(!_0x374ed4['length'])return _0x1bb733;const _0x1bd203=_0x374ed4['map'](_0x4f3038=>normalizeStr(_0x4f3038['tireTypeTe'+'xt']||goalTireTypeLabel(_0x4f3038['tireType']))+'|'+normalizeStr(_0x4f3038['brand'])+'|'+normalizeStr(_0x4f3038['design'])+'|'+_0x4f3038['kmExpected']+'|'+_0x4f3038['kpkExpecte'+'d']);return[_0x1bb733,..._0x1bd203]['join']('\x0a');}function parseCpkGoalsEditorText(_0x20a3c2){const _0x159ddd=(_0x20a3c2||'')['split'](/\r?\n/)['map'](_0x31fc1b=>_0x31fc1b['trim']())['filter'](Boolean);if(_0x159ddd['length']===0x0)return[];const _0x2f4b0d=[];return _0x159ddd['forEach']((_0x4c9a94,_0x8d596d)=>{const _0x224352=normalizeDesignToken(_0x4c9a94);if(_0x8d596d===0x0&&_0x224352['includes']('TIPO')&&_0x224352['includes']('DISENO'))return;let _0x2a78c5=_0x4c9a94['split']('|')['map'](_0x6cab58=>_0x6cab58['trim']());if(_0x2a78c5['length']<0x4)_0x2a78c5=_0x4c9a94['split']('\x09')['map'](_0x197af2=>_0x197af2['trim']());if(_0x2a78c5['length']<0x4)_0x2a78c5=_0x4c9a94['split'](',')['map'](_0x18e799=>_0x18e799['trim']());if(_0x2a78c5['length']<0x4)throw new Error('Línea\x20'+(_0x8d596d+0x1)+(':\x20formato\x20'+'inválido.'));let _0x36bc1b='',_0x40cde6='',_0x130a80='',_0x4d4abf='',_0x1dbb0a='';_0x2a78c5['length']>=0x5?[_0x36bc1b,_0x40cde6,_0x130a80,_0x4d4abf,_0x1dbb0a]=_0x2a78c5:[_0x36bc1b,_0x130a80,_0x4d4abf,_0x1dbb0a]=_0x2a78c5;const _0x3f2be9=normalizeCpkGoalRecord({'tireTypeText':_0x36bc1b,'brandText':_0x40cde6,'design':_0x130a80,'kmExpected':_0x4d4abf,'kpkExpected':_0x1dbb0a});if(!_0x3f2be9)throw new Error('Línea\x20'+(_0x8d596d+0x1)+(':\x20diseño\x20v'+'acío\x20o\x20met'+'as\x20inválid'+'as.'));_0x2f4b0d['push'](_0x3f2be9);}),_0x2f4b0d;}function openCpkGoalsModal(){if(!currentUser||currentUser['role']!=='admin'){logStatus('Solo\x20admin'+'istradores'+'\x20pueden\x20ed'+'itar\x20metas'+'\x20CPK.','error');return;}loadLocalCpkGoals();const _0x36d787=document['getElement'+'ById']('cpkGoalsEd'+'itorText');if(_0x36d787)_0x36d787['value']=goalsToEditorText(dbCpkGoals);setCpkGoalsEditorError('');const _0x561ad1=document['getElement'+'ById']('cpkGoalsMo'+'dal');_0x561ad1&&_0x561ad1['classList']['contains']('opacity-0')&&window['toggleModa'+'l']('cpkGoalsMo'+'dal');}function saveCpkGoalsFromEditor(){if(!currentUser||currentUser['role']!=='admin'){logStatus('Solo\x20admin'+'istradores'+'\x20pueden\x20ed'+'itar\x20metas'+'\x20CPK.','error');return;}const _0xc81f5c=document['getElement'+'ById']('cpkGoalsEd'+'itorText');if(!_0xc81f5c)return;try{const _0x29db78=parseCpkGoalsEditorText(_0xc81f5c['value']);if(!_0x29db78['length']){setCpkGoalsEditorError('Debes\x20capt'+'urar\x20al\x20me'+'nos\x20una\x20me'+'ta\x20válida.');return;}saveLocalCpkGoals(_0x29db78),setCpkGoalsEditorError(''),logStatus('Metas\x20CPK\x20'+'guardadas\x20'+'localmente'+'\x20('+_0x29db78['length']+'\x20filas).','info');if(moduleState['currentTab']==='performanc'+'e')runCPKAnalysis();window['toggleModa'+'l']('cpkGoalsMo'+'dal');}catch(_0x35e84b){setCpkGoalsEditorError(_0x35e84b['message']||'No\x20se\x20pudo'+'\x20guardar\x20l'+'as\x20metas.');}}function restoreDefaultCpkGoals(){if(!currentUser||currentUser['role']!=='admin'){logStatus('Solo\x20admin'+'istradores'+'\x20pueden\x20ed'+'itar\x20metas'+'\x20CPK.','error');return;}localStorage['removeItem'](CPK_GOALS_STORAGE_KEY);const _0xb80567=loadLocalCpkGoals(),_0x2d8268=document['getElement'+'ById']('cpkGoalsEd'+'itorText');if(_0x2d8268)_0x2d8268['value']=goalsToEditorText(dbCpkGoals);setCpkGoalsEditorError('');if(moduleState['currentTab']==='performanc'+'e')runCPKAnalysis();!_0xb80567&&logStatus('Plantilla\x20'+'limpia.\x20Pu'+'edes\x20pegar'+'\x20tus\x20metas'+'\x20manualmen'+'te.','info');}function processScrapData(_0x4998de){if(!_0x4998de||!_0x4998de['length']){dbScrap=[],safeSetText('scrapCount'+'Display',0x0);return;}let _0x35c28d=0x0;dbScrap=_0x4998de['map'](_0x48f464=>{const _0x40fc18=(getValue(_0x48f464,'brand','scrap')||'GEN')['toString']()['trim']()['toUpperCas'+'e'](),_0x3ff8e=(getValue(_0x48f464,'model','scrap')||'STD')['toString']()['trim']()['toUpperCas'+'e'](),_0x7c09d5=getValue(_0x48f464,'date','scrap');if(parseFlexibleDate(_0x7c09d5))_0x35c28d++;let _0x32b53a=getValue(_0x48f464,'scrapProvi'+'der','scrap');return(!_0x32b53a||_0x32b53a['trim']()===''||_0x32b53a==='Sin\x20Asigna'+'r')&&(_0x32b53a='Recolecció'+'n\x20Pend.'),{'id':getValue(_0x48f464,'id','scrap')||'S/N','brand':_0x40fc18,'model':_0x3ff8e,'mm':safeFloat(getValue(_0x48f464,'mmNow','scrap')),'originalMm':safeFloat(getValue(_0x48f464,'mmOrig','scrap'))||0x18,'cost':safeFloat(getValue(_0x48f464,'cost','scrap')),'status':'Scrapped','reason':getValue(_0x48f464,'scrapReaso'+'n','scrap')||'Desc','provider':_0x32b53a,'date':_0x7c09d5};})['filter'](_0x34c264=>_0x34c264!==null),safeSetText('scrapCount'+'Display',dbScrap['length']),logStatus('Desecho:\x20'+dbScrap['length']+('\x20items.\x20Fe'+'chas\x20legib'+'les:\x20')+_0x35c28d,'info');}function processScrapCreditData(_0x192c00){if(!_0x192c00||!_0x192c00['length']){dbScrapCredits=[];return;}let _0x39b921=0x0;dbScrapCredits=_0x192c00['map']((_0x1b0215,_0x496cdd)=>{const _0xf4af63=getValue(_0x1b0215,'date','scrapCredi'+'t');if(parseFlexibleDate(_0xf4af63))_0x39b921++;const _0x1676bc=normalizeStr(getValue(_0x1b0215,'provider','scrapCredi'+'t'))||'Sin\x20provee'+'dor',_0x456bbe=normalizeStr(getValue(_0x1b0215,'legalName','scrapCredi'+'t'))||'-',_0x8843de=normalizeStr(getValue(_0x1b0215,'descriptio'+'n','scrapCredi'+'t'))||'Sin\x20descri'+'pción',_0xcd4dad=Math['abs'](safeFloat(getValue(_0x1b0215,'qty','scrapCredi'+'t'))),_0x1a1596=Math['abs'](safeFloat(getValue(_0x1b0215,'amount','scrapCredi'+'t')));return{'id':'NC-'+(_0x496cdd+0x1),'date':_0xf4af63,'provider':_0x1676bc,'legalName':_0x456bbe,'description':_0x8843de,'qty':_0xcd4dad,'amount':_0x1a1596};})['filter'](_0x5213dc=>_0x5213dc['amount']>0x0||_0x5213dc['qty']>0x0||normalizeStr(_0x5213dc['descriptio'+'n'])!=='Sin\x20descri'+'pción'),logStatus('Notas\x20Créd'+'ito:\x20'+dbScrapCredits['length']+('\x20registros'+'.\x20Fechas\x20l'+'egibles:\x20')+_0x39b921,'info');}function processWashData(_0x2873df){if(!_0x2873df||!_0x2873df['length']){dbWashing=[],safeSetText('washCount',0x0),sanitizeWashSelectedOptions();return;}const _0x3f7f5c=new Date();_0x3f7f5c['setHours'](0x17,0x3b,0x3b,0x3e7);let _0x38e2fa=_0x2873df['map'](_0x153f98=>{const _0x264eaa=getValue(_0x153f98,'unit','wash')||'S/N',_0x2650df=getValue(_0x153f98,'washCompan'+'y','wash')||'Sin\x20Asigna'+'r',_0x53e1eb=getValue(_0x153f98,'washDate','wash'),_0x465eb0=getValue(_0x153f98,'washDays','wash');let _0x131486=0x0,_0xf68bbe='-',_0x111abd=-0x1,_0x21cb42=0x0,_0x1972a7=parseFlexibleDate(_0x53e1eb);if(_0x1972a7&&_0x1972a7>_0x3f7f5c){if(_0x1972a7['getDate']()<=0xc){const _0x2e91bc=_0x1972a7['getDate']()-0x1,_0x203a7e=_0x1972a7['getMonth']()+0x1,_0x262f45=new Date(_0x1972a7['getFullYea'+'r'](),_0x2e91bc,_0x203a7e);_0x262f45<=_0x3f7f5c&&(_0x1972a7=_0x262f45);}}if(_0x1972a7){const _0x3ad314=_0x3f7f5c['getTime']()-_0x1972a7['getTime']();_0x131486=Math['floor'](_0x3ad314/(0x3e8*0x3c*0x3c*0x18));if(_0x131486<0x0)_0x131486=0x0;const _0x69360f=String(_0x1972a7['getDate']())['padStart'](0x2,'0'),_0x148e6b=String(_0x1972a7['getMonth']()+0x1)['padStart'](0x2,'0'),_0x1dc24d=_0x1972a7['getFullYea'+'r']();_0xf68bbe=_0x69360f+'-'+_0x148e6b+'-'+_0x1dc24d,_0x111abd=_0x1972a7['getMonth'](),_0x21cb42=_0x1972a7['getFullYea'+'r']();}else _0x465eb0&&(_0x131486=parseInt(_0x465eb0));return{'unit':_0x264eaa,'company':_0x2650df,'days':_0x131486,'monthIdx':_0x111abd,'year':_0x21cb42,'lastWashDate':_0xf68bbe,'daysWithoutWash':_0x131486,'rawDate':_0x1972a7};});dbWashing=_0x38e2fa['filter'](_0x546227=>_0x546227['daysWithou'+'tWash']<=0x1f4),safeSetText('washCount',dbWashing['length']),sanitizeWashSelectedOptions();}function processWashHistoryData(_0x42c021){if(!_0x42c021||!_0x42c021['length']){dbWashHistory=[];if(document['getElement'+'ById']('washHistor'+'yCount'))safeSetText('washHistor'+'yCount',0x0);sanitizeWashSelectedOptions();return;}let _0x3a6254=0x0,_0x564ed9=0x0;dbWashHistory=_0x42c021['map'](_0x478af3=>{const _0x1b0786=getValue(_0x478af3,'unit','wash')||'S/N';let _0x463094=getValue(_0x478af3,'washCompan'+'y','wash')||'Sin\x20Asigna'+'r',_0x346738=_0x463094;COMPANY_MAP[_0x463094]&&(_0x346738=COMPANY_MAP[_0x463094]);const _0x164190=getValue(_0x478af3,'washDate','wash');let _0x5c9fb9='-',_0x4d0848=-0x1,_0x5f1690=0x0;const _0x161120=parseFlexibleDate(_0x164190);if(_0x161120){const _0x1ae1b5=String(_0x161120['getDate']())['padStart'](0x2,'0'),_0x11e8f6=String(_0x161120['getMonth']()+0x1)['padStart'](0x2,'0'),_0x56deda=_0x161120['getFullYea'+'r']();_0x5c9fb9=_0x1ae1b5+'-'+_0x11e8f6+'-'+_0x56deda,_0x4d0848=_0x161120['getMonth'](),_0x5f1690=_0x161120['getFullYea'+'r'](),_0x3a6254++;}else return _0x564ed9++,null;return{'unit':_0x1b0786,'company':_0x346738,'dateStr':_0x5c9fb9,'monthIdx':_0x4d0848,'year':_0x5f1690,'rawDate':_0x161120};})['filter'](_0xb5bc5e=>_0xb5bc5e!==null);if(document['getElement'+'ById']('washHistor'+'yCount'))safeSetText('washHistor'+'yCount',dbWashHistory['length']);_0x564ed9>0x0?logStatus('Lavado\x20His'+'tórico:\x20'+_0x3a6254+('\x20cargados.'+'\x20⚠️\x20')+_0x564ed9+('\x20fechas\x20il'+'egibles.'),'info'):logStatus('Lavado\x20His'+'tórico:\x20'+_0x3a6254+('\x20registros'+'\x20cargados\x20'+'correctame'+'nte.')),sanitizeWashSelectedOptions();}function processFuelData(_0x52640a){if(!_0x52640a||!_0x52640a['length']){dbExtra=[],safeSetText('fuelCount',0x0);return;}dbExtra=_0x52640a['map'](_0x41473f=>{const _0x58cc8e=getValue(_0x41473f,'fuelMonth','fuel')||'-';let _0x2f80bc=getValue(_0x41473f,'fuelCompan'+'y','fuel')||'Sin\x20Asigna'+'r',_0x27de7d=getValue(_0x41473f,'unit','fuel')||'S/N',_0x554788=_0x2f80bc['toString']()['trim']();if(COMPANY_MAP[_0x554788])_0x554788=COMPANY_MAP[_0x554788];if(LA_PAZ_UNITS['includes'](_0x27de7d['toUpperCas'+'e']()))_0x554788='La\x20Paz';const _0x178b97=getValue(_0x41473f,'fuelEngine','fuel')||'Desconocid'+'o',_0x54df7c=getValue(_0x41473f,'fuelManufa'+'cturer','fuel')||'Desconocid'+'o',_0x19c653=getValue(_0x41473f,'fuelSegmen'+'t','fuel')||'General';if(_0x178b97['toUpperCas'+'e']()['includes']('EURO\x205'))_0x554788='Pipitas';const _0x1ba9d2=getValue(_0x41473f,'fuelOperat'+'or','fuel')||'Desconocid'+'o',_0x372d63=safeFloat(getValue(_0x41473f,'fuelKm','fuel')),_0x5a7c97=safeFloat(getValue(_0x41473f,'fuelLiters','fuel'));let _0x229ed4=safeFloat(getValue(_0x41473f,'fuelYield','fuel'));if(_0x229ed4===0x0&&_0x5a7c97>0x0)_0x229ed4=_0x372d63/_0x5a7c97;let _0x5470d4=0x0,_0x2a6808=new Date()['getFullYea'+'r']();const _0x1a5118=parseFlexibleDate(_0x58cc8e);if(_0x1a5118)_0x5470d4=_0x1a5118['getMonth'](),_0x2a6808=_0x1a5118['getFullYea'+'r']();else{let _0x181cae=monthNamesFull['findIndex'](_0x545fc7=>_0x545fc7['toUpperCas'+'e']()['includes'](_0x58cc8e['toString']()['toUpperCas'+'e']()['substring'](0x0,0x3)));if(_0x181cae!==-0x1)_0x5470d4=_0x181cae;const _0x1ed5a6=_0x58cc8e['toString']()['match'](/20\d{2}/);if(_0x1ed5a6)_0x2a6808=parseInt(_0x1ed5a6[0x0]);}return{'month':_0x58cc8e,'mIdx':_0x5470d4,'year':_0x2a6808,'company':_0x554788,'engine':_0x178b97,'manufacturer':_0x54df7c,'operator':_0x1ba9d2,'km':_0x372d63,'liters':_0x5a7c97,'yield':_0x229ed4,'unit':_0x27de7d,'segment':_0x19c653};})['filter'](_0x12f307=>_0x12f307['km']>0x0&&_0x12f307['liters']>0x0),safeSetText('fuelCount',dbExtra['length']),sanitizeFuelSelectedOptions();}function getFuelSuggestionOptions(_0x3d677c){const _0x5ee40b=new Set();return(Array['isArray'](dbExtra)?dbExtra:[])['forEach'](_0x55f4e7=>{if(_0x3d677c==='UNIT'){const _0xd983d0=normalizeStr(_0x55f4e7['unit'])['toUpperCas'+'e']();if(_0xd983d0)_0x5ee40b['add'](_0xd983d0);}else{const _0x5760d4=normalizeStr(_0x55f4e7['operator'])['toUpperCas'+'e']();if(_0x5760d4)_0x5ee40b['add'](_0x5760d4);}}),Array['from'](_0x5ee40b)['sort']((_0x162028,_0xf1992)=>_0x162028['localeComp'+'are'](_0xf1992,'es',{'sensitivity':'base'}));}function syncFuelSelectedInfo(){const _0x34d7ff=document['getElement'+'ById']('fuelSelect'+'edUnitInfo'),_0x2a5d94=document['getElement'+'ById']('fuelSelect'+'edOperator'+'Info');if(_0x34d7ff)_0x34d7ff['innerText']=currentFuelSelectedUnit['length']?currentFuelSelectedUnit['length']+('\x20seleccion'+'ados'):'';if(_0x2a5d94)_0x2a5d94['innerText']=currentFuelSelectedOperator['length']?currentFuelSelectedOperator['length']+('\x20seleccion'+'ados'):'';}function syncFuelExclusiveFilterState(){const _0x437d57=document['getElement'+'ById']('fuelFilter'+'Unit'),_0x48db58=document['getElement'+'ById']('fuelFilter'+'Operator'),_0x2f385b=document['getElement'+'ById']('fuelSugges'+'tUnit'),_0x4f569a=document['getElement'+'ById']('fuelSugges'+'tOperator');currentFuelSelectedUnit['length']>0x0&&currentFuelSelectedOperator['length']>0x0&&(currentFuelSelectedOperator=[]);const _0x36947e=currentFuelSelectedOperator['length']>0x0,_0x4e18a5=currentFuelSelectedUnit['length']>0x0;if(_0x36947e){currentFuelSelectedUnit=[],currentFuelSearchUnit='';if(_0x437d57)_0x437d57['value']='';if(_0x2f385b)_0x2f385b['classList']['remove']('show');}if(_0x4e18a5){currentFuelSelectedOperator=[],currentFuelSearchOperator='';if(_0x48db58)_0x48db58['value']='';if(_0x4f569a)_0x4f569a['classList']['remove']('show');}_0x437d57&&(_0x437d57['disabled']=_0x36947e,_0x437d57['classList']['toggle']('bg-slate-1'+'00',_0x36947e),_0x437d57['classList']['toggle']('text-slate'+'-400',_0x36947e),_0x437d57['classList']['toggle']('cursor-not'+'-allowed',_0x36947e),_0x437d57['placeholde'+'r']=_0x36947e?'Unidad\x20(de'+'shabilitad'+'o)':'Unidad'),_0x48db58&&(_0x48db58['disabled']=_0x4e18a5,_0x48db58['classList']['toggle']('bg-slate-1'+'00',_0x4e18a5),_0x48db58['classList']['toggle']('text-slate'+'-400',_0x4e18a5),_0x48db58['classList']['toggle']('cursor-not'+'-allowed',_0x4e18a5),_0x48db58['placeholde'+'r']=_0x4e18a5?'Operador\x20('+'deshabilit'+'ado)':'Operador'),syncFuelSelectedInfo();}function sanitizeFuelSelectedOptions(){const _0x163d9b=new Set(getFuelSuggestionOptions('UNIT')),_0xf7d484=new Set(getFuelSuggestionOptions('OP'));currentFuelSelectedUnit=currentFuelSelectedUnit['filter'](_0x4d0145=>_0x163d9b['has'](_0x4d0145)),currentFuelSelectedOperator=currentFuelSelectedOperator['filter'](_0x581562=>_0xf7d484['has'](_0x581562)),syncFuelExclusiveFilterState();}function renderFuelSuggestions(_0xd3cfce){const _0x45f151=_0xd3cfce==='UNIT'?'fuelFilter'+'Unit':'fuelFilter'+'Operator',_0x50116d=_0xd3cfce==='UNIT'?'fuelSugges'+'tUnit':'fuelSugges'+'tOperator',_0x5eb669=_0xd3cfce==='UNIT'?currentFuelSelectedUnit:currentFuelSelectedOperator,_0x33c12f=document['getElement'+'ById'](_0x45f151),_0xadca19=document['getElement'+'ById'](_0x50116d);if(!_0x33c12f||!_0xadca19)return;if(_0x33c12f['disabled']){_0xadca19['classList']['remove']('show');return;}const _0x50e46b=normalizeStr(_0x33c12f['value'])['toUpperCas'+'e'](),_0x90a1b8=getFuelSuggestionOptions(_0xd3cfce)['filter'](_0x475634=>!_0x50e46b||_0x475634['includes'](_0x50e46b))['slice'](0x0,0x50);if(!_0x90a1b8['length']){_0xadca19['innerHTML']='<div\x20class'+'=\x22px-2\x20py-'+'2\x20text-xs\x20'+'text-slate'+'-400\x22>Sin\x20'+'coincidenc'+'ias</div>',_0xadca19['classList']['add']('show');return;}_0xadca19['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<di'+'v\x20class=\x22p'+'x-2\x20py-1\x20b'+'order-b\x20bo'+'rder-slate'+'-100\x20flex\x20'+'items-cent'+'er\x20justify'+'-between\x20t'+'ext-[10px]'+'\x20text-slat'+'e-500\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<s'+'pan>'+(_0xd3cfce==='UNIT'?'Unidad':'Operador')+('</span>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<b'+'utton\x20clas'+'s=\x22text-in'+'digo-600\x20h'+'over:text-'+'indigo-800'+'\x20font-bold'+'\x22\x20onclick='+'\x22window.cl'+'earFuelSug'+'gestionSel'+'ection(\x27')+_0xd3cfce+('\x27)\x22>Limpia'+'r</button>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20</d'+'iv>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')+_0x90a1b8['map'](_0x34e63c=>{const _0x258b15=encodeURIComponent(_0x34e63c),_0x49c2ce=_0x5eb669['includes'](_0x34e63c)?'checked':'';return'<label\x20cla'+'ss=\x22cursor'+'-pointer\x20p'+'x-2\x20py-1\x20h'+'over:bg-sl'+'ate-50\x20fle'+'x\x20items-ce'+'nter\x20gap-2'+'\x20text-xs\x20t'+'ext-slate-'+'700\x22><inpu'+'t\x20type=\x22ch'+'eckbox\x22\x20'+_0x49c2ce+('\x20onchange='+'\x22window.to'+'ggleFuelSu'+'ggestionSe'+'lection(\x27')+_0xd3cfce+'\x27,\x27'+_0x258b15+('\x27,this.che'+'cked)\x22>\x20<s'+'pan>')+escapeHtml(_0x34e63c)+('</span></l'+'abel>');})['join']('')+('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20'),_0xadca19['classList']['add']('show');}function toggleFuelSuggestionSelection(_0x73b814,_0xe30a6c,_0x241837){const _0x543cf6=decodeURIComponent(_0xe30a6c||'');if(!_0x543cf6)return;if(_0x241837&&_0x73b814==='UNIT'){currentFuelSelectedOperator=[],currentFuelSearchOperator='';const _0x21f70a=document['getElement'+'ById']('fuelFilter'+'Operator');if(_0x21f70a)_0x21f70a['value']='';}else{if(_0x241837&&_0x73b814==='OP'){currentFuelSelectedUnit=[],currentFuelSearchUnit='';const _0x5e5b2e=document['getElement'+'ById']('fuelFilter'+'Unit');if(_0x5e5b2e)_0x5e5b2e['value']='';}}const _0x57e73a=_0x73b814==='UNIT'?currentFuelSelectedUnit:currentFuelSelectedOperator,_0x4de2ee=_0x57e73a['indexOf'](_0x543cf6);if(_0x241837&&_0x4de2ee===-0x1)_0x57e73a['push'](_0x543cf6);if(!_0x241837&&_0x4de2ee>=0x0)_0x57e73a['splice'](_0x4de2ee,0x1);syncFuelExclusiveFilterState();}function clearFuelSuggestionSelection(_0x451f81){if(_0x451f81==='UNIT')currentFuelSelectedUnit=[];else currentFuelSelectedOperator=[];syncFuelExclusiveFilterState(),renderFuelSuggestions(_0x451f81);}function applyFuelSearchFilters(){const _0xe5a43a=document['getElement'+'ById']('fuelFilter'+'Unit'),_0x4c92df=document['getElement'+'ById']('fuelFilter'+'Operator');currentFuelSearchUnit=normalizeStr(_0xe5a43a?_0xe5a43a['value']:'')['toUpperCas'+'e'](),currentFuelSearchOperator=normalizeStr(_0x4c92df?_0x4c92df['value']:'')['toUpperCas'+'e'](),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='extra')runFuelAnalysis();}function clearFuelSearchFilters(){currentFuelSearchUnit='',currentFuelSearchOperator='',currentFuelSelectedUnit=[],currentFuelSelectedOperator=[];const _0x50b0d6=document['getElement'+'ById']('fuelFilter'+'Unit'),_0x19d6cc=document['getElement'+'ById']('fuelFilter'+'Operator');if(_0x50b0d6)_0x50b0d6['value']='';if(_0x19d6cc)_0x19d6cc['value']='';syncFuelExclusiveFilterState(),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='extra')runFuelAnalysis();}function getFuelSearchScopedRows(){if(!Array['isArray'](dbExtra)||!dbExtra['length'])return[];const _0x599688=new Set(currentFuelSelectedUnit),_0x593b8d=new Set(currentFuelSelectedOperator);return dbExtra['filter'](_0x4504b9=>{const _0x4eba73=normalizeStr(_0x4504b9['unit'])['toUpperCas'+'e'](),_0x3c1b53=normalizeStr(_0x4504b9['operator'])['toUpperCas'+'e'](),_0x50c96b=_0x599688['size']>0x0?_0x599688['has'](_0x4eba73):!currentFuelSearchUnit||_0x4eba73['includes'](currentFuelSearchUnit),_0x109b6c=_0x593b8d['size']>0x0?_0x593b8d['has'](_0x3c1b53):!currentFuelSearchOperator||_0x3c1b53['includes'](currentFuelSearchOperator);return _0x50c96b&&_0x109b6c;});}function isExcludedWashFilterUnit(_0x918935){const _0xdc68f5=normalizeStr(_0x918935&&_0x918935['unit'])['toUpperCas'+'e'](),_0x103f65=normalizeStr(_0x918935&&_0x918935['company'])['toUpperCas'+'e']();return _0xdc68f5['includes']('EXTERN')||_0xdc68f5['includes']('CCM')||_0x103f65['includes']('EXTERN')||_0x103f65['includes']('CCM');}function getWashSuggestionOptions(){const _0x14478d=new Set();return(Array['isArray'](dbWashing)?dbWashing:[])['forEach'](_0x4948f7=>{if(isExcludedWashFilterUnit(_0x4948f7))return;const _0x57b813=normalizeStr(_0x4948f7['unit'])['toUpperCas'+'e']();if(_0x57b813)_0x14478d['add'](_0x57b813);}),(Array['isArray'](dbWashHistory)?dbWashHistory:[])['forEach'](_0x3b71c7=>{if(isExcludedWashFilterUnit(_0x3b71c7))return;const _0x9dccc=normalizeStr(_0x3b71c7['unit'])['toUpperCas'+'e']();if(_0x9dccc)_0x14478d['add'](_0x9dccc);}),Array['from'](_0x14478d)['sort']((_0x8573ac,_0x14b16d)=>_0x8573ac['localeComp'+'are'](_0x14b16d,'es',{'sensitivity':'base'}));}function syncWashSelectedInfo(){const _0x357503=document['getElement'+'ById']('washSelect'+'edUnitInfo');if(!_0x357503)return;_0x357503['innerText']=currentWashSelectedUnit['length']?currentWashSelectedUnit['length']+('\x20seleccion'+'ados'):'';}function sanitizeWashSelectedOptions(){const _0x1777b4=new Set(getWashSuggestionOptions());currentWashSelectedUnit=currentWashSelectedUnit['filter'](_0x69bf15=>_0x1777b4['has'](_0x69bf15)),syncWashSelectedInfo();}function renderWashSuggestions(){const _0x4d4e22=document['getElement'+'ById']('washFilter'+'Unit'),_0x4a1e2f=document['getElement'+'ById']('washSugges'+'tUnit');if(!_0x4d4e22||!_0x4a1e2f)return;const _0x5107ed=normalizeStr(_0x4d4e22['value'])['toUpperCas'+'e'](),_0x347f05=getWashSuggestionOptions()['filter'](_0x2ebc80=>!_0x5107ed||_0x2ebc80['includes'](_0x5107ed))['slice'](0x0,0x50);if(!_0x347f05['length']){_0x4a1e2f['innerHTML']='<div\x20class'+'=\x22px-2\x20py-'+'2\x20text-xs\x20'+'text-slate'+'-400\x22>Sin\x20'+'coincidenc'+'ias</div>',_0x4a1e2f['classList']['add']('show');return;}_0x4a1e2f['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<di'+'v\x20class=\x22p'+'x-2\x20py-1\x20b'+'order-b\x20bo'+'rder-slate'+'-100\x20flex\x20'+'items-cent'+'er\x20justify'+'-between\x20t'+'ext-[10px]'+'\x20text-slat'+'e-500\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<s'+'pan>Unidad'+'</span>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<b'+'utton\x20clas'+'s=\x22text-in'+'digo-600\x20h'+'over:text-'+'indigo-800'+'\x20font-bold'+'\x22\x20onclick='+'\x22window.cl'+'earWashSug'+'gestionSel'+'ection()\x22>'+'Limpiar</b'+'utton>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20</div>\x0a'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20'+_0x347f05['map'](_0x2d6893=>{const _0x4c4ba3=encodeURIComponent(_0x2d6893),_0x50d56c=currentWashSelectedUnit['includes'](_0x2d6893)?'checked':'';return'<label\x20cla'+'ss=\x22cursor'+'-pointer\x20p'+'x-2\x20py-1\x20h'+'over:bg-sl'+'ate-50\x20fle'+'x\x20items-ce'+'nter\x20gap-2'+'\x20text-xs\x20t'+'ext-slate-'+'700\x22><inpu'+'t\x20type=\x22ch'+'eckbox\x22\x20'+_0x50d56c+('\x20onchange='+'\x22window.to'+'ggleWashSu'+'ggestionSe'+'lection(\x27')+_0x4c4ba3+('\x27,this.che'+'cked)\x22>\x20<s'+'pan>')+escapeHtml(_0x2d6893)+('</span></l'+'abel>');})['join']('')+('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20'),_0x4a1e2f['classList']['add']('show');}function toggleWashSuggestionSelection(_0x835862,_0x1adf3e){const _0x3db806=decodeURIComponent(_0x835862||'');if(!_0x3db806)return;const _0x391b95=currentWashSelectedUnit['indexOf'](_0x3db806);if(_0x1adf3e&&_0x391b95===-0x1)currentWashSelectedUnit['push'](_0x3db806);if(!_0x1adf3e&&_0x391b95>=0x0)currentWashSelectedUnit['splice'](_0x391b95,0x1);syncWashSelectedInfo();}function clearWashSuggestionSelection(){currentWashSelectedUnit=[],syncWashSelectedInfo(),renderWashSuggestions();}function applyWashSearchFilters(){const _0x11679e=document['getElement'+'ById']('washFilter'+'Unit');currentWashSearchUnit=normalizeStr(_0x11679e?_0x11679e['value']:'')['toUpperCas'+'e'](),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='washing')runWashAnalysis();}function clearWashSearchFilters(){currentWashSearchUnit='',currentWashSelectedUnit=[];const _0x774f43=document['getElement'+'ById']('washFilter'+'Unit');if(_0x774f43)_0x774f43['value']='';syncWashSelectedInfo(),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='washing')runWashAnalysis();}function getWashScopedCurrentRows(){if(!Array['isArray'](dbWashing)||!dbWashing['length'])return[];const _0x354cfe=new Set(currentWashSelectedUnit),_0x251679=_0x354cfe['size']>0x0||!!currentWashSearchUnit;return dbWashing['filter'](_0x20d611=>{if(_0x251679&&isExcludedWashFilterUnit(_0x20d611))return![];const _0x230e45=normalizeStr(_0x20d611['unit'])['toUpperCas'+'e']();return _0x354cfe['size']>0x0?_0x354cfe['has'](_0x230e45):!currentWashSearchUnit||_0x230e45['includes'](currentWashSearchUnit);});}function getWashScopedHistoryRows(){if(!Array['isArray'](dbWashHistory)||!dbWashHistory['length'])return[];const _0x51b05d=new Set(currentWashSelectedUnit),_0x3630d7=_0x51b05d['size']>0x0||!!currentWashSearchUnit;return dbWashHistory['filter'](_0x120e20=>{if(_0x3630d7&&isExcludedWashFilterUnit(_0x120e20))return![];const _0x16a211=normalizeStr(_0x120e20['unit'])['toUpperCas'+'e']();return _0x51b05d['size']>0x0?_0x51b05d['has'](_0x16a211):!currentWashSearchUnit||_0x16a211['includes'](currentWashSearchUnit);});}function hasWashSpecificSelection(){return currentWashSelectedUnit['length']>0x0||!!currentWashSearchUnit;}function toggleWashSummaryMode(_0x1d0335){const _0x3d4840=document['getElement'+'ById']('washTopDir'+'tyContaine'+'r'),_0x1f880e=document['getElement'+'ById']('washHistor'+'ySummaryCo'+'ntainer');if(_0x3d4840)_0x3d4840['classList']['toggle']('hidden',_0x1d0335);if(_0x1f880e)_0x1f880e['classList']['toggle']('hidden',!_0x1d0335);}function renderWashHistorySummaryRows(_0x494c8c){const _0xd119bb=document['getElement'+'ById']('washHistor'+'ySummaryTi'+'tle'),_0x3d68af=document['getElement'+'ById']('washHistor'+'ySummaryBo'+'dy');if(!_0xd119bb||!_0x3d68af)return;const _0x51ed15=currentWashSelectedUnit['length']?currentWashSelectedUnit['join'](',\x20'):currentWashSearchUnit||'Unidad\x20fil'+'trada';_0xd119bb['innerText']='Selección:'+'\x20'+_0x51ed15;const _0x2c2eb7=Array['isArray'](_0x494c8c)?[..._0x494c8c]:[];_0x2c2eb7['sort']((_0xc3addf,_0x1fd3f7)=>{if(_0xc3addf['rawDate']&&_0x1fd3f7['rawDate'])return _0x1fd3f7['rawDate']-_0xc3addf['rawDate'];return normalizeStr(_0x1fd3f7['dateStr'])['localeComp'+'are'](normalizeStr(_0xc3addf['dateStr']),'es');});if(!_0x2c2eb7['length']){_0x3d68af['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20históri'+'co\x20para\x20la'+'\x20selección'+'\x20actual.</'+'td></tr>';return;}_0x3d68af['innerHTML']=_0x2c2eb7['slice'](0x0,0xc8)['map'](_0x19a9ac=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'\x20class=\x22ho'+'ver:bg-cya'+'n-50\x20trans'+'ition\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'d\x20class=\x22p'+'-3\x20font-bo'+'ld\x20text-sl'+'ate-700\x22>'+escapeHtml(normalizeStr(_0x19a9ac['unit']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-slat'+'e-600\x22>')+escapeHtml(normalizeStr(_0x19a9ac['company']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-slat'+'e-600\x20font'+'-mono\x22>')+escapeHtml(normalizeStr(_0x19a9ac['dateStr']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-500\x22>')+escapeHtml(monthNamesFull[_0x19a9ac['monthIdx']]||'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'))['join']('');}function renderWashHighFrequencyTable(_0x40965b){const _0x467203=document['getElement'+'ById']('washHighFr'+'eqBody'),_0x3cd1b0=document['getElement'+'ById']('washHighFr'+'eqCount');if(!_0x467203||!_0x3cd1b0)return;const _0x4a3eaa=(Array['isArray'](_0x40965b)?_0x40965b:[])['filter'](_0x200f67=>!isExcludedWashFilterUnit(_0x200f67)),_0x3f31b9={};_0x4a3eaa['forEach'](_0x10bec2=>{const _0x4800d6=normalizeStr(_0x10bec2['unit'])['toUpperCas'+'e']();if(!_0x4800d6)return;if(!_0x3f31b9[_0x4800d6])_0x3f31b9[_0x4800d6]={'unit':normalizeStr(_0x10bec2['unit']),'rows':[]};_0x3f31b9[_0x4800d6]['rows']['push'](_0x10bec2);});const _0x5621fc=Object['values'](_0x3f31b9)['map'](_0x299325=>{const _0x285d23=_0x299325['rows']['filter'](_0x4a1124=>_0x4a1124['rawDate']instanceof Date)['sort']((_0x28e99f,_0x51e8e1)=>_0x28e99f['rawDate']-_0x51e8e1['rawDate']);let _0x520b3e=0x0,_0x1c81fc=0x0,_0x315ad1=null;for(let _0x217ab6=0x1;_0x217ab6<_0x285d23['length'];_0x217ab6++){const _0x2a11be=_0x285d23[_0x217ab6-0x1]['rawDate'],_0xace3a9=_0x285d23[_0x217ab6]['rawDate'],_0x18b877=Math['floor']((_0xace3a9-_0x2a11be)/(0x3e8*0x3c*0x3c*0x18));if(_0x18b877<0x0)continue;_0x315ad1=_0x18b877,_0x18b877<0x1e&&(_0x520b3e++,_0x1c81fc+=_0x18b877);}if(_0x520b3e<=0x0)return null;const _0x2604dc=_0x285d23['length']?_0x285d23[_0x285d23['length']-0x1]:_0x299325['rows'][_0x299325['rows']['length']-0x1]||null;return{'unit':normalizeStr(_0x299325['unit']),'company':normalizeStr(_0x2604dc&&_0x2604dc['company'])||'-','shortCycleCount':_0x520b3e,'avgShortCycle':_0x520b3e>0x0?_0x1c81fc/_0x520b3e:0x0,'lastGap':_0x315ad1==null?'-':_0x315ad1+'\x20d','totalWashes':_0x285d23['length']};})['filter'](Boolean);_0x5621fc['sort']((_0x29c727,_0x36a1f8)=>{if(_0x36a1f8['shortCycle'+'Count']!==_0x29c727['shortCycle'+'Count'])return _0x36a1f8['shortCycle'+'Count']-_0x29c727['shortCycle'+'Count'];if(_0x29c727['avgShortCy'+'cle']!==_0x36a1f8['avgShortCy'+'cle'])return _0x29c727['avgShortCy'+'cle']-_0x36a1f8['avgShortCy'+'cle'];return _0x36a1f8['totalWashe'+'s']-_0x29c727['totalWashe'+'s'];}),_0x3cd1b0['innerText']=_0x5621fc['length']['toLocaleSt'+'ring']('es-MX');if(!_0x5621fc['length']){_0x467203['innerHTML']='<tr><td\x20co'+'lspan=\x227\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20unidade'+'s\x20con\x20frec'+'uencia\x20&lt'+';\x2030\x20días\x20'+'en\x20el\x20peri'+'odo.</td><'+'/tr>';return;}const _0x48645e=_0x333a6d=>{if(_0x333a6d['shortCycle'+'Count']>=0x8||_0x333a6d['avgShortCy'+'cle']<=0xe)return{'label':'ALTO','css':'bg-red-100'+'\x20text-red-'+'700'};if(_0x333a6d['shortCycle'+'Count']>=0x4||_0x333a6d['avgShortCy'+'cle']<=0x15)return{'label':'MEDIO','css':'bg-amber-1'+'00\x20text-am'+'ber-700'};return{'label':'BAJO','css':'bg-green-1'+'00\x20text-gr'+'een-700'};};_0x467203['innerHTML']=_0x5621fc['slice'](0x0,0x14)['map'](_0x53b786=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'\x20class=\x22ho'+'ver:bg-amb'+'er-50\x20tran'+'sition\x22>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'td\x20class=\x22'+'p-2\x20text-c'+'enter\x22><sp'+'an\x20class=\x22'+'px-2\x20py-0.'+'5\x20rounded\x20'+'text-[10px'+']\x20font-bol'+'d\x20'+_0x48645e(_0x53b786)['css']+'\x22>'+_0x48645e(_0x53b786)['label']+('</span></t'+'d>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<td\x20cla'+'ss=\x22p-2\x20fo'+'nt-bold\x20te'+'xt-slate-7'+'00\x22>')+escapeHtml(_0x53b786['unit'])+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-slat'+'e-600\x22>')+escapeHtml(_0x53b786['company'])+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-cent'+'er\x20font-mo'+'no\x20font-bo'+'ld\x20text-ro'+'se-600\x22>')+_0x53b786['shortCycle'+'Count']['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-cent'+'er\x20font-mo'+'no\x20text-sl'+'ate-600\x22>')+_0x53b786['avgShortCy'+'cle']['toFixed'](0x1)+('\x20d</td>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'d\x20class=\x22p'+'-2\x20text-ce'+'nter\x20font-'+'mono\x20text-'+'slate-500\x22'+'>')+_0x53b786['lastGap']+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-cent'+'er\x20font-mo'+'no\x20text-sl'+'ate-500\x22>')+_0x53b786['totalWashe'+'s']['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'))['join']('');}function hasFuelSpecificSelection(){return currentFuelSelectedUnit['length']>0x0||currentFuelSelectedOperator['length']>0x0||!!currentFuelSearchUnit||!!currentFuelSearchOperator;}function toggleFuelRankingMode(_0x5b4425){const _0x2e0e8a=document['getElement'+'ById']('fuelTopRan'+'kingsConta'+'iner'),_0x1b5f1c=document['getElement'+'ById']('fuelSpecif'+'icSummaryC'+'ontainer');if(_0x2e0e8a)_0x2e0e8a['classList']['toggle']('hidden',_0x5b4425);if(_0x1b5f1c)_0x1b5f1c['classList']['toggle']('hidden',!_0x5b4425);}function renderFuelSpecificSummaryRows(_0x362995,_0x16d7a3){const _0x550441=document['getElement'+'ById']('fuelSpecif'+'icSummaryT'+'itle'),_0x498d22=document['getElement'+'ById']('fuelSpecif'+'icSummaryS'+'ubtitle'),_0x3c382d=document['getElement'+'ById']('fuelSpecif'+'icHeaderEn'+'tity'),_0x56e737=document['getElement'+'ById']('fuelSpecif'+'icSummaryB'+'ody');if(!_0x550441||!_0x498d22||!_0x3c382d||!_0x56e737)return;const _0xad4874=_0x16d7a3==='UNIT',_0x5f3895=_0xad4874?currentFuelSelectedUnit['length']?currentFuelSelectedUnit:[currentFuelSearchUnit]:currentFuelSelectedOperator['length']?currentFuelSelectedOperator:[currentFuelSearchOperator],_0x2a765c=_0x5f3895['filter'](Boolean)['join'](',\x20');_0x550441['innerText']=_0xad4874?'Operadores'+'\x20por\x20Unida'+'d\x20Seleccio'+'nada':'Unidades\x20p'+'or\x20Operado'+'r\x20Seleccio'+'nado',_0x498d22['innerText']=_0x2a765c?'Selección:'+'\x20'+_0x2a765c:'',_0x3c382d['innerText']=_0xad4874?'Operador':'Unidad';const _0xca367={};_0x362995['forEach'](_0x4e3b69=>{const _0x321d23=_0xad4874?normalizeStr(_0x4e3b69['operator']||'SIN\x20OPERAD'+'OR')['toUpperCas'+'e']():normalizeStr(_0x4e3b69['unit']||'SIN\x20UNIDAD')['toUpperCas'+'e']();if(!_0xca367[_0x321d23])_0xca367[_0x321d23]={'km':0x0,'liters':0x0,'count':0x0};_0xca367[_0x321d23]['km']+=_0x4e3b69['km']||0x0,_0xca367[_0x321d23]['liters']+=_0x4e3b69['liters']||0x0,_0xca367[_0x321d23]['count']+=0x1;});const _0x3bd680=Object['entries'](_0xca367)['map'](([_0x7ea5e2,_0x2fe377])=>({'name':_0x7ea5e2,'km':_0x2fe377['km'],'liters':_0x2fe377['liters'],'yield':_0x2fe377['liters']>0x0?_0x2fe377['km']/_0x2fe377['liters']:0x0,'count':_0x2fe377['count']}))['sort']((_0x46ab2b,_0x58ee84)=>_0x58ee84['yield']-_0x46ab2b['yield']);if(!_0x3bd680['length']){_0x56e737['innerHTML']='<tr><td\x20co'+'lspan=\x225\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x20it'+'alic\x22>Sin\x20'+'datos\x20para'+'\x20la\x20selecc'+'ión</td></'+'tr>';return;}_0x56e737['innerHTML']=_0x3bd680['map']((_0x2480a7,_0xdb03af)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'\x20class=\x22ho'+'ver:bg-sla'+'te-50\x20bord'+'er-b\x20borde'+'r-slate-10'+'0\x22>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20f'+'ont-semibo'+'ld\x20text-sl'+'ate-700\x22>'+(_0xdb03af+0x1)+'.\x20'+escapeHtml(_0x2480a7['name'])+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-righ'+'t\x20text-sla'+'te-500\x20fon'+'t-mono\x22>')+_0x2480a7['km']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-righ'+'t\x20text-sla'+'te-500\x20fon'+'t-mono\x22>')+_0x2480a7['liters']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20font-bo'+'ld\x20text-te'+'al-700\x22>')+_0x2480a7['yield']['toFixed'](0x2)+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-500\x22>')+_0x2480a7['count']['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'))['join']('');}function getLossCompanyScopedRows(){if(!Array['isArray'](dbLoss)||!dbLoss['length'])return[];if(currentLossCompanyFilter==='ALL')return dbLoss;return dbLoss['filter'](_0x19c9aa=>_0x19c9aa['company']===currentLossCompanyFilter);}function getLossSuggestionOptions(_0x1852b8){const _0x4a5d02=getLossCompanyScopedRows(),_0x11ec09=new Set();return _0x4a5d02['forEach'](_0x8a1541=>{if(_0x1852b8==='TU'){if(_0x8a1541['tractor'])_0x11ec09['add'](_0x8a1541['tractor']);if(_0x8a1541['unit'])_0x11ec09['add'](_0x8a1541['unit']);}else{if(_0x8a1541['operator'])_0x11ec09['add'](_0x8a1541['operator']);}}),Array['from'](_0x11ec09)['sort']((_0x218426,_0x47a475)=>_0x218426['localeComp'+'are'](_0x47a475,'es',{'sensitivity':'base'}));}function syncLossSelectedInfo(){const _0x3071db=document['getElement'+'ById']('lossSelect'+'edTUInfo'),_0x9bc8e1=document['getElement'+'ById']('lossSelect'+'edOperator'+'Info');if(_0x3071db){if(currentLossSelectedTU['length'])_0x3071db['innerText']=currentLossSelectedTU['length']+('\x20seleccion'+'ados');else _0x3071db['innerText']='';}if(_0x9bc8e1){if(currentLossSelectedOperator['length'])_0x9bc8e1['innerText']=currentLossSelectedOperator['length']+('\x20seleccion'+'ados');else _0x9bc8e1['innerText']='';}}function syncLossExclusiveFilterState(){const _0x25fd5a=document['getElement'+'ById']('lossFilter'+'TU'),_0x86ce5b=document['getElement'+'ById']('lossFilter'+'Operator'),_0x395fa0=document['getElement'+'ById']('lossSugges'+'tTU'),_0x2f2c3b=document['getElement'+'ById']('lossSugges'+'tOperator');currentLossSelectedTU['length']>0x0&&currentLossSelectedOperator['length']>0x0&&(currentLossSelectedOperator=[]);const _0x25c9c4=currentLossSelectedOperator['length']>0x0,_0x3c1f69=currentLossSelectedTU['length']>0x0;if(_0x25c9c4){currentLossSelectedTU=[],currentLossSearchTU='';if(_0x25fd5a)_0x25fd5a['value']='';if(_0x395fa0)_0x395fa0['classList']['remove']('show');}if(_0x3c1f69){currentLossSelectedOperator=[],currentLossSearchOperator='';if(_0x86ce5b)_0x86ce5b['value']='';if(_0x2f2c3b)_0x2f2c3b['classList']['remove']('show');}_0x25fd5a&&(_0x25fd5a['disabled']=_0x25c9c4,_0x25fd5a['classList']['toggle']('bg-slate-1'+'00',_0x25c9c4),_0x25fd5a['classList']['toggle']('text-slate'+'-400',_0x25c9c4),_0x25fd5a['classList']['toggle']('cursor-not'+'-allowed',_0x25c9c4),_0x25fd5a['placeholde'+'r']=_0x25c9c4?'Tractor\x20o\x20'+'Unidad\x20(de'+'shabilitad'+'o)':'Tractor\x20o\x20'+'Unidad'),_0x86ce5b&&(_0x86ce5b['disabled']=_0x3c1f69,_0x86ce5b['classList']['toggle']('bg-slate-1'+'00',_0x3c1f69),_0x86ce5b['classList']['toggle']('text-slate'+'-400',_0x3c1f69),_0x86ce5b['classList']['toggle']('cursor-not'+'-allowed',_0x3c1f69),_0x86ce5b['placeholde'+'r']=_0x3c1f69?'Operador\x20('+'deshabilit'+'ado)':'Operador'),syncLossSelectedInfo();}function sanitizeLossSelectedOptions(){const _0x3df286=new Set(getLossSuggestionOptions('TU')),_0xd99a5a=new Set(getLossSuggestionOptions('OP'));currentLossSelectedTU=currentLossSelectedTU['filter'](_0x3cc7dc=>_0x3df286['has'](_0x3cc7dc)),currentLossSelectedOperator=currentLossSelectedOperator['filter'](_0x5c2a78=>_0xd99a5a['has'](_0x5c2a78)),syncLossExclusiveFilterState();}function renderLossSuggestions(_0x14c1f9){const _0x6680df=_0x14c1f9==='TU'?'lossFilter'+'TU':'lossFilter'+'Operator',_0x4ffb03=_0x14c1f9==='TU'?'lossSugges'+'tTU':'lossSugges'+'tOperator',_0x391802=_0x14c1f9==='TU'?currentLossSelectedTU:currentLossSelectedOperator,_0x412a52=document['getElement'+'ById'](_0x6680df),_0x5668d2=document['getElement'+'ById'](_0x4ffb03);if(!_0x412a52||!_0x5668d2)return;if(_0x412a52['disabled']){_0x5668d2['classList']['remove']('show');return;}const _0x305830=normalizeStr(_0x412a52['value'])['toUpperCas'+'e'](),_0x55eb0f=getLossSuggestionOptions(_0x14c1f9)['filter'](_0xa3fed2=>!_0x305830||_0xa3fed2['includes'](_0x305830))['slice'](0x0,0x50);if(!_0x55eb0f['length']){_0x5668d2['innerHTML']='<div\x20class'+'=\x22px-2\x20py-'+'2\x20text-xs\x20'+'text-slate'+'-400\x22>Sin\x20'+'coincidenc'+'ias</div>',_0x5668d2['classList']['add']('show');return;}_0x5668d2['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<di'+'v\x20class=\x22p'+'x-2\x20py-1\x20b'+'order-b\x20bo'+'rder-slate'+'-100\x20flex\x20'+'items-cent'+'er\x20justify'+'-between\x20t'+'ext-[10px]'+'\x20text-slat'+'e-500\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<s'+'pan>'+(_0x14c1f9==='TU'?'Tractor\x20/\x20'+'Unidad':'Operador')+('</span>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<b'+'utton\x20clas'+'s=\x22text-in'+'digo-600\x20h'+'over:text-'+'indigo-800'+'\x20font-bold'+'\x22\x20onclick='+'\x22window.cl'+'earLossSug'+'gestionSel'+'ection(\x27')+_0x14c1f9+('\x27)\x22>Limpia'+'r</button>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20</d'+'iv>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')+_0x55eb0f['map'](_0x303eae=>{const _0x2ca8a2=encodeURIComponent(_0x303eae),_0x31e501=_0x391802['includes'](_0x303eae)?'checked':'';return'<label\x20cla'+'ss=\x22cursor'+'-pointer\x20p'+'x-2\x20py-1\x20h'+'over:bg-sl'+'ate-50\x20fle'+'x\x20items-ce'+'nter\x20gap-2'+'\x20text-xs\x20t'+'ext-slate-'+'700\x22><inpu'+'t\x20type=\x22ch'+'eckbox\x22\x20'+_0x31e501+('\x20onchange='+'\x22window.to'+'ggleLossSu'+'ggestionSe'+'lection(\x27')+_0x14c1f9+'\x27,\x27'+_0x2ca8a2+('\x27,this.che'+'cked)\x22>\x20<s'+'pan>')+escapeHtml(_0x303eae)+('</span></l'+'abel>');})['join']('')+('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20'),_0x5668d2['classList']['add']('show');}function toggleLossSuggestionSelection(_0xc2c7b2,_0x1a5bfe,_0x187d37){const _0x520c0e=decodeURIComponent(_0x1a5bfe||'');if(!_0x520c0e)return;if(_0x187d37&&_0xc2c7b2==='TU'){currentLossSelectedOperator=[],currentLossSearchOperator='';const _0x345dfc=document['getElement'+'ById']('lossFilter'+'Operator');if(_0x345dfc)_0x345dfc['value']='';}else{if(_0x187d37&&_0xc2c7b2==='OP'){currentLossSelectedTU=[],currentLossSearchTU='';const _0x4d9712=document['getElement'+'ById']('lossFilter'+'TU');if(_0x4d9712)_0x4d9712['value']='';}}const _0x39849a=_0xc2c7b2==='TU'?currentLossSelectedTU:currentLossSelectedOperator,_0x119036=_0x39849a['indexOf'](_0x520c0e);if(_0x187d37&&_0x119036===-0x1)_0x39849a['push'](_0x520c0e);if(!_0x187d37&&_0x119036>=0x0)_0x39849a['splice'](_0x119036,0x1);syncLossExclusiveFilterState();}function clearLossSuggestionSelection(_0x3aef9e){if(_0x3aef9e==='TU')currentLossSelectedTU=[];else currentLossSelectedOperator=[];syncLossExclusiveFilterState(),renderLossSuggestions(_0x3aef9e);}function updateLossCompanyButtons(){const _0x1036c9={'ALL':'loss-compa'+'ny-ALL','Yucarro':'loss-compa'+'ny-YUCARRO','T2020':'loss-compa'+'ny-T2020','CR\x20MID':'loss-compa'+'ny-CRMID','CR\x20LPZ':'loss-compa'+'ny-CRLPZ'};Object['entries'](_0x1036c9)['forEach'](([_0x394717,_0x2b1333])=>{const _0x2c120a=document['getElement'+'ById'](_0x2b1333);if(!_0x2c120a)return;_0x2c120a['classList']['toggle']('active',currentLossCompanyFilter===_0x394717);});}function updateLossLitersModeButtons(){const _0xa5ccdf={'ABS':'loss-liter'+'s-mode-ABS','PCT':'loss-liter'+'s-mode-PCT'};Object['entries'](_0xa5ccdf)['forEach'](([_0x427505,_0x376466])=>{const _0xc1e2c1=document['getElement'+'ById'](_0x376466);if(!_0xc1e2c1)return;_0xc1e2c1['classList']['toggle']('active',currentLossLitersMode===_0x427505);});}function setLossLitersMode(_0x5c1981){const _0x484ba5=['ABS','PCT'];currentLossLitersMode=_0x484ba5['includes'](_0x5c1981)?_0x5c1981:'PCT',updateLossLitersModeButtons();if(moduleState['currentTab']==='loss')runLossAnalysis();}function setLossLowRankBy(_0x2849d1){const _0x829a48=['OPERADOR','UNIDAD'];currentLossLowRankBy=_0x829a48['includes'](_0x2849d1)?_0x2849d1:'OPERADOR';const _0x1a4876=document['getElement'+'ById']('lossLowRan'+'kBy');if(_0x1a4876&&_0x1a4876['value']!==currentLossLowRankBy)_0x1a4876['value']=currentLossLowRankBy;if(moduleState['currentTab']==='loss')runLossAnalysis();}function setLossTopOrder(_0x5c7824){const _0x530c68=['MENOR','MAYOR'];currentLossTopOrder=_0x530c68['includes'](_0x5c7824)?_0x5c7824:'MENOR';const _0x188ce6=document['getElement'+'ById']('lossTopOrd'+'er');if(_0x188ce6&&_0x188ce6['value']!==currentLossTopOrder)_0x188ce6['value']=currentLossTopOrder;if(moduleState['currentTab']==='loss')runLossAnalysis();}function setLossCompanyFilter(_0x536835){const _0x1ea069=['ALL','Yucarro','T2020','CR\x20MID','CR\x20LPZ'];currentLossCompanyFilter=_0x1ea069['includes'](_0x536835)?_0x536835:'ALL',updateLossCompanyButtons(),sanitizeLossSelectedOptions();if(moduleState['currentTab']==='loss')runLossAnalysis();}function applyLossSearchFilters(){const _0xb226fd=document['getElement'+'ById']('lossFilter'+'TU'),_0x22f38d=document['getElement'+'ById']('lossFilter'+'Operator');currentLossSearchTU=normalizeStr(_0xb226fd?_0xb226fd['value']:'')['toUpperCas'+'e'](),currentLossSearchOperator=normalizeStr(_0x22f38d?_0x22f38d['value']:'')['toUpperCas'+'e'](),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='loss')runLossAnalysis();}function clearLossSearchFilters(){currentLossSearchTU='',currentLossSearchOperator='',currentLossSelectedTU=[],currentLossSelectedOperator=[];const _0x4ebc9b=document['getElement'+'ById']('lossFilter'+'TU'),_0x439831=document['getElement'+'ById']('lossFilter'+'Operator');if(_0x4ebc9b)_0x4ebc9b['value']='';if(_0x439831)_0x439831['value']='';syncLossExclusiveFilterState(),hideAllCheckboxDropdowns();if(moduleState['currentTab']==='loss')runLossAnalysis();}function processLossData(_0xd0cd2a,_0x152036,_0x1fcf55){const _0x52d850=['date','tractor','unit','operator','origin','destinatio'+'n'],_0x48f799=(_0x464df6,_0x50813c)=>{if(!Array['isArray'](_0x464df6)||!_0x464df6['length'])return[];return _0x464df6['map'](_0xa9c169=>{const _0x49a4c3=getValue(_0xa9c169,'date','loss'),_0x18f5e6=getValue(_0xa9c169,'tractor','loss'),_0x195150=getValue(_0xa9c169,'unit','loss'),_0x5bf414=getValue(_0xa9c169,'operator','loss'),_0x1143b1=getValue(_0xa9c169,'origin','loss'),_0x406a65=getValue(_0xa9c169,'destinatio'+'n','loss'),_0x580e61={'date':normalizeStr(_0x49a4c3),'tractor':normalizeStr(_0x18f5e6)['toUpperCas'+'e'](),'unit':normalizeStr(_0x195150)['toUpperCas'+'e'](),'operator':normalizeStr(_0x5bf414)['toUpperCas'+'e'](),'origin':normalizeStr(_0x1143b1)['toUpperCas'+'e'](),'destination':normalizeStr(_0x406a65)['toUpperCas'+'e']()},_0x1c824e=_0x52d850['some'](_0x12fe93=>!_0x580e61[_0x12fe93]),_0x26bb7c=parseFlexibleDate(_0x580e61['date']);if(_0x1c824e||!_0x26bb7c)return null;const _0x52a376=_0x26bb7c['getFullYea'+'r'](),_0x488a54=_0x26bb7c['getMonth']();let _0x29139d=_0x50813c;if(_0x50813c==='Corpored'){const _0x502e0a=_0x580e61['origin']['replace'](/[^A-Z0-9 ]+/g,'\x20')['replace'](/\s+/g,'\x20')['trim']();_0x29139d=_0x502e0a['includes']('TAD\x20LA\x20PAZ')?'CR\x20LPZ':'CR\x20MID';}return{'company':_0x29139d,'date':_0x580e61['date'],'dateObj':_0x26bb7c,'year':_0x52a376,'month':_0x488a54,'monthKey':_0x52a376+'-'+String(_0x488a54+0x1)['padStart'](0x2,'0'),'tractor':_0x580e61['tractor'],'unit':_0x580e61['unit'],'operator':_0x580e61['operator'],'origin':_0x580e61['origin'],'destination':_0x580e61['destinatio'+'n'],'ingresos':safeFloat(getValue(_0xa9c169,'ingresos','loss')),'ingresosPeajes':safeFloat(getValue(_0xa9c169,'ingresosPe'+'ajes','loss')),'litersTransported':safeFloat(getValue(_0xa9c169,'litersTran'+'sported','loss')),'litersFaltSabana':safeFloat(getValue(_0xa9c169,'litersFalt'+'Sabana','loss')),'diffSiic':safeFloat(getValue(_0xa9c169,'diffSiic','loss')),'importeSiic':safeFloat(getValue(_0xa9c169,'importeSii'+'c','loss')),'litersFaltSiic':safeFloat(getValue(_0xa9c169,'litersFalt'+'Siic','loss')),'litersCondonaPemex':safeFloat(getValue(_0xa9c169,'litersCond'+'onaPemex','loss')),'litersDescPemex':safeFloat(getValue(_0xa9c169,'litersDesc'+'Pemex','loss')),'importeDescPemex':safeFloat(getValue(_0xa9c169,'importeDes'+'cPemex','loss')),'litersAbsTyuc':safeFloat(getValue(_0xa9c169,'litersAbsT'+'yuc','loss')),'importeAbsTyuc':safeFloat(getValue(_0xa9c169,'importeAbs'+'Tyuc','loss')),'litersDescOperador':safeFloat(getValue(_0xa9c169,'litersDesc'+'Operador','loss')),'importeDescOperador':safeFloat(getValue(_0xa9c169,'importeDes'+'cOperador','loss')),'viajes':safeFloat(getValue(_0xa9c169,'viajes','loss'))||0x0};})['filter'](_0x4f582a=>_0x4f582a!==null);},_0x32e8b7=_0x48f799(_0xd0cd2a,'Yucarro'),_0x571ade=_0x48f799(_0x152036,'T2020'),_0x443a76=_0x48f799(_0x1fcf55,'Corpored');dbLoss=[..._0x32e8b7,..._0x571ade,..._0x443a76],sanitizeLossSelectedOptions();const _0x5603f0=_0x443a76['filter'](_0x5874fe=>_0x5874fe['company']==='CR\x20MID')['length'],_0x393f9d=_0x443a76['filter'](_0x3748fa=>_0x3748fa['company']==='CR\x20LPZ')['length'];safeSetText('lossCount',dbLoss['length']),logStatus('Faltante:\x20'+dbLoss['length']+('\x20registros'+'\x20consolida'+'dos\x20(')+_0x32e8b7['length']+'\x20YUC,\x20'+_0x571ade['length']+'\x20T2020,\x20'+_0x5603f0+'\x20CR\x20MID,\x20'+_0x393f9d+'\x20CR\x20LPZ).','info');if(moduleState['currentTab']==='loss')runLossAnalysis();}function runLossAnalysis(){if(!Array['isArray'](dbLoss)||dbLoss['length']===0x0){safeSetText('lossCount',0x0),safeSetText('lossKpiTra'+'nsported','0'),safeSetText('lossKpiSii'+'c','0'),safeSetText('lossKpiPct','0.000%'),safeSetText('lossKpiDes'+'cPemex','0'),safeSetText('lossKpiDes'+'cOper','0'),safeSetText('lossKpiImp'+'orte','$0');const _0x594a96=document['getElement'+'ById']('lossRoutes'+'Body');if(_0x594a96)_0x594a96['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20datos</'+'td></tr>';updateLossCompanyButtons(),updateLossLitersModeButtons();return;}const _0x20454c=currentLossCompanyFilter==='ALL'?dbLoss['slice']():dbLoss['filter'](_0xdc0851=>_0xdc0851['company']===currentLossCompanyFilter),_0x2dc11f=new Set(currentLossSelectedTU),_0xd0ee36=new Set(currentLossSelectedOperator),_0x5e3cf2=_0x20454c['filter'](_0x3403b5=>{const _0x2e4be8=_0x2dc11f['size']>0x0?_0x2dc11f['has'](_0x3403b5['tractor'])||_0x2dc11f['has'](_0x3403b5['unit']):!currentLossSearchTU||_0x3403b5['tractor']['includes'](currentLossSearchTU)||_0x3403b5['unit']['includes'](currentLossSearchTU),_0xd46646=_0xd0ee36['size']>0x0?_0xd0ee36['has'](_0x3403b5['operator']):!currentLossSearchOperator||_0x3403b5['operator']['includes'](currentLossSearchOperator);return _0x2e4be8&&_0xd46646;}),_0x33cc=currentLossLitersMode==='PCT',_0x43a8ff=_0x5e3cf2['reduce']((_0x39a146,_0xb6d49d)=>_0x39a146+_0xb6d49d['litersTran'+'sported'],0x0),_0x118771=_0x5e3cf2['reduce']((_0x2e02d2,_0x2ed798)=>_0x2e02d2+_0x2ed798['litersFalt'+'Siic'],0x0),_0x3188f2=_0x5e3cf2['reduce']((_0x5aa22d,_0x217564)=>_0x5aa22d+_0x217564['litersDesc'+'Pemex'],0x0),_0x51c7f0=_0x5e3cf2['reduce']((_0x4d52a8,_0x1875cf)=>_0x4d52a8+_0x1875cf['litersDesc'+'Operador'],0x0),_0x37f422=_0x5e3cf2['reduce']((_0x19b3ac,_0x531803)=>_0x19b3ac+_0x531803['importeDes'+'cPemex']+_0x531803['importeDes'+'cOperador'],0x0),_0x55998a=_0x43a8ff>0x0?_0x118771/_0x43a8ff*0x64:0x0;safeSetText('lossCount',_0x5e3cf2['length']),safeSetText('lossKpiTra'+'nsported',_0x43a8ff['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})),safeSetText('lossKpiSii'+'c',_0x118771['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})),safeSetText('lossKpiPct',_0x55998a['toFixed'](0x3)+'%'),safeSetText('lossKpiDes'+'cPemex',_0x3188f2['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})),safeSetText('lossKpiDes'+'cOper',_0x51c7f0['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})),safeSetText('lossKpiImp'+'orte','$'+_0x37f422['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})),safeSetText('lossCompan'+'yChartTitl'+'e',_0x33cc?'Comparativ'+'o\x20por\x20Empr'+'esa\x20(%\x20+\x20I'+'mporte)':'Comparativ'+'o\x20por\x20Empr'+'esa\x20(LTS\x20+'+'\x20Importe)'),safeSetText('lossMonthl'+'yChartTitl'+'e',_0x33cc?'Tendencia\x20'+'Mensual\x20%\x20'+'Faltante\x20S'+'IIC':'Tendencia\x20'+'Mensual\x20LT'+'S\x20Faltante'+'\x20SIIC'),safeSetText('lossLiters'+'BreakdownT'+'itle',_0x33cc?'Desglose\x20d'+'e\x20Litros\x20('+'%\x20sobre\x20tr'+'ansportado'+')':'Desglose\x20d'+'e\x20Litros\x20('+'Pemex\x20/\x20Ab'+'sorción\x20/\x20'+'Operador)');const _0x41909a=currentLossLowRankBy==='UNIDAD'?'Unidades':'Operadores',_0x3115b1=currentLossTopOrder==='MAYOR'?'Mayor':'Menor';safeSetText('lossOperat'+'orChartTit'+'le','Top\x20'+_0x41909a+'\x20con\x20'+_0x3115b1+('\x20LTS\x20Falta'+'nte\x20SIIC'));const _0x525b1d=document['getElement'+'ById']('lossLowRan'+'kBy');if(_0x525b1d&&_0x525b1d['value']!==currentLossLowRankBy)_0x525b1d['value']=currentLossLowRankBy;const _0x8dde=document['getElement'+'ById']('lossTopOrd'+'er');if(_0x8dde&&_0x8dde['value']!==currentLossTopOrder)_0x8dde['value']=currentLossTopOrder;const _0x250b81=['Yucarro','T2020','CR\x20MID','CR\x20LPZ'],_0xbb7aee=isColorblind?{'DESC_PEMEX':'#009E73','ABS_TRANSP':'#F0E442','DESC_OPERADOR':'#D55E00'}:LOSS_PREFIX_COLORS,_0x5efb63={'Yucarro':'#0072B2','T2020':'#E69F00','CR\x20MID':'#009E73','CR\x20LPZ':'#CC79A7','Corpored':'#009E73','La\x20Paz':'#CC79A7'},_0x4a3f8f={'Yucarro':{'short':'YUC','color':isColorblind?_0x5efb63['Yucarro']:COMPANY_COLORS['YUC']||COMPANY_COLORS['YUCARRO']||'#00B0F0'},'T2020':{'short':'T2020','color':isColorblind?_0x5efb63['T2020']:COMPANY_COLORS['T2020']||'#4472C4'},'CR\x20MID':{'short':'CR\x20MID','color':isColorblind?_0x5efb63['CR\x20MID']:COMPANY_COLORS['CR']||COMPANY_COLORS['CORPORED']||'#ED7D31'},'CR\x20LPZ':{'short':'CR\x20LPZ','color':isColorblind?_0x5efb63['CR\x20LPZ']:COMPANY_COLORS['CR\x20LPZ']||COMPANY_COLORS['LA\x20PAZ']||'#DAA0FA'},'Corpored':{'short':'CR','color':isColorblind?_0x5efb63['Corpored']:COMPANY_COLORS['CR']||COMPANY_COLORS['CORPORED']||'#ED7D31'},'La\x20Paz':{'short':'CR\x20LPZ','color':isColorblind?_0x5efb63['La\x20Paz']:COMPANY_COLORS['CR\x20LPZ']||COMPANY_COLORS['LA\x20PAZ']||'#DAA0FA'}},_0x5cff94=_0x250b81['map'](_0x505b46=>{const _0x1266d0=_0x5e3cf2['filter'](_0x21d4e6=>_0x21d4e6['company']===_0x505b46),_0x37ea7b=_0x1266d0['reduce']((_0x3c80af,_0x451f4f)=>_0x3c80af+_0x451f4f['litersTran'+'sported'],0x0),_0xdb3747=_0x1266d0['reduce']((_0x3d583b,_0xeb1ea2)=>_0x3d583b+_0xeb1ea2['litersFalt'+'Siic'],0x0),_0x3889e5=_0x1266d0['reduce']((_0x21f3c7,_0x52a3ef)=>_0x21f3c7+_0x52a3ef['importeDes'+'cPemex']+_0x52a3ef['importeDes'+'cOperador'],0x0),_0x71ed98=_0x4a3f8f[_0x505b46]||{'short':_0x505b46,'color':'#334155'};return{'company':_0x505b46,'short':_0x71ed98['short'],'color':_0x71ed98['color'],'transported':_0x37ea7b,'siic':_0xdb3747,'pct':_0x37ea7b>0x0?_0xdb3747/_0x37ea7b*0x64:0x0,'importe':_0x3889e5};})['filter'](_0x254727=>currentLossCompanyFilter==='ALL'?!![]:_0x254727['company']===currentLossCompanyFilter);initChart('lossCompan'+'yChart','bar',{'labels':_0x5cff94['map'](_0x46996d=>_0x46996d['short']),'datasets':[{'type':'bar','label':_0x33cc?'%\x20Faltante'+'\x20SIIC':'LTS\x20Faltan'+'te\x20SIIC','data':_0x5cff94['map'](_0xe5c94e=>_0x33cc?_0xe5c94e['pct']:_0xe5c94e['siic']),'backgroundColor':_0x5cff94['map'](_0x8a420=>_0x8a420['color']),'yAxisID':'y'},{'type':'line','label':'Importe\x20De'+'sc.\x20Total','data':_0x5cff94['map'](_0x245aa4=>_0x245aa4['importe']),'borderColor':isColorblind?'#111827':'#0f172a','pointBackgroundColor':'#ffffff','pointBorderColor':isColorblind?'#111827':'#0f172a','pointBorderWidth':0x2,'yAxisID':'y1','tension':0.25}]},{'scales':{'y':{'type':'linear','position':'left','title':{'display':!![],'text':_0x33cc?'%\x20Faltante':'Litros'},'ticks':{'callback':_0x3550c4=>_0x33cc?Number(_0x3550c4)['toFixed'](0x2)+'%':Number(_0x3550c4)['toLocaleSt'+'ring']('es-MX')}},'y1':{'type':'linear','position':'right','title':{'display':!![],'text':'Importe\x20($'+')'},'grid':{'drawOnChartArea':![]},'ticks':{'callback':_0xb14867=>'$'+Number(_0xb14867)['toLocaleSt'+'ring']('es-MX')}}},'plugins':{'tooltip':{'callbacks':{'label':_0x7eafd9=>{const _0x553d3f=_0x7eafd9['dataset']?.['label']?_0x7eafd9['dataset']['label']+':\x20':'',_0x514114=_0x7eafd9['raw'],_0x539a4b=_0x514114&&typeof _0x514114==='object'&&_0x514114!==null&&_0x514114['y']!==undefined?_0x514114['y']:_0x514114;if(_0x7eafd9['dataset']?.['yAxisID']==='y1'||/importe/i['test'](_0x7eafd9['dataset']?.['label']||''))return''+_0x553d3f+formatCurrencyMX(_0x539a4b);if(_0x33cc)return''+_0x553d3f+Number(_0x539a4b)['toFixed'](0x2)+'%';return''+_0x553d3f+Number(_0x539a4b)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0});}}},'datalabels':{'display':![]}}});const _0x228d4b=currentLossCompanyFilter==='ALL'?_0x250b81:[currentLossCompanyFilter],_0x910286=[...new Set(_0x20454c['map'](_0x146f77=>_0x146f77['monthKey']))]['sort'](),_0x2fe31d=_0x910286['map'](_0xda1cf4=>{const [_0xe51471,_0x5e3824]=_0xda1cf4['split']('-')['map'](Number);return monthNamesFull[_0x5e3824-0x1]['substring'](0x0,0x3)+'\x20'+String(_0xe51471)['substring'](0x2);}),_0x479b14=_0x228d4b['map'](_0x338d9d=>{const _0x4cfee2={};return _0x5e3cf2['filter'](_0x1c6b38=>_0x1c6b38['company']===_0x338d9d)['forEach'](_0x587339=>{if(!_0x4cfee2[_0x587339['monthKey']])_0x4cfee2[_0x587339['monthKey']]={'trans':0x0,'siic':0x0};_0x4cfee2[_0x587339['monthKey']]['trans']+=_0x587339['litersTran'+'sported'],_0x4cfee2[_0x587339['monthKey']]['siic']+=_0x587339['litersFalt'+'Siic'];}),{'label':_0x4a3f8f[_0x338d9d]?.['short']||_0x338d9d,'data':_0x910286['map'](_0x54e3ec=>{const _0xda5cc3=_0x4cfee2[_0x54e3ec]||{'trans':0x0,'siic':0x0};if(!_0x33cc)return _0xda5cc3['siic'];return _0xda5cc3['trans']>0x0?_0xda5cc3['siic']/_0xda5cc3['trans']*0x64:0x0;}),'borderColor':_0x4a3f8f[_0x338d9d]?.['color']||'#334155','backgroundColor':'transparen'+'t','tension':0.25};});initChart('lossMonthl'+'yChart','line',{'labels':_0x2fe31d,'datasets':_0x479b14},{'scales':{'y':{'title':{'display':!![],'text':_0x33cc?'%\x20Faltante'+'\x20SIIC':'LTS\x20Faltan'+'te\x20SIIC'},'ticks':{'callback':_0xeb5691=>_0x33cc?Number(_0xeb5691)['toFixed'](0x2)+'%':Number(_0xeb5691)['toLocaleSt'+'ring']('es-MX')}}},'plugins':{'datalabels':{'display':![]}}});const _0x13e866=_0x250b81['map'](_0x1ca3fd=>{const _0x4157cc=_0x5e3cf2['filter'](_0xcc679f=>_0xcc679f['company']===_0x1ca3fd);return{'company':_0x1ca3fd,'short':_0x4a3f8f[_0x1ca3fd]?.['short']||_0x1ca3fd,'transported':_0x4157cc['reduce']((_0x55be55,_0x5e6e5d)=>_0x55be55+_0x5e6e5d['litersTran'+'sported'],0x0),'litersDescPemex':_0x4157cc['reduce']((_0x2994a7,_0x305c79)=>_0x2994a7+_0x305c79['litersDesc'+'Pemex'],0x0),'litersAbsTyuc':_0x4157cc['reduce']((_0x419271,_0xfb412e)=>_0x419271+_0xfb412e['litersAbsT'+'yuc'],0x0),'litersDescOperador':_0x4157cc['reduce']((_0x1ba694,_0x5c2709)=>_0x1ba694+_0x5c2709['litersDesc'+'Operador'],0x0),'importeDescPemex':_0x4157cc['reduce']((_0x38f39f,_0x59c702)=>_0x38f39f+_0x59c702['importeDes'+'cPemex'],0x0),'importeAbsTyuc':_0x4157cc['reduce']((_0x4bba94,_0x5dd0fd)=>_0x4bba94+_0x5dd0fd['importeAbs'+'Tyuc'],0x0),'importeDescOperador':_0x4157cc['reduce']((_0x56cbd0,_0x1791c0)=>_0x56cbd0+_0x1791c0['importeDes'+'cOperador'],0x0)};})['filter'](_0x5f408f=>currentLossCompanyFilter==='ALL'?!![]:_0x5f408f['company']===currentLossCompanyFilter),_0x59278d=_0x13e866['map'](_0x37dbfb=>_0x37dbfb['short']),_0x37a386=(_0x2c9792,_0xb13696)=>{if(!_0x33cc)return _0x2c9792;if(_0xb13696<=0x0)return 0x0;return _0x2c9792/_0xb13696*0x64;};initChart('lossLiters'+'BreakdownC'+'hart','bar',{'labels':_0x59278d,'datasets':[{'label':_0x33cc?'DESC\x20PEMEX'+'\x20(%)':'LTS\x20FALTAN'+'TE\x20DESC\x20PE'+'MEX','data':_0x13e866['map'](_0x295756=>_0x37a386(_0x295756['litersDesc'+'Pemex'],_0x295756['transporte'+'d'])),'backgroundColor':_0xbb7aee['DESC_PEMEX'],'stack':'lit'},{'label':_0x33cc?'ABS\x20TRANSP'+'.\x20(%)':'LTS\x20FALTAN'+'TE\x20ABS\x20TRA'+'NSP.','data':_0x13e866['map'](_0x4c9820=>_0x37a386(_0x4c9820['litersAbsT'+'yuc'],_0x4c9820['transporte'+'d'])),'backgroundColor':_0xbb7aee['ABS_TRANSP'],'stack':'lit'},{'label':_0x33cc?'DESC\x20OPERA'+'DOR\x20(%)':'LTS\x20FALTAN'+'TE\x20DESC\x20OP'+'ERADOR','data':_0x13e866['map'](_0x5bdea6=>_0x37a386(_0x5bdea6['litersDesc'+'Operador'],_0x5bdea6['transporte'+'d'])),'backgroundColor':_0xbb7aee['DESC_OPERA'+'DOR'],'stack':'lit'}]},{'scales':{'x':{'stacked':!![]},'y':{'stacked':!![],'title':{'display':!![],'text':_0x33cc?'%\x20sobre\x20tr'+'ansportado':'Litros'},'ticks':{'callback':_0x1ee213=>_0x33cc?Number(_0x1ee213)['toFixed'](0x2)+'%':Number(_0x1ee213)['toLocaleSt'+'ring']('es-MX')}}},'plugins':{'datalabels':{'display':![]}}}),initChart('lossAmount'+'BreakdownC'+'hart','bar',{'labels':_0x59278d,'datasets':[{'label':'IMPORTE\x20FA'+'LTANTE\x20DES'+'C\x20PEMEX','data':_0x13e866['map'](_0x2da7a7=>_0x2da7a7['importeDes'+'cPemex']),'backgroundColor':_0xbb7aee['DESC_PEMEX'],'stack':'amt'},{'label':'IMP.\x20FALT\x20'+'ABS\x20TRANSP'+'.','data':_0x13e866['map'](_0x5d89c8=>_0x5d89c8['importeAbs'+'Tyuc']),'backgroundColor':_0xbb7aee['ABS_TRANSP'],'stack':'amt'},{'label':'IMPORTE\x20FA'+'LTANTE\x20DES'+'C\x20OPERADOR','data':_0x13e866['map'](_0x4186fa=>_0x4186fa['importeDes'+'cOperador']),'backgroundColor':_0xbb7aee['DESC_OPERA'+'DOR'],'stack':'amt'}]},{'scales':{'x':{'stacked':!![]},'y':{'stacked':!![],'title':{'display':!![],'text':'Importe\x20($'+')'},'ticks':{'callback':_0x16aa3d=>formatCurrencyMX(_0x16aa3d)}}},'plugins':{'tooltip':{'callbacks':{'label':_0x5a9f90=>{const _0x18eb8f=_0x5a9f90['dataset']?.['label']?_0x5a9f90['dataset']['label']+':\x20':'';return''+_0x18eb8f+formatCurrencyMX(_0x5a9f90['raw']);}}},'datalabels':{'display':![]}}});const _0x5326aa={};_0x5e3cf2['forEach'](_0x300bcf=>{!_0x5326aa[_0x300bcf['monthKey']]&&(_0x5326aa[_0x300bcf['monthKey']]={'pemex':0x0,'abs':0x0,'oper':0x0}),_0x5326aa[_0x300bcf['monthKey']]['pemex']+=_0x300bcf['importeDes'+'cPemex'],_0x5326aa[_0x300bcf['monthKey']]['abs']+=_0x300bcf['importeAbs'+'Tyuc'],_0x5326aa[_0x300bcf['monthKey']]['oper']+=_0x300bcf['importeDes'+'cOperador'];}),initChart('lossMonthl'+'yAmountCha'+'rt','bar',{'labels':_0x2fe31d,'datasets':[{'label':'Imp.\x20Desc\x20'+'Pemex','data':_0x910286['map'](_0x15487a=>_0x5326aa[_0x15487a]?.['pemex']||0x0),'backgroundColor':_0xbb7aee['DESC_PEMEX'],'stack':'mamt'},{'label':'Imp.\x20Abs\x20T'+'ransp.','data':_0x910286['map'](_0x19f4c1=>_0x5326aa[_0x19f4c1]?.['abs']||0x0),'backgroundColor':_0xbb7aee['ABS_TRANSP'],'stack':'mamt'},{'label':'Imp.\x20Desc\x20'+'Operador','data':_0x910286['map'](_0x462fde=>_0x5326aa[_0x462fde]?.['oper']||0x0),'backgroundColor':_0xbb7aee['DESC_OPERA'+'DOR'],'stack':'mamt'}]},{'scales':{'x':{'stacked':!![]},'y':{'stacked':!![],'title':{'display':!![],'text':'Importe\x20($'+')'},'ticks':{'callback':_0xd96776=>formatCurrencyMX(_0xd96776)}}},'plugins':{'tooltip':{'callbacks':{'label':_0x1c2fba=>{const _0x1acd7a=_0x1c2fba['dataset']?.['label']?_0x1c2fba['dataset']['label']+':\x20':'';return''+_0x1acd7a+formatCurrencyMX(_0x1c2fba['raw']);}}},'datalabels':{'display':![]}}});const _0x2e3924={};_0x5e3cf2['forEach'](_0x4a5a3e=>{const _0xbf38dd=currentLossLowRankBy==='UNIDAD'?_0x4a5a3e['unit']||'SIN\x20UNIDAD':_0x4a5a3e['operator']||'SIN\x20OPERAD'+'OR';if(!_0x2e3924[_0xbf38dd])_0x2e3924[_0xbf38dd]={'siic':0x0,'transported':0x0,'trips':0x0};_0x2e3924[_0xbf38dd]['siic']+=_0x4a5a3e['litersFalt'+'Siic'],_0x2e3924[_0xbf38dd]['transporte'+'d']+=_0x4a5a3e['litersTran'+'sported'],_0x2e3924[_0xbf38dd]['trips']+=_0x4a5a3e['viajes']>0x0?_0x4a5a3e['viajes']:0x1;});const _0x45c93c=currentLossTopOrder==='MENOR',_0x5e8d02=Object['entries'](_0x2e3924)['map'](([_0x266c7f,_0x348109])=>({'name':_0x266c7f,'siic':_0x348109['siic'],'pct':_0x348109['transporte'+'d']>0x0?_0x348109['siic']/_0x348109['transporte'+'d']*0x64:0x0,'trips':_0x348109['trips'],'avgPerTrip':_0x348109['trips']>0x0?_0x348109['siic']/_0x348109['trips']:0x0}))['sort']((_0xf9a222,_0x525417)=>_0x45c93c?_0xf9a222['siic']-_0x525417['siic']:_0x525417['siic']-_0xf9a222['siic'])['slice'](0x0,0xa);initChart('lossOperat'+'orChart','bar',{'indexAxis':'y','labels':_0x5e8d02['map'](_0x4e37b3=>_0x4e37b3['name']),'datasets':[{'label':'LTS\x20Faltan'+'te\x20SIIC','data':_0x5e8d02['map'](_0xc4753=>_0xc4753['siic']),'backgroundColor':_0x45c93c?isColorblind?'#0072B2':'#16a34a':isColorblind?'#D55E00':'#dc2626','pcts':_0x5e8d02['map'](_0x5859c7=>_0x5859c7['pct']),'siicVals':_0x5e8d02['map'](_0x3e9ef2=>_0x3e9ef2['siic']),'tripsVals':_0x5e8d02['map'](_0x886ed5=>_0x886ed5['trips']),'avgVals':_0x5e8d02['map'](_0x1dd74b=>_0x1dd74b['avgPerTrip'])}]},{'plugins':{'tooltip':{'callbacks':{'label':_0x408bd6=>{const _0x384dc6=_0x408bd6['dataset']['siicVals'][_0x408bd6['dataIndex']];return'LTS\x20Faltan'+'te:\x20'+Number(_0x384dc6)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0});},'afterLabel':_0x218715=>{const _0x154efe=_0x218715['dataset']['pcts'][_0x218715['dataIndex']],_0x2976a1=_0x218715['dataset']['tripsVals'][_0x218715['dataIndex']],_0x5a48be=_0x218715['dataset']['avgVals'][_0x218715['dataIndex']];return['Viajes:\x20'+Number(_0x2976a1)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2}),'Promedio\x20L'+'TS/viaje:\x20'+Number(_0x5a48be)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2}),'Porcentaje'+':\x20'+Number(_0x154efe)['toFixed'](0x3)+'%'];}}},'datalabels':{'color':'#ffffff','anchor':'end','align':'start','font':{'weight':'bold','size':0xa}}},'scales':{'x':{'ticks':{'callback':_0x16b95f=>Number(_0x16b95f)['toLocaleSt'+'ring']('es-MX')}}}});const _0x439c3e={};_0x5e3cf2['forEach'](_0x188e49=>{const _0x46aa60=_0x188e49['origin']+'\x20->\x20'+_0x188e49['destinatio'+'n'];if(!_0x439c3e[_0x46aa60])_0x439c3e[_0x46aa60]={'count':0x0,'siic':0x0,'transported':0x0};_0x439c3e[_0x46aa60]['count']+=0x1,_0x439c3e[_0x46aa60]['siic']+=_0x188e49['litersFalt'+'Siic'],_0x439c3e[_0x46aa60]['transporte'+'d']+=_0x188e49['litersTran'+'sported'];});const _0xc234d7=Object['entries'](_0x439c3e)['map'](([_0xa5839a,_0x19aa52])=>({'route':_0xa5839a,'count':_0x19aa52['count'],'siic':_0x19aa52['siic'],'pct':_0x19aa52['transporte'+'d']>0x0?_0x19aa52['siic']/_0x19aa52['transporte'+'d']*0x64:0x0}))['sort']((_0xaea5d5,_0xa29632)=>_0xa29632['siic']-_0xaea5d5['siic'])['slice'](0x0,0xc),_0x38f112=document['getElement'+'ById']('lossRoutes'+'Body');_0x38f112&&(!_0xc234d7['length']?_0x38f112['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20datos</'+'td></tr>':_0x38f112['innerHTML']=_0xc234d7['map'](_0xeaf80a=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<tr\x20c'+'lass=\x22hove'+'r:bg-amber'+'-50\x20border'+'-b\x20border-'+'slate-100\x22'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-3\x20font-'+'semibold\x20t'+'ext-slate-'+'700\x22>'+escapeHtml(normalizeStr(_0xeaf80a['route']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20text-slat'+'e-500\x22>')+_0xeaf80a['count']['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-right\x20'+'font-mono\x20'+'text-red-6'+'00\x22>')+_0xeaf80a['siic']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-right\x20'+'font-mono\x20'+'text-amber'+'-700\x22>')+_0xeaf80a['pct']['toFixed'](0x3)+('%</td>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20</tr>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20'))['join']('')),updateLossCompanyButtons(),updateLossLitersModeButtons();}function formatChartNumber(_0x1ce98c){if(_0x1ce98c===null||_0x1ce98c===undefined||_0x1ce98c==='')return'-';if(typeof _0x1ce98c!=='number')return String(_0x1ce98c);if(!isFinite(_0x1ce98c))return'-';if(Math['abs'](_0x1ce98c)>=0x3e8)return _0x1ce98c['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0});if(Math['abs'](_0x1ce98c)>=0x64)return _0x1ce98c['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x1});return _0x1ce98c['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2});}function formatCurrencyMX(_0x419c6b){const _0x1c9ba4=Number(_0x419c6b||0x0);return'$'+_0x1c9ba4['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0});}function initChart(_0x408f0a,_0x405c74,_0x1b6e74,_0x375962){const _0x230c48=document['getElement'+'ById'](_0x408f0a);if(!_0x230c48)return;if(charts[_0x408f0a])charts[_0x408f0a]['destroy']();const _0x380106={'responsive':!![],'maintainAspectRatio':![],'resizeDelay':0x78,'indexAxis':_0x1b6e74['indexAxis']||'x','onClick':_0x1b6e74['onClick'],'interaction':{'mode':_0x405c74==='line'?'index':'nearest','intersect':_0x405c74==='line'?![]:!![]},'animation':{'duration':0x1c2,'easing':'easeOutCub'+'ic'},'plugins':{'legend':{'display':_0x405c74!=='bar'||_0x1b6e74['scales']?.['x']?.['stacked'],'labels':{'usePointStyle':!![],'pointStyle':'circle','padding':0xc,'boxWidth':0xa}},'tooltip':{'callbacks':{'label':_0x4ece47=>{const _0x1de476=_0x4ece47['dataset']?.['label']?_0x4ece47['dataset']['label']+':\x20':'',_0x4468d5=_0x4ece47['raw'];if(_0x4468d5&&typeof _0x4468d5==='object'&&_0x4468d5!==null&&_0x4468d5['y']!==undefined)return''+_0x1de476+formatChartNumber(_0x4468d5['y']);return''+_0x1de476+formatChartNumber(_0x4468d5);}}},'annotation':_0x1b6e74['annotation'],'datalabels':{'color':_0x405c74==='doughnut'?'#ffffff':'#475569','font':{'weight':'bold','size':0xb},'clamp':!![],'display':_0x412c7f=>{if(window['innerWidth']<0x300)return![];const _0x566345=_0x412c7f['chart']?.['data']?.['labels']?.['length']||_0x412c7f['dataset']?.['data']?.['length']||0x0;if(_0x566345>0x12)return![];const _0x19dac6=_0x412c7f['dataset']?.['data']?.[_0x412c7f['dataIndex']];if(typeof _0x19dac6==='number')return _0x19dac6!==0x0;return!!_0x19dac6;},'formatter':(_0x229fd4,_0x2198bb)=>{if(_0x2198bb['chart']['canvas']['id']==='strategyCh'+'art')return _0x229fd4['model']?_0x229fd4['model']:'';if(_0x405c74==='doughnut'&&_0x2198bb['chart']['canvas']['id']==='providerCh'+'art')return _0x229fd4;if(_0x405c74==='doughnut'&&_0x2198bb['chart']['canvas']['id']==='scrapReaso'+'nChart'){let _0x37ea3d=0x0,_0x2bef48=_0x2198bb['chart']['data']['datasets'][0x0]['data'];_0x2bef48['map'](_0x3b016e=>{_0x37ea3d+=_0x3b016e;});let _0x6cc396=(_0x229fd4*0x64/_0x37ea3d)['toFixed'](0x1)+'%';return _0x6cc396;}if(_0x1b6e74['scales']?.['x']?.['stacked'])return _0x229fd4>0x0?_0x229fd4:'';if(_0x2198bb['chart']['canvas']['id']==='wasteChart')return'';return'';}}},'scales':_0x1b6e74['scales']||{}};_0x1b6e74['plugins']&&(_0x380106['plugins']={..._0x380106['plugins'],..._0x1b6e74['plugins']});if(_0x375962){const {plugins:_0x1ac342,..._0x4ae8fb}=_0x375962;_0x1ac342&&(_0x380106['plugins']={..._0x380106['plugins'],..._0x1ac342}),Object['assign'](_0x380106,_0x4ae8fb);}_0x380106['scales']?.['x']&&!_0x380106['scales']['x']['ticks']&&(_0x380106['scales']['x']['ticks']={'autoSkip':!![],'maxRotation':0x2d,'minRotation':0x0}),_0x380106['scales']?.['y']&&!_0x380106['scales']['y']['ticks']&&(_0x380106['scales']['y']['ticks']={'callback':_0x5bdf90=>formatChartNumber(_0x5bdf90)}),charts[_0x408f0a]=new Chart(_0x230c48,{'type':_0x405c74,'data':_0x1b6e74,'options':_0x380106});}function renderDrillDownTable(_0x496877,_0x5a4424){const _0x3f6fb0=document['getElement'+'ById']('drillDownC'+'ontainer'),_0x9cf2df=document['getElement'+'ById']('drillDownB'+'ody'),_0x3e73cc=document['getElement'+'ById']('drillDownT'+'itle');if(!_0x3f6fb0||!_0x9cf2df)return;const _0x1a14f0=getFilteredPerformanceData(!![]),_0x5e95f9=_0x1a14f0['filter'](_0x46a7ff=>_0x46a7ff['brand']+'\x20'+_0x46a7ff['model']===_0x496877&&_0x46a7ff['type']===_0x5a4424),_0x595075=RANKING_RULES[_0x5a4424];let _0x2e4ea7=_0x5e95f9;_0x595075&&(_0x2e4ea7=_0x5e95f9['filter'](_0x213ad1=>{if(_0x213ad1['km']<=_0x595075['minKm'])return![];if(!isFinite(_0x213ad1['efficiency']))return![];if(_0x213ad1['efficiency']<=_0x595075['minEff']||_0x213ad1['efficiency']>=_0x595075['maxEff'])return![];return!![];}));const _0x5e1f7d=_0x5e95f9['length']-_0x2e4ea7['length'];let _0x37f8ab='Total:\x20'+_0x2e4ea7['length']['toLocaleSt'+'ring']('es-MX')+'\x20llantas';_0x5e1f7d>0x0&&(_0x37f8ab+='\x20<span\x20cla'+'ss=\x22text-o'+'range-500\x20'+'font-norma'+'l\x20ml-1\x22>('+_0x5e1f7d+('\x20ocultas\x20p'+'or\x20filtros'+')</span>')),_0x3e73cc['innerHTML']='<span\x20clas'+'s=\x22font-bo'+'ld\x22>'+escapeHtml(normalizeStr(_0x496877))+'</span>\x20('+escapeHtml(normalizeStr(_0x5a4424))+')\x20-\x20'+_0x37f8ab,_0x9cf2df['innerHTML']='',_0x2e4ea7['length']===0x0?_0x9cf2df['innerHTML']='<tr><td\x20co'+'lspan=\x229\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>N'+'inguna\x20lla'+'nta\x20de\x20est'+'e\x20modelo\x20c'+'umple\x20con\x20'+'los\x20criter'+'ios\x20estric'+'tos\x20del\x20se'+'gmento\x20('+(_0x595075?_0x595075['label']:'Sin\x20Reglas')+(').</td></t'+'r>'):_0x2e4ea7['forEach']((_0x2b2462,_0x23fdea)=>{_0x9cf2df['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'indigo-50\x20'+'border-b\x20b'+'order-indi'+'go-50\x22><td'+'\x20class=\x22p-'+'3\x20text-cen'+'ter\x20text-s'+'late-400\x20f'+'ont-bold\x20t'+'ext-xs\x22>'+(_0x23fdea+0x1)+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20text-ind'+'igo-900\x20fo'+'nt-bold\x22>')+escapeHtml(normalizeStr(_0x2b2462['unit']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x22>')+escapeHtml(normalizeStr(_0x2b2462['folio']))+('</td><td\x20c'+'lass=\x22p-3\x22'+'>')+escapeHtml(normalizeStr(_0x2b2462['brand']))+('</td><td\x20c'+'lass=\x22p-3\x22'+'>')+escapeHtml(normalizeStr(_0x2b2462['model']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x22>')+_0x2b2462['mm']+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x22>')+_0x2b2462['km']['toLocaleSt'+'ring']('es-MX')+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x20text-blu'+'e-600\x22>')+_0x2b2462['efficiency']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-right'+'\x20font-bold'+'\x20text-slat'+'e-800\x22>$')+_0x2b2462['cpk']['toFixed'](0x4)+'</td></tr>';}),_0x3f6fb0['classList']['remove']('hidden'),_0x3f6fb0['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function renderDynamicPerformanceCharts(_0x1145a9){const _0xfa2aaf=document['getElement'+'ById']('dynamicCha'+'rtsContain'+'er');let _0x4d442c='';const _0x2f6c49=currentFilter==='ALL'?['Delanteras','Tracción','Toda\x20Posic'+'ión']:[currentFilter],_0x5b8853=_0x1145a9['filter'](_0x15d4b5=>_0x15d4b5['type']==='Sin\x20Clasif'+'icar')['length'];_0x5b8853>0x0&&currentFilter==='ALL'&&_0x2f6c49['push']('Sin\x20Clasif'+'icar'),_0x2f6c49['forEach'](_0x13882a=>{const _0xfb5e4='cpkChart'+_0x13882a['replace'](/\s/g,''),_0x3a25de='lg:col-spa'+'n-2';_0x4d442c+='<div\x20class'+'=\x22'+_0x3a25de+('\x20bg-white\x20'+'p-6\x20rounde'+'d-xl\x20shado'+'w-sm\x20borde'+'r\x20border-s'+'late-200\x20c'+'ursor-poin'+'ter\x20hover:'+'shadow-md\x20'+'transition'+'-shadow\x22><'+'h3\x20class=\x22'+'text-xs\x20fo'+'nt-bold\x20te'+'xt-slate-5'+'00\x20upperca'+'se\x20mb-4\x22>')+_0x13882a+('</h3><div\x20'+'class=\x22h-6'+'4\x20w-full\x22>'+'<canvas\x20id'+'=\x22')+_0xfb5e4+('\x22></canvas'+'></div><p\x20'+'class=\x22tex'+'t-[10px]\x20t'+'ext-center'+'\x20text-slat'+'e-400\x20mt-2'+'\x20italic\x22>H'+'az\x20clic\x20en'+'\x20una\x20barra'+'\x20para\x20ver\x20'+'detalle</p'+'></div>');}),_0xfa2aaf['innerHTML']=_0x4d442c,setTimeout(()=>{_0x2f6c49['forEach'](_0x13b839=>{const _0x1a8253='cpkChart'+_0x13b839['replace'](/\s/g,''),_0x123eb5=_0x1145a9['filter'](_0x859111=>_0x859111['type']===_0x13b839);_0x123eb5['sort']((_0x1f9a97,_0x2d58cc)=>(_0x2d58cc['avgKm']||0x0)-(_0x1f9a97['avgKm']||0x0));const _0x17979d=_0x123eb5['reduce']((_0x500616,_0x222b8a)=>_0x500616+(_0x222b8a['avgCPK']||0x0),0x0)/(_0x123eb5['length']||0x1),_0x3faf77=isNaN(_0x17979d)||!isFinite(_0x17979d)?0x0:_0x17979d,_0x195dc1=_0x123eb5['slice'](0x0,0xa),_0x430271=isColorblind?'#56B4E9':'#22c55e',_0x4169ac=isColorblind?'#D55E00':'#ef4444',_0x156d22=isColorblind?'#E69F00':'#eab308',_0x4c560a=_0x195dc1['map'](_0x36f51a=>_0x36f51a['avgCPK']<_0x3faf77*0.9?_0x430271:_0x36f51a['avgCPK']>_0x3faf77*1.1?_0x4169ac:_0x156d22),_0x2dea93=_0x195dc1['map'](_0x4b5ee3=>_0x4b5ee3['isTrailer']?_0x4b5ee3['name']+'\x20🚛':_0x4b5ee3['name']),_0x530872={'annotations':{'avgLine':{'type':'line','yMin':_0x3faf77,'yMax':_0x3faf77,'borderColor':_0x4169ac,'borderWidth':0x2,'borderDash':[0x5,0x5],'label':{'content':'Prom:\x20$'+_0x3faf77['toFixed'](0x2),'display':!![],'position':'end','backgroundColor':'rgba(239,\x20'+'68,\x2068,\x200.'+'8)','color':'white','font':{'size':0xa,'weight':'bold'}}}}};initChart(_0x1a8253,'bar',{'labels':_0x2dea93,'datasets':[{'label':'CPK\x20($)','data':_0x195dc1['map'](_0x4b885e=>_0x4b885e['avgCPK']),'backgroundColor':_0x4c560a,'borderRadius':0x4,'avgKms':_0x195dc1['map'](_0x3dc53e=>_0x3dc53e['avgKm'])}],'annotation':_0x530872},{'plugins':{'datalabels':{'display':!![],'anchor':'end','align':'end','color':'#64748b','font':{'size':0xa,'weight':'bold'},'formatter':(_0x2c791b,_0x4e9639)=>{if(_0x4e9639['dataset']['avgKms']&&_0x4e9639['dataset']['avgKms'][_0x4e9639['dataIndex']]){const _0x57a95a=_0x4e9639['dataset']['avgKms'][_0x4e9639['dataIndex']];return(_0x57a95a/0x3e8)['toFixed'](0x0)+'k';}return'';}}},'onClick':(_0x5121b6,_0x25f7ea,_0x164455)=>{if(_0x25f7ea['length']){const _0x331506=_0x25f7ea[0x0]['index'],_0x1e5e4a=_0x164455['data']['labels'][_0x331506],_0x517598=_0x1e5e4a['replace']('\x20🚛','');renderDrillDownTable(_0x517598,_0x13b839);}}});});},0x64);}function buildDesignCandidateKeys(_0x222ba0){const _0x482230=normalizeDesignToken(_0x222ba0);if(!_0x482230)return[];const _0x24bf10=new Set([_0x482230]);if(_0x482230['endsWith']('S')&&_0x482230['length']>0x3)_0x24bf10['add'](_0x482230['slice'](0x0,-0x1));if(!_0x482230['endsWith']('S'))_0x24bf10['add'](_0x482230+'S');return Array['from'](_0x24bf10);}function renderCpkGoalSummaryDrillDown(_0x44911d){const _0x1455f8=document['getElement'+'ById']('cpkGoalSum'+'maryDrillC'+'ontainer'),_0x50e58e=document['getElement'+'ById']('cpkGoalSum'+'maryDrillT'+'itle'),_0x2fed2b=document['getElement'+'ById']('cpkGoalSum'+'maryDrillB'+'ody');if(!_0x1455f8||!_0x50e58e||!_0x2fed2b)return;const _0x4e46b4=Array['isArray'](_0x44911d&&_0x44911d['detailRows'])?_0x44911d['detailRows']:[],_0xda7b55=[..._0x4e46b4]['sort']((_0x36c9fd,_0x20cb72)=>(Number(_0x20cb72['km'])||0x0)-(Number(_0x36c9fd['km'])||0x0)),_0x2f1e36=_0xda7b55['length'],_0x4412cb=_0x44911d&&_0x44911d['kmAct']?_0x44911d['kmAct']:0x0,_0xaecf77=_0x44911d&&_0x44911d['kpkAct']?_0x44911d['kpkAct']:0x0;_0x50e58e['innerText']=normalizeStr(_0x44911d['design'])+'\x20|\x20'+normalizeStr(_0x44911d['brand'])+'\x20|\x20'+normalizeStr(_0x44911d['tireTypeTe'+'xt'])+'\x20|\x20'+_0x2f1e36+('\x20llantas\x20u'+'sadas\x20|\x20Km'+'\x20Prom:\x20')+_0x4412cb['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+'\x20|\x20KPK:\x20$'+_0xaecf77['toFixed'](0x4);if(!_0xda7b55['length']){_0x2fed2b['innerHTML']='<tr><td\x20co'+'lspan=\x229\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20detalle'+'\x20disponibl'+'e\x20para\x20est'+'e\x20diseño.<'+'/td></tr>',_0x1455f8['classList']['remove']('hidden');return;}_0x2fed2b['innerHTML']=_0xda7b55['map']((_0x1cc60e,_0x209ced)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'\x20class=\x22ho'+'ver:bg-ind'+'igo-50\x22>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'td\x20class=\x22'+'p-3\x20text-c'+'enter\x20text'+'-slate-400'+'\x20font-bold'+'\x20text-xs\x22>'+(_0x209ced+0x1)+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-in'+'digo-900\x20f'+'ont-bold\x22>')+escapeHtml(normalizeStr(_0x1cc60e['unit']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x22>')+escapeHtml(normalizeStr(_0x1cc60e['folio']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x22>')+escapeHtml(normalizeStr(_0x1cc60e['brand']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20font-semi'+'bold\x20text-'+'slate-700\x22'+'>')+escapeHtml(normalizeStr(_0x1cc60e['model']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x22>')+escapeHtml(normalizeStr(_0x1cc60e['type']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20font-mo'+'no\x22>')+(Number(_0x1cc60e['km'])||0x0)['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20font-mo'+'no\x20text-bl'+'ue-600\x22>')+(Number(_0x1cc60e['efficiency'])||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-3'+'\x20text-righ'+'t\x20font-bol'+'d\x20text-sla'+'te-800\x22>$')+(Number(_0x1cc60e['cpk'])||0x0)['toFixed'](0x4)+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'))['join'](''),_0x1455f8['classList']['remove']('hidden'),_0x1455f8['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function renderCpkGoalSummary(_0x282772){const _0x8c9976=document['getElement'+'ById']('cpkGoalSum'+'maryContai'+'ner'),_0x54c94f=document['getElement'+'ById']('cpkGoalSum'+'maryHead'),_0x287ddb=document['getElement'+'ById']('cpkGoalSum'+'maryBody'),_0xd9a087=document['getElement'+'ById']('cpkGoalSum'+'maryEmpty'),_0x5266aa=document['getElement'+'ById']('cpkGoalSum'+'maryCount'),_0x269d07=document['getElement'+'ById']('cpkGoalKpi'+'MetaKm'),_0x489d86=document['getElement'+'ById']('cpkGoalKpi'+'MetaKpk'),_0x446d7e=document['getElement'+'ById']('cpkGoalKpi'+'RiskHigh'),_0x1935a6=document['getElement'+'ById']('cpkGoalSum'+'maryDrillC'+'ontainer');if(!_0x8c9976||!_0x54c94f||!_0x287ddb||!_0xd9a087||!_0x5266aa||!_0x269d07||!_0x489d86||!_0x446d7e)return;if(currentPerformanceStatusFilter==='CONCLUIDA'){_0x8c9976['classList']['add']('hidden');if(_0x1935a6)_0x1935a6['classList']['add']('hidden');return;}_0x8c9976['classList']['remove']('hidden');const _0x20a23f=document['getElement'+'ById']('cpkGoalSum'+'maryRuleTe'+'xt');_0x20a23f&&(_0x20a23f['innerText']='Filtros\x20ap'+'licados:\x20S'+'e\x20excluyen'+'\x20Delantera'+'s.\x20Tracció'+'n:\x20Km\x20>\x2028'+'0k\x20(Top\x2030'+'\x20por\x20diseñ'+'o).\x20Toda\x20P'+'osición:\x20K'+'m\x20>\x20300k\x20('+'Top\x2030\x20por'+'\x20diseño).');const _0x3e711d=new Set(['Tracción','Toda\x20Posic'+'ión']),_0x21942f=(Array['isArray'](_0x282772)?_0x282772:[])['filter'](_0x3ea2ba=>_0x3ea2ba['status']==='ACTIVA'&&_0x3e711d['has'](_0x3ea2ba['type'])),_0x5e4178={},_0x34ee95={};_0x21942f['forEach']((_0x1c8219,_0x58f5a4)=>{const _0x3bbc93=buildDesignCandidateKeys(_0x1c8219['model']),_0x5de781=buildGoalBrandCandidates(_0x1c8219['brand']);_0x3bbc93['forEach'](_0x2ca5b3=>{if(!_0x5e4178[_0x2ca5b3])_0x5e4178[_0x2ca5b3]=new Set();_0x5e4178[_0x2ca5b3]['add'](_0x58f5a4),_0x5de781['forEach'](_0x50dce3=>{const _0x14677d=_0x50dce3+'|'+_0x2ca5b3;if(!_0x34ee95[_0x14677d])_0x34ee95[_0x14677d]=new Set();_0x34ee95[_0x14677d]['add'](_0x58f5a4);});});});const _0x5a5d4a=(_0x36ecd5,_0x5999e5)=>{if(!_0x5999e5||!(_0x5999e5 instanceof Set))return;_0x5999e5['forEach'](_0xbe00e4=>_0x36ecd5['add'](_0xbe00e4));},_0x52579d=_0x472653=>{const _0xc5530e=buildDesignCandidateKeys(_0x472653['design']),_0x51eed0=buildGoalBrandCandidates(_0x472653['brand']),_0x42f9c3=new Set();_0x51eed0['length']>0x0&&_0x51eed0['forEach'](_0x346d0c=>{_0xc5530e['forEach'](_0xcd86f2=>_0x5a5d4a(_0x42f9c3,_0x34ee95[_0x346d0c+'|'+_0xcd86f2]));});_0x42f9c3['size']===0x0&&_0xc5530e['forEach'](_0x53c4e8=>_0x5a5d4a(_0x42f9c3,_0x5e4178[_0x53c4e8]));if(_0x42f9c3['size']===0x0){const _0x5d5694=normalizeDesignToken(_0x472653['design']);_0x5d5694['length']>=0x5&&Object['entries'](_0x34ee95)['forEach'](([_0x108f03,_0x2f3a27])=>{if(!_0x2f3a27||!_0x2f3a27['size'])return;const _0x1b9e6a=_0x108f03['indexOf']('|');if(_0x1b9e6a<0x0)return;const _0x128289=_0x108f03['slice'](0x0,_0x1b9e6a),_0x4ed755=_0x108f03['slice'](_0x1b9e6a+0x1);if(_0x51eed0['length']>0x0&&!_0x51eed0['includes'](_0x128289))return;const _0xcd6238=_0x4ed755['startsWith'](_0x5d5694)||_0x5d5694['startsWith'](_0x4ed755);if(!_0xcd6238)return;_0x5a5d4a(_0x42f9c3,_0x2f3a27);});}if(_0x42f9c3['size']===0x0){const _0x56aa03=normalizeDesignToken(_0x472653['design']);_0x56aa03['length']>=0x5&&Object['entries'](_0x5e4178)['forEach'](([_0x454c02,_0x2769b8])=>{if(!_0x2769b8||!_0x2769b8['size'])return;const _0x224a17=_0x454c02['startsWith'](_0x56aa03)||_0x56aa03['startsWith'](_0x454c02);if(!_0x224a17)return;_0x5a5d4a(_0x42f9c3,_0x2769b8);});}return Array['from'](_0x42f9c3);},_0x57f0cc=(Array['isArray'](dbCpkGoals)?dbCpkGoals:[])['filter'](_0x240194=>_0x240194&&_0x240194['tireType']!=='DELANTERA')['map'](_0x467e11=>{const _0x3b974e=CPK_GOAL_SUMMARY_RULES[_0x467e11['tireType']];if(!_0x3b974e)return null;const _0x5453ff=_0x52579d(_0x467e11)['map'](_0x3f44f2=>_0x21942f[_0x3f44f2])['filter'](_0x5183cc=>_0x5183cc&&_0x5183cc['type']===_0x3b974e['segment']&&(Number(_0x5183cc['km'])||0x0)>_0x3b974e['minKm'])['sort']((_0x30de01,_0x190b8b)=>(Number(_0x190b8b['km'])||0x0)-(Number(_0x30de01['km'])||0x0))['slice'](0x0,_0x3b974e['topN']),_0x516c6f=_0x5453ff['reduce']((_0x11c538,_0x1f38f2)=>{return _0x11c538['sumKm']+=Number(_0x1f38f2['km'])||0x0,_0x11c538['sumCost']+=Number(_0x1f38f2['cost'])||0x0,_0x11c538['count']+=0x1,_0x11c538;},{'sumKm':0x0,'sumCost':0x0,'count':0x0}),_0x27dc1f=_0x516c6f['count']>0x0?_0x516c6f['sumKm']/_0x516c6f['count']:0x0,_0x360698=_0x516c6f['sumKm']>0x0?_0x516c6f['sumCost']/_0x516c6f['sumKm']:0x0,_0x23d3bb=_0x467e11['kmExpected']>0x0?(_0x27dc1f-_0x467e11['kmExpected'])/_0x467e11['kmExpected']*0x64:null,_0x28f088=_0x467e11['kpkExpecte'+'d']>0x0?(_0x360698-_0x467e11['kpkExpecte'+'d'])/_0x467e11['kpkExpecte'+'d']*0x64:null;return{'tireType':_0x467e11['tireType'],'tireTypeLabel':goalTireTypeLabel(_0x467e11['tireType']),'tireTypeText':_0x467e11['tireTypeTe'+'xt']||goalTireTypeLabel(_0x467e11['tireType']),'brand':_0x467e11['brand']||'','design':_0x467e11['design'],'kmExpected':_0x467e11['kmExpected'],'kmAct':_0x27dc1f,'kmDiffPct':_0x23d3bb,'kpkExpected':_0x467e11['kpkExpecte'+'d'],'kpkAct':_0x360698,'kpkDiffPct':_0x28f088,'activeCount':_0x516c6f['count'],'detailRows':_0x5453ff};})['filter'](_0x119b95=>_0x119b95&&(_0x119b95['kmExpected']>0x0||_0x119b95['kpkExpecte'+'d']>0x0)&&(_0x119b95['activeCoun'+'t']||0x0)>0x0),_0x15dcb8=_0x57f0cc['map'](_0x570f42=>{const _0x3b676d=_0x570f42['kmDiffPct']!=null&&isFinite(_0x570f42['kmDiffPct'])&&_0x570f42['kmDiffPct']>=0x0,_0x42e2f7=_0x570f42['kpkDiffPct']!=null&&isFinite(_0x570f42['kpkDiffPct'])&&_0x570f42['kpkDiffPct']<=0x0;return{..._0x570f42,'kmGood':_0x3b676d,'kpkGood':_0x42e2f7};});_0x5266aa['innerText']=_0x15dcb8['length']['toLocaleSt'+'ring']('es-MX');if(!_0x15dcb8['length']){_0x287ddb['innerHTML']='',_0xd9a087['classList']['remove']('hidden'),_0x269d07['innerText']='0/0\x20(0%)',_0x489d86['innerText']='0/0\x20(0%)',_0x446d7e['innerText']='0';if(_0x1935a6)_0x1935a6['classList']['add']('hidden');return;}_0xd9a087['classList']['add']('hidden');const _0x2fe143=_0x477137=>_0x477137==null||!isFinite(_0x477137)?'-':''+(_0x477137>0x0?'+':'')+_0x477137['toFixed'](0x1)+'%',_0x478735=(_0x5351d9,_0x36a0d1)=>{if(_0x5351d9==null||!isFinite(_0x5351d9))return'text-slate'+'-400';if(_0x36a0d1)return _0x5351d9<=0x0?'text-emera'+'ld-600\x20fon'+'t-bold':'text-red-6'+'00\x20font-bo'+'ld';return _0x5351d9>=0x0?'text-emera'+'ld-600\x20fon'+'t-bold':'text-red-6'+'00\x20font-bo'+'ld';},_0x1a2324=_0x15dcb8['length'],_0xaf9468=_0x15dcb8['filter'](_0x5763db=>_0x5763db['kmGood'])['length'],_0xc540c0=_0x15dcb8['filter'](_0x494c32=>_0x494c32['kpkGood'])['length'],_0x58f293=_0x15dcb8['filter'](_0x5d57f9=>!_0x5d57f9['kmGood']&&!_0x5d57f9['kpkGood'])['length'],_0x1a3ed2=_0x1a2324>0x0?_0xaf9468/_0x1a2324*0x64:0x0,_0x328fcf=_0x1a2324>0x0?_0xc540c0/_0x1a2324*0x64:0x0;_0x269d07['innerText']=_0xaf9468+'/'+_0x1a2324+'\x20('+_0x1a3ed2['toFixed'](0x0)+'%)',_0x489d86['innerText']=_0xc540c0+'/'+_0x1a2324+'\x20('+_0x328fcf['toFixed'](0x0)+'%)',_0x446d7e['innerText']=_0x58f293['toLocaleSt'+'ring']('es-MX'),_0x54c94f['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<th\x20clas'+'s=\x22p-2\x22>Ti'+'po\x20de\x20llan'+'ta</th>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'h\x20class=\x22p'+'-2\x22>Marca<'+'/th>\x0a\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<th\x20c'+'lass=\x22p-2\x22'+'>Diseño</t'+'h>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<th\x20cla'+'ss=\x22p-2\x20te'+'xt-right\x22>'+'Km\x20x\x20Mm\x20Es'+'p.</th>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'h\x20class=\x22p'+'-2\x20text-ri'+'ght\x22>Km\x20Pr'+'om.\x20Act.</'+'th>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<th\x20cl'+'ass=\x22p-2\x20t'+'ext-right\x22'+'>Diferenci'+'a\x20Km\x20(%)</'+'th>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<th\x20cl'+'ass=\x22p-2\x20t'+'ext-right\x22'+'>$\x20x\x20Km\x20Es'+'p.</th>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'h\x20class=\x22p'+'-2\x20text-ri'+'ght\x22>K\x20P\x20K'+'\x20Act.</th>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<th\x20class'+'=\x22p-2\x20text'+'-right\x22>Di'+'ferencia\x20$'+'/Km\x20(%)</t'+'h>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<th\x20cla'+'ss=\x22p-2\x20te'+'xt-right\x22>'+'Activas</t'+'h>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'/tr>\x0a\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20';const _0x1e01dc=[..._0x15dcb8]['sort']((_0x1c218f,_0x5335a6)=>{const _0x534337=normalizeStr(_0x1c218f['tireTypeTe'+'xt'])['localeComp'+'are'](normalizeStr(_0x5335a6['tireTypeTe'+'xt']),'es',{'sensitivity':'base'});if(_0x534337!==0x0)return _0x534337;const _0x481f20=normalizeStr(_0x1c218f['brand'])['localeComp'+'are'](normalizeStr(_0x5335a6['brand']),'es',{'sensitivity':'base'});if(_0x481f20!==0x0)return _0x481f20;return normalizeStr(_0x1c218f['design'])['localeComp'+'are'](normalizeStr(_0x5335a6['design']),'es',{'sensitivity':'base'});});_0x287ddb['innerHTML']=_0x1e01dc['map']((_0xaf8f7a,_0x5a4d3d)=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<tr'+'\x20class=\x22ho'+'ver:bg-sla'+'te-50\x20curs'+'or-pointer'+'\x20transitio'+'n\x22\x20data-su'+'mmary-row-'+'idx=\x22'+_0x5a4d3d+('\x22>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<td\x20cla'+'ss=\x22p-2\x20fo'+'nt-semibol'+'d\x20text-sla'+'te-600\x22>')+escapeHtml(normalizeStr(_0xaf8f7a['tireTypeTe'+'xt']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20font-semi'+'bold\x20text-'+'slate-600\x22'+'>')+escapeHtml(normalizeStr(_0xaf8f7a['brand']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20font-bold'+'\x20text-slat'+'e-700\x22>')+escapeHtml(normalizeStr(_0xaf8f7a['design']))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20text-sla'+'te-600\x22>')+(_0xaf8f7a['kmExpected']>0x0?_0xaf8f7a['kmExpected']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0}):'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20text-ind'+'igo-700\x22>')+(_0xaf8f7a['kmAct']>0x0?_0xaf8f7a['kmAct']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0}):'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20')+_0x478735(_0xaf8f7a['kmDiffPct'],![])+'\x22>'+_0x2fe143(_0xaf8f7a['kmDiffPct'])+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20text-sla'+'te-600\x22>')+(_0xaf8f7a['kpkExpecte'+'d']>0x0?'$'+_0xaf8f7a['kpkExpecte'+'d']['toFixed'](0x4):'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20text-ind'+'igo-700\x22>')+(_0xaf8f7a['kpkAct']>0x0?'$'+_0xaf8f7a['kpkAct']['toFixed'](0x4):'-')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20')+_0x478735(_0xaf8f7a['kpkDiffPct'],!![])+'\x22>'+_0x2fe143(_0xaf8f7a['kpkDiffPct'])+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22p-2'+'\x20text-righ'+'t\x20font-mon'+'o\x20text-sla'+'te-700\x22>')+(_0xaf8f7a['activeCoun'+'t']||0x0)['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20</tr>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'))['join']('');const _0x5b82ae=_0x287ddb['querySelec'+'torAll']('tr[data-su'+'mmary-row-'+'idx]');_0x5b82ae['forEach'](_0x400c18=>{_0x400c18['addEventLi'+'stener']('click',()=>{_0x5b82ae['forEach'](_0x326fd5=>_0x326fd5['classList']['remove']('bg-indigo-'+'50')),_0x400c18['classList']['add']('bg-indigo-'+'50');const _0x49ad00=Number(_0x400c18['getAttribu'+'te']('data-summa'+'ry-row-idx')),_0x306b57=_0x1e01dc[_0x49ad00];if(!_0x306b57)return;renderCpkGoalSummaryDrillDown(_0x306b57);});});}function runCPKAnalysis(){let _0x22f50b=getFilteredPerformanceData(!![]);const _0xecf213=_0x22f50b['length'],_0x339468=[...new Set(_0x22f50b['map'](_0x48e4bb=>_0x48e4bb['brand']))],_0x38fbdb=[...new Set(_0x22f50b['map'](_0x2d7070=>_0x2d7070['model']))],_0x5943cb=_0x22f50b['reduce']((_0x5379a9,_0x29705d)=>_0x5379a9+_0x29705d['km'],0x0),_0xfc4289=0x1387,_0x35d129=_0xecf213/_0xfc4289*0x64;safeSetText('kpiTotalTi'+'res',_0xecf213['toLocaleSt'+'ring']('es-MX')),safeSetText('kpiUnivPct',_0x35d129['toFixed'](0x1)+'%'),safeSetText('kpiUnivBra'+'nds',_0x339468['length']),safeSetText('kpiUnivMod'+'els',_0x38fbdb['length']),safeSetText('kpiUnivKm',(_0x5943cb/0xf4240)['toFixed'](0x2)+'M');const _0x529a53=_0x22f50b['filter'](_0x1a2101=>_0x1a2101['type']==='Tracción'),_0x2bb32d=_0x529a53['reduce']((_0x245a9a,_0x1376b9)=>_0x245a9a+_0x1376b9['cost'],0x0),_0x5ed876=_0x529a53['reduce']((_0x3b7e0d,_0x272234)=>_0x3b7e0d+_0x272234['km'],0x0),_0x3ade21=_0x5ed876>0x0?_0x2bb32d/_0x5ed876:0x0;safeSetText('kpiCpkTrac'+'tion','$'+_0x3ade21['toFixed'](0x4));const _0x151af5=_0x22f50b['filter'](_0xc2ec68=>_0xc2ec68['type']==='Toda\x20Posic'+'ión'),_0x9ff8de=_0x151af5['reduce']((_0x367736,_0xd8f5d4)=>_0x367736+_0xd8f5d4['cost'],0x0),_0x535973=_0x151af5['reduce']((_0x110388,_0x249015)=>_0x110388+_0x249015['km'],0x0),_0x4a229f=_0x535973>0x0?_0x9ff8de/_0x535973:0x0;safeSetText('kpiCpkAllP'+'os','$'+_0x4a229f['toFixed'](0x4));const _0x30cb5a=_0x22f50b['filter'](_0x49379c=>_0x49379c['type']==='Tracción'||_0x49379c['type']==='Toda\x20Posic'+'ión'),_0x36c5d2=_0x30cb5a['reduce']((_0x24ac5e,_0x14f4e0)=>_0x24ac5e+_0x14f4e0['efficiency'],0x0),_0x1a5de1=_0x30cb5a['length']>0x0?_0x36c5d2/_0x30cb5a['length']:0x0;safeSetText('kpiGlobalE'+'ff',_0x1a5de1['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0}));const _0x2969c3=new Set(_0x22f50b['map'](_0x442e0c=>_0x442e0c['unit'])),_0x48b9a1=_0x2969c3['size'];safeSetText('kpiUniqueU'+'nits',_0x48b9a1['toLocaleSt'+'ring']());const _0x1e4418={};_0x22f50b['forEach'](_0x57be3d=>{_0x1e4418[_0x57be3d['brand']]=(_0x1e4418[_0x57be3d['brand']]||0x0)+0x1;});const _0x3beed1=Object['entries'](_0x1e4418)['sort']((_0x578402,_0x4816d9)=>_0x4816d9[0x1]-_0x578402[0x1]),_0x34ffe8=_0x3beed1['slice'](0x0,0x6),_0xc714f6=_0x3beed1['slice'](0x6),_0x37b3a3=_0xc714f6['reduce']((_0x10d6bb,_0x5b66dd)=>_0x10d6bb+_0x5b66dd[0x1],0x0);if(_0x37b3a3>0x0)_0x34ffe8['push'](['OTRAS',_0x37b3a3]);const _0xd03f32=_0x34ffe8['map'](_0xd2a3ea=>_0xd2a3ea[0x0]),_0xe11e2=_0x34ffe8['map'](_0x5e58e6=>_0x5e58e6[0x1]),_0x3afa29=isColorblind?['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442','#56B4E9','#999999']:_0xd03f32['map']((_0x4aef98,_0x5ad2e6)=>FALLBACK_COLORS[_0x5ad2e6%FALLBACK_COLORS['length']]);initChart('cpkUnivers'+'eChart','doughnut',{'labels':_0xd03f32,'datasets':[{'data':_0xe11e2,'backgroundColor':_0x3afa29,'borderWidth':0x0,'otherBrandsData':_0xc714f6}]},{'cutout':'60%','plugins':{'legend':{'position':'right','labels':{'boxWidth':0xa,'font':{'size':0xa}}},'datalabels':{'color':'white','font':{'weight':'bold','size':0xa},'formatter':(_0x15f0ad,_0x49c0df)=>{let _0x57416a=0x0,_0x121611=_0x49c0df['chart']['data']['datasets'][0x0]['data'];_0x121611['map'](_0x4f3129=>{_0x57416a+=_0x4f3129;});let _0x15bbd9=(_0x15f0ad*0x64/_0x57416a)['toFixed'](0x0)+'%';return _0x15bbd9;}},'tooltip':{'callbacks':{'afterBody':_0x257637=>{if(_0x257637[0x0]['label']==='OTRAS'){const _0x4c9f96=_0x257637[0x0]['chart']['data']['datasets'][0x0],_0x50707c=_0x4c9f96['otherBrand'+'sData'];if(!_0x50707c||_0x50707c['length']===0x0)return[];const _0x18505e=_0x50707c['reduce']((_0x4fdf41,_0x34aa74)=>_0x4fdf41+_0x34aa74[0x1],0x0),_0x39e158=_0x50707c['slice'](0x0,0xa)['map'](_0x57b1a7=>'•\x20'+_0x57b1a7[0x0]+':\x20'+_0x57b1a7[0x1]+'\x20('+(_0x57b1a7[0x1]/_0x18505e*0x64)['toFixed'](0x0)+'%)');return _0x50707c['length']>0xa&&_0x39e158['push']('...\x20y\x20'+(_0x50707c['length']-0xa)+'\x20más.'),['\x20','DESGLOSE\x20O'+'TRAS:',..._0x39e158];}}}}},'onClick':(_0x1f656b,_0x2d603b,_0xcd26ca)=>{if(_0x2d603b['length']){const _0x53e729=_0x2d603b[0x0]['index'],_0x193f02=_0xcd26ca['data']['labels'][_0x53e729];if(_0x193f02==='OTRAS'){const _0x53a49f=_0xcd26ca['data']['datasets'][0x0],_0x14b271=_0x53a49f['otherBrand'+'sData'];showCPKOthersDrillDown(_0x14b271);}else showCPKBrandDrillDown(_0x193f02);}}}),renderCpkGoalSummary(_0x22f50b);const _0x1ecb22={};_0x22f50b['forEach'](_0x474f43=>{const _0x87a644=_0x474f43['brand']+'|'+_0x474f43['model']+'|'+_0x474f43['type'];if(!_0x1ecb22[_0x87a644])_0x1ecb22[_0x87a644]={'brand':_0x474f43['brand'],'model':_0x474f43['model'],'type':_0x474f43['type'],'count':0x0,'sumKm':0x0,'sumCost':0x0,'sumEff':0x0,'sumOrigMm':0x0,'isTrailer':_0x474f43['isTrailer']};_0x1ecb22[_0x87a644]['count']++,_0x1ecb22[_0x87a644]['sumKm']+=_0x474f43['km'],_0x1ecb22[_0x87a644]['sumCost']+=_0x474f43['cost'],_0x1ecb22[_0x87a644]['sumEff']+=_0x474f43['efficiency'],_0x1ecb22[_0x87a644]['sumOrigMm']+=_0x474f43['originalMm'];});const _0x5757ca=Object['values'](_0x1ecb22)['map'](_0x5c205d=>{const _0x367343=_0x5c205d['count']>0x0?_0x5c205d['sumOrigMm']/_0x5c205d['count']:0x0,_0x1ae202=_0x5c205d['count']>0x0?_0x5c205d['sumEff']/_0x5c205d['count']:0x0,_0x5dda17=Math['max'](0x0,_0x367343-3.5),_0xcb90=_0x1ae202>0x0?_0x1ae202*_0x5dda17:_0x5c205d['sumKm']/_0x5c205d['count'];return{'name':_0x5c205d['brand']+'\x20'+_0x5c205d['model'],'type':_0x5c205d['type'],'count':_0x5c205d['count'],'avgKm':_0x5c205d['sumKm']/_0x5c205d['count'],'avgCPK':_0x5c205d['sumCost']/_0x5c205d['sumKm'],'efficiency':_0x1ae202,'estimatedLife':_0xcb90,'isTrailer':_0x5c205d['isTrailer']};});safeSetText('perfCount',_0x22f50b['length']),renderDynamicPerformanceCharts(_0x5757ca),renderEfficiencyRanking(_0x22f50b);}function showCPKBrandDrillDown(_0x2e5533){const _0x1451b8=document['getElement'+'ById']('drillDownC'+'ontainer'),_0x29bfbc=document['getElement'+'ById']('drillDownB'+'ody'),_0x3c69ab=document['getElement'+'ById']('drillDownT'+'itle'),_0x4f31d9=document['getElement'+'ById']('drillDownH'+'ead');if(!_0x1451b8||!_0x29bfbc)return;_0x4f31d9&&(_0x4f31d9['innerHTML']='<tr><th\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x22>#</th><t'+'h\x20class=\x22p'+'-3\x20text-ce'+'nter\x22>1.\x20E'+'CO\x20Nuevo</'+'th><th\x20cla'+'ss=\x22p-3\x20te'+'xt-center\x22'+'>2.\x20Folio<'+'/th><th\x20cl'+'ass=\x22p-3\x22>'+'3.\x20Marca</'+'th><th\x20cla'+'ss=\x22p-3\x22>4'+'.\x20Modelo</'+'th><th\x20cla'+'ss=\x22p-3\x20te'+'xt-center\x22'+'>5.\x20MM\x20Act'+'ual</th><t'+'h\x20class=\x22p'+'-3\x20text-ce'+'nter\x22>6.\x20K'+'M\x20Rec.</th'+'><th\x20class'+'=\x22p-3\x20text'+'-center\x22>7'+'.\x20Km/mm</t'+'h><th\x20clas'+'s=\x22p-3\x20tex'+'t-right\x22>8'+'.\x20CPK\x20Indi'+'v.</th></t'+'r>');let _0x31285c=getFilteredPerformanceData(!![]);const _0x55d99c=_0x31285c['filter'](_0x5a941f=>_0x5a941f['brand']===_0x2e5533);_0x3c69ab['innerHTML']='<span\x20clas'+'s=\x22font-bo'+'ld\x20text-in'+'digo-700\x22>'+'MARCA:\x20'+escapeHtml(normalizeStr(_0x2e5533))+('</span>\x20-\x20'+'Detalle\x20de'+'\x20')+_0x55d99c['length']+'\x20llantas',_0x29bfbc['innerHTML']='',_0x55d99c['length']===0x0?_0x29bfbc['innerHTML']='<tr><td\x20co'+'lspan=\x229\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20registr'+'os.</td></'+'tr>':(_0x55d99c['sort']((_0x4a2f0a,_0x1557af)=>_0x1557af['km']-_0x4a2f0a['km']),_0x55d99c['forEach']((_0x3eba1a,_0x1b9cb3)=>{_0x29bfbc['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'indigo-50\x20'+'border-b\x20b'+'order-indi'+'go-50\x22><td'+'\x20class=\x22p-'+'3\x20text-cen'+'ter\x20text-s'+'late-400\x20f'+'ont-bold\x20t'+'ext-xs\x22>'+(_0x1b9cb3+0x1)+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20text-ind'+'igo-900\x20fo'+'nt-bold\x22>')+escapeHtml(normalizeStr(_0x3eba1a['unit']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x22>')+escapeHtml(normalizeStr(_0x3eba1a['folio']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'font-bold\x20'+'text-slate'+'-600\x22>')+escapeHtml(normalizeStr(_0x3eba1a['brand']))+('</td><td\x20c'+'lass=\x22p-3\x22'+'>')+escapeHtml(normalizeStr(_0x3eba1a['model']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x22>')+_0x3eba1a['mm']+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x22>')+_0x3eba1a['km']['toLocaleSt'+'ring']('es-MX')+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x20text-blu'+'e-600\x22>')+_0x3eba1a['efficiency']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-right'+'\x20font-bold'+'\x20text-slat'+'e-800\x22>$')+_0x3eba1a['cpk']['toFixed'](0x4)+'</td></tr>';})),_0x1451b8['classList']['remove']('hidden'),_0x1451b8['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function showCPKOthersDrillDown(_0x2be2d5){const _0x10800e=document['getElement'+'ById']('drillDownC'+'ontainer'),_0x29a600=document['getElement'+'ById']('drillDownB'+'ody'),_0x463792=document['getElement'+'ById']('drillDownT'+'itle'),_0x46a25a=document['getElement'+'ById']('drillDownH'+'ead');if(!_0x10800e||!_0x29a600)return;_0x46a25a&&(_0x46a25a['innerHTML']='<tr><th\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x22>#</th><t'+'h\x20class=\x22p'+'-3\x22>Marca<'+'/th><th\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x22>Cantidad'+'\x20Llantas</'+'th><th\x20cla'+'ss=\x22p-3\x20te'+'xt-right\x22>'+'%\x20Particip'+'ación\x20(Uni'+'verso)</th'+'></tr>');const _0x302b41=_0x2be2d5['reduce']((_0x6d72bf,_0x4b321a)=>_0x6d72bf+_0x4b321a[0x1],0x0);_0x463792['innerHTML']='<span\x20clas'+'s=\x22font-bo'+'ld\x20text-in'+'digo-700\x22>'+'OTRAS\x20MARC'+'AS</span>\x20'+'-\x20Desglose'+'\x20Agrupado\x20'+'('+_0x2be2d5['length']+'\x20marcas)',_0x29a600['innerHTML']='',!_0x2be2d5||_0x2be2d5['length']===0x0?_0x29a600['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x22>S'+'in\x20registr'+'os.</td></'+'tr>':_0x2be2d5['forEach']((_0x2317f8,_0x1d5297)=>{const _0x296312=_0x2317f8[0x0],_0x36b72c=_0x2317f8[0x1],_0x1b972d=(_0x36b72c/_0x302b41*0x64)['toFixed'](0x1);_0x29a600['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<tr\x20c'+'lass=\x22hove'+'r:bg-indig'+'o-50\x20borde'+'r-b\x20border'+'-indigo-50'+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<td\x20class'+'=\x22p-3\x20text'+'-center\x20te'+'xt-slate-4'+'00\x20font-bo'+'ld\x20text-xs'+'\x22>'+(_0x1d5297+0x1)+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20f'+'ont-bold\x20t'+'ext-indigo'+'-900\x22>')+escapeHtml(normalizeStr(_0x296312))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-center'+'\x20font-mono'+'\x20font-bold'+'\x20text-slat'+'e-700\x22>')+_0x36b72c+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20<td\x20cl'+'ass=\x22p-3\x20t'+'ext-right\x20'+'text-slate'+'-500\x20text-'+'xs\x22>')+_0x1b972d+('%\x20(del\x20gru'+'po\x20Otras)<'+'/td>\x0a\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'/tr>');}),_0x10800e['classList']['remove']('hidden'),_0x10800e['scrollInto'+'View']({'behavior':'smooth','block':'center'});}function renderEfficiencyRanking(_0x23df8d){const _0x249e44=document['getElement'+'ById']('efficiency'+'RankingGri'+'d');if(!_0x249e44)return;_0x249e44['innerHTML']='';const _0x23a8c1=['Delanteras','Tracción','Toda\x20Posic'+'ión'];_0x23a8c1['forEach'](_0x2c3dae=>{const _0xd90b06=RANKING_RULES[_0x2c3dae],_0x4e23ec=_0x23df8d['filter'](_0xedf7da=>{if(_0xedf7da['type']!==_0x2c3dae)return![];if(_0xd90b06){if(_0xedf7da['km']<=_0xd90b06['minKm'])return![];if(!isFinite(_0xedf7da['efficiency']))return![];if(_0xedf7da['efficiency']<=_0xd90b06['minEff']||_0xedf7da['efficiency']>=_0xd90b06['maxEff'])return![];}return!![];}),_0x52c39d={};_0x4e23ec['forEach'](_0x23c5ab=>{const _0x237f72=_0x23c5ab['brand']+'\x20'+_0x23c5ab['model'];!_0x52c39d[_0x237f72]&&(_0x52c39d[_0x237f72]={'name':_0x237f72,'count':0x0,'sumEff':0x0}),_0x52c39d[_0x237f72]['count']++,_0x52c39d[_0x237f72]['sumEff']+=_0x23c5ab['efficiency'];});const _0x2225a7=Object['values'](_0x52c39d)['map'](_0x5642de=>({'name':_0x5642de['name'],'count':_0x5642de['count'],'efficiency':_0x5642de['sumEff']/_0x5642de['count']}))['sort']((_0x7d0d4b,_0x23e5fd)=>_0x23e5fd['efficiency']-_0x7d0d4b['efficiency'])['slice'](0x0,0x5);let _0x14d280='';_0x2225a7['length']===0x0?_0x14d280='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x20te'+'xt-xs\x20ital'+'ic\x22>Sin\x20da'+'tos.\x20Crite'+'rio:\x20'+escapeHtml(normalizeStr(_0xd90b06?_0xd90b06['label']:'N/A'))+'</td></tr>':_0x2225a7['forEach']((_0x2908d0,_0x290498)=>{let _0x44916b=_0x290498===0x0?'text-amber'+'-500':_0x290498===0x1?'text-slate'+'-400':_0x290498===0x2?'text-amber'+'-700':'text-slate'+'-500',_0x5befa8=_0x290498<0x3?'<i\x20class=\x22'+'fa-solid\x20f'+'a-trophy\x22>'+'</i>':'<span\x20clas'+'s=\x22font-bo'+'ld\x20text-[1'+'0px]\x22>#'+(_0x290498+0x1)+'</span>',_0x2550ed=_0x290498===0x0?'bg-indigo-'+'50':'';const _0x3c19db=encodeURIComponent(normalizeStr(_0x2908d0['name'])),_0x22a6f4=encodeURIComponent(normalizeStr(_0x2c3dae)),_0x100419=escapeHtml(normalizeStr(_0x2908d0['name']));_0x14d280+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'tr\x20data-mo'+'del=\x22'+_0x3c19db+('\x22\x20data-seg'+'ment=\x22')+_0x22a6f4+('\x22\x20class=\x22j'+'s-drill-ro'+'w\x20cursor-p'+'ointer\x20bor'+'der-b\x20bord'+'er-slate-5'+'0\x20last:bor'+'der-0\x20hove'+'r:bg-slate'+'-100\x20trans'+'ition\x20')+_0x2550ed+('\x22>\x0a\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20<!--\x20'+'COL\x201:\x20CON'+'TEO\x20(NUEVO'+')\x20-->\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'d\x20class=\x22p'+'y-2\x20pl-3\x20t'+'ext-center'+'\x20w-14\x20bord'+'er-r\x20borde'+'r-slate-10'+'0\x22>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<div\x20class'+'=\x22font-mon'+'o\x20font-bol'+'d\x20text-sla'+'te-600\x20tex'+'t-sm\x22>')+_0x2908d0['count']['toLocaleSt'+'ring']('es-MX')+('</div>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<div\x20cl'+'ass=\x22text-'+'[8px]\x20text'+'-slate-400'+'\x20uppercase'+'\x20leading-n'+'one\x22>Llant'+'as</div>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20</td>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'!--\x20COL\x202:'+'\x20RANK\x20-->\x0a'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<td\x20clas'+'s=\x22py-2\x20pl'+'-2\x20text-ce'+'nter\x20')+_0x44916b+('\x20w-8\x20text-'+'sm\x22>')+_0x5befa8+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<!'+'--\x20COL\x203:\x20'+'MODELO\x20-->'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<td\x20cla'+'ss=\x22py-2\x20p'+'x-2\x22>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20<div\x20cla'+'ss=\x22font-b'+'old\x20text-s'+'late-700\x20t'+'ext-xs\x20tru'+'ncate\x22\x20tit'+'le=\x22')+_0x100419+'\x22>'+_0x100419+('</div>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20<'+'/td>\x0a\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20<!-'+'-\x20COL\x204:\x20E'+'FICIENCIA\x20'+'-->\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<td\x20'+'class=\x22py-'+'2\x20pr-3\x20tex'+'t-right\x22>\x0a'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<div'+'\x20class=\x22fo'+'nt-mono\x20fo'+'nt-bold\x20te'+'xt-indigo-'+'600\x20text-s'+'m\x22>')+_0x2908d0['efficiency']['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+('</div>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<div\x20cl'+'ass=\x22text-'+'[9px]\x20text'+'-slate-400'+'\x22>km/mm</d'+'iv>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20</td'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'</tr>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');}),_0x249e44['innerHTML']+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<div\x20clas'+'s=\x22bg-whit'+'e\x20rounded-'+'xl\x20shadow-'+'sm\x20border\x20'+'border-sla'+'te-200\x20ove'+'rflow-hidd'+'en\x20flex\x20fl'+'ex-col\x20h-f'+'ull\x22>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<div\x20class'+'=\x22bg-slate'+'-50\x20border'+'-b\x20border-'+'slate-100\x20'+'p-3\x20text-c'+'enter\x22>\x0a\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<h4\x20'+'class=\x22fon'+'t-bold\x20tex'+'t-slate-60'+'0\x20text-xs\x20'+'uppercase\x20'+'tracking-w'+'ide\x22>'+escapeHtml(normalizeStr(_0x2c3dae))+('</h4>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20')+(_0xd90b06?'<p\x20class=\x22'+'text-[10px'+']\x20text-ind'+'igo-700\x20mt'+'-1\x20bg-indi'+'go-50\x20inli'+'ne-block\x20p'+'x-2\x20py-0.5'+'\x20rounded-f'+'ull\x20border'+'\x20border-in'+'digo-200\x20f'+'ont-semibo'+'ld\x20shadow-'+'sm\x22>Filtro'+':\x20'+escapeHtml(normalizeStr(_0xd90b06['label']))+'</p>':'')+('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20</div'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20<div'+'\x20class=\x22ov'+'erflow-y-a'+'uto\x20max-h-'+'64\x20scrollb'+'ar-thin\x20fl'+'ex-grow\x22>\x0a'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<t'+'able\x20class'+'=\x22w-full\x22>'+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20<tbody\x20'+'class=\x22div'+'ide-y\x20divi'+'de-slate-5'+'0\x22>\x0a\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')+_0x14d280+('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20</tbody'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'</table>\x0a\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20</div>\x0a'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'</div>\x0a\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20');}),_0x249e44['querySelec'+'torAll']('.js-drill-'+'row')['forEach'](_0x1f6598=>{_0x1f6598['addEventLi'+'stener']('click',()=>{const _0x50189f=decodeURIComponent(_0x1f6598['dataset']['model']||''),_0x4b9663=decodeURIComponent(_0x1f6598['dataset']['segment']||'');renderDrillDownTable(_0x50189f,_0x4b9663);});});}function runScrapAnalysis(){let _0x323793=dbScrap,_0xfb576=dbScrapCredits;const _0x324784=moduleState['scrap']['periods'];if(_0x324784['length']>0x0){const _0x47d105=_0x2e68b9=>{const _0x35c828=parseFlexibleDate(_0x2e68b9['date']);if(!_0x35c828)return![];const _0x2c1076=_0x35c828['getFullYea'+'r']()+'-'+_0x35c828['getMonth']();return _0x324784['includes'](_0x2c1076);};_0x323793=_0x323793['filter'](_0x47d105),_0xfb576=_0xfb576['filter'](_0x47d105);}const _0x3e2dc5=_0x323793['length'],_0x2a5e4a=_0x323793['reduce']((_0x4528d2,_0x5a6f34)=>_0x4528d2+Math['max'](0x0,(_0x5a6f34['mm']||0x0)-0x3),0x0),_0x2e48f4=_0x2a5e4a*0x190,_0x1857f1={},_0x30a24d={},_0x5e8777={},_0x98720c={},_0x1d4bf1=[],_0x397f30={},_0x24f0bd={},_0x5c3581={},_0x116e69=_0xfb576['reduce']((_0x11f725,_0x2553f1)=>_0x11f725+(_0x2553f1['amount']||0x0),0x0),_0x280c92=_0xfb576['reduce']((_0x424dd3,_0x4fe50c)=>_0x424dd3+(_0x4fe50c['qty']||0x0),0x0),_0x33a964=new Date(),_0x4c370a=[],_0x459083=[],_0x9d5fa2={};let _0x8f8bba=0x0;for(let _0x577cc0=0xc;_0x577cc0>=0x1;_0x577cc0--){const _0x191e5a=new Date(_0x33a964['getFullYea'+'r'](),_0x33a964['getMonth']()-_0x577cc0,0x1),_0x231c13=_0x191e5a['getFullYea'+'r'](),_0x54ecb8=_0x191e5a['getMonth']();_0x4c370a['push'](_0x231c13+'-'+_0x54ecb8),_0x459083['push'](monthNamesFull[_0x54ecb8]['substring'](0x0,0x3)+'\x20'+_0x231c13['toString']()['substr'](0x2));}dbScrap['forEach'](_0x429a63=>{const _0x4fcf61=parseFlexibleDate(_0x429a63['date']);if(!_0x4fcf61)return;const _0x14ed22=_0x4fcf61['getFullYea'+'r']()+'-'+_0x4fcf61['getMonth'](),_0x2b622b=_0x4c370a['indexOf'](_0x14ed22);if(_0x2b622b===-0x1)return;const _0x1b2d0d=_0x429a63['provider']||'Recolecció'+'n\x20Pend.';if(!_0x9d5fa2[_0x1b2d0d])_0x9d5fa2[_0x1b2d0d]=new Array(0xc)['fill'](0x0);_0x9d5fa2[_0x1b2d0d][_0x2b622b]++,_0x8f8bba++;});const _0x559a76={};_0x323793['forEach'](_0x5ad813=>{_0x1857f1[_0x5ad813['provider']]=(_0x1857f1[_0x5ad813['provider']]||0x0)+0x1,_0x30a24d[_0x5ad813['reason']]=(_0x30a24d[_0x5ad813['reason']]||0x0)+0x1,_0x5e8777[_0x5ad813['brand']]=(_0x5e8777[_0x5ad813['brand']]||0x0)+Math['max'](0x0,(_0x5ad813['mm']||0x0)-0x3),_0x98720c[_0x5ad813['brand']]=(_0x98720c[_0x5ad813['brand']]||0x0)+0x1;const _0x221be1=parseFlexibleDate(_0x5ad813['date']);if(_0x221be1)_0x1d4bf1['push'](_0x221be1);const _0x1e59ae=_0x5ad813['brand']+'\x20'+_0x5ad813['model'];if(!_0x559a76[_0x1e59ae])_0x559a76[_0x1e59ae]={'count':0x0,'causes':{}};_0x559a76[_0x1e59ae]['count']++;const _0x140bd2=_0x5ad813['reason']||'Desconocid'+'a';_0x559a76[_0x1e59ae]['causes'][_0x140bd2]=(_0x559a76[_0x1e59ae]['causes'][_0x140bd2]||0x0)+0x1;}),_0xfb576['forEach'](_0x5649d7=>{const _0x13d45e=normalizeStr(_0x5649d7['provider'])||'Sin\x20provee'+'dor',_0x42a8f8=normalizeStr(_0x5649d7['legalName'])||'Sin\x20razón\x20'+'social',_0x5c127b=normalizeStr(_0x5649d7['descriptio'+'n'])||'Sin\x20descri'+'pción';_0x397f30[_0x13d45e]=(_0x397f30[_0x13d45e]||0x0)+(_0x5649d7['amount']||0x0),_0x24f0bd[_0x42a8f8]=(_0x24f0bd[_0x42a8f8]||0x0)+(_0x5649d7['amount']||0x0),_0x5c3581[_0x5c127b]=(_0x5c3581[_0x5c127b]||0x0)+(_0x5649d7['amount']||0x0);const _0x491bd5=parseFlexibleDate(_0x5649d7['date']);if(_0x491bd5)_0x1d4bf1['push'](_0x491bd5);});const _0xa140aa=Object['keys'](_0x559a76)['map'](_0x5f260c=>{const _0x17e9ce=_0x559a76[_0x5f260c],_0x45ffa8=Object['entries'](_0x17e9ce['causes'])['map'](([_0x336733,_0x44f524])=>({'reason':_0x336733,'count':_0x44f524}))['sort']((_0x2a4a7c,_0x24f652)=>_0x24f652['count']-_0x2a4a7c['count']);return{'name':_0x5f260c,'count':_0x17e9ce['count'],'topCauses':_0x45ffa8['slice'](0x0,0x2)};}),_0xb1bd0b=_0xa140aa['sort']((_0x4ce2f4,_0x278860)=>_0x278860['count']-_0x4ce2f4['count'])['slice'](0x0,0x5),_0xf8a23d=Object['entries'](_0x30a24d)['sort']((_0x41d9ca,_0x5b4e85)=>_0x5b4e85[0x1]-_0x41d9ca[0x1]),_0x2d054d=_0xf8a23d['length']>0x0?{'name':_0xf8a23d[0x0][0x0],'count':_0xf8a23d[0x0][0x1]}:null,_0x31aea6=document['getElement'+'ById']('topScrapMo'+'delsBody');_0x31aea6&&(_0x31aea6['innerHTML']='',_0xb1bd0b['length']===0x0?_0x31aea6['innerHTML']='<tr><td\x20co'+'lspan=\x224\x22\x20'+'class=\x22p-4'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x20it'+'alic\x22>No\x20h'+'ay\x20datos\x20d'+'isponibles'+'\x20para\x20el\x20p'+'eriodo\x20sel'+'eccionado.'+'</td></tr>':_0xb1bd0b['forEach']((_0x2c8ee6,_0x29029a)=>{const _0x1f6ddf=_0x29029a+0x1;let _0x4b85c6='<span\x20clas'+'s=\x22font-bo'+'ld\x20text-sl'+'ate-400\x22>#'+_0x1f6ddf+'</span>';if(_0x1f6ddf===0x1)_0x4b85c6='🥇';else{if(_0x1f6ddf===0x2)_0x4b85c6='🥈';else{if(_0x1f6ddf===0x3)_0x4b85c6='🥉';}}let _0x3f0b33='';_0x2c8ee6['topCauses']['forEach']((_0x5701cd,_0xa1b03)=>{const _0x10508c=_0x2c8ee6['count']>0x0?Math['round'](_0x5701cd['count']/_0x2c8ee6['count']*0x64):0x0,_0x352230=_0xa1b03===0x0?'bg-orange-'+'400':'bg-orange-'+'200';_0x3f0b33+='<div\x20class'+'=\x22mb-2\x20las'+'t:mb-0\x22><d'+'iv\x20class=\x22'+'flex\x20justi'+'fy-between'+'\x20items-cen'+'ter\x20text-['+'10px]\x20mb-0'+'.5\x22><span\x20'+'class=\x22fon'+'t-semibold'+'\x20text-slat'+'e-700\x20trun'+'cate\x20pr-2\x22'+'\x20title=\x22'+escapeHtml(normalizeStr(_0x5701cd['reason']))+'\x22>'+escapeHtml(normalizeStr(_0x5701cd['reason']))+('</span><sp'+'an\x20class=\x22'+'text-slate'+'-500\x20white'+'space-nowr'+'ap\x22>')+_0x10508c+'%\x20('+_0x5701cd['count']['toLocaleSt'+'ring']('es-MX')+(')</span></'+'div><div\x20c'+'lass=\x22w-fu'+'ll\x20bg-slat'+'e-100\x20roun'+'ded-full\x20h'+'-1.5\x22><div'+'\x20class=\x22')+_0x352230+('\x20h-1.5\x20rou'+'nded-full\x22'+'\x20style=\x22wi'+'dth:\x20')+_0x10508c+('%\x22></div><'+'/div></div'+'>');}),_0x31aea6['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'orange-50\x20'+'transition'+'\x20border-b\x20'+'border-sla'+'te-50\x20last'+':border-0\x22'+'><td\x20class'+'=\x22p-3\x20text'+'-center\x20te'+'xt-lg\x20alig'+'n-middle\x22>'+_0x4b85c6+('</td><td\x20c'+'lass=\x22p-3\x20'+'font-bold\x20'+'text-slate'+'-700\x20align'+'-middle\x20te'+'xt-xs\x22>')+escapeHtml(normalizeStr(_0x2c8ee6['name']))+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20align-mi'+'ddle\x22><spa'+'n\x20class=\x22f'+'ont-mono\x20t'+'ext-base\x20f'+'ont-bold\x20t'+'ext-orange'+'-600\x20bg-or'+'ange-50\x20ro'+'unded-lg\x20p'+'x-2\x20py-1\x20b'+'order\x20bord'+'er-orange-'+'100\x22>')+_0x2c8ee6['count']['toLocaleSt'+'ring']('es-MX')+('</span></t'+'d><td\x20clas'+'s=\x22p-3\x20ali'+'gn-middle\x20'+'w-1/3\x22><di'+'v\x20class=\x22f'+'lex\x20flex-c'+'ol\x22>')+_0x3f0b33+('</div></td'+'></tr>');})),renderScrapView({'total':_0x3e2dc5,'mm':_0x2a5e4a,'money':_0x2e48f4,'provs':_0x1857f1,'reasons':_0x30a24d,'brandWaste':_0x5e8777,'brandCount':_0x98720c,'exitDates':_0x1d4bf1,'topModel':_0xb1bd0b['length']>0x0?_0xb1bd0b[0x0]:null,'topReason':_0x2d054d,'trendLabels':_0x459083,'trendMap':_0x9d5fa2,'trendTotal':_0x8f8bba,'creditMoney':_0x116e69,'creditQty':_0x280c92,'creditEvents':_0xfb576['length'],'creditRows':_0xfb576['slice'](),'creditByProvider':_0x397f30,'creditByLegalName':_0x24f0bd,'creditByDescription':_0x5c3581}),runStrategyAnalysis({'compactOnly':!![],'periodsOverride':_0x324784});}function renderScrapView(_0x24d12c){let _0x1dbe5d=0x1,_0x3f3f78='Periodo\x20no'+'\x20definido';if(_0x24d12c['exitDates']['length']>0x0){const _0x53cc71=_0x24d12c['exitDates']['sort']((_0x829a06,_0x26b688)=>_0x829a06-_0x26b688),_0xc7decc=_0x53cc71[0x0],_0x27beb5=_0x53cc71[_0x53cc71['length']-0x1];_0x1dbe5d=(_0x27beb5['getFullYea'+'r']()-_0xc7decc['getFullYea'+'r']())*0xc+(_0x27beb5['getMonth']()-_0xc7decc['getMonth']())+0x1,_0x1dbe5d=Math['max'](0x1,_0x1dbe5d);const _0x3e9cff=monthNamesFull[_0xc7decc['getMonth']()]['substring'](0x0,0x3),_0x256ed2=_0xc7decc['getFullYea'+'r'](),_0xa48100=monthNamesFull[_0x27beb5['getMonth']()]['substring'](0x0,0x3),_0x157d14=_0x27beb5['getFullYea'+'r']();_0x3f3f78=_0x3e9cff+'\x20'+_0x256ed2+'\x20-\x20'+_0xa48100+'\x20'+_0x157d14+'\x20('+_0x1dbe5d+'\x20meses)';}const _0x1e0c63=_0x24d12c['mm']/_0x1dbe5d,_0x3d44d7=_0x24d12c['money']/_0x1dbe5d,_0x589f0b=_0x24d12c['total']/_0x1dbe5d,_0x4f15e1=_0x24d12c['creditMone'+'y']/_0x1dbe5d,_0x4e9456=_0x3d44d7-_0x4f15e1,_0x3aced1=_0x24d12c['money']>0x0?_0x24d12c['creditMone'+'y']/_0x24d12c['money']*0x64:0x0;safeSetText('scrapTotal'+'Count',_0x24d12c['total']),safeSetText('scrapTotal'+'Period',_0x3f3f78),safeSetText('monthlyRet'+'ireCount',_0x24d12c['trendTotal']),safeSetText('scrapWaste'+'dMm',_0x1e0c63['toFixed'](0x1)+'\x20mm/mes'),safeSetText('scrapWaste'+'dMoney','Est.\x20$'+_0x3d44d7['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+'\x20/mes'),safeSetText('monthlyScr'+'apRate',_0x589f0b['toFixed'](0x1)),safeSetText('scrapCredi'+'tMoney','$'+_0x4f15e1['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+'\x20/mes'),safeSetText('scrapCredi'+'tCount',(_0x24d12c['creditEven'+'ts']||0x0)['toLocaleSt'+'ring']('es-MX')+('\x20eventos\x20|'+'\x20')+(_0x24d12c['creditQty']||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x1})+'\x20pzas'),safeSetText('scrapCredi'+'tCoverage',_0x3aced1['toFixed'](0x2)+'%'),safeSetText('scrapNetLo'+'ssMoney',(_0x4e9456<0x0?'-':'')+'$'+Math['abs'](_0x4e9456)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x0})+'\x20/mes'),safeSetText('creditLega'+'lTotalAmou'+'nt','$'+(_0x24d12c['creditMone'+'y']||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2}));const _0xb843d4=document['getElement'+'ById']('creditProv'+'iderTotals');if(_0xb843d4){const _0x2e3abb=Object['entries'](_0x24d12c['creditByPr'+'ovider']||{})['sort']((_0x53c94d,_0x5a95a4)=>(Number(_0x5a95a4[0x1])||0x0)-(Number(_0x53c94d[0x1])||0x0));if(!_0x2e3abb['length'])_0xb843d4['innerHTML']='<span\x20clas'+'s=\x22text-sl'+'ate-400\x22>S'+'in\x20ingreso'+'s\x20por\x20prov'+'eedor.</sp'+'an>';else{const _0x1c89ac=_0x2e3abb['map'](([_0x2b65f7,_0x3a7866],_0x1aeea1)=>{const _0x30ca4b=isColorblind?['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442'][_0x1aeea1%0x5]:PROVIDER_COLORS[_0x2b65f7]||FALLBACK_COLORS[_0x1aeea1%FALLBACK_COLORS['length']],_0x26e94f='$'+(Number(_0x3a7866)||0x0)['toLocaleSt'+'ring']('es-MX',{'maximumFractionDigits':0x2});return'<span\x20clas'+'s=\x22inline-'+'flex\x20items'+'-center\x20ga'+'p-1\x20px-2\x20p'+'y-1\x20rounde'+'d-full\x20bg-'+'slate-50\x20b'+'order\x20bord'+'er-slate-2'+'00\x20text-sl'+'ate-700\x22><'+'span\x20class'+'=\x22inline-b'+'lock\x20w-2\x20h'+'-2\x20rounded'+'-full\x22\x20sty'+'le=\x22backgr'+'ound:'+_0x30ca4b+('\x22></span><'+'span\x20class'+'=\x22font-sem'+'ibold\x22>')+escapeHtml(_0x2b65f7)+('</span><sp'+'an\x20class=\x22'+'font-mono\x22'+'>')+_0x26e94f+('</span></s'+'pan>');});_0xb843d4['innerHTML']=_0x1c89ac['join']('');}}const _0x1d6f39=0x1387,_0x513fe8=_0x589f0b/_0x1d6f39*0x64;safeSetText('scrapRolli'+'ngPct',_0x513fe8['toFixed'](0x2)+'%');if(_0x24d12c['topModel']){const _0x1038a1=document['getElement'+'ById']('scrapTopMo'+'del');_0x1038a1&&(_0x1038a1['innerText']=_0x24d12c['topModel']['name'],_0x1038a1['title']=_0x24d12c['topModel']['name']),safeSetText('scrapTopMo'+'delCount',_0x24d12c['topModel']['count']);}else safeSetText('scrapTopMo'+'del','-'),safeSetText('scrapTopMo'+'delCount','0');if(_0x24d12c['topReason']){const _0x29969f=document['getElement'+'ById']('scrapTopRe'+'ason');_0x29969f&&(_0x29969f['innerText']=_0x24d12c['topReason']['name'],_0x29969f['title']=_0x24d12c['topReason']['name']),safeSetText('scrapTopRe'+'asonCount',_0x24d12c['topReason']['count']);}else safeSetText('scrapTopRe'+'ason','-'),safeSetText('scrapTopRe'+'asonCount','0');const _0x2df917=Object['keys'](_0x24d12c['provs']),_0x1be41d=_0x2df917['map']((_0x3202bf,_0x15c133)=>{if(isColorblind)return['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442'][_0x15c133%0x5];return PROVIDER_COLORS[_0x3202bf]||FALLBACK_COLORS[_0x15c133%FALLBACK_COLORS['length']];});initChart('providerCh'+'art','doughnut',{'labels':_0x2df917,'datasets':[{'data':Object['values'](_0x24d12c['provs']),'backgroundColor':_0x1be41d}]},{});const _0x4e255c=Object['entries'](_0x24d12c['reasons'])['sort']((_0x1c45eb,_0x4bceaa)=>_0x4bceaa[0x1]-_0x1c45eb[0x1]),_0x1631a5=_0x4e255c['slice'](0x0,0x5),_0x4c8b1b=_0x4e255c['slice'](0x5),_0x28cb90=_0x4c8b1b['reduce']((_0x1d70ec,_0x201afd)=>_0x1d70ec+_0x201afd[0x1],0x0);if(_0x28cb90>0x0)_0x1631a5['push'](['Otros',_0x28cb90]);const _0x49d518=_0x1631a5['map'](_0x48bc62=>_0x48bc62[0x0]),_0x629fc3=_0x1631a5['map'](_0x40e356=>_0x40e356[0x1]),_0xad1af6=isColorblind?['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442','#56B4E9']:_0x49d518['map']((_0x29620c,_0x5f1270)=>FALLBACK_COLORS[_0x5f1270%FALLBACK_COLORS['length']]);initChart('scrapReaso'+'nChart','doughnut',{'labels':_0x49d518,'datasets':[{'data':_0x629fc3,'backgroundColor':_0xad1af6}]},{'onClick':(_0x1d68b3,_0x49e9c2,_0x2523c0)=>{if(!_0x49e9c2['length'])return;const _0xf6e052=_0x49e9c2[0x0]['index'],_0x59317a=_0x2523c0['data']['labels'][_0xf6e052];if(_0x59317a==='Otros'&&_0x4c8b1b['length']>0x0)showScrapDrillDown(_0x4c8b1b,_0x24d12c['total']);}});const _0x252125=Object['keys'](_0x24d12c['brandWaste']),_0x5db84f=Object['values'](_0x24d12c['brandWaste']),_0x236aab=_0x252125['map'](_0x47fb91=>_0x24d12c['brandCount']&&_0x24d12c['brandCount'][_0x47fb91]?_0x24d12c['brandCount'][_0x47fb91]:0x0),_0xd6962c=isColorblind?'#D55E00':'#ef4444';initChart('wasteChart','bar',{'labels':_0x252125,'datasets':[{'label':'Desperdici'+'o\x20(mm)','data':_0x5db84f,'backgroundColor':_0xd6962c,'counts':_0x236aab}]},{'indexAxis':'y','onClick':(_0x4a1803,_0x488814,_0x255f72)=>{if(!_0x488814['length'])return;const _0x211596=_0x488814[0x0]['index'],_0x18fc07=_0x255f72['data']['labels'][_0x211596];window['showScrapB'+'randDetail'](_0x18fc07);},'onHover':(_0x49a352,_0x46f463)=>{_0x49a352['native']['target']['style']['cursor']=_0x46f463[0x0]?'pointer':'default';},'plugins':{'datalabels':{'color':'#ffffff','anchor':'end','align':'start','font':{'weight':'bold','size':0xa},'formatter':(_0x2ab374,_0x15d2d5)=>{if(_0x2ab374>0x3e8){const _0x11acb5=_0x15d2d5['dataset']['counts'][_0x15d2d5['dataIndex']];return _0x11acb5+'\x20llantas';}return'';}}}});const _0x204f4b=Object['keys'](_0x24d12c['trendMap']),_0x3b286d=_0x204f4b['map']((_0x5d74f6,_0x58ef3a)=>{const _0x2be22e=isColorblind?['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442'][_0x58ef3a%0x5]:PROVIDER_COLORS[_0x5d74f6]||FALLBACK_COLORS[_0x58ef3a%FALLBACK_COLORS['length']];return{'label':_0x5d74f6,'data':_0x24d12c['trendMap'][_0x5d74f6],'backgroundColor':_0x2be22e,'stack':'S1'};});initChart('monthlyRet'+'ireChart','bar',{'labels':_0x24d12c['trendLabel'+'s'],'datasets':_0x3b286d,'scales':{'x':{'stacked':!![]},'y':{'stacked':!![]}}});const _0x2ff0d3=Object['entries'](_0x24d12c['creditByLe'+'galName']||{})['sort']((_0x54364b,_0xef4fe1)=>_0xef4fe1[0x1]-_0x54364b[0x1])['slice'](0x0,0xc),_0x2e2116=_0x2ff0d3['length']?_0x2ff0d3['map'](_0x2b9449=>_0x2b9449[0x0]):['Sin\x20datos'],_0x4866eb=Array['isArray'](_0x24d12c['creditRows'])?_0x24d12c['creditRows']:[],_0x301391=(_0x323a0e,_0x3b84fa)=>{const _0x415548=normalizeStr(_0x323a0e)['toUpperCas'+'e']();if(_0x415548['includes']('LA\x20PAZ')||_0x415548['includes']('LPZ'))return COMPANY_COLORS['CR\x20LPZ']||COMPANY_COLORS['LA\x20PAZ']||'#DAA0FA';if(_0x415548['includes']('CORPORED')||_0x415548==='CR'||_0x415548['startsWith']('CR\x20'))return COMPANY_COLORS['CR']||COMPANY_COLORS['CORPORED']||'#ED7D31';if(_0x415548['includes']('T2020'))return COMPANY_COLORS['T2020']||'#4472C4';if(_0x415548['includes']('YUC'))return COMPANY_COLORS['YUC']||COMPANY_COLORS['YUCARRO']||'#00B0F0';if(COMPANY_COLORS[_0x415548])return COMPANY_COLORS[_0x415548];return PALETTE_FALLBACK[_0x3b84fa%PALETTE_FALLBACK['length']];},_0xb62c81={};_0x4866eb['forEach'](_0x5d24db=>{const _0x43e215=normalizeStr(_0x5d24db['legalName'])||'Sin\x20razón\x20'+'social',_0x386cd8=normalizeStr(_0x5d24db['provider'])||'Sin\x20provee'+'dor',_0x3c4256=Number(_0x5d24db['amount'])||0x0;if(!_0xb62c81[_0x43e215])_0xb62c81[_0x43e215]={};_0xb62c81[_0x43e215][_0x386cd8]=(_0xb62c81[_0x43e215][_0x386cd8]||0x0)+_0x3c4256;});const _0x177c07={};Object['values'](_0xb62c81)['forEach'](_0x2ce36c=>{Object['entries'](_0x2ce36c)['forEach'](([_0x170f51,_0xeb0727])=>{_0x177c07[_0x170f51]=(_0x177c07[_0x170f51]||0x0)+(Number(_0xeb0727)||0x0);});});const _0x5bcedb=Object['entries'](_0x177c07)['sort']((_0x4f75ce,_0x38f977)=>_0x38f977[0x1]-_0x4f75ce[0x1])['map'](_0x26db3c=>_0x26db3c[0x0]),_0x371c9e=isColorblind?['#0072B2','#E69F00','#009E73','#CC79A7','#F0E442','#56B4E9','#D55E00']:null,_0x4a9958=_0x5bcedb['map']((_0xdd8170,_0x3aac07)=>({'label':_0xdd8170,'data':_0x2e2116['map'](_0x4afa7c=>_0xb62c81[_0x4afa7c]&&_0xb62c81[_0x4afa7c][_0xdd8170]||0x0),'backgroundColor':isColorblind?_0x371c9e[_0x3aac07%_0x371c9e['length']]:PROVIDER_COLORS[_0xdd8170]||_0x301391(_0xdd8170,_0x3aac07),'borderRadius':0x4,'stack':'legal-prov'+'ider'}));!_0x4a9958['length']&&_0x4a9958['push']({'label':'Sin\x20provee'+'dor','data':_0x2e2116['map'](()=>0x0),'backgroundColor':'#cbd5e1','borderRadius':0x4,'stack':'legal-prov'+'ider'});const _0x50f6a3=document['getElement'+'ById']('creditLega'+'lDrillDown'+'Container');if(_0x50f6a3)_0x50f6a3['classList']['add']('hidden');initChart('creditProv'+'iderChart','bar',{'labels':_0x2e2116,'datasets':_0x4a9958,'indexAxis':'y','scales':{'x':{'beginAtZero':!![],'stacked':!![]},'y':{'stacked':!![]}}},{'onClick':(_0x18859f,_0x5a12ed,_0x513982)=>{if(!_0x5a12ed||!_0x5a12ed['length'])return;const _0x3cd899=_0x5a12ed[0x0]['index'],_0x44b24d=_0x5a12ed[0x0]['datasetInd'+'ex'],_0xa6fb20=_0x513982['data']['labels'][_0x3cd899],_0x38f968=_0x513982['data']['datasets'][_0x44b24d]?_0x513982['data']['datasets'][_0x44b24d]['label']:'';if(!_0xa6fb20||_0xa6fb20==='Sin\x20datos')return;showCreditLegalDrillDown(_0xa6fb20,_0x4866eb,_0x38f968);},'onHover':(_0x370732,_0x373e5c)=>{_0x370732&&_0x370732['native']&&_0x370732['native']['target']&&(_0x370732['native']['target']['style']['cursor']=_0x373e5c&&_0x373e5c['length']?'pointer':'default');},'plugins':{'tooltip':{'callbacks':{'label':_0x1b3ea1=>_0x1b3ea1['dataset']['label']+':\x20'+formatCurrencyMX(_0x1b3ea1['raw'])}},'datalabels':{'display':![]}},'scales':{'x':{'beginAtZero':!![],'stacked':!![],'ticks':{'callback':_0x3105f0=>formatCurrencyMX(_0x3105f0)}},'y':{'stacked':!![],'ticks':{'autoSkip':![],'callback':function(_0x2496b2){return this['getLabelFo'+'rValue']?this['getLabelFo'+'rValue'](_0x2496b2):_0x2496b2;}}}}});const _0x1f4e4c=Object['entries'](_0x24d12c['creditByDe'+'scription']||{})['sort']((_0x4a0e07,_0x40517a)=>_0x40517a[0x1]-_0x4a0e07[0x1])['slice'](0x0,0xa),_0x5da338=_0x1f4e4c['length']?_0x1f4e4c['map'](_0x2ba0b0=>_0x2ba0b0[0x0]):['Sin\x20datos'],_0x5713ec=_0x1f4e4c['length']?_0x1f4e4c['map'](_0xfd71c6=>_0xfd71c6[0x1]):[0x0];initChart('creditDesc'+'riptionCha'+'rt','bar',{'labels':_0x5da338,'datasets':[{'label':'Reembolso','data':_0x5713ec,'backgroundColor':'#14b8a6'}],'indexAxis':'y','scales':{'x':{'beginAtZero':!![]}}},{'plugins':{'tooltip':{'callbacks':{'label':_0x2eacc4=>_0x2eacc4['dataset']['label']+':\x20'+formatCurrencyMX(_0x2eacc4['raw'])}},'datalabels':{'display':![]}},'scales':{'x':{'beginAtZero':!![],'ticks':{'callback':_0x2c9743=>formatCurrencyMX(_0x2c9743)}}}});}function runStrategyAnalysis(_0x1cdd5a={}){try{let _0x54f557=dbPerformance,_0x1e3683=dbScrap;const _0x36c954=Array['isArray'](_0x1cdd5a['periodsOve'+'rride'])?_0x1cdd5a['periodsOve'+'rride']:moduleState['strategy']['periods'];if(_0x36c954['length']>0x0){const _0x553c7d=_0x171489=>{const _0x4ef759=parseFlexibleDate(_0x171489['date']);if(!_0x4ef759)return![];const _0x5710b9=_0x4ef759['getFullYea'+'r']()+'-'+_0x4ef759['getMonth']();return _0x36c954['includes'](_0x5710b9);};_0x54f557=dbPerformance['filter'](_0x553c7d),_0x1e3683=dbScrap['filter'](_0x553c7d);}const _0x57ef8b=_0x1c53ee=>normalizeStr(_0x1c53ee)['normalize']('NFD')['replace'](/[\u0300-\u036f]/g,'')['toUpperCas'+'e']()['replace'](/[^A-Z0-9]+/g,'\x20')['replace'](/\s+/g,'\x20')['trim'](),_0xa8321=_0xd322b9=>_0x57ef8b(_0xd322b9)['replace'](/\s+/g,''),_0x335d6d={'BFG':'BFGOODRICH','BFGOODRICH':'BFGOODRICH'},_0x324fee=_0x444f0e=>{const _0x5058f6=_0xa8321(_0x444f0e);return _0x335d6d[_0x5058f6]||_0x5058f6;},_0x47ab00=_0x41bcd6=>_0xa8321(_0x41bcd6),_0xfc614b=(_0xc5ad72,_0x3ef9e2)=>_0x324fee(_0xc5ad72)+'|'+_0x47ab00(_0x3ef9e2),_0xc05f00=_0x20b251=>{const _0x19ce09=_0x20b251['indexOf']('|');if(_0x19ce09<0x0)return{'brand':'','model':_0x20b251||''};return{'brand':_0x20b251['slice'](0x0,_0x19ce09),'model':_0x20b251['slice'](_0x19ce09+0x1)};},_0x3b0505=(_0x556355,_0x41a13f)=>{if(_0x556355===_0x41a13f)return!![];const _0x2b8c20=_0x556355['length'],_0x261bcc=_0x41a13f['length'];if(Math['abs'](_0x2b8c20-_0x261bcc)>0x1)return![];let _0x4db3e9=0x0,_0x4971d8=0x0,_0x192ed3=0x0;while(_0x4db3e9<_0x2b8c20&&_0x4971d8<_0x261bcc){if(_0x556355[_0x4db3e9]===_0x41a13f[_0x4971d8]){_0x4db3e9++,_0x4971d8++;continue;}_0x192ed3++;if(_0x192ed3>0x1)return![];if(_0x2b8c20>_0x261bcc)_0x4db3e9++;else{if(_0x261bcc>_0x2b8c20)_0x4971d8++;else _0x4db3e9++,_0x4971d8++;}}if(_0x4db3e9<_0x2b8c20||_0x4971d8<_0x261bcc)_0x192ed3++;return _0x192ed3<=0x1;},_0x4f3095=_0x4ac344=>{const _0x20f71a=_0x47ab00(_0x4ac344),_0x24a91d=new Set([_0x20f71a]);if(_0x20f71a['length']>0x3&&_0x20f71a['endsWith']('S'))_0x24a91d['add'](_0x20f71a['slice'](0x0,-0x1));if(_0x20f71a['length']>0x2&&!_0x20f71a['endsWith']('S'))_0x24a91d['add'](_0x20f71a+'S');return[..._0x24a91d];},_0x3b0336=(_0x30e614,_0xc9785a)=>{const _0x2c29ae=_0x324fee(_0x30e614);return _0x4f3095(_0xc9785a)['map'](_0x30a541=>_0x2c29ae+'|'+_0x30a541);},_0x1c907e=(_0x2fbdc4,_0x1ade70)=>(normalizeStr(_0x2fbdc4)['toUpperCas'+'e']()+'\x20'+normalizeStr(_0x1ade70)['toUpperCas'+'e']())['trim'](),_0x760e62={},_0x14a60b={},_0x4245cc={},_0x1374c5={},_0x296774={};let _0x3aa249=0x0,_0xc6ddfc=0x0;_0x54f557['forEach'](_0xb8c84=>{const _0x2be7c1=_0xfc614b(_0xb8c84['brand'],_0xb8c84['model']),_0x314098=_0xc05f00(_0x2be7c1);if(!_0x760e62[_0x2be7c1])_0x760e62[_0x2be7c1]={'cost':0x0,'km':0x0,'sumEff':0x0,'effCount':0x0,'typeVotes':{},'name':_0x1c907e(_0xb8c84['brand'],_0xb8c84['model'])};_0x760e62[_0x2be7c1]['cost']+=_0xb8c84['cost'],_0x760e62[_0x2be7c1]['km']+=_0xb8c84['km'];_0xb8c84['efficiency']>0x0&&isFinite(_0xb8c84['efficiency'])&&(_0x760e62[_0x2be7c1]['sumEff']+=_0xb8c84['efficiency'],_0x760e62[_0x2be7c1]['effCount']++);const _0x2db8a9=_0xb8c84['type']||'Sin\x20Clasif'+'icar';_0x760e62[_0x2be7c1]['typeVotes'][_0x2db8a9]=(_0x760e62[_0x2be7c1]['typeVotes'][_0x2db8a9]||0x0)+0x1,_0x14a60b[_0x2be7c1]=_0x14a60b[_0x2be7c1]||_0x760e62[_0x2be7c1]['name'],_0x296774[_0x2be7c1]=(_0x296774[_0x2be7c1]||0x0)+0x1,_0x3b0336(_0xb8c84['brand'],_0xb8c84['model'])['forEach'](_0x164fbb=>{if(!(_0x164fbb in _0x4245cc))_0x4245cc[_0x164fbb]=_0x2be7c1;else{if(_0x4245cc[_0x164fbb]!==_0x2be7c1)_0x4245cc[_0x164fbb]=null;}});if(!_0x1374c5[_0x314098['brand']])_0x1374c5[_0x314098['brand']]=[];!_0x1374c5[_0x314098['brand']]['some'](_0x1603d7=>_0x1603d7['model']===_0x314098['model']&&_0x1603d7['key']===_0x2be7c1)&&_0x1374c5[_0x314098['brand']]['push']({'model':_0x314098['model'],'key':_0x2be7c1}),_0x3aa249+=_0xb8c84['cost'],_0xc6ddfc+=_0xb8c84['km'];});const _0x58d6c1=_0xc6ddfc>0x0?_0x3aa249/_0xc6ddfc:0x0,_0x57dfbe=_0x58d6c1*0.95,_0x10a8b8={},_0x1363e2={},_0x4f9689={},_0x477fb3={},_0x1b324c={},_0x3b9227=new Set();let _0x4ec6b1=0x0,_0x34cc56=0x0;_0x1e3683['forEach'](_0x40a979=>{const _0x1cb1dc=Math['max'](0x0,(_0x40a979['mm']||0x0)-0x3),_0x5d8a41=_0xfc614b(_0x40a979['brand'],_0x40a979['model']),_0x2387a6=_0xc05f00(_0x5d8a41),_0xdbb56b=_0x1c907e(_0x40a979['brand'],_0x40a979['model']);let _0x486cdd=null;if(!_0x477fb3[_0x2387a6['brand']])_0x477fb3[_0x2387a6['brand']]=[];!_0x477fb3[_0x2387a6['brand']]['some'](_0xf5a08=>_0xf5a08['model']===_0x2387a6['model'])&&_0x477fb3[_0x2387a6['brand']]['push']({'model':_0x2387a6['model'],'name':_0xdbb56b});const _0x596fd9=_0x3b0336(_0x40a979['brand'],_0x40a979['model']);for(const _0x7c5d64 of _0x596fd9){const _0x423202=_0x4245cc[_0x7c5d64];if(_0x423202&&_0x760e62[_0x423202]){_0x486cdd=_0x423202;break;}}if(!_0x486cdd&&_0x1374c5[_0x2387a6['brand']]&&_0x2387a6['model']['length']>=0x5){const _0x263772=_0x1374c5[_0x2387a6['brand']]['filter'](_0x7e851c=>_0x3b0505(_0x2387a6['model'],_0x7e851c['model']));if(_0x263772['length']===0x1)_0x486cdd=_0x263772[0x0]['key'];}if(!_0x486cdd)_0x486cdd=_0x5d8a41;const _0x5e24ef=!!(_0x760e62[_0x486cdd]&&_0x760e62[_0x486cdd]['km']>0x0);if(_0x5e24ef)_0x3b9227['add'](_0x486cdd);else{if(!_0x1b324c[_0x5d8a41])_0x1b324c[_0x5d8a41]={'key':_0x5d8a41,'name':_0xdbb56b,'count':0x0,'brand':_0x2387a6['brand'],'model':_0x2387a6['model']};_0x1b324c[_0x5d8a41]['count']++;}if(!_0x10a8b8[_0x486cdd])_0x10a8b8[_0x486cdd]={'wasteMm':0x0,'count':0x0};_0x10a8b8[_0x486cdd]['wasteMm']+=_0x1cb1dc,_0x10a8b8[_0x486cdd]['count']++,_0x1363e2[_0x40a979['reason']]=(_0x1363e2[_0x40a979['reason']]||0x0)+_0x1cb1dc,_0x4f9689[_0x486cdd]=(_0x4f9689[_0x486cdd]||0x0)+0x1,_0x14a60b[_0x486cdd]=_0x14a60b[_0x486cdd]||_0xdbb56b,_0x4ec6b1+=_0x1cb1dc,_0x34cc56++;});const _0x3bb8a8=Object['keys'](_0x4f9689),_0x4ed371=_0x3bb8a8['filter'](_0x12cd6a=>_0x760e62[_0x12cd6a]&&_0x760e62[_0x12cd6a]['km']>0x0),_0x3688d4=_0x4ed371['reduce']((_0x12198a,_0x9608d)=>_0x12198a+(_0x4f9689[_0x9608d]||0x0),0x0),_0x4719ac=Math['max'](0x0,_0x34cc56-_0x3688d4),_0x34473c=_0x34cc56>0x0?_0x3688d4/_0x34cc56*0x64:0x0,_0x45091e=(_0x129b9b,_0x53346a)=>{const _0x5366c0=_0x1374c5[_0x129b9b]||[],_0x5b6d0f=_0x5366c0['filter'](_0x521550=>_0x3b0505(_0x53346a,_0x521550['model']));if(_0x5b6d0f['length']!==0x1)return'';const _0x23ed79=_0x5b6d0f[0x0]['key'];return _0x14a60b[_0x23ed79]||_0x760e62[_0x23ed79]?.['name']||'';},_0x44fedc=(_0x1b096e,_0x1bc602)=>{const _0x2e5bbd=_0x477fb3[_0x1b096e]||[],_0x125c8f=_0x2e5bbd['filter'](_0x1592b2=>_0x3b0505(_0x1bc602,_0x1592b2['model']));if(_0x125c8f['length']!==0x1)return'';return _0x125c8f[0x0]['name']||'';},_0x2cfb5b=Object['values'](_0x1b324c)['map'](_0x4aaee9=>({'name':_0x4aaee9['name'],'count':_0x4aaee9['count'],'possibleMatch':_0x45091e(_0x4aaee9['brand'],_0x4aaee9['model'])}))['sort']((_0x37c49e,_0x32f7c0)=>_0x32f7c0['count']-_0x37c49e['count']),_0x2a9158=Object['keys'](_0x760e62)['filter'](_0x40f60c=>(_0x760e62[_0x40f60c]?.['km']||0x0)>0x0&&!_0x3b9227['has'](_0x40f60c))['map'](_0x4d5093=>{const _0x194e9e=_0xc05f00(_0x4d5093);return{'name':_0x14a60b[_0x4d5093]||_0x760e62[_0x4d5093]?.['name']||_0x4d5093,'count':_0x296774[_0x4d5093]||0x0,'possibleMatch':_0x44fedc(_0x194e9e['brand'],_0x194e9e['model'])};})['sort']((_0x542315,_0x4d1446)=>_0x4d1446['count']-_0x542315['count']),_0x1a0dd1=_0x4ed371['map'](_0x360c0f=>{const _0x14de53=_0x760e62[_0x360c0f],_0x2f6295=_0x10a8b8[_0x360c0f]||{'wasteMm':0x0,'count':0x0},_0x13c4f2=_0x14de53['km']>0x0?_0x14de53['cost']/_0x14de53['km']:0x0,_0x5af0ca=_0x14de53['effCount']>0x0?_0x14de53['sumEff']/_0x14de53['effCount']:0x0,_0x1b0372=_0x5af0ca>0x0?0x2710/_0x5af0ca:0x0,_0x4b39cd=_0x2f6295['count']>0x0?_0x2f6295['wasteMm']/_0x2f6295['count']:0x0,_0x91bd13=Object['entries'](_0x14de53['typeVotes'])['sort']((_0x18159b,_0x280340)=>_0x280340[0x1]-_0x18159b[0x1])[0x0]?.[0x0]||'Sin\x20Clasif'+'icar';return{'key':_0x360c0f,'name':_0x14a60b[_0x360c0f]||_0x14de53['name'],'type':_0x91bd13,'avgCPK':_0x13c4f2,'avgWastedMm':_0x4b39cd,'wearMmPer10k':_0x1b0372,'scrapCount':_0x2f6295['count']};})['filter'](_0x3c6dbd=>_0x3c6dbd['avgCPK']>0x0),_0x4ab22d=(_0x4cd01,_0x450b78)=>{if(!_0x4cd01['length'])return{'min':0x0,'max':0x0};const _0xf183dd=_0x4cd01['map'](_0x450b78)['filter'](_0x39ecd4=>isFinite(_0x39ecd4));if(!_0xf183dd['length'])return{'min':0x0,'max':0x0};return{'min':Math['min'](..._0xf183dd),'max':Math['max'](..._0xf183dd)};},_0x21d2b5=(_0x503faa,_0x27d721)=>_0x27d721['max']-_0x27d721['min']>0x0?(_0x503faa-_0x27d721['min'])/(_0x27d721['max']-_0x27d721['min']):0.5,_0x4aad2f=_0x4ab22d(_0x1a0dd1,_0x57d581=>_0x57d581['avgCPK']),_0x3f5aad=_0x4ab22d(_0x1a0dd1,_0x54e33b=>_0x54e33b['wearMmPer1'+'0k']),_0x249ef8=_0x4ab22d(_0x1a0dd1,_0xab6f45=>_0xab6f45['scrapCount']),_0x2fd502=_0x4ab22d(_0x1a0dd1,_0x169313=>_0x169313['avgWastedM'+'m']);_0x1a0dd1['forEach'](_0x2c9db0=>{const _0x19082e=_0x21d2b5(_0x2c9db0['avgCPK'],_0x4aad2f),_0x5cab96=_0x21d2b5(_0x2c9db0['wearMmPer1'+'0k'],_0x3f5aad),_0x33df19=_0x21d2b5(_0x2c9db0['scrapCount'],_0x249ef8),_0x3f9ff2=_0x21d2b5(_0x2c9db0['avgWastedM'+'m'],_0x2fd502);_0x2c9db0['prioritySc'+'ore']=(0.35*_0x19082e+0.35*_0x5cab96+0.2*_0x33df19+0.1*_0x3f9ff2)*0x64;}),_0x1a0dd1['sort']((_0x447338,_0x246c67)=>_0x246c67['prioritySc'+'ore']-_0x447338['prioritySc'+'ore']);const _0x1b7e49=_0x1a0dd1[0x0]||null;renderStrategy({'models':_0x1a0dd1,'avgFleetCPK':_0x58d6c1,'targetCPK':_0x57dfbe,'cpkMap':_0x760e62,'modelLabelMap':_0x14a60b,'causeWaste':_0x1363e2,'modelCountMap':_0x4f9689,'totalWasteMM':_0x4ec6b1,'totalScrapCount':_0x34cc56,'matchPct':_0x34473c,'matchedModelCount':_0x4ed371['length'],'unmatchedScrapCount':_0x4719ac,'topRisk':_0x1b7e49,'unmatchedScrapRows':_0x2cfb5b,'unmatchedCpkRows':_0x2a9158},_0x1cdd5a);}catch(_0x5ee281){console['error']('Error\x20runn'+'ing\x20Strate'+'gy\x20Analysi'+'s:',_0x5ee281),logStatus('Error\x20en\x20m'+'ódulo\x20Estr'+'ategia','error');}}function renderStrategy(_0x5c1100,_0x26ffc3={}){if(!_0x5c1100)return;const _0x5cb9bb=Array['isArray'](_0x5c1100['models'])?_0x5c1100['models']:[],_0x31ee8a=!!_0x26ffc3['compactOnl'+'y'];safeSetText('targetCPK','$'+_0x5c1100['targetCPK']['toFixed'](0x4)),safeSetText('currentAvg'+'CPK','$'+_0x5c1100['avgFleetCP'+'K']['toFixed'](0x4)),safeSetText('strategyMa'+'tchPct',_0x5c1100['matchPct']['toFixed'](0x1)+'%'),safeSetText('strategyMa'+'tchModels',_0x5c1100['matchedMod'+'elCount']||0x0),safeSetText('strategyUn'+'matchedScr'+'ap',_0x5c1100['unmatchedS'+'crapCount']||0x0),safeSetText('strategyTo'+'pRiskModel',_0x5c1100['topRisk']?_0x5c1100['topRisk']['name']:'-'),safeSetText('strategyTo'+'pRiskScore',_0x5c1100['topRisk']?'Score\x20'+_0x5c1100['topRisk']['prioritySc'+'ore']['toFixed'](0x1):'Score\x200'),safeSetText('scrapStrat'+'egyMatchPc'+'t',_0x5c1100['matchPct']['toFixed'](0x1)+'%'),safeSetText('scrapStrat'+'egyMatchMo'+'dels',_0x5c1100['matchedMod'+'elCount']||0x0),safeSetText('scrapStrat'+'egyUnmatch'+'edScrap',_0x5c1100['unmatchedS'+'crapCount']||0x0),safeSetText('scrapStrat'+'egyTopRisk'+'Model',_0x5c1100['topRisk']?_0x5c1100['topRisk']['name']:'-'),safeSetText('scrapStrat'+'egyTopRisk'+'Score',_0x5c1100['topRisk']?'Score\x20'+_0x5c1100['topRisk']['prioritySc'+'ore']['toFixed'](0x1):'Score\x200');const _0x80032d=(_0x3e4dbd,_0x402188,_0x52258e)=>{const _0x1b998d=document['getElement'+'ById'](_0x402188),_0x5cddf3=document['getElement'+'ById'](_0x52258e);if(!_0x1b998d||!_0x5cddf3)return;const _0x2a0848=Array['isArray'](_0x3e4dbd)?_0x3e4dbd:[];if(!_0x2a0848['length']){_0x1b998d['innerHTML']='',_0x5cddf3['classList']['remove']('hidden');return;}_0x5cddf3['classList']['add']('hidden'),_0x1b998d['innerHTML']=_0x2a0848['slice'](0x0,0x19)['map'](_0x260d20=>'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20<tr>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-2\x20text-'+'slate-700\x22'+'>'+escapeHtml(normalizeStr(_0x260d20['name']||'-'))+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-2\x20text-'+'center\x20tex'+'t-slate-50'+'0\x20font-mon'+'o\x22>')+(_0x260d20['count']||0x0)['toLocaleSt'+'ring']('es-MX')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'<td\x20class='+'\x22p-2\x20text-'+'indigo-700'+'\x22>')+(_0x260d20['possibleMa'+'tch']?escapeHtml(normalizeStr(_0x260d20['possibleMa'+'tch'])):'<span\x20clas'+'s=\x22text-sl'+'ate-300\x22>-'+'</span>')+('</td>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20</tr'+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20'))['join']('');};_0x80032d(_0x5c1100['unmatchedS'+'crapRows'],'strategyUn'+'matchedScr'+'apBody','strategyUn'+'matchedScr'+'apEmpty'),_0x80032d(_0x5c1100['unmatchedC'+'pkRows'],'strategyUn'+'matchedCpk'+'Body','strategyUn'+'matchedCpk'+'Empty'),_0x80032d(_0x5c1100['unmatchedS'+'crapRows'],'scrapStrat'+'egyUnmatch'+'edScrapBod'+'y','scrapStrat'+'egyUnmatch'+'edScrapEmp'+'ty'),_0x80032d(_0x5c1100['unmatchedC'+'pkRows'],'scrapStrat'+'egyUnmatch'+'edCpkBody','scrapStrat'+'egyUnmatch'+'edCpkEmpty');const _0x3ad17e=Object['entries'](_0x5c1100['modelCount'+'Map'])['sort']((_0x413c1f,_0x2b63e6)=>_0x2b63e6[0x1]-_0x413c1f[0x1])['slice'](0x0,0xa),_0x19e02f=_0x3ad17e['map'](_0x14cd65=>_0x5c1100['modelLabel'+'Map'][_0x14cd65[0x0]]||_0x14cd65[0x0]),_0x282421=_0x3ad17e['map'](_0x1dfb7b=>_0x1dfb7b[0x1]),_0x17d3e3=_0x3ad17e['map'](_0x4eadcb=>{const _0x5237a6=_0x4eadcb[0x0],_0xf0de97=_0x5c1100['cpkMap'][_0x5237a6];if(_0xf0de97&&_0xf0de97['km']>0x0)return _0xf0de97['cost']/_0xf0de97['km'];return null;}),_0x2cb604=isColorblind?'#0072B2':'#3b82f6',_0x1ddec3=isColorblind?'#D55E00':'#6366f1';initChart('scrapStrat'+'egyParetoM'+'odelsChart','bar',{'labels':_0x19e02f,'datasets':[{'type':'line','label':'CPK\x20Promed'+'io\x20($)','data':_0x17d3e3,'borderColor':_0x2cb604,'yAxisID':'y1','pointRadius':0x4,'pointBackgroundColor':'#fff','pointBorderColor':_0x2cb604,'pointBorderWidth':0x2},{'type':'bar','label':'Llantas\x20De'+'sechadas','data':_0x282421,'backgroundColor':_0x1ddec3,'yAxisID':'y','borderRadius':0x4}]},{'scales':{'y':{'type':'linear','display':!![],'position':'left','title':{'display':!![],'text':'Unidades'}},'y1':{'type':'linear','display':!![],'position':'right','grid':{'drawOnChartArea':![]},'title':{'display':!![],'text':'CPK\x20($)'},'ticks':{'callback':_0x2b6f13=>'$'+_0x2b6f13['toFixed'](0x3)},'beginAtZero':!![]}},'plugins':{'datalabels':{'display':_0x1f0258=>_0x1f0258['dataset']['type']==='bar','color':'white','font':{'size':0xa,'weight':'bold'},'anchor':'center','align':'center'},'tooltip':{'callbacks':{'label':_0x4b02b7=>{let _0x1bb6af=_0x4b02b7['dataset']['label']+':\x20';if(_0x4b02b7['dataset']['type']==='line')_0x1bb6af+=_0x4b02b7['raw']==null?'Sin\x20match\x20'+'CPK':'$'+(_0x4b02b7['raw']||0x0)['toFixed'](0x4);else _0x1bb6af+=(_0x4b02b7['raw']||0x0)+'\x20un.';return _0x1bb6af;}}}}});if(_0x31ee8a)return;const _0x1c0887=_0x5cb9bb['filter'](_0x4431ac=>_0x4431ac['type']['includes']('Tracción')||_0x4431ac['type']['includes']('TRACCIÓN')),_0x154b79=_0x5cb9bb['filter'](_0x252e20=>!_0x252e20['type']['includes']('Tracción')&&!_0x252e20['type']['includes']('TRACCIÓN')),_0x535a9c=new Set(_0x5cb9bb['slice'](0x0,0x8)['map'](_0x2eecd5=>_0x2eecd5['name'])),_0xdb95cf=_0x1c0887['map'](_0x253b71=>({'x':_0x253b71['avgCPK'],'y':_0x253b71['wearMmPer1'+'0k'],'r':Math['min'](0x16,0x4+Math['sqrt'](Math['max'](0x1,_0x253b71['scrapCount']))*2.5),'model':_0x253b71['name'],'waste':_0x253b71['avgWastedM'+'m'],'scrapCount':_0x253b71['scrapCount'],'score':_0x253b71['prioritySc'+'ore']})),_0x2561e9=_0x154b79['map'](_0x2f752c=>({'x':_0x2f752c['avgCPK'],'y':_0x2f752c['wearMmPer1'+'0k'],'r':Math['min'](0x16,0x4+Math['sqrt'](Math['max'](0x1,_0x2f752c['scrapCount']))*2.5),'model':_0x2f752c['name'],'waste':_0x2f752c['avgWastedM'+'m'],'scrapCount':_0x2f752c['scrapCount'],'score':_0x2f752c['prioritySc'+'ore']})),_0x344177=isColorblind?'#0072B2':'#3b82f6',_0x308af2=isColorblind?'#CC79A7':'#8b5cf6',_0x915617={'scales':{'x':{'title':{'display':!![],'text':'CPK\x20($)'}},'y':{'title':{'display':!![],'text':'mm\x20/\x2010k\x20k'+'m\x20(desgast'+'e)'}}},'plugins':{'tooltip':{'callbacks':{'label':_0x5db6ed=>_0x5db6ed['raw']['model']+':\x20CPK\x20$'+_0x5db6ed['raw']['x']['toFixed'](0x4)+'\x20|\x20'+_0x5db6ed['raw']['y']['toFixed'](0x2)+('\x20mm/10k\x20|\x20'+'Scrap\x20')+_0x5db6ed['raw']['scrapCount']+'\x20|\x20Score\x20'+_0x5db6ed['raw']['score']['toFixed'](0x1)}},'datalabels':{'color':'#475569','align':'top','font':{'weight':'bold','size':0xa},'formatter':_0x129c77=>_0x535a9c['has'](_0x129c77['model'])?_0x129c77['model']:''}}};initChart('strategyCh'+'artTractio'+'n','bubble',{'datasets':[{'label':'Tracción','data':_0xdb95cf,'backgroundColor':_0x344177}]},_0x915617),initChart('strategyCh'+'artTrailer','bubble',{'datasets':[{'label':'Arrastre\x20/'+'\x20TP\x20/\x20Sin\x20'+'Clasificar','data':_0x2561e9,'backgroundColor':_0x308af2}]},_0x915617);const _0xbb0da=Object['entries'](_0x5c1100['causeWaste'])['sort']((_0x190a31,_0xb033d8)=>_0xb033d8[0x1]-_0x190a31[0x1])['slice'](0x0,0xa),_0x451881=_0xbb0da['map'](_0x52ed99=>_0x52ed99[0x0]),_0x4c2e6e=_0xbb0da['map'](_0x35135c=>_0x35135c[0x1]);let _0x5afaa4=0x0;const _0x387bea=_0x4c2e6e['map'](_0xd4617e=>{return _0x5afaa4+=_0xd4617e,_0x5c1100['totalWaste'+'MM']>0x0?_0x5afaa4/_0x5c1100['totalWaste'+'MM']*0x64:0x0;}),_0xf28f23=isColorblind?'#E69F00':'#eab308',_0x382211=isColorblind?'#009E73':'#9333ea';initChart('strategyPa'+'retoChart','bar',{'labels':_0x451881,'datasets':[{'type':'line','label':'%\x20Acumulad'+'o','data':_0x387bea,'borderColor':_0xf28f23,'yAxisID':'y1','pointRadius':0x3,'pointBackgroundColor':_0xf28f23},{'type':'bar','label':'Desperdici'+'o\x20Total\x20(m'+'m)','data':_0x4c2e6e,'backgroundColor':_0x382211,'yAxisID':'y'}]},{'scales':{'y':{'type':'linear','display':!![],'position':'left','title':{'display':!![],'text':'Milímetros'+'\x20(mm)'}},'y1':{'type':'linear','display':!![],'position':'right','min':0x0,'max':0x64,'grid':{'drawOnChartArea':![]},'ticks':{'callback':_0x43e603=>_0x43e603+'%'}}},'plugins':{'datalabels':{'display':_0x315882=>_0x315882['dataset']['type']==='bar','color':'white','font':{'size':0xa,'weight':'bold'},'anchor':'end','align':'start','formatter':Math['round']}}}),initChart('strategyPa'+'retoModels'+'Chart','bar',{'labels':_0x19e02f,'datasets':[{'type':'line','label':'CPK\x20Promed'+'io\x20($)','data':_0x17d3e3,'borderColor':_0x2cb604,'yAxisID':'y1','pointRadius':0x4,'pointBackgroundColor':'#fff','pointBorderColor':_0x2cb604,'pointBorderWidth':0x2},{'type':'bar','label':'Llantas\x20De'+'sechadas','data':_0x282421,'backgroundColor':_0x1ddec3,'yAxisID':'y','borderRadius':0x4}]},{'scales':{'y':{'type':'linear','display':!![],'position':'left','title':{'display':!![],'text':'Unidades'}},'y1':{'type':'linear','display':!![],'position':'right','grid':{'drawOnChartArea':![]},'title':{'display':!![],'text':'CPK\x20($)'},'ticks':{'callback':_0x59677f=>'$'+_0x59677f['toFixed'](0x3)},'beginAtZero':!![]}},'plugins':{'datalabels':{'display':_0x97f00a=>_0x97f00a['dataset']['type']==='bar','color':'white','font':{'size':0xa,'weight':'bold'},'anchor':'center','align':'center'},'tooltip':{'callbacks':{'label':_0x28dc97=>{let _0x4a12d8=_0x28dc97['dataset']['label']+':\x20';if(_0x28dc97['dataset']['type']==='line')_0x4a12d8+=_0x28dc97['raw']==null?'Sin\x20match\x20'+'CPK':'$'+(_0x28dc97['raw']||0x0)['toFixed'](0x4);else _0x4a12d8+=(_0x28dc97['raw']||0x0)+'\x20un.';return _0x4a12d8;}}}}});}function runWashAnalysis(){try{logStatus('Generando\x20'+'gráficos\x20d'+'e\x20Lavadero'+'...');const _0x4bbb57=getWashScopedCurrentRows(),_0x2e0870=moduleState['washing']['periods'],_0x325669=document['getElement'+'ById']('washDrillD'+'ownContain'+'er'),_0x380708=document['getElement'+'ById']('washMonthl'+'yDetailCon'+'tainer');if(_0x325669)_0x325669['classList']['add']('hidden');if(_0x380708)_0x380708['classList']['add']('hidden');const _0x15cf5e=_0x4bbb57['filter'](_0x5cb453=>_0x5cb453['daysWithou'+'tWash']<=0x2d)['length'],_0x58280b=_0x4bbb57['filter'](_0xde781e=>_0xde781e['daysWithou'+'tWash']>0x2d&&_0xde781e['daysWithou'+'tWash']<0x64)['length'],_0x5d5c69=_0x4bbb57['filter'](_0x1f4ce9=>_0x1f4ce9['daysWithou'+'tWash']>=0x64)['length'];safeSetText('washCleanC'+'ount',_0x15cf5e),safeSetText('washAlertC'+'ount',_0x58280b),safeSetText('washCritic'+'alCount',_0x5d5c69);const _0xf121bb=_0x303832=>{if(_0x303832===0x0)return _0x2e2c32=>_0x2e2c32['daysWithou'+'tWash']<=0x2d;if(_0x303832===0x1)return _0x5f57aa=>_0x5f57aa['daysWithou'+'tWash']>0x2d&&_0x5f57aa['daysWithou'+'tWash']<0x64;if(_0x303832===0x2)return _0x4e9227=>_0x4e9227['daysWithou'+'tWash']>=0x64;return()=>![];},_0x16c06b=['Limpias','Alerta','Críticas'],_0x23c9f3=[_0x15cf5e||0x0,_0x58280b||0x0,_0x5d5c69||0x0],_0x3b886a=isColorblind?'#56B4E9':'#22c55e',_0x14b8b6=isColorblind?'#E69F00':'#eab308',_0x5263a9=isColorblind?'#D55E00':'#ef4444';try{initChart('washStatus'+'Chart','doughnut',{'labels':_0x16c06b,'datasets':[{'data':_0x23c9f3,'backgroundColor':[_0x3b886a,_0x14b8b6,_0x5263a9]}]},{'onClick':(_0xc4ee71,_0xd77002,_0x2f0e03)=>{if(_0xd77002['length']){const _0xcab024=_0xd77002[0x0]['index'],_0x58b1a3=_0x2f0e03['data']['labels'][_0xcab024],_0x4060dc=_0x4bbb57['filter'](_0xf121bb(_0xcab024));showWashDrillDown(_0x4060dc,'Estatus\x20Ge'+'neral:\x20<st'+'rong>'+_0x58b1a3+('</strong>\x20'+'(')+_0x4060dc['length']+'\x20unidades)');}},'onHover':(_0x3b0993,_0x2c3f18)=>{_0x3b0993['native']['target']['style']['cursor']=_0x2c3f18[0x0]?'pointer':'default';}});}catch(_0x16c85c){console['warn']('Error\x20char'+'t\x201\x20wash',_0x16c85c),logStatus('Error\x20char'+'t\x201\x20wash','error');}try{const _0xa7e35d={};_0x4bbb57['forEach'](_0x206210=>{if(!_0xa7e35d[_0x206210['company']])_0xa7e35d[_0x206210['company']]={'clean':0x0,'alert':0x0,'critical':0x0};if(_0x206210['daysWithou'+'tWash']<=0x2d)_0xa7e35d[_0x206210['company']]['clean']++;else{if(_0x206210['daysWithou'+'tWash']<0x64)_0xa7e35d[_0x206210['company']]['alert']++;else _0xa7e35d[_0x206210['company']]['critical']++;}});const _0x2a549d=Object['keys'](_0xa7e35d)['sort']();initChart('washCompan'+'yChart','bar',{'labels':_0x2a549d,'datasets':[{'label':'Limpias','data':_0x2a549d['map'](_0x4af0e4=>_0xa7e35d[_0x4af0e4]['clean']),'backgroundColor':_0x3b886a,'stack':'S1'},{'label':'Alerta','data':_0x2a549d['map'](_0x378354=>_0xa7e35d[_0x378354]['alert']),'backgroundColor':_0x14b8b6,'stack':'S1'},{'label':'Críticas','data':_0x2a549d['map'](_0x2aef3a=>_0xa7e35d[_0x2aef3a]['critical']),'backgroundColor':_0x5263a9,'stack':'S1'}]},{'scales':{'x':{'stacked':!![]},'y':{'stacked':!![]}},'plugins':{'datalabels':{'color':'white','font':{'weight':'bold','size':0xa},'display':_0x4bc553=>_0x4bc553['dataset']['data'][_0x4bc553['dataIndex']]>0x0},'tooltip':{'mode':'index','intersect':![]}},'onClick':(_0x5528a4,_0x53209f,_0x1e6177)=>{if(_0x53209f['length']){const _0x3bff50=_0x53209f[0x0],_0xe49029=_0x1e6177['data']['labels'][_0x3bff50['index']],_0x4217e8=_0x16c06b[_0x3bff50['datasetInd'+'ex']],_0x20177f=_0xf121bb(_0x3bff50['datasetInd'+'ex']),_0x7e4fe1=_0x4bbb57['filter'](_0x1680a3=>_0x1680a3['company']===_0xe49029&&_0x20177f(_0x1680a3));showWashDrillDown(_0x7e4fe1,'Detalle:\x20<'+'strong>'+_0xe49029+('</strong>\x20'+'-\x20')+_0x4217e8+'\x20('+_0x7e4fe1['length']+'\x20unidades)');}},'onHover':(_0x1758dc,_0x3572c1)=>{_0x1758dc['native']['target']['style']['cursor']=_0x3572c1[0x0]?'pointer':'default';}});}catch(_0x4a9b75){console['warn']('Error\x20char'+'t\x202\x20wash',_0x4a9b75),logStatus('Error\x20char'+'t\x202\x20wash','error');}const _0x574fed=document['getElement'+'ById']('washCritic'+'alTableBod'+'y'),_0x2f74df=hasWashSpecificSelection();toggleWashSummaryMode(_0x2f74df);if(_0x2f74df)renderWashHistorySummaryRows(getWashScopedHistoryRows());else{if(_0x574fed){_0x574fed['innerHTML']='';const _0x1bfb11=[..._0x4bbb57]['sort']((_0x36ac6c,_0x9e2b90)=>_0x9e2b90['daysWithou'+'tWash']-_0x36ac6c['daysWithou'+'tWash'])['slice'](0x0,0xa);_0x1bfb11['forEach'](_0x52fc62=>{_0x574fed['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'red-50\x22><t'+'d\x20class=\x22p'+'-3\x20font-bo'+'ld\x20text-sl'+'ate-700\x22>'+_0x52fc62['unit']+('</td><td\x20c'+'lass=\x22p-3\x22'+'>')+_0x52fc62['company']+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-bol'+'d\x20text-red'+'-600\x22>')+_0x52fc62['daysWithou'+'tWash']+'</td></tr>';});}}window['renderWash'+'MonthlyCha'+'rt']();}catch(_0x58236a){console['error'](_0x58236a),logStatus('Error\x20FATA'+'L\x20Lavadero'+':\x20'+_0x58236a['message'],'error');}}function renderWashMonthlyChart(){const _0x24588e=document['getElement'+'ById']('localWashH'+'istoryFilt'+'er'),_0xd0f80=_0x24588e?_0x24588e['value']:'L12M',_0x49fc03=getWashScopedHistoryRows();let _0x1113bf=[..._0x49fc03];if(document['getElement'+'ById']('washHistor'+'yCount'))safeSetText('washHistor'+'yCount',_0x49fc03['length']);let _0x4db36d=[],_0x516d8e=[];if(_0xd0f80==='L12M'){const _0x3fbf3f=new Date();for(let _0x198d5b=0xb;_0x198d5b>=0x0;_0x198d5b--){const _0xb7e110=new Date(_0x3fbf3f['getFullYea'+'r'](),_0x3fbf3f['getMonth']()-_0x198d5b,0x1),_0x3e8ad4=_0xb7e110['getMonth'](),_0x391346=_0xb7e110['getFullYea'+'r']();_0x4db36d['push'](monthNamesFull[_0x3e8ad4]['substring'](0x0,0x3)+'\x20'+_0x391346['toString']()['substr'](0x2)),_0x516d8e['push'](_0x391346+'-'+_0x3e8ad4);}_0x1113bf=_0x1113bf['filter'](_0x32738a=>_0x516d8e['includes'](_0x32738a['year']+'-'+_0x32738a['monthIdx']));}else _0xd0f80!=='ALL'&&(_0x1113bf=_0x1113bf['filter'](_0x3bcbb7=>_0x3bcbb7['year']['toString']()===_0xd0f80)),_0x4db36d=monthNamesFull['map'](_0x563e48=>_0x563e48['substring'](0x0,0x3)),_0x516d8e=[0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7,0x8,0x9,0xa,0xb];renderWashHighFrequencyTable(_0x1113bf);const _0x17cca3=[...new Set(_0x1113bf['map'](_0x9f0067=>_0x9f0067['company']))]['sort'](),_0x5f5d74={};_0x17cca3['forEach'](_0x55f015=>{_0x5f5d74[_0x55f015]=new Array(_0x4db36d['length'])['fill'](0x0);});const _0x3caf4d=new Array(_0x4db36d['length'])['fill'](0x0);_0x1113bf['forEach'](_0x6217d6=>{let _0x1f229a=-0x1;_0xd0f80==='L12M'?_0x1f229a=_0x516d8e['indexOf'](_0x6217d6['year']+'-'+_0x6217d6['monthIdx']):_0x1f229a=_0x6217d6['monthIdx'],_0x1f229a>=0x0&&_0x1f229a<_0x4db36d['length']&&_0x5f5d74[_0x6217d6['company']]&&(_0x5f5d74[_0x6217d6['company']][_0x1f229a]++,_0x3caf4d[_0x1f229a]++);});const _0x5c7ea4=_0x3caf4d['reduce']((_0x59b059,_0x2068b6)=>_0x59b059+_0x2068b6,0x0),_0x47f02e=_0x4db36d['length']>0x0?_0x5c7ea4/_0x4db36d['length']:0x0,_0x18bebf=['#93c5fd','#86efac','#fca5a5','#fde047','#d8b4fe','#fdba74','#67e8f9','#f9a8d4','#cbd5e1','#a5b4fc','#818cf8'],_0x3921ff=_0x17cca3['map']((_0x56b989,_0x22cc1f)=>{let _0x5c0b89=COMPANY_COLORS[_0x56b989]||COMPANY_COLORS[_0x56b989['toUpperCas'+'e']()]||_0x18bebf[_0x22cc1f%_0x18bebf['length']];return{'label':_0x56b989,'data':_0x5f5d74[_0x56b989],'backgroundColor':_0x5c0b89,'stack':'S1','datalabels':{'color':'#ffffff','textShadowBlur':0x2,'textShadowColor':'rgba(0,0,0'+',0.3)','align':'center','anchor':'center','font':{'weight':'bold','size':0xa},'formatter':_0x4b70d2=>_0x4b70d2>0x0?_0x4b70d2:''}};});_0x3921ff['push']({'label':'Total','data':_0x3caf4d,'type':'line','borderColor':'transparen'+'t','backgroundColor':'transparen'+'t','pointRadius':0x0,'datalabels':{'align':'end','anchor':'end','color':'#64748b','font':{'weight':'bold','size':0xb},'formatter':_0x91657b=>_0x91657b>0x0?_0x91657b:''},'order':0x0}),initChart('washMonthl'+'yChart','bar',{'labels':_0x4db36d,'datasets':_0x3921ff},{'scales':{'x':{'stacked':!![]},'y':{'stacked':!![]}},'plugins':{'legend':{'display':!![],'position':'bottom','labels':{'boxWidth':0xa,'font':{'size':0xa},'filter':(_0x5e450f,_0x460452)=>_0x5e450f['text']!=='Total'}},'tooltip':{'mode':'index','intersect':![],'filter':_0x1c730a=>_0x1c730a['dataset']['label']!=='Total'},'datalabels':{'display':!![]},'annotation':{'annotations':{'avgLine':{'type':'line','yMin':_0x47f02e,'yMax':_0x47f02e,'borderColor':'#94a3b8','borderWidth':0x2,'borderDash':[0x5,0x5],'label':{'content':'Prom:\x20'+_0x47f02e['toFixed'](0x1),'display':!![],'position':'end','backgroundColor':'rgba(241,\x20'+'245,\x20249,\x20'+'0.9)','color':'#475569','font':{'size':0x9,'weight':'bold'},'yAdjust':-0xa}}}}},'onClick':(_0x3b496c,_0x924556,_0xe15547)=>{if(_0x924556['length']>0x0){const _0x2e4fde=_0x924556[0x0],_0x40239f=_0x2e4fde['index'];let _0x3f75b6=-0x1,_0x1c8c57=-0x1,_0x363dd6=_0xe15547['data']['labels'][_0x40239f]||'-';if(_0xd0f80==='L12M'){if(_0x516d8e&&_0x516d8e[_0x40239f]){const _0x39ca41=_0x516d8e[_0x40239f]['split']('-');_0x1c8c57=parseInt(_0x39ca41[0x0]),_0x3f75b6=parseInt(_0x39ca41[0x1]);}}else _0x3f75b6=_0x40239f,_0x1c8c57=parseInt(_0xd0f80);const _0x37f0d1=_0x49fc03['filter'](_0x582a99=>_0x582a99['monthIdx']===_0x3f75b6&&_0x582a99['year']===_0x1c8c57);showWashMonthlyDetail(_0x37f0d1,'Detalle\x20Hi'+'stórico:\x20<'+'strong>'+_0x363dd6+('</strong>\x20'+'(')+_0x37f0d1['length']+'\x20lavados)');}},'onHover':(_0x1d54e5,_0x55874c)=>{_0x1d54e5['native']['target']['style']['cursor']=_0x55874c[0x0]?'pointer':'default';}});const _0x1959cd=document['getElement'+'ById']('localWashH'+'istoryFilt'+'er');if(_0x1959cd&&_0x1959cd['options']['length']<=0x2){const _0x568a08=[...new Set(dbWashHistory['map'](_0x59ddef=>_0x59ddef['year']))]['sort']()['reverse']();_0x568a08['forEach'](_0x34081b=>{let _0x5abfc4=![];for(let _0x327ea2=0x0;_0x327ea2<_0x1959cd['options']['length'];_0x327ea2++)if(_0x1959cd['options'][_0x327ea2]['value']===_0x34081b['toString']())_0x5abfc4=!![];if(!_0x5abfc4){const _0x511aa7=document['createElem'+'ent']('option');_0x511aa7['value']=_0x34081b,_0x511aa7['innerText']=_0x34081b,_0x1959cd['appendChil'+'d'](_0x511aa7);}});}}function runFuelAnalysis(){try{logStatus('Generando\x20'+'análisis\x20d'+'e\x20combusti'+'ble...');if(!dbExtra||dbExtra['length']===0x0){console['warn']('No\x20hay\x20dat'+'os\x20de\x20comb'+'ustible\x20pa'+'ra\x20procesa'+'r');return;}const _0x1e9629=getFuelSearchScopedRows(),_0x1acc74=_0x1e9629['filter'](_0x369d46=>_0x369d46['company']!=='Pipitas'),_0x235e39=_0x1e9629['filter'](_0x2b4c44=>_0x2b4c44['company']==='Pipitas');try{const _0x48269e=_0x1acc74['reduce']((_0x4a07f5,_0x3ded78)=>_0x4a07f5+_0x3ded78['km'],0x0),_0xe4a46=_0x1acc74['reduce']((_0x5bef32,_0x272895)=>_0x5bef32+_0x272895['liters'],0x0),_0x468e5a=_0xe4a46>0x0?_0x48269e/_0xe4a46:0x0;safeSetText('fuelGlobal'+'Yield',_0x468e5a['toFixed'](0x2)+'\x20km/L');const _0x198444=_0x235e39['reduce']((_0x1d6128,_0x4d18e2)=>_0x1d6128+_0x4d18e2['km'],0x0),_0x77e3bb=_0x235e39['reduce']((_0x2fbef1,_0x2e8118)=>_0x2fbef1+_0x2e8118['liters'],0x0),_0x43a234=_0x77e3bb>0x0?_0x198444/_0x77e3bb:0x0;safeSetText('pipitasYie'+'ldTop',_0x43a234['toFixed'](0x2)+'\x20km/L');const _0x42c9d3={},_0xb1a3a2={};_0x1acc74['forEach'](_0x38c800=>{if(!_0x42c9d3[_0x38c800['engine']])_0x42c9d3[_0x38c800['engine']]={'km':0x0,'liters':0x0,'name':_0x38c800['engine']};_0x42c9d3[_0x38c800['engine']]['km']+=_0x38c800['km'],_0x42c9d3[_0x38c800['engine']]['liters']+=_0x38c800['liters'];if(!_0xb1a3a2[_0x38c800['company']])_0xb1a3a2[_0x38c800['company']]={'km':0x0,'liters':0x0,'name':_0x38c800['company']};_0xb1a3a2[_0x38c800['company']]['km']+=_0x38c800['km'],_0xb1a3a2[_0x38c800['company']]['liters']+=_0x38c800['liters'];});const _0x6aad19=Object['values'](_0x42c9d3)['map'](_0x4c0d8a=>({'name':_0x4c0d8a['name'],'yield':_0x4c0d8a['liters']>0x0?_0x4c0d8a['km']/_0x4c0d8a['liters']:0x0})),_0x3947fe=_0x6aad19['sort']((_0x5f31e9,_0x481fbc)=>_0x481fbc['yield']-_0x5f31e9['yield'])[0x0];_0x3947fe&&(safeSetText('fuelBestEn'+'gine',_0x3947fe['name']),safeSetText('fuelBestEn'+'gineVal',_0x3947fe['yield']['toFixed'](0x2)+'\x20km/L'));const _0x34dd96=Object['values'](_0xb1a3a2)['map'](_0x5753df=>({'name':_0x5753df['name'],'yield':_0x5753df['liters']>0x0?_0x5753df['km']/_0x5753df['liters']:0x0})),_0x1a141f=_0x34dd96['sort']((_0x34de6f,_0x1f5844)=>_0x34de6f['yield']-_0x1f5844['yield'])[0x0];_0x1a141f&&(safeSetText('fuelWorstC'+'ompany',_0x1a141f['name']),safeSetText('fuelWorstC'+'ompanyVal',_0x1a141f['yield']['toFixed'](0x2)+'\x20km/L'));const _0x5c27c2=document['getElement'+'ById']('fuelTrendF'+'ilter'),_0xb1b0dd=_0x5c27c2?_0x5c27c2['value']:'L12M';let _0x5b6862=[],_0x44baa5=[];if(_0xb1b0dd==='L12M'){const _0x197bc9=new Date();for(let _0xbf43d4=0xc;_0xbf43d4>=0x1;_0xbf43d4--){const _0xb99b98=new Date(_0x197bc9['getFullYea'+'r'](),_0x197bc9['getMonth']()-_0xbf43d4,0x1);_0x5b6862['push'](monthNamesFull[_0xb99b98['getMonth']()]['substring'](0x0,0x3)+'\x20'+_0xb99b98['getFullYea'+'r']()['toString']()['substr'](0x2)),_0x44baa5['push'](_0xb99b98['getFullYea'+'r']()+'-'+_0xb99b98['getMonth']());}}else _0x5b6862=monthNamesFull['map'](_0x34d1aa=>_0x34d1aa['substring'](0x0,0x3)),_0x44baa5=[0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7,0x8,0x9,0xa,0xb]['map'](_0x34d596=>_0x34d596['toString']());if(_0x5c27c2&&_0x5c27c2['options']['length']<=0x2){const _0x59d82f=[...new Set(dbExtra['map'](_0x2b8f79=>_0x2b8f79['year']))]['sort']()['reverse']();_0x59d82f['forEach'](_0x4ac000=>{let _0x136280=![];for(let _0x2d17fc=0x0;_0x2d17fc<_0x5c27c2['options']['length'];_0x2d17fc++)if(_0x5c27c2['options'][_0x2d17fc]['value']===_0x4ac000['toString']())_0x136280=!![];if(!_0x136280){const _0x38e405=document['createElem'+'ent']('option');_0x38e405['value']=_0x4ac000,_0x38e405['innerText']=_0x4ac000,_0x5c27c2['appendChil'+'d'](_0x38e405);}});}const _0x2a4966={};_0x1acc74['forEach'](_0x92b486=>{if(_0xb1b0dd!=='L12M'&&_0xb1b0dd!=='ALL'&&_0x92b486['year']['toString']()!==_0xb1b0dd)return;if(!_0x2a4966[_0x92b486['engine']])_0x2a4966[_0x92b486['engine']]=new Array(_0x5b6862['length'])['fill'](null)['map'](()=>({'km':0x0,'lit':0x0}));let _0x503e5c=-0x1;_0xb1b0dd==='L12M'?_0x503e5c=_0x44baa5['indexOf'](_0x92b486['year']+'-'+_0x92b486['mIdx']):_0x503e5c=_0x92b486['mIdx'],_0x503e5c>=0x0&&_0x503e5c<_0x5b6862['length']&&(_0x2a4966[_0x92b486['engine']][_0x503e5c]['km']+=_0x92b486['km'],_0x2a4966[_0x92b486['engine']][_0x503e5c]['lit']+=_0x92b486['liters']);});const _0x3f9a9c=Object['keys'](_0x2a4966)['map']((_0x4d0810,_0x17c682)=>{const _0x244b7b=_0x2a4966[_0x4d0810]['map'](_0xb734d3=>_0xb734d3['lit']>0x0?_0xb734d3['km']/_0xb734d3['lit']:null);let _0x59c085=isColorblind?COLORBLIND_PALETTE[_0x17c682%COLORBLIND_PALETTE['length']]:FALLBACK_COLORS[_0x17c682%FALLBACK_COLORS['length']];return!isColorblind&&(_0x4d0810['toUpperCas'+'e']()['includes']('EPA\x2004')||_0x4d0810['toUpperCas'+'e']()['includes']('EPA04'))&&(_0x59c085='#1d4ed8'),{'label':_0x4d0810,'data':_0x244b7b,'borderColor':_0x59c085,'backgroundColor':'transparen'+'t','tension':0.3};});initChart('fuelEngine'+'TrendChart','line',{'labels':_0x5b6862,'datasets':_0x3f9a9c},{'plugins':{'legend':{'position':'bottom','labels':{'boxWidth':0xc,'font':{'size':0xa}}},'datalabels':{'display':![]}},'layout':{'padding':{'top':0xa}}});const _0x4aa7ea=_0x34dd96['map'](_0x8c0ff9=>_0x8c0ff9['name']),_0x1e2d48=_0x34dd96['map'](_0x324cd1=>_0x324cd1['yield']),_0x50f405=_0x4aa7ea['map']((_0x1c023f,_0x2189ff)=>{if(isColorblind){const _0x38fe40=['#E69F00','#56B4E9','#009E73','#F0E442','#0072B2','#D55E00','#CC79A7'];return _0x38fe40[_0x2189ff%_0x38fe40['length']];}if(COMPANY_COLORS[_0x1c023f])return COMPANY_COLORS[_0x1c023f];return PALETTE_FALLBACK[_0x2189ff%PALETTE_FALLBACK['length']];});initChart('fuelCompan'+'yBarChart','bar',{'labels':_0x4aa7ea,'datasets':[{'label':'Rendimient'+'o\x20(Km/L)','data':_0x1e2d48,'backgroundColor':_0x50f405,'borderRadius':0x4}]},{'onClick':(_0x4e0bd1,_0x2c73c4,_0x1ef23e)=>{if(_0x2c73c4['length']){const _0x3ea9b7=_0x2c73c4[0x0]['index'],_0x2910fe=_0x1ef23e['data']['labels'][_0x3ea9b7];window['showFuelDr'+'illDown'](_0x2910fe);}},'plugins':{'datalabels':{'color':'#ffffff','anchor':'center','align':'center','font':{'weight':'bold','size':0xb},'formatter':_0x18d54e=>_0x18d54e?_0x18d54e['toFixed'](0x2):''},'tooltip':{'callbacks':{'footer':()=>'Click\x20para'+'\x20ver\x20desgl'+'ose\x20de\x20uni'+'dades'}}}});const _0x2aff1b=document['getElement'+'ById']('fuelEngine'+'TableBody');_0x2aff1b&&(_0x2aff1b['innerHTML']='',_0x6aad19['sort']((_0x1ade19,_0xd11dc4)=>_0xd11dc4['yield']-_0x1ade19['yield'])['forEach']((_0x558135,_0x2c60c6)=>{const _0x3253b2=_0x2c60c6+0x1;let _0x4bc55e='<span\x20clas'+'s=\x22font-bo'+'ld\x20text-sl'+'ate-400\x22>#'+_0x3253b2+'</span>';if(_0x3253b2===0x1)_0x4bc55e='<span\x20clas'+'s=\x22text-lg'+'\x22>🥇</span>';else{if(_0x3253b2===0x2)_0x4bc55e='<span\x20clas'+'s=\x22text-lg'+'\x22>🥈</span>';else{if(_0x3253b2===0x3)_0x4bc55e='<span\x20clas'+'s=\x22text-lg'+'\x22>🥉</span>';}}const _0x4261b1=_0x42c9d3[_0x558135['name']];_0x2aff1b['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'teal-50\x20bo'+'rder-b\x20bor'+'der-slate-'+'100\x22><td\x20c'+'lass=\x22p-3\x20'+'font-bold\x20'+'text-slate'+'-700\x22>'+_0x558135['name']+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20text-sla'+'te-600\x22>')+_0x4261b1['km']['toLocaleSt'+'ring']()+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20text-sla'+'te-600\x22>')+_0x4261b1['liters']['toLocaleSt'+'ring']()+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x20font-mon'+'o\x20font-bol'+'d\x20text-tea'+'l-700\x22>')+_0x558135['yield']['toFixed'](0x2)+('</td><td\x20c'+'lass=\x22p-3\x20'+'text-cente'+'r\x22>')+_0x4bc55e+'</td></tr>';}));}catch(_0x2f47a0){console['error']('Error\x20in\x20F'+'uel\x20KPI/Ma'+'in\x20Charts:',_0x2f47a0);}try{const _0x1c8a6b=[...new Set(_0x1acc74['map'](_0x6a4cb=>_0x6a4cb['engine']))]['sort']();window['populateMu'+'ltiSelect']('dropdownMa'+'nufEngine',_0x1c8a6b,'Motores');const _0x505060=[...new Set(_0x1acc74['map'](_0x86fcd7=>_0x86fcd7['company']))]['sort']();window['populateMu'+'ltiSelect']('dropdownMa'+'nufCompany',_0x505060,'Sociedades');const _0x3be99d=[...new Set(_0x1acc74['map'](_0x2dd6a0=>_0x2dd6a0['segment']))]['sort']();window['populateMu'+'ltiSelect']('dropdownMa'+'nufSegment',_0x3be99d,'Segmentos'),window['updateManu'+'facturerCh'+'art']();}catch(_0x328810){console['warn']('Manufactur'+'er\x20Chart\x20B'+'lock\x20Faile'+'d:',_0x328810);}try{const _0x236cd4=document['getElement'+'ById']('operatorGr'+'oupFilter')?document['getElement'+'ById']('operatorGr'+'oupFilter')['value']:'ALL',_0x4ae518=document['getElement'+'ById']('activeFilt'+'erDisplay');_0x4ae518&&(_0x236cd4!=='ALL'?(_0x4ae518['innerText']=_0x236cd4,_0x4ae518['classList']['remove']('hidden')):_0x4ae518['classList']['add']('hidden'));const _0x446b3f=hasFuelSpecificSelection();if(_0x446b3f){const _0x4f9c63=currentFuelSelectedUnit['length']>0x0||!!currentFuelSearchUnit&&currentFuelSelectedOperator['length']===0x0&&!currentFuelSearchOperator;toggleFuelRankingMode(!![]),renderFuelSpecificSummaryRows(_0x1e9629,_0x4f9c63?'UNIT':'OP');return;}toggleFuelRankingMode(![]);const _0x3ed8df={},_0xef539e={};_0x1e9629['forEach'](_0x3e48c3=>{const _0x7b5271=_0x3e48c3['operator']||'Sin\x20Nombre',_0x194df3=_0x3e48c3['engine']||'Desconocid'+'o',_0x3cb00f=_0x7b5271+'|'+_0x194df3,_0x4a2cd6=_0x3e48c3['unit']||'S/N';let _0x3e611d='Otros';const _0x1b82af=(_0x3e48c3['segment']||'')['toUpperCas'+'e'](),_0x23815a=(_0x3e48c3['company']||'')['toUpperCas'+'e']();if(_0x1b82af['includes']('FZS'))_0x3e611d='FZS';else{if(_0x1b82af['includes']('VIAJE\x20LOCA'+'L'))_0x3e611d='Viaje\x20Loca'+'l';else{if(_0x1b82af['includes']('PR\x20MID'))_0x3e611d='PR\x20MID';else{if(_0x1b82af['includes']('CR\x20LPZ'))_0x3e611d='CR\x20LPZ';else{if(_0x1b82af['includes']('PIPAS')||_0x23815a['includes']('PIPITAS'))_0x3e611d='Pipas\x20Chic'+'as';}}}}!_0x3ed8df[_0x3cb00f]&&(_0x3ed8df[_0x3cb00f]={'name':_0x7b5271,'engine':_0x194df3,'km':0x0,'liters':0x0,'company':_0x3e48c3['company'],'group':_0x3e611d}),_0x3ed8df[_0x3cb00f]['km']+=_0x3e48c3['km'],_0x3ed8df[_0x3cb00f]['liters']+=_0x3e48c3['liters'],!_0xef539e[_0x4a2cd6]&&(_0xef539e[_0x4a2cd6]={'name':_0x4a2cd6,'engine':_0x194df3,'km':0x0,'liters':0x0,'company':_0x3e48c3['company'],'group':_0x3e611d}),_0xef539e[_0x4a2cd6]['km']+=_0x3e48c3['km'],_0xef539e[_0x4a2cd6]['liters']+=_0x3e48c3['liters'];});let _0x54f82f=Object['values'](_0x3ed8df)['filter'](_0x16ec83=>_0x16ec83['km']>0x4e20)['filter'](_0xbe1ff3=>{if(_0x236cd4==='ALL')return!![];return _0xbe1ff3['group']===_0x236cd4;})['map'](_0x46517b=>({'name':_0x46517b['name'],'engine':_0x46517b['engine'],'km':_0x46517b['km'],'yield':_0x46517b['liters']>0x0?_0x46517b['km']/_0x46517b['liters']:0x0,'company':_0x46517b['company'],'group':_0x46517b['group']}));const _0x1dea86={};_0x54f82f['forEach'](_0x44edb1=>{if(!_0x1dea86[_0x44edb1['engine']])_0x1dea86[_0x44edb1['engine']]=[];_0x1dea86[_0x44edb1['engine']]['push'](_0x44edb1);});let _0x41ca01=Object['values'](_0xef539e)['filter'](_0xcb5ce8=>_0xcb5ce8['km']>0x1388)['filter'](_0x3f929c=>{if(_0x236cd4==='ALL')return!![];return _0x3f929c['group']===_0x236cd4;})['map'](_0x104403=>({'name':_0x104403['name'],'engine':_0x104403['engine'],'km':_0x104403['km'],'yield':_0x104403['liters']>0x0?_0x104403['km']/_0x104403['liters']:0x0,'company':_0x104403['company'],'group':_0x104403['group']}));const _0x26a090={};_0x41ca01['forEach'](_0x409be8=>{if(!_0x26a090[_0x409be8['engine']])_0x26a090[_0x409be8['engine']]=[];_0x26a090[_0x409be8['engine']]['push'](_0x409be8);});const _0x40a52c=['EPA\x2004','EURO\x20IV','EURO\x20V','S13\x20E24'],_0x54f0c2=Object['keys'](_0x1dea86)['sort']((_0x2fd852,_0x30598e)=>{const _0x29b83a=_0x2fd852['toUpperCas'+'e'](),_0x211767=_0x30598e['toUpperCas'+'e']();let _0x2ffef6=_0x40a52c['findIndex'](_0x5a4823=>_0x29b83a['includes'](_0x5a4823)),_0xe3c251=_0x40a52c['findIndex'](_0x39f5b2=>_0x211767['includes'](_0x39f5b2));if(_0x2ffef6===-0x1)_0x2ffef6=0x3e7;if(_0xe3c251===-0x1)_0xe3c251=0x3e7;if(_0x2ffef6!==_0xe3c251)return _0x2ffef6-_0xe3c251;const _0x3e99cd=_0x1dea86[_0x2fd852]['reduce']((_0x3e8594,_0x4e22e5)=>_0x3e8594+_0x4e22e5['km'],0x0),_0x4932b8=_0x1dea86[_0x30598e]['reduce']((_0x2a542f,_0x4db2dd)=>_0x2a542f+_0x4db2dd['km'],0x0);return _0x4932b8-_0x3e99cd;}),_0x18321f=(_0x243dd8,_0x264d70,_0x46837c)=>{const _0x26a441=document['getElement'+'ById'](_0x243dd8);if(!_0x26a441)return;_0x26a441['innerHTML']='';let _0x5b3cab=![];_0x264d70['forEach'](_0x5bbdab=>{let _0x524510=_0x1dea86[_0x5bbdab];if(!_0x46837c&&_0x236cd4==='ALL')_0x524510=_0x524510['filter'](_0x1864b1=>_0x1864b1['group']!=='CR\x20LPZ');if(_0x524510['length']===0x0)return;_0x524510['sort']((_0x4114de,_0x2cf0c9)=>_0x2cf0c9['yield']-_0x4114de['yield']);const _0xc21e99=_0x46837c?_0x524510['slice'](0x0,0x3):_0x524510['reverse']()['slice'](0x0,0x3);_0xc21e99['length']>0x0&&(_0x5b3cab=!![],_0x26a441['innerHTML']+='<tr\x20class='+'\x22bg-slate-'+'200\x20border'+'-y\x20border-'+'slate-300\x22'+'><td\x20colsp'+'an=\x223\x22\x20cla'+'ss=\x22px-3\x20p'+'y-1\x20text-['+'10px]\x20font'+'-bold\x20text'+'-slate-600'+'\x20uppercase'+'\x20tracking-'+'wider\x22><i\x20'+'class=\x22fa-'+'solid\x20fa-c'+'ogs\x20mr-1\x22>'+'</i>\x20'+_0x5bbdab+'</td></tr>',_0xc21e99['forEach']((_0xa39df8,_0x506e14)=>{let _0x52f652=_0x46837c?'text-green'+'-600':'text-red-6'+'00',_0x422c30=_0x46837c?_0x506e14===0x0?'🥇':_0x506e14===0x1?'🥈':'🥉':'<span\x20clas'+'s=\x22text-xs'+'\x20font-bold'+'\x20text-red-'+'400\x22>#'+(_0x506e14+0x1)+'</span>';_0x26a441['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'slate-50\x20b'+'order-b\x20bo'+'rder-slate'+'-100\x22><td\x20'+'class=\x22p-2'+'\x20font-bold'+'\x20text-slat'+'e-700\x20flex'+'\x20items-cen'+'ter\x20gap-2\x22'+'><span\x20cla'+'ss=\x22w-4\x20te'+'xt-center\x22'+'>'+_0x422c30+('</span><di'+'v\x20class=\x22f'+'lex\x20flex-c'+'ol\x22><span>')+_0xa39df8['name']+('</span><sp'+'an\x20class=\x22'+'text-[9px]'+'\x20text-slat'+'e-400\x20font'+'-normal\x20up'+'percase\x22>')+_0xa39df8['company']+('\x20<span\x20cla'+'ss=\x22text-['+'8px]\x20bg-sl'+'ate-100\x20te'+'xt-slate-5'+'00\x20px-1\x20ro'+'unded\x20ml-1'+'\x22>')+_0xa39df8['group']+('</span></s'+'pan></div>'+'</td><td\x20c'+'lass=\x22p-2\x20'+'text-right'+'\x20text-slat'+'e-500\x20font'+'-mono\x20text'+'-xs\x22>')+(_0xa39df8['km']/0x3e8)['toFixed'](0x1)+('k</td><td\x20'+'class=\x22p-2'+'\x20text-cent'+'er\x20font-bo'+'ld\x20')+_0x52f652+'\x22>'+_0xa39df8['yield']['toFixed'](0x2)+'</td></tr>';}));});if(!_0x5b3cab)_0x26a441['innerHTML']='<tr><td\x20co'+'lspan=\x223\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x20it'+'alic\x20text-'+'xs\x22>Sin\x20da'+'tos\x20para\x20e'+'ste\x20grupo<'+'/td></tr>';};_0x18321f('topOperato'+'rsBody',_0x54f0c2,!![]),_0x18321f('bottomOper'+'atorsBody',_0x54f0c2,![]);const _0xff0565=(_0xab969,_0x33d5c4,_0x4da1af)=>{const _0x2d3482=document['getElement'+'ById'](_0xab969);if(!_0x2d3482)return;_0x2d3482['innerHTML']='';let _0x1f427c=![];_0x33d5c4['forEach'](_0x4a28be=>{let _0x1464cf=_0x26a090[_0x4a28be]||[];if(_0x1464cf['length']===0x0)return;_0x1464cf['sort']((_0x568232,_0x3fb931)=>_0x3fb931['yield']-_0x568232['yield']);const _0x16bf2c=_0x4da1af?_0x1464cf['slice'](0x0,0x3):_0x1464cf['reverse']()['slice'](0x0,0x3);_0x16bf2c['length']>0x0&&(_0x1f427c=!![],_0x2d3482['innerHTML']+='<tr\x20class='+'\x22bg-slate-'+'200\x20border'+'-y\x20border-'+'slate-300\x22'+'><td\x20colsp'+'an=\x223\x22\x20cla'+'ss=\x22px-3\x20p'+'y-1\x20text-['+'10px]\x20font'+'-bold\x20text'+'-slate-600'+'\x20uppercase'+'\x20tracking-'+'wider\x22><i\x20'+'class=\x22fa-'+'solid\x20fa-c'+'ogs\x20mr-1\x22>'+'</i>\x20'+_0x4a28be+'</td></tr>',_0x16bf2c['forEach']((_0x4f9b57,_0x361689)=>{let _0x2530e7=_0x4da1af?'text-blue-'+'600':'text-orang'+'e-600',_0x2a287b=_0x4da1af?_0x361689===0x0?'🥇':_0x361689===0x1?'🥈':'🥉':'<span\x20clas'+'s=\x22text-xs'+'\x20font-bold'+'\x20text-oran'+'ge-400\x22>#'+(_0x361689+0x1)+'</span>';_0x2d3482['innerHTML']+='<tr\x20class='+'\x22hover:bg-'+'slate-50\x20b'+'order-b\x20bo'+'rder-slate'+'-100\x22><td\x20'+'class=\x22p-2'+'\x20font-bold'+'\x20text-slat'+'e-700\x20flex'+'\x20items-cen'+'ter\x20gap-2\x22'+'><span\x20cla'+'ss=\x22w-4\x20te'+'xt-center\x22'+'>'+_0x2a287b+('</span><di'+'v\x20class=\x22f'+'lex\x20flex-c'+'ol\x22><span>')+_0x4f9b57['name']+('</span><sp'+'an\x20class=\x22'+'text-[9px]'+'\x20text-slat'+'e-400\x20font'+'-normal\x20up'+'percase\x22>')+_0x4f9b57['company']+('\x20<span\x20cla'+'ss=\x22text-['+'8px]\x20bg-sl'+'ate-100\x20te'+'xt-slate-5'+'00\x20px-1\x20ro'+'unded\x20ml-1'+'\x22>')+_0x4f9b57['group']+('</span></s'+'pan></div>'+'</td><td\x20c'+'lass=\x22p-2\x20'+'text-right'+'\x20text-slat'+'e-500\x20font'+'-mono\x20text'+'-xs\x22>')+(_0x4f9b57['km']/0x3e8)['toFixed'](0x1)+('k</td><td\x20'+'class=\x22p-2'+'\x20text-cent'+'er\x20font-bo'+'ld\x20')+_0x2530e7+'\x22>'+_0x4f9b57['yield']['toFixed'](0x2)+'</td></tr>';}));});if(!_0x1f427c)_0x2d3482['innerHTML']='<tr><td\x20co'+'lspan=\x223\x22\x20'+'class=\x22p-3'+'\x20text-cent'+'er\x20text-sl'+'ate-400\x20it'+'alic\x20text-'+'xs\x22>Sin\x20da'+'tos\x20para\x20e'+'ste\x20grupo<'+'/td></tr>';};_0xff0565('topUnitsBo'+'dy',_0x54f0c2,!![]),_0xff0565('bottomUnit'+'sBody',_0x54f0c2,![]);}catch(_0x5db40e){console['error']('Error\x20in\x20O'+'perator/Un'+'it\x20Ranking'+':',_0x5db40e);}}catch(_0x498f0f){console['error'](_0x498f0f),logStatus('Error\x20FATA'+'L\x20Combusti'+'ble:\x20'+_0x498f0f['message'],'error');}}function updateManufacturerChart(){const _0x5e025d=_0x44a20c=>{const _0xaa4ee5=document['getElement'+'ById'](_0x44a20c);if(!_0xaa4ee5)return['ALL'];const _0x51f555=_0xaa4ee5['querySelec'+'torAll']('input[type'+'=\x22checkbox'+'\x22]:checked'),_0x6bff4b=Array['from'](_0x51f555)['map'](_0x2d897f=>_0x2d897f['value']);if(_0x6bff4b['includes']('ALL'))return['ALL'];if(_0x6bff4b['length']===0x0)return['NONE'];return _0x6bff4b;},_0x299cf2=_0x5e025d('dropdownMa'+'nufEngine'),_0x2e59a8=_0x5e025d('dropdownMa'+'nufCompany'),_0xca6e5b=_0x5e025d('dropdownMa'+'nufSegment'),_0x452b5f=getFuelSearchScopedRows()['filter'](_0x1d4df0=>_0x1d4df0['company']!=='Pipitas'),_0x5a505f=_0x452b5f['filter'](_0x8dd201=>{if(!_0x299cf2['includes']('ALL')&&!_0x299cf2['includes'](_0x8dd201['engine']))return![];if(!_0x2e59a8['includes']('ALL')&&!_0x2e59a8['includes'](_0x8dd201['company']))return![];if(!_0xca6e5b['includes']('ALL')&&!_0xca6e5b['includes'](_0x8dd201['segment']))return![];return!![];}),_0x35ba01=new Date(),_0x1e234a=[],_0x4f4516=[];for(let _0x4bc6eb=0xc;_0x4bc6eb>=0x1;_0x4bc6eb--){const _0x10b206=new Date(_0x35ba01['getFullYea'+'r'](),_0x35ba01['getMonth']()-_0x4bc6eb,0x1),_0x41cb09=_0x10b206['getFullYea'+'r'](),_0x46f729=_0x10b206['getMonth']();_0x1e234a['push'](_0x41cb09+'-'+_0x46f729);const _0x1510f9=monthNamesFull[_0x46f729]['substring'](0x0,0x3)+'\x20'+_0x41cb09['toString']()['substr'](0x2);_0x4f4516['push'](_0x1510f9);}const _0x5d67b9=[...new Set(_0x5a505f['map'](_0x30dff5=>_0x30dff5['manufactur'+'er']))],_0x2461b7={};_0x5d67b9['forEach'](_0x487c7d=>{_0x2461b7[_0x487c7d]=new Array(0xc)['fill'](null)['map'](()=>({'km':0x0,'lit':0x0}));}),_0x5a505f['forEach'](_0x40f7f0=>{const _0x184b98=_0x40f7f0['year']+'-'+_0x40f7f0['mIdx'],_0x362fc5=_0x1e234a['indexOf'](_0x184b98);_0x362fc5!==-0x1&&(_0x2461b7[_0x40f7f0['manufactur'+'er']][_0x362fc5]['km']+=_0x40f7f0['km'],_0x2461b7[_0x40f7f0['manufactur'+'er']][_0x362fc5]['lit']+=_0x40f7f0['liters']);});const _0x33a08c=_0x5d67b9['map']((_0x55b354,_0x410aee)=>{const _0x1cabd5=_0x2461b7[_0x55b354]['map'](_0x54e411=>_0x54e411['lit']>0x0?_0x54e411['km']/_0x54e411['lit']:null),_0x20a633=isColorblind?COLORBLIND_PALETTE[_0x410aee%COLORBLIND_PALETTE['length']]:PALETTE_FALLBACK[_0x410aee%PALETTE_FALLBACK['length']];return{'label':_0x55b354,'data':_0x1cabd5,'borderColor':_0x20a633,'backgroundColor':'transparen'+'t','tension':0.3};});initChart('manufactur'+'erTrendCha'+'rt','line',{'labels':_0x4f4516,'datasets':_0x33a08c},{'plugins':{'title':{'display':![]},'tooltip':{'mode':'index','intersect':![]},'datalabels':{'display':!![],'align':'top','anchor':'end','offset':0x4,'color':function(_0x35fa9c){return _0x35fa9c['dataset']['borderColo'+'r'];},'backgroundColor':'rgba(255,\x20'+'255,\x20255,\x20'+'0.8)','borderRadius':0x3,'font':{'size':0x9,'weight':'bold'},'formatter':_0x20c735=>_0x20c735?_0x20c735['toFixed'](0x2):''}},'scales':{'y':{'title':{'display':!![],'text':'Rendimient'+'o\x20(km/L)'}}},'layout':{'padding':{'top':0x14}}});}window['startSyste'+'m']=startSystem,window['manualRefr'+'esh']=manualRefresh,window['switchTab']=switchTab,window['updatePeri'+'odSelectio'+'n']=updatePeriodSelection,window['toggleYear'+'Dropdown']=toggleYearDropdown,window['setCategor'+'yFilter']=setCategoryFilter,window['setPerform'+'anceStatus'+'Filter']=setPerformanceStatusFilter,window['handleLink'+'sClick']=handleLinksClick,window['attemptMai'+'nLogin']=attemptMainLogin,window['attemptLog'+'in']=attemptLogin,window['logoutSess'+'ion']=logoutSession,window['toggleModa'+'l']=toggleModal,window['saveCloudC'+'onfig']=saveCloudConfig,window['resetToDef'+'aults']=resetToDefaults,window['openCpkGoa'+'lsModal']=openCpkGoalsModal,window['saveCpkGoa'+'lsFromEdit'+'or']=saveCpkGoalsFromEditor,window['restoreDef'+'aultCpkGoa'+'ls']=restoreDefaultCpkGoals,window['renderWash'+'MonthlyCha'+'rt']=renderWashMonthlyChart,window['runCPKAnal'+'ysis']=runCPKAnalysis,window['runScrapAn'+'alysis']=runScrapAnalysis,window['runStrateg'+'yAnalysis']=runStrategyAnalysis,window['runWashAna'+'lysis']=runWashAnalysis,window['runFuelAna'+'lysis']=runFuelAnalysis,window['runLossAna'+'lysis']=runLossAnalysis,window['updateManu'+'facturerCh'+'art']=updateManufacturerChart,window['toggleColo'+'rblindMode']=toggleColorblindMode,window['setLossCom'+'panyFilter']=setLossCompanyFilter,window['setLossLit'+'ersMode']=setLossLitersMode,window['setLossLow'+'RankBy']=setLossLowRankBy,window['setLossTop'+'Order']=setLossTopOrder,window['renderFuel'+'Suggestion'+'s']=renderFuelSuggestions,window['toggleFuel'+'Suggestion'+'Selection']=toggleFuelSuggestionSelection,window['clearFuelS'+'uggestionS'+'election']=clearFuelSuggestionSelection,window['applyFuelS'+'earchFilte'+'rs']=applyFuelSearchFilters,window['clearFuelS'+'earchFilte'+'rs']=clearFuelSearchFilters,window['applyLossS'+'earchFilte'+'rs']=applyLossSearchFilters,window['clearLossS'+'earchFilte'+'rs']=clearLossSearchFilters,window['renderLoss'+'Suggestion'+'s']=renderLossSuggestions,window['toggleLoss'+'Suggestion'+'Selection']=toggleLossSuggestionSelection,window['clearLossS'+'uggestionS'+'election']=clearLossSuggestionSelection,window['renderWash'+'Suggestion'+'s']=renderWashSuggestions,window['toggleWash'+'Suggestion'+'Selection']=toggleWashSuggestionSelection,window['clearWashS'+'uggestionS'+'election']=clearWashSuggestionSelection,window['applyWashS'+'earchFilte'+'rs']=applyWashSearchFilters,window['clearWashS'+'earchFilte'+'rs']=clearWashSearchFilters,window['renderWash'+'DrillDownR'+'ows']=renderWashDrillDownRows,window['setWashDri'+'llSort']=setWashDrillSort,window['renderWash'+'MonthlyDet'+'ailRows']=renderWashMonthlyDetailRows,window['setWashMon'+'thlyDetail'+'Sort']=setWashMonthlyDetailSort,window['populateMu'+'ltiSelect']=populateMultiSelect,window['showWashDr'+'illDown']=showWashDrillDown,window['showWashMo'+'nthlyDetai'+'l']=showWashMonthlyDetail,window['showFuelDr'+'illDown']=showFuelDrillDown,window['showScrapB'+'randDetail']=showScrapBrandDetail,window['showCPKBra'+'ndDrillDow'+'n']=showCPKBrandDrillDown,window['showCPKOth'+'ersDrillDo'+'wn']=showCPKOthersDrillDown,window['closeDropd'+'owns']=closeDropdowns,window['renderUser'+'sTable']=renderUsersTable,window['resetUserF'+'orm']=resetUserForm,window['saveUserFr'+'omForm']=saveUserFromForm,window['editUserFr'+'omTable']=editUserFromTable,window['deleteUser'+'FromTable']=deleteUserFromTable,window['downloadSe'+'cureUsersB'+'ackup']=downloadSecureUsersBackup,window['openUsersB'+'ackupImpor'+'t']=openUsersBackupImport,window['openChange'+'PasswordMo'+'dal']=openChangePasswordModal,window['submitPass'+'wordChange']=submitPasswordChange;
+
+        // --- 0. CONSTANTS & UTILS ---
+        const monthNamesFull = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        // ACTUALIZADO: Añadido 'Recolección Pend.' a la paleta de colores
+        const PROVIDER_COLORS = { 'Mil Neumaticos': '#f97316', 'Mil Neumáticos': '#f97316', 'Llantamaya': '#22c55e', 'Prometeon': '#eab308', 'Patio PRS': '#ec4899', 'Venta Ext': '#0ea5e9', 'Sin Asignar': '#94a3b8', 'Recolección Pend.': '#94a3b8' };
+        const FALLBACK_COLORS = ['#8b5cf6', '#a78bfa', '#34d399', '#fbbf24', '#60a5fa'];
+        
+        // --- COLORES CORPORATIVOS (ACTUALIZADOS) ---
+        const COMPANY_COLORS = {
+            // Variantes para asegurar coincidencia
+            'Yucarro': '#00B0F0',   'YUCARRO': '#00B0F0', 'YUC': '#00B0F0',
+            'T2020': '#4472C4',
+            'LMR': '#00B050',
+            'Corpored': '#ED7D31',  'CORPORED': '#ED7D31', 'CR': '#ED7D31',
+            'CAMECAM': '#FFC000',   'CMC': '#FFC000',
+            'CCM': '#A568D2',
+            'Externo': '#FF6161',   'Venta Ext': '#FF6161',
+            
+            // Otros
+            'LORM': '#0e7490',    
+            'La Paz': '#DAA0FA', 'LA PAZ': '#DAA0FA', 'CR LPZ': '#DAA0FA',
+            'Pipitas': '#be185d', 
+            'Sin Asignar': '#64748b' 
+        };
+
+        const PALETTE_FALLBACK = [
+            '#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#a855f7', 
+            '#06b6d4', '#f97316', '#ec4899', '#6366f1', '#84cc16', 
+            '#14b8a6', '#d946ef', '#f43f5e', '#eab308'
+        ];
+        const COLORBLIND_PALETTE = ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442', '#56B4E9', '#D55E00', '#999999'];
+        const LOSS_PREFIX_COLORS = {
+            DESC_PEMEX: '#00B050',
+            ABS_TRANSP: '#FFD966',
+            DESC_OPERADOR: '#FC6464'
+        };
+
+        // --- GLOBAL STATE ---
+        let isColorblind = false;
+        
+        // --- FUNCIONES DE UTILIDAD MOVIDAS AL INICIO PARA HOISTING SEGURO ---
+        function toggleColorblindMode() {
+            if (!currentUser || !userCanUseColorblind(currentUser)) {
+                logStatus('No tienes permiso para usar Modo Contraste.', 'error');
+                return;
+            }
+            isColorblind = !isColorblind;
+            const btn = document.getElementById('btnColorblind');
+            if (btn) {
+                if (isColorblind) {
+                    btn.classList.add('bg-slate-300', 'text-slate-900', 'font-bold');
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+                } else {
+                    btn.classList.remove('bg-slate-300', 'text-slate-900', 'font-bold');
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i>';
+                }
+            }
+            // Refrescar el tab actual para aplicar colores
+            window.switchTab(moduleState.currentTab);
+        }
+
+        // --- UI HELPERS FOR DROPDOWNS ---
+        window.toggleFilterDropdown = function(id, event) {
+            event.stopPropagation();
+            const el = document.getElementById(id);
+            if(el) el.classList.toggle('show');
+        };
+
+        window.handleMultiSelectChange = function(containerId, checkbox) {
+            const container = document.getElementById(containerId);
+            const allCheckbox = container.querySelector('input[value="ALL"]');
+            const otherCheckboxes = container.querySelectorAll('input[type="checkbox"]:not([value="ALL"])');
+
+            if (checkbox.value === 'ALL') {
+                if(checkbox.checked) {
+                     otherCheckboxes.forEach(cb => cb.checked = true);
+                } else {
+                     otherCheckboxes.forEach(cb => cb.checked = false);
+                }
+            } else {
+                if (!checkbox.checked) {
+                    allCheckbox.checked = false;
+                } else {
+                    const allChecked = Array.from(otherCheckboxes).every(cb => cb.checked);
+                    if(allChecked) allCheckbox.checked = true;
+                }
+            }
+            
+            // Update Button Label
+            const count = Array.from(otherCheckboxes).filter(c => c.checked).length;
+            const total = otherCheckboxes.length;
+            const btnId = containerId.replace('dropdown', 'btn');
+            const btn = document.getElementById(btnId);
+            
+            let labelBase = "";
+            if(btnId.includes('Engine')) labelBase = "Motores";
+            else if(btnId.includes('Company')) labelBase = "Sociedades";
+            else if(btnId.includes('Segment')) labelBase = "Segmentos";
+
+            if (allCheckbox.checked || count === total) {
+                btn.innerHTML = `${labelBase}: Todos <i class="fa-solid fa-chevron-down text-[10px]"></i>`;
+            } else {
+                btn.innerHTML = `${labelBase} (${count}) <i class="fa-solid fa-chevron-down text-[10px]"></i>`;
+            }
+
+            // Trigger Update
+            window.updateManufacturerChart();
+        };
+
+        function populateMultiSelect(containerId, options, category) {
+            const container = document.getElementById(containerId);
+            if(!container) return; 
+            if(container.children.length > 0) return; // Already populated
+
+            const buildOption = (value, labelText, classes) => {
+                const label = document.createElement('label');
+                label.className = classes;
+                const input = document.createElement('input');
+                input.type = 'checkbox';
+                input.value = value;
+                input.checked = true;
+                input.addEventListener('change', () => window.handleMultiSelectChange(containerId, input));
+                const span = document.createElement('span');
+                span.className = value === 'ALL' ? 'ml-2 font-bold text-slate-700' : 'ml-2';
+                span.innerText = labelText;
+                label.appendChild(input);
+                label.appendChild(span);
+                return label;
+            };
+
+            container.innerHTML = '';
+            container.appendChild(buildOption('ALL', 'Todos', 'block px-4 py-2 hover:bg-slate-100 cursor-pointer border-b border-slate-100'));
+            options.forEach(opt => {
+                container.appendChild(buildOption(normalizeStr(opt), normalizeStr(opt), 'block px-4 py-2 hover:bg-slate-50 cursor-pointer text-xs text-slate-600'));
+            });
+        }
+
+        // --- DRILL DOWN FUNCTIONS (MOVED TO TOP FOR SAFETY) ---
+        function getWashSortIndicator(state, key) {
+            if (!state || state.key !== key) return '<span class="text-slate-300 ml-1">-</span>';
+            return state.dir === 'asc'
+                ? '<span class="text-cyan-600 ml-1">^</span>'
+                : '<span class="text-cyan-600 ml-1">v</span>';
+        }
+
+        function getWashStatusBadgeAndClass(daysWithoutWash) {
+            if (daysWithoutWash <= 45) {
+                return {
+                    badge: '<span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Limpia</span>',
+                    daysClass: 'text-green-600'
+                };
+            }
+            if (daysWithoutWash < 100) {
+                return {
+                    badge: '<span class="bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Alerta</span>',
+                    daysClass: 'text-yellow-600'
+                };
+            }
+            return {
+                badge: '<span class="bg-red-100 text-red-700 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Crítica</span>',
+                daysClass: 'text-red-600'
+            };
+        }
+
+        function updateWashDrillDownHead() {
+            const thead = document.getElementById('washDrillDownHead');
+            if (!thead) return;
+            thead.innerHTML = `
+                <tr>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashDrillSort('unit')">Unidad ${getWashSortIndicator(currentWashDrillSort, 'unit')}</th>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashDrillSort('company')">Empresa ${getWashSortIndicator(currentWashDrillSort, 'company')}</th>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashDrillSort('lastWashDate')">Fecha ${getWashSortIndicator(currentWashDrillSort, 'lastWashDate')}</th>
+                    <th class="p-3 cursor-pointer select-none text-center" onclick="window.setWashDrillSort('daysWithoutWash')">Días Trans. ${getWashSortIndicator(currentWashDrillSort, 'daysWithoutWash')}</th>
+                    <th class="p-3 text-center">Estado</th>
+                </tr>
+            `;
+        }
+
+        function setWashDrillSort(key) {
+            const defaultDirs = {
+                unit: 'asc',
+                company: 'asc',
+                lastWashDate: 'desc',
+                daysWithoutWash: 'desc'
+            };
+            if (currentWashDrillSort.key === key) {
+                currentWashDrillSort.dir = currentWashDrillSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentWashDrillSort.key = key;
+                currentWashDrillSort.dir = defaultDirs[key] || 'asc';
+            }
+            renderWashDrillDownRows();
+        }
+
+        function renderWashDrillDownRows() {
+            const container = document.getElementById('washDrillDownContainer');
+            const tbody = document.getElementById('washDrillDownBody');
+            const titleEl = document.getElementById('washDrillDownTitle');
+            if (!container || !tbody || !titleEl) return;
+
+            updateWashDrillDownHead();
+            const sortedRows = (Array.isArray(currentWashDrillRows) ? [...currentWashDrillRows] : []).sort((a, b) => {
+                const key = currentWashDrillSort.key;
+                let cmp = 0;
+                if (key === 'daysWithoutWash') {
+                    cmp = (Number(a.daysWithoutWash) || 0) - (Number(b.daysWithoutWash) || 0);
+                } else if (key === 'lastWashDate') {
+                    const ta = a.rawDate ? a.rawDate.getTime() : 0;
+                    const tb = b.rawDate ? b.rawDate.getTime() : 0;
+                    cmp = ta - tb;
+                } else if (key === 'company') {
+                    cmp = normalizeStr(a.company).localeCompare(normalizeStr(b.company), 'es', { sensitivity: 'base' });
+                } else {
+                    cmp = normalizeStr(a.unit).localeCompare(normalizeStr(b.unit), 'es', { sensitivity: 'base' });
+                }
+                if (cmp === 0) cmp = (Number(b.daysWithoutWash) || 0) - (Number(a.daysWithoutWash) || 0);
+                return currentWashDrillSort.dir === 'asc' ? cmp : -cmp;
+            });
+
+            titleEl.innerHTML = `${currentWashDrillBaseTitle || 'Detalle de Lavados'} <span class="text-cyan-700 font-normal">| ${sortedRows.length} unidades</span>`;
+            tbody.innerHTML = '';
+
+            if (!sortedRows.length) {
+                tbody.innerHTML = '<tr><td colspan="5" class="p-4 text-center text-slate-400">Sin registros para esta selección.</td></tr>';
+            } else {
+                sortedRows.forEach(r => {
+                    const daysVal = Number(r.daysWithoutWash) || 0;
+                    const status = getWashStatusBadgeAndClass(daysVal);
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-slate-50 border-b border-slate-100 last:border-0 transition">
+                            <td class="p-3 font-bold text-slate-700 text-xs">${escapeHtml(normalizeStr(r.unit))}</td>
+                            <td class="p-3 text-xs">${escapeHtml(normalizeStr(r.company))}</td>
+                            <td class="p-3 text-xs text-slate-500">${escapeHtml(normalizeStr(r.lastWashDate))}</td>
+                            <td class="p-3 text-center font-mono font-bold text-xs ${status.daysClass}">${daysVal}</td>
+                            <td class="p-3 text-center">${status.badge}</td>
+                        </tr>
+                    `;
+                });
+            }
+        }
+
+        function showWashDrillDown(data, title) {
+            const container = document.getElementById('washDrillDownContainer');
+            const monthlyContainer = document.getElementById('washMonthlyDetailContainer');
+            if (!container) return;
+            if (monthlyContainer) monthlyContainer.classList.add('hidden');
+
+            currentWashDrillRows = Array.isArray(data) ? data.slice() : [];
+            currentWashDrillBaseTitle = title || 'Detalle de Lavados';
+            currentWashDrillSort = { key: 'daysWithoutWash', dir: 'desc' };
+            renderWashDrillDownRows();
+
+            container.classList.remove('hidden');
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function updateWashMonthlyDetailHead() {
+            const thead = document.getElementById('washMonthlyDetailHead');
+            if (!thead) return;
+            thead.innerHTML = `
+                <tr>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashMonthlyDetailSort('unit')">Unidad ${getWashSortIndicator(currentWashMonthlyDetailSort, 'unit')}</th>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashMonthlyDetailSort('company')">Empresa ${getWashSortIndicator(currentWashMonthlyDetailSort, 'company')}</th>
+                    <th class="p-3 cursor-pointer select-none" onclick="window.setWashMonthlyDetailSort('rawDate')">Fecha de Lavado ${getWashSortIndicator(currentWashMonthlyDetailSort, 'rawDate')}</th>
+                    <th class="p-3 text-center cursor-pointer select-none" onclick="window.setWashMonthlyDetailSort('monthIdx')">Mes ${getWashSortIndicator(currentWashMonthlyDetailSort, 'monthIdx')}</th>
+                </tr>
+            `;
+        }
+
+        function setWashMonthlyDetailSort(key) {
+            const defaultDirs = {
+                unit: 'asc',
+                company: 'asc',
+                rawDate: 'desc',
+                monthIdx: 'asc'
+            };
+            if (currentWashMonthlyDetailSort.key === key) {
+                currentWashMonthlyDetailSort.dir = currentWashMonthlyDetailSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentWashMonthlyDetailSort.key = key;
+                currentWashMonthlyDetailSort.dir = defaultDirs[key] || 'asc';
+            }
+            renderWashMonthlyDetailRows();
+        }
+
+        function renderWashMonthlyDetailRows() {
+            const container = document.getElementById('washMonthlyDetailContainer');
+            const tbody = document.getElementById('washMonthlyDetailBody');
+            const titleEl = document.getElementById('washMonthlyDetailTitle');
+            if (!container || !tbody || !titleEl) return;
+
+            updateWashMonthlyDetailHead();
+            const sortedRows = (Array.isArray(currentWashMonthlyDetailRows) ? [...currentWashMonthlyDetailRows] : []).sort((a, b) => {
+                const key = currentWashMonthlyDetailSort.key;
+                let cmp = 0;
+                if (key === 'rawDate') {
+                    const ta = a.rawDate ? a.rawDate.getTime() : 0;
+                    const tb = b.rawDate ? b.rawDate.getTime() : 0;
+                    cmp = ta - tb;
+                } else if (key === 'company') {
+                    cmp = normalizeStr(a.company).localeCompare(normalizeStr(b.company), 'es', { sensitivity: 'base' });
+                } else if (key === 'monthIdx') {
+                    cmp = (Number(a.monthIdx) || 0) - (Number(b.monthIdx) || 0);
+                } else {
+                    cmp = normalizeStr(a.unit).localeCompare(normalizeStr(b.unit), 'es', { sensitivity: 'base' });
+                }
+                if (cmp === 0 && key !== 'rawDate') {
+                    const ta = a.rawDate ? a.rawDate.getTime() : 0;
+                    const tb = b.rawDate ? b.rawDate.getTime() : 0;
+                    cmp = tb - ta;
+                }
+                return currentWashMonthlyDetailSort.dir === 'asc' ? cmp : -cmp;
+            });
+
+            titleEl.innerHTML = `${currentWashMonthlyDetailBaseTitle || 'Detalle Histórico Mensual'} <span class="text-cyan-700 font-normal">| ${sortedRows.length} lavados</span>`;
+            tbody.innerHTML = '';
+
+            if (!sortedRows.length) {
+                tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-slate-400">Sin registros para esta selección.</td></tr>';
+            } else {
+                sortedRows.forEach(r => {
+                    const compColor = COMPANY_COLORS[r.company] || COMPANY_COLORS[normalizeStr(r.company).toUpperCase()] || '#64748b';
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-cyan-50 border-b border-slate-100 last:border-0 transition">
+                            <td class="p-3 font-bold text-slate-700 text-xs">${escapeHtml(normalizeStr(r.unit))}</td>
+                            <td class="p-3 text-xs font-bold" style="color:${compColor}">${escapeHtml(normalizeStr(r.company))}</td>
+                            <td class="p-3 text-xs text-slate-600 font-mono">${escapeHtml(normalizeStr(r.dateStr))}</td>
+                            <td class="p-3 text-center text-xs text-slate-400 uppercase">${escapeHtml(monthNamesFull[r.monthIdx] || '-')}</td>
+                        </tr>
+                    `;
+                });
+            }
+        }
+
+        function showWashMonthlyDetail(data, title) {
+            const container = document.getElementById('washMonthlyDetailContainer');
+            const statusContainer = document.getElementById('washDrillDownContainer');
+            if (!container) return;
+            if (statusContainer) statusContainer.classList.add('hidden');
+
+            currentWashMonthlyDetailRows = Array.isArray(data) ? data.slice() : [];
+            currentWashMonthlyDetailBaseTitle = title || 'Detalle Histórico Mensual';
+            currentWashMonthlyDetailSort = { key: 'rawDate', dir: 'desc' };
+            renderWashMonthlyDetailRows();
+
+            container.classList.remove('hidden');
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Compatibilidad con referencias anteriores
+        function showWashHistoryDetail(data, title) {
+            showWashMonthlyDetail(data, title);
+        }
+
+        function showFuelDrillDown(company) {
+            const container = document.getElementById('fuelDrillDownContainer');
+            const title = document.getElementById('fuelDrillDownTitle');
+            const canvasId = 'fuelDrillDownChart';
+            
+            if(!container) return;
+
+            // CORRECCIÓN CRÍTICA: Mostrar el contenedor ANTES de renderizar el gráfico.
+            // Si el contenedor está oculto (hidden), Chart.js detecta dimensiones 0x0 y no dibuja nada al primer clic.
+            container.classList.remove('hidden');
+
+            const data = dbExtra.filter(r => r.company === company && r.company !== 'Pipitas');
+            const segments = [...new Set(data.map(r => r.segment))];
+            
+            // --- LÓGICA DE VENTANA DE TIEMPO (Últimos 12 Meses Concluidos) ---
+            const today = new Date();
+            const timeWindowKeys = [];
+            const chartLabels = [];
+
+            // Generar los últimos 12 meses, excluyendo el mes actual
+            for (let i = 12; i >= 1; i--) {
+                const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+                const y = d.getFullYear();
+                const m = d.getMonth(); // 0-11
+                
+                timeWindowKeys.push(`${y}-${m}`);
+                // Etiquetas dinámicas (ej: "Feb 25", "Mar 25"...)
+                chartLabels.push(`${monthNamesFull[m].substring(0, 3)} ${y.toString().substr(2)}`);
+            }
+
+            const segmentData = {};
+            segments.forEach(seg => {
+                // Array de 12 posiciones, alineado con timeWindowKeys
+                segmentData[seg] = new Array(12).fill(null).map(() => ({ km:0, lit:0 }));
+            });
+
+            data.forEach(r => {
+                const key = `${r.year}-${r.mIdx}`;
+                // Buscar si el registro pertenece a la ventana de tiempo
+                const windowIdx = timeWindowKeys.indexOf(key);
+
+                if(windowIdx !== -1) {
+                    segmentData[r.segment][windowIdx].km += r.km;
+                    segmentData[r.segment][windowIdx].lit += r.liters;
+                }
+            });
+
+            const datasets = segments.map((seg, idx) => {
+                const yieldData = segmentData[seg].map(m => m.lit > 0 ? m.km / m.lit : null);
+                const color = isColorblind
+                    ? COLORBLIND_PALETTE[idx % COLORBLIND_PALETTE.length]
+                    : PALETTE_FALLBACK[idx % PALETTE_FALLBACK.length];
+                
+                return {
+                    label: seg,
+                    data: yieldData,
+                    borderColor: color,
+                    backgroundColor: 'transparent',
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointHoverRadius: 6
+                };
+            });
+
+            title.innerText = `${company} - Tendencia Mensual por Segmento`;
+            
+            initChart(canvasId, 'line', {
+                labels: chartLabels, // Usar etiquetas dinámicas
+                datasets: datasets
+            }, {
+                plugins: {
+                    legend: { display: true },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.dataset.label}: ${ctx.raw ? ctx.raw.toFixed(2) : '-'} km/L`
+                        }
+                    },
+                    datalabels: {
+                        display: true,
+                        align: 'top',
+                        anchor: 'end',
+                        offset: 4,
+                        color: function(context) { return context.dataset.borderColor; },
+                        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                        borderRadius: 3,
+                        font: { size: 9, weight: 'bold' },
+                        formatter: (value) => value ? value.toFixed(2) : ''
+                    }
+                },
+                scales: {
+                    y: { title: { display: true, text: 'Rendimiento (km/L)' }, beginAtZero: false }
+                },
+                layout: { padding: { top: 20 } }
+            });
+
+            // container.classList.remove('hidden'); // MOVIDO AL INICIO DE LA FUNCIÓN
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        function showScrapDrillDown(data, total) {
+             const container = document.getElementById('scrapDrillDownContainer'); 
+             const tbody = document.getElementById('scrapDrillDownBody'); 
+             const title = document.getElementById('scrapDrillDownTitle');
+             const thead = document.getElementById('scrapDrillDownHead');
+             
+             if(!container || !tbody) return;
+             
+             // Restore title and headers for General Reasons
+             if(title) title.innerHTML = '<i class="fa-solid fa-list-ul"></i> Detalle: Otras Causas';
+             if(thead) {
+                 thead.innerHTML = '<tr><th class="p-3">Causa</th><th class="p-3 text-center">Cantidad</th><th class="p-3 text-right">% del Total</th></tr>';
+             }
+
+             tbody.innerHTML = '';
+             data.forEach(([reason, count]) => { const pct = ((count / total) * 100).toFixed(1); tbody.innerHTML += `<tr class="hover:bg-slate-50"><td class="p-3 font-bold text-slate-700">${escapeHtml(normalizeStr(reason))}</td><td class="p-3 text-center text-slate-600">${count.toLocaleString('es-MX')}</td><td class="p-3 text-right font-mono text-blue-600 font-bold">${pct}%</td></tr>`; });
+             container.classList.remove('hidden'); container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function showScrapBrandDetail(brand) {
+            const container = document.getElementById('scrapDrillDownContainer');
+            const tbody = document.getElementById('scrapDrillDownBody');
+            const title = document.getElementById('scrapDrillDownTitle');
+            const thead = document.getElementById('scrapDrillDownHead');
+            
+            if(!container || !tbody) return;
+
+            // Update Headers for Brand Detail
+            if(title) title.innerHTML = `<i class="fa-solid fa-tags text-orange-600"></i> Desglose por Marca: <span class="text-slate-800">${escapeHtml(normalizeStr(brand))}</span>`;
+            if(thead) {
+                thead.innerHTML = `
+                    <tr>
+                        <th class="p-3">Diseño (Modelo)</th>
+                        <th class="p-3 text-center">Cant. Llantas</th>
+                        <th class="p-3 text-center">Prom. mm/llanta</th>
+                        <th class="p-3 text-right">MM Desperdiciados Total</th>
+                    </tr>
+                `;
+            }
+            
+            // Logic to filter and aggregate data
+            const data = dbScrap.filter(r => r.brand === brand);
+            const modelMap = {};
+            
+            data.forEach(r => {
+                const mm = Math.max(0, (r.mm || 0) - 3);
+                if(!modelMap[r.model]) modelMap[r.model] = { count: 0, mm: 0 };
+                modelMap[r.model].count++;
+                modelMap[r.model].mm += mm;
+            });
+            
+            const sortedModels = Object.entries(modelMap)
+                .map(([name, stats]) => ({ name, ...stats }))
+                .sort((a,b) => b.mm - a.mm); // Sort by wasted MM descending
+
+            tbody.innerHTML = '';
+            
+            if (sortedModels.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-slate-400">Sin datos de desperdicio.</td></tr>';
+            } else {
+                sortedModels.forEach(m => {
+                    const avg = m.count > 0 ? m.mm / m.count : 0;
+                    tbody.innerHTML += `
+                        <tr class="hover:bg-orange-50 border-b border-slate-100 last:border-0 transition">
+                            <td class="p-3 font-bold text-slate-700 text-xs">${escapeHtml(normalizeStr(m.name))}</td>
+                            <td class="p-3 text-center text-slate-600 text-xs font-semibold">${m.count}</td>
+                            <td class="p-3 text-center font-mono text-orange-600 font-bold text-xs">${avg.toFixed(2)} mm</td>
+                            <td class="p-3 text-right font-mono text-red-600 font-bold text-xs">${m.mm.toFixed(1)} mm</td>
+                        </tr>
+                    `;
+                });
+            }
+            
+            container.classList.remove('hidden');
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function showCreditLegalDrillDown(legalName, rows, providerName = '') {
+            const container = document.getElementById('creditLegalDrillDownContainer');
+            const tbody = document.getElementById('creditLegalDrillDownBody');
+            const title = document.getElementById('creditLegalDrillDownTitle');
+            if (!container || !tbody || !title) return;
+
+            const target = normalizeStr(legalName);
+            const providerTarget = normalizeStr(providerName);
+            const list = Array.isArray(rows) ? rows : [];
+            const filtered = list.filter(r => {
+                if (normalizeStr(r.legalName) !== target) return false;
+                if (!providerTarget) return true;
+                return normalizeStr(r.provider) === providerTarget;
+            });
+            filtered.sort((a, b) => {
+                const da = parseFlexibleDate(a.date);
+                const db = parseFlexibleDate(b.date);
+                if (da && db) return db - da;
+                if (da) return -1;
+                if (db) return 1;
+                return 0;
+            });
+
+            const subtotal = filtered.reduce((acc, r) => acc + (Number(r.amount) || 0), 0);
+            const totalQty = filtered.reduce((acc, r) => acc + (Number(r.qty) || 0), 0);
+            const scope = providerTarget ? `${target} / ${providerTarget}` : target;
+            title.innerHTML = `<i class="fa-solid fa-table-list"></i> ${escapeHtml(scope)} <span class="text-[11px] font-normal text-slate-500 ml-2">(${filtered.length} reg. | Qty: ${totalQty.toLocaleString('es-MX', { maximumFractionDigits: 1 })} | Total: $${subtotal.toLocaleString('es-MX', { maximumFractionDigits: 2 })})</span>`;
+
+            if (!filtered.length) {
+                tbody.innerHTML = '<tr><td colspan="6" class="p-4 text-center text-slate-400">Sin detalle disponible para esta razón social.</td></tr>';
+            } else {
+                tbody.innerHTML = filtered.map(r => `
+                    <tr class="hover:bg-slate-50">
+                        <td class="p-3 text-xs text-slate-600">${escapeHtml(normalizeStr(r.date) || '-')}</td>
+                        <td class="p-3 text-xs text-slate-700">${escapeHtml(normalizeStr(r.provider) || '-')}</td>
+                        <td class="p-3 text-xs font-semibold text-slate-700">${escapeHtml(normalizeStr(r.legalName) || '-')}</td>
+                        <td class="p-3 text-center text-xs text-slate-600 font-mono">${(Number(r.qty) || 0).toLocaleString('es-MX', { maximumFractionDigits: 1 })}</td>
+                        <td class="p-3 text-xs text-slate-700">${escapeHtml(normalizeStr(r.description) || '-')}</td>
+                        <td class="p-3 text-right text-xs font-mono font-bold text-emerald-700">$${(Number(r.amount) || 0).toLocaleString('es-MX', { maximumFractionDigits: 2 })}</td>
+                    </tr>
+                `).join('');
+            }
+
+            container.classList.remove('hidden');
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // --- URLS CONFIGURADAS (MODULOS) ---
+        // 1. CPK: 585285912
+        const DEFAULT_CPK_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vThc6F_SNxa5JhL897dxyyl7u-g-g2q4QbTHIo8yEkDBJpHXAH9NZzx3FJFPwxvbg/pub?gid=585285912&single=true&output=csv";
+        // 2. SCRAP: 1264772684
+        const DEFAULT_SCRAP_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRkZVja7KbANtJeC2ED5QZp9QPt9RGV2wp-p8_jhTJfie0OJw17RFHgjvXPr90teg/pub?gid=1264772684&single=true&output=csv"; 
+        // 2.1 SCRAP CREDIT NOTES: 362347697
+        const DEFAULT_SCRAP_CREDIT_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRkZVja7KbANtJeC2ED5QZp9QPt9RGV2wp-p8_jhTJfie0OJw17RFHgjvXPr90teg/pub?gid=362347697&single=true&output=csv";
+        // 3. WASH STATUS: 1103372447
+        const DEFAULT_WASH_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCaFeNwOTwRuMkQnliCirL04_SiAHFXAzqn_TPe_Evuy6f_xuB9_insuXl3mgvRg/pub?gid=1103372447&single=true&output=csv";
+        // 4. WASH HIST: 1734395370
+        const DEFAULT_WASH_HISTORY_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRlZOIwJFJGVOZq2IIY2gMo1DRIwDXQXnJIom29GuKUw1MOIjCKSmMvhSaoCJgQYg/pub?gid=1734395370&single=true&output=csv";
+        // 5. FUEL (EXTRA): 612375241 (ACTUALIZADO)
+        const DEFAULT_EXTRA_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsdiL36ZevOm1AY8E-PfkIhWFzimoVoeQlbWw-wq7mfHU-bE28UENuWqjLl1yb_A/pub?gid=612375241&single=true&output=csv";
+        // 5.1 CPK GOALS SUMMARY (SOLO MIGRACIÓN INICIAL): 584200482
+        const DEFAULT_CPK_GOALS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vThc6F_SNxa5JhL897dxyyl7u-g-g2q4QbTHIo8yEkDBJpHXAH9NZzx3FJFPwxvbg/pub?gid=584200482&single=true&output=csv";
+        const CPK_GOALS_STORAGE_KEY = 'yucarro_cpk_goals_local_v1';
+        const DEFAULT_CPK_GOALS_LOCAL = [];
+        // 6. PRODUCT LOSS (3 EMPRESAS)
+        const DEFAULT_LOSS_Y_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrVX7KEz9XHq0m50eT6wsF-kSigOp4pNiycGS9mlbFy3tl_jA-cS7jaeqkt1TtCg/pub?gid=869681452&single=true&output=csv";
+        const DEFAULT_LOSS_T_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrVX7KEz9XHq0m50eT6wsF-kSigOp4pNiycGS9mlbFy3tl_jA-cS7jaeqkt1TtCg/pub?gid=236163936&single=true&output=csv";
+        const DEFAULT_LOSS_C_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrVX7KEz9XHq0m50eT6wsF-kSigOp4pNiycGS9mlbFy3tl_jA-cS7jaeqkt1TtCg/pub?gid=266470563&single=true&output=csv";
+
+        const COMPANY_MAP = { '2000': 'T2020', '2001': 'Corpored', '2003': 'Yucarro', '2005': 'CMC', '2006': 'LMR', '2007': 'LORM' };
+        const LA_PAZ_UNITS = ['CR-75', 'CR-76', 'CR-77', 'CR-85', 'CR-86'];
+
+        // --- DEFINICIÓN DE REGLAS DE FILTRADO (GLOBAL) ---
+        const RANKING_RULES = {
+            'Delanteras': { minKm: 80000, minEff: 25000, maxEff: 50000, label: 'Km > 80k | 25k < Eff < 50k' },
+            'Tracción': { minKm: 150000, minEff: 20000, maxEff: 55000, label: 'Km > 150k | 20k < Eff < 55k' },
+            'Toda Posición': { minKm: 150000, minEff: 28000, maxEff: 60000, label: 'Km > 150k | 28k < Eff < 60k' }
+        };
+        const CPK_GOAL_SUMMARY_RULES = {
+            TRACCION: { segment: 'Tracción', minKm: 280000, topN: 30 },
+            TODA_ARRASTRE: { segment: 'Toda Posición', minKm: 300000, topN: 30 }
+        };
+
+        // --- 1. MOCK DATA & CONFIG (GLOBAL SCOPE) ---
+        const MOCK_CPK_DATA = [{ "FOLIO": "101", "MARCA": "MOCK", "DISEÑO": "DATA", "SEGMENTO": "Delanteras", "MM ACTUAL": "10", "MM ORIG": "18", "KM REC. TOT.": "10000", "COSTO": "5000", "CPK": "0.5", "ECO Nuevo": "M-01" }];
+        const MOCK_SCRAP_DATA = [];
+        const MOCK_SCRAP_CREDIT_DATA = [];
+        const MOCK_WASH_DATA = [];
+
+        // --- 1. CONFIGURACIÓN BLINDADA (Diccionarios Separados) ---
+        const MODULE_CONFIGS = {
+            cpk: {
+                mapping: {
+                    unit: ['Unidad', 'ECO Nuevo', 'ECO', 'Economico', 'Vehicle', 'Unit', 'Vehiculo'],
+                    folio: ['FOLIO', 'Serial', 'ID', 'Placa', 'Tire ID', 'No.', 'Serie'],
+                    brand: ['MARCA', 'Marca', 'Brand', 'Fabricante'],
+                    model: ['DISEÑO', 'Modelo', 'Diseño', 'Patron', 'Design'],
+                    segment: ['SEGMENTO', 'Segmento', 'Tipo', 'Familia', 'Position', 'Posicion', 'Eje', 'Rodado', 'Posición'],
+                    mmOrig: ['MM ORIG', 'Original', 'Profundidad Original', 'Profundidad Inicial', 'MM_Orig'],
+                    mmNow: ['MM ACTUAL', 'MM Prom', 'Remanente', 'Profundidad Actual', 'MM', 'MM_Actual'],
+                    km: ['KM REC. TOT.', 'KM Totales', 'Rendimiento', 'Kilometraje', 'Recorrido', 'Odo', 'Odometro', 'Km Recorridos', 'Km', 'Kms', 'Distancia'], 
+                    cost: ['$', 'Costo', 'Importe', 'Precio', 'Valor', 'COSTO'],
+                    date: ['Fecha', 'Date', 'Fecha Montaje', 'F. Montaje'],
+                    cpk_value: ['CPK', 'Costo por Km'],
+                    pos: ['POS', 'Posicion'],
+                    // NUEVO: Mapeo para columna Articulación
+                    articulation: ['Articulacion', 'Articulación', 'Remolque', 'Caja', 'Trailer', 'Dolly'],
+                    status: ['Status', 'STATUS', 'Estado', 'Estatus']
+                }
+            },
+            scrap: {
+                mapping: {
+                    id: ['FOLIO', 'ID', 'ECO Nuevo', 'ECO', 'Unidad', 'Economico', 'Serial', 'Placa', 'No.'],
+                    brand: ['MARCA', 'Marca', 'Brand', 'Fabricante'],
+                    model: ['DISEÑO', 'Modelo', 'Diseño', 'Patron', 'Design'],
+                    mmOrig: ['MM ORIG', 'Original', 'Profundidad Original', 'Profundidad Inicial', 'MM_Orig'],
+                    mmNow: ['MM ACTUAL', 'MM Prom', 'Remanente', 'Profundidad Actual', 'MM', 'MM_Actual'],
+                    cost: ['$', 'Costo', 'Importe', 'Precio', 'Valor', 'COSTO'],
+                    scrapStatus: ['STATUS', 'Estado', 'Estatus'],
+                    scrapReason: ['CAUSA', 'Motivo', 'Reason', 'Falla', 'Descripcion'],
+                    scrapProvider: ['Prov. Retiro', 'Proveedor', 'Vendor', 'Patio', 'Destino'],
+                    // ACTUALIZADO: Prioridad absoluta a "F. Salida" (Columna B) para el gráfico mensual
+                    date: ['F. Salida', 'F Salida', 'Fecha Baja', 'Fecha Retiro', 'Fecha', 'Date', 'scrapDate'] 
+                }
+            },
+            scrapCredit: {
+                mapping: {
+                    date: ['Fecha', 'FECHA', 'F. Nota', 'F Nota', 'Date'],
+                    provider: ['Proveedor', 'PROVEEDOR', 'Vendor'],
+                    legalName: ['razon social', 'Razon social', 'RAZON SOCIAL', 'Razón social'],
+                    qty: ['cantidad', 'Cantidad', 'CANTIDAD', 'Cant.'],
+                    description: ['descripcion', 'Descripcion', 'DESCRIPCION', 'Descripción', 'Concepto'],
+                    amount: ['importe', 'Importe', 'IMPORTE', 'Monto', '$']
+                }
+            },
+            wash: {
+                mapping: {
+                    unit: ['Unidad', 'ECO Nuevo', 'ECO', 'Economico', 'Vehicle', 'Unit', 'Vehiculo'],
+                    washDate: ['FECHA', 'Fecha', 'Ultimo Lavado', 'Fecha de Lavado', 'Date', 'Time', 'Marca temporal', 'Timestamp', 'Fecha Lavado'],
+                    washDays: ['Dias', 'Dias Sin Lavar', 'Días'],
+                    washCompany: ['EMPRESA', 'Empresa', 'Company', 'Proveedor', 'Base', 'Sociedad']
+                }
+            },
+            fuel: {
+                mapping: {
+                    // ACTUALIZADO: Prioridad a "Nº vehículo" para identificar unidades correctamente
+                    unit: ['Nº vehículo', 'Nº vehiculo', 'N° vehículo', 'No. vehículo', 'Unidad', 'ECO Nuevo', 'ECO', 'Economico', 'Vehicle', 'Unit', 'Vehiculo', 'Eco', 'Económico'],
+                    fuelMonth: ['Fecha programada', 'Mes', 'Month'],
+                    fuelCompany: ['Sociedad', 'Empresa', 'Company', 'Soc.'],
+                    fuelEngine: ['Motor', 'Tipo Motor', 'Engine'],
+                    fuelManufacturer: ['Fabricante', 'Manufacturer', 'Marca'], // Mapeo nuevo para Fabricante
+                    fuelSegment: ['Char 15', 'Segmento', 'Tipo', 'Subgrupo', 'B', 'Char. 15', 'Grupo'], 
+                    fuelOperator: ['Nombre', 'nombre de pila', 'Operador', 'Chofer', 'Conductor', 'Driver', 'Operador.'], 
+                    fuelKm: ['Km reales', 'Kms', 'Kilometros', 'Km', 'Distancia', 'Odometer', 'Odómetro', 'Recorrido', 'KM RECORRIDOS', 'Km.'],
+                    fuelLiters: ['Consumo', 'Litros', 'Lts', 'Galones', 'Volumen', 'Combustible', 'LITROS CONSUMIDOS', 'Litros Reales', 'Lts.'],
+                    fuelYield: ['Rend. Fisico', 'Rendimiento', 'Rend', 'Km/L', 'Eficiencia', 'Rendimiento Real']
+                }
+            },
+            loss: {
+                mapping: {
+                    date: ['FECHA DE VIAJE', 'FECHA', 'Fecha de viaje', 'Fecha'],
+                    tractor: ['TRACTOR', 'Tractor', 'Numero PR', 'Número PR'],
+                    unit: ['UNIDAD', 'Unidad', 'Numero Eco', 'Número Eco', 'ECO'],
+                    operator: ['OPERADOR', 'Operador', 'Chofer', 'Conductor'],
+                    origin: ['ORIGEN', 'Origen'],
+                    destination: ['DESTINO', 'Destino'],
+                    ingresos: ['INGRESOS', 'INGRESOS FLETES', 'Ingresos'],
+                    ingresosPeajes: ['INGRESOS PEAJES', 'Ingresos peajes'],
+                    litersTransported: ['LTS TRANSPORTADOS', 'Litros Transportados'],
+                    litersFaltSabana: ['LTS FALT SABANA', 'LTS FALTANTE SABANA', ' LTS FALTANTE SABANA'],
+                    diffSiic: [' DIF LTS  FALTANTE SIIC', 'Dif Lts falt Siic', 'DIF LTS FALTANTE SIIC'],
+                    importeSiic: [' IMPORTE FALTANTE SIIC', 'IMPORTE FALTANTE SIIC'],
+                    litersFaltSiic: ['LTS FALTANTE SIIC', ' LTS FALTANTE SIIC', 'Litros Faltante SIC'],
+                    litersCondonaPemex: ['LTS FALTANTE CONDONA PEMEX'],
+                    litersDescPemex: ['LTS FALTANTE DESC PEMEX', 'LTS Faltante Desc Pemex'],
+                    importeDescPemex: ['IMPORTE FALTANTE DESC PEMEX'],
+                    litersAbsTyuc: ['LTS FALTANTE ABS TYUC', 'LTS FALTANTE ABS TVV', 'LTS FALTANTE ABS TCORP', 'LITROS FALTANTE ABS TYUC', 'LTS FALTANTE ABS TRANSP', 'LTS FALTANTE ABS TRANPS', 'LTS FALTANTE ABS TRANSP.'],
+                    importeAbsTyuc: ['IMPORTE FALTANTE ABS TYUC', 'IMPORTE FALTANTE ABS TVV', 'IMPORTE FALTANTE ABS TCORP', 'IMPORTE FALTANTE ABS TRANSP', 'IMPORTE FALTANTE ABS TRANPS', 'IMP. FALT ABS TRANSP.', 'IMP. FALT ABS TRANSP'],
+                    litersDescOperador: ['LTS FALTANTE DESC OPERADOR', 'LTS FALTANTE DESC OPERADOR'],
+                    importeDescOperador: ['IMPORTE FALTANTE DESC OPERADOR'],
+                    viajes: ['Viajes', 'Viajes ']
+                }
+            }
+        };
+
+        // --- GLOBAL STATE & HELPERS ---
+        let dbPerformance = [], dbScrap = [], dbScrapCredits = [], dbWashing = [], dbWashHistory = [], dbExtra = [], dbLoss = [], dbCpkGoals = [];
+        let currentFilter = 'ALL';
+        let currentPerformanceStatusFilter = 'ALL';
+        let currentWashSearchUnit = '';
+        let currentWashSelectedUnit = [];
+        let currentWashDrillRows = [];
+        let currentWashDrillBaseTitle = '';
+        let currentWashMonthlyDetailRows = [];
+        let currentWashMonthlyDetailBaseTitle = '';
+        let currentWashDrillSort = { key: 'daysWithoutWash', dir: 'desc' };
+        let currentWashMonthlyDetailSort = { key: 'rawDate', dir: 'desc' };
+        let currentFuelSearchUnit = '';
+        let currentFuelSearchOperator = '';
+        let currentFuelSelectedUnit = [];
+        let currentFuelSelectedOperator = [];
+        let currentLossCompanyFilter = 'ALL';
+        let currentLossLitersMode = 'PCT';
+        let currentLossLowRankBy = 'OPERADOR';
+        let currentLossTopOrder = 'MENOR';
+        let currentLossSearchTU = '';
+        let currentLossSearchOperator = '';
+        let currentLossSelectedTU = [];
+        let currentLossSelectedOperator = [];
+        let charts = {};
+        let moduleState = { performance: { periods: [] }, scrap: { periods: [] }, washing: { periods: [] }, strategy: { periods: [] }, extra: { periods: [] }, loss: { periods: [] }, currentTab: 'performance' };
+        const MERGE_STRATEGY_IN_SCRAP = true;
+        
+        // --- UTILS ---
+        function escapeHtml(text) {
+          if (!text) return text;
+          return text
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+        }
+
+        function normalizeStr(value) {
+            return (value || '').toString().trim();
+        }
+
+        function normalizeCpkStatus(rawStatus) {
+            const s = normalizeStr(rawStatus).toUpperCase();
+            if (!s) return 'SIN ESTATUS';
+            if (s.includes('ACTIV')) return 'ACTIVA';
+            if (s.includes('CONCLU') || s.includes('FIN') || s.includes('BAJA') || s.includes('RETIR')) return 'CONCLUIDA';
+            return 'SIN ESTATUS';
+        }
+
+        function updatePerformanceStatusButtons() {
+            ['ALL', 'ACTIVA', 'CONCLUIDA'].forEach(key => {
+                const btn = document.getElementById(`perf-status-${key}`);
+                if (!btn) return;
+                btn.classList.toggle('active', currentPerformanceStatusFilter === key);
+            });
+        }
+
+        function getFilteredPerformanceData(includePeriods = true) {
+            let data = dbPerformance.slice();
+
+            if (currentPerformanceStatusFilter !== 'ALL') {
+                data = data.filter(d => d.status === currentPerformanceStatusFilter);
+            }
+
+            if (includePeriods) {
+                const periods = moduleState.performance.periods;
+                if (periods.length > 0) {
+                    data = data.filter(d => {
+                        const date = parseFlexibleDate(d.date);
+                        if(!date) return false;
+                        const key = `${date.getFullYear()}-${date.getMonth()}`;
+                        return periods.includes(key);
+                    });
+                }
+            }
+
+            return data;
+        }
+
+        function setPerformanceStatusFilter(status) {
+            const allowed = ['ALL', 'ACTIVA', 'CONCLUIDA'];
+            currentPerformanceStatusFilter = allowed.includes(status) ? status : 'ALL';
+            updatePerformanceStatusButtons();
+            if (moduleState.currentTab === 'performance') runCPKAnalysis();
+        }
+
+        function getAuthConfig() {
+            const cfg = window.YUCARRO_AUTH || {};
+            return {
+                mainUser: normalizeStr(cfg.mainUser),
+                mainPass: normalizeStr(cfg.mainPass),
+                adminPass: normalizeStr(cfg.adminPass)
+            };
+        }
+
+        const USER_STORAGE_KEY = 'yucarro_users_v1';
+        const CURRENT_USER_KEY = 'yucarro_current_user_v1';
+        const MODULE_DEFS = [
+            { key: 'performance', label: 'CPK Llantas', inputId: 'inputUrlCpk', rowId: 'cloudRowCpk', storageKey: 'yucarro_cpk_url' },
+            { key: 'scrap', label: 'Desecho', inputId: 'inputUrlScrap', rowId: 'cloudRowScrap', storageKey: 'yucarro_scrap_url' },
+            { key: 'strategy', label: 'Estrategia', inputId: 'inputUrlScrap', rowId: 'cloudRowScrap', storageKey: 'yucarro_scrap_url' },
+            { key: 'scrapCredit', label: 'Desecho Notas Crédito', inputId: 'inputUrlScrapCredit', rowId: 'cloudRowScrapCredit', storageKey: 'yucarro_scrap_credit_url' },
+            { key: 'washing', label: 'Lavadero', inputId: 'inputUrlWash', rowId: 'cloudRowWash', storageKey: 'yucarro_wash_url' },
+            { key: 'washingHist', label: 'Lavadero Hist.', inputId: 'inputUrlWashHistory', rowId: 'cloudRowWashHist', storageKey: 'yucarro_wash_hist_url' },
+            { key: 'extra', label: 'Combustible', inputId: 'inputUrlExtra', rowId: 'cloudRowExtra', storageKey: 'yucarro_extra_url' },
+            { key: 'lossY', label: 'Faltante Yucarro', inputId: 'inputUrlLossY', rowId: 'cloudRowLossY', storageKey: 'yucarro_loss_y_url' },
+            { key: 'lossT', label: 'Faltante T2020', inputId: 'inputUrlLossT', rowId: 'cloudRowLossT', storageKey: 'yucarro_loss_t_url' },
+            { key: 'lossC', label: 'Faltante Corpored', inputId: 'inputUrlLossC', rowId: 'cloudRowLossC', storageKey: 'yucarro_loss_c_url' }
+        ];
+        const LINK_ACCESS_DEFS = [
+            { key: 'performance', label: 'CPK Llantas' },
+            { key: 'scrap', label: 'Desecho' },
+            { key: 'strategy', label: 'Estrategia' },
+            { key: 'scrapCredit', label: 'Desecho Notas Crédito' },
+            { key: 'washing', label: 'Lavadero' },
+            { key: 'washingHist', label: 'Lavadero Hist.' },
+            { key: 'extra', label: 'Combustible' },
+            { key: 'lossY', label: 'Faltante Yucarro' },
+            { key: 'lossT', label: 'Faltante T2020' },
+            { key: 'lossC', label: 'Faltante Corpored' }
+        ];
+        const CSV_LINK_KEYS = MODULE_DEFS.map(def => def.key);
+        const TAB_TO_MODULE = {
+            performance: 'performance',
+            scrap: 'scrap',
+            strategy: 'strategy',
+            washing: 'washing',
+            extra: 'extra',
+            loss: 'loss'
+        };
+        let currentUser = null;
+        let linkSessionUser = null;
+
+        function saveUsers(users) {
+            localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(users));
+        }
+
+        function getUsers() {
+            try {
+                const raw = localStorage.getItem(USER_STORAGE_KEY);
+                const users = raw ? JSON.parse(raw) : [];
+                return Array.isArray(users) ? users : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function normalizeImportedUser(raw) {
+            if (!raw || typeof raw !== 'object') return null;
+            const username = normalizeStr(raw.username);
+            const password = normalizeStr(raw.password);
+            const roleRaw = normalizeStr(raw.role).toLowerCase();
+            const role = roleRaw === 'admin' ? 'admin' : (roleRaw === 'viewer' ? 'viewer' : 'editor');
+            if (!username || !password) return null;
+
+            const allowedModules = ['performance', 'scrap', 'strategy', 'washing', 'extra', 'loss', 'colorblind'];
+            const allowedLinks = LINK_ACCESS_DEFS.map(def => def.key);
+            const modules = Array.isArray(raw.modules)
+                ? raw.modules.map(x => normalizeStr(x)).filter(x => allowedModules.includes(x))
+                : [];
+            const linkAccess = Array.isArray(raw.linkAccess)
+                ? raw.linkAccess.map(x => normalizeStr(x)).filter(x => allowedLinks.includes(x))
+                : [];
+
+            return {
+                username,
+                password,
+                role,
+                modules: role === 'admin' ? allowedModules.slice() : Array.from(new Set(modules)),
+                linkAccess: role === 'admin' ? allowedLinks.slice() : (role === 'viewer' ? [] : Array.from(new Set(linkAccess)))
+            };
+        }
+
+        function sanitizeImportedUsers(usersRaw) {
+            if (!Array.isArray(usersRaw)) return [];
+            const dedup = new Map();
+            usersRaw.forEach(raw => {
+                const u = normalizeImportedUser(raw);
+                if (!u) return;
+                dedup.set(u.username, u);
+            });
+            return Array.from(dedup.values());
+        }
+
+        function getCurrentUser() {
+            const username = normalizeStr(localStorage.getItem(CURRENT_USER_KEY));
+            if (!username) return null;
+            return getUsers().find(u => u.username === username) || null;
+        }
+
+        function setCurrentUser(username) {
+            if (!username) {
+                localStorage.removeItem(CURRENT_USER_KEY);
+                currentUser = null;
+                return;
+            }
+            localStorage.setItem(CURRENT_USER_KEY, username);
+            currentUser = getUsers().find(u => u.username === username) || null;
+        }
+
+        function hideLockScreen() {
+            const screen = document.getElementById('mainLockScreen');
+            if (!screen) return;
+            screen.classList.add('opacity-0', 'pointer-events-none');
+            screen.style.display = 'none';
+        }
+
+        function showLockScreen() {
+            const screen = document.getElementById('mainLockScreen');
+            if (!screen) return;
+            screen.style.display = 'flex';
+            screen.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function updateSessionUi() {
+            const badge = document.getElementById('sessionUserBadge');
+            const btnLogout = document.getElementById('btnLogout');
+            const btnChangePassword = document.getElementById('btnChangePassword');
+            if (badge) {
+                if (currentUser && currentUser.username) {
+                    badge.innerText = `${currentUser.username} (${currentUser.role || 'usuario'})`;
+                    badge.classList.remove('hidden');
+                } else {
+                    badge.classList.add('hidden');
+                    badge.innerText = '';
+                }
+            }
+            if (btnLogout) {
+                if (currentUser) btnLogout.classList.remove('hidden');
+                else btnLogout.classList.add('hidden');
+            }
+            if (btnChangePassword) {
+                const canChange = !!(currentUser && (currentUser.role === 'editor' || currentUser.role === 'viewer'));
+                btnChangePassword.classList.toggle('hidden', !canChange);
+            }
+        }
+
+        function setChangePassError(msg) {
+            const el = document.getElementById('changePassError');
+            if (!el) return;
+            if (!msg) {
+                el.classList.add('hidden');
+                el.innerText = '';
+                return;
+            }
+            el.innerText = msg;
+            el.classList.remove('hidden');
+        }
+
+        function resetChangePasswordForm() {
+            const currentEl = document.getElementById('changePassCurrent');
+            const newEl = document.getElementById('changePassNew');
+            const confirmEl = document.getElementById('changePassConfirm');
+            if (currentEl) currentEl.value = '';
+            if (newEl) newEl.value = '';
+            if (confirmEl) confirmEl.value = '';
+            setChangePassError('');
+        }
+
+        function openChangePasswordModal() {
+            if (!currentUser || (currentUser.role !== 'editor' && currentUser.role !== 'viewer')) {
+                logStatus('Solo usuarios Editor o Solo lectura pueden cambiar su contraseña aquí.', 'error');
+                return;
+            }
+            resetChangePasswordForm();
+            toggleModal('changePasswordModal');
+        }
+
+        function submitPasswordChange() {
+            if (!currentUser || (currentUser.role !== 'editor' && currentUser.role !== 'viewer')) {
+                setChangePassError('No tienes permisos para cambiar contraseña.');
+                return;
+            }
+            const currentPass = normalizeStr(document.getElementById('changePassCurrent')?.value);
+            const newPass = normalizeStr(document.getElementById('changePassNew')?.value);
+            const confirmPass = normalizeStr(document.getElementById('changePassConfirm')?.value);
+
+            if (!currentPass || !newPass || !confirmPass) {
+                setChangePassError('Completa los 3 campos.');
+                return;
+            }
+            if (newPass.length < 6) {
+                setChangePassError('La nueva contraseña debe tener al menos 6 caracteres.');
+                return;
+            }
+            if (newPass !== confirmPass) {
+                setChangePassError('La confirmación no coincide con la nueva contraseña.');
+                return;
+            }
+
+            const users = getUsers();
+            const idx = users.findIndex(u => u.username === currentUser.username);
+            if (idx < 0) {
+                setChangePassError('No se encontró el usuario activo.');
+                return;
+            }
+            if (users[idx].password !== currentPass) {
+                setChangePassError('La contraseña actual es incorrecta.');
+                return;
+            }
+            if (currentPass === newPass) {
+                setChangePassError('La nueva contraseña debe ser distinta a la actual.');
+                return;
+            }
+
+            users[idx].password = newPass;
+            saveUsers(users);
+            setCurrentUser(users[idx].username);
+            setChangePassError('');
+            toggleModal('changePasswordModal');
+            logStatus('Contraseña actualizada correctamente.', 'info');
+        }
+
+        function logoutSession() {
+            setCurrentUser('');
+            linkSessionUser = null;
+            const changePassModal = document.getElementById('changePasswordModal');
+            if (changePassModal && !changePassModal.classList.contains('opacity-0')) {
+                toggleModal('changePasswordModal');
+            }
+            applyUserAccessControl();
+            showLockScreen();
+            const userInput = document.getElementById('mainUser');
+            const passInput = document.getElementById('mainPass');
+            const err = document.getElementById('mainLoginError');
+            if (userInput) userInput.value = '';
+            if (passInput) passInput.value = '';
+            if (err) err.classList.add('hidden');
+            logStatus('Sesión cerrada.', 'info');
+        }
+
+        function userHasModule(user, tabId) {
+            if (!user) return false;
+            if (user.role === 'admin') return true;
+            if (MERGE_STRATEGY_IN_SCRAP && tabId === 'scrap') {
+                const mods = Array.isArray(user.modules) ? user.modules : [];
+                return mods.includes('scrap') || mods.includes('strategy');
+            }
+            if (MERGE_STRATEGY_IN_SCRAP && tabId === 'strategy') return false;
+            const mod = TAB_TO_MODULE[tabId];
+            if (!mod) return false;
+            return Array.isArray(user.modules) && user.modules.includes(mod);
+        }
+
+        function userCanEditLink(user, moduleKey) {
+            if (!user) return false;
+            if (user.role === 'admin') return true;
+            return Array.isArray(user.linkAccess) && user.linkAccess.includes(moduleKey);
+        }
+
+        function userCanEditAnyLink(user) {
+            if (!user) return false;
+            if (user.role === 'admin') return true;
+            return Array.isArray(user.linkAccess) && user.linkAccess.length > 0;
+        }
+
+        function userCanOpenLinksPanel(user) {
+            if (!user) return false;
+            if (user.role === 'admin') return true;
+            return Array.isArray(user.linkAccess) && user.linkAccess.some(key => CSV_LINK_KEYS.includes(key));
+        }
+
+        function userCanUseColorblind(user) {
+            if (!user) return false;
+            if (user.role === 'admin') return true;
+            return Array.isArray(user.modules) && user.modules.includes('colorblind');
+        }
+
+        function initUserStore() {
+            const auth = getAuthConfig();
+            if (!auth.mainUser || !auth.mainPass) return;
+            const users = getUsers();
+            const found = users.find(u => u.username === auth.mainUser);
+            const adminModules = ['performance', 'scrap', 'strategy', 'washing', 'extra', 'loss', 'colorblind'];
+            const adminLinks = LINK_ACCESS_DEFS.map(def => def.key);
+            if (!found) {
+                users.push({
+                    username: auth.mainUser,
+                    password: auth.mainPass,
+                    role: 'admin',
+                    modules: adminModules.slice(),
+                    linkAccess: adminLinks.slice()
+                });
+                saveUsers(users);
+                return;
+            }
+            if (found.role !== 'admin') found.role = 'admin';
+            found.modules = adminModules.slice();
+            found.linkAccess = adminLinks.slice();
+            if (found.password !== auth.mainPass) found.password = auth.mainPass;
+            saveUsers(users);
+        }
+
+        function authenticateUser(username, password) {
+            const u = normalizeStr(username);
+            const p = normalizeStr(password);
+            if (!u || !p) return null;
+            return getUsers().find(user => user.username === u && user.password === p) || null;
+        }
+
+        function applyUserAccessControl() {
+            const btnLinksAccess = document.getElementById('btnLinksAccess');
+            const btnColorblind = document.getElementById('btnColorblind');
+            const btnUsers = document.getElementById('btnUsersAdmin');
+            const btnCpkGoals = document.getElementById('btnCpkGoalsAdmin');
+            const unmatchedPanel = document.getElementById('strategyUnmatchedPanel');
+            const unmatchedPanelIntegrated = document.getElementById('scrapStrategyUnmatchedPanel');
+            const washHighFreqContainer = document.getElementById('washHighFreqContainer');
+            const strategyTab = document.getElementById('tab-strategy');
+            const strategyView = document.getElementById('view-strategy');
+            if (btnLinksAccess) {
+                const canOpenLinks = !!(currentUser && userCanOpenLinksPanel(currentUser));
+                btnLinksAccess.classList.toggle('hidden', !canOpenLinks);
+            }
+            if (btnColorblind) {
+                const canUseContrast = !!(currentUser && userCanUseColorblind(currentUser));
+                btnColorblind.classList.toggle('hidden', !canUseContrast);
+                if (!canUseContrast && isColorblind) isColorblind = false;
+            }
+            if (btnUsers) {
+                if (currentUser && currentUser.role === 'admin') btnUsers.classList.remove('hidden');
+                else btnUsers.classList.add('hidden');
+            }
+            if (btnCpkGoals) {
+                if (currentUser && currentUser.role === 'admin') btnCpkGoals.classList.remove('hidden');
+                else btnCpkGoals.classList.add('hidden');
+            }
+            if (unmatchedPanel) {
+                const isAdmin = !!(currentUser && currentUser.role === 'admin');
+                unmatchedPanel.classList.toggle('hidden', !isAdmin);
+            }
+            if (unmatchedPanelIntegrated) {
+                const isAdmin = !!(currentUser && currentUser.role === 'admin');
+                unmatchedPanelIntegrated.classList.toggle('hidden', !isAdmin);
+            }
+            if (washHighFreqContainer) {
+                const canSeeHighFreq = !!(currentUser && (currentUser.role === 'admin' || currentUser.role === 'editor'));
+                washHighFreqContainer.classList.toggle('hidden', !canSeeHighFreq);
+            }
+            updateSessionUi();
+
+            Object.keys(TAB_TO_MODULE).forEach(tabId => {
+                const tabBtn = document.getElementById(`tab-${tabId}`);
+                const view = document.getElementById(`view-${tabId}`);
+                const hasAccess = currentUser ? userHasModule(currentUser, tabId) : true;
+                if (tabBtn) tabBtn.classList.toggle('hidden', !hasAccess);
+                if (view && !hasAccess) view.classList.add('hidden');
+            });
+
+            if (currentUser && !userHasModule(currentUser, moduleState.currentTab)) {
+                const firstAllowed = Object.keys(TAB_TO_MODULE).find(t => (!MERGE_STRATEGY_IN_SCRAP || t !== 'strategy') && userHasModule(currentUser, t));
+                if (firstAllowed) switchTab(firstAllowed);
+            }
+            if (currentUser) {
+                updateCloudInputPermissions(currentUser);
+            }
+            if (MERGE_STRATEGY_IN_SCRAP) {
+                if (strategyTab) strategyTab.classList.add('hidden');
+                if (strategyView) strategyView.classList.add('hidden');
+                if (moduleState.currentTab === 'strategy') switchTab('scrap');
+            }
+        }
+
+        function getCloudUrls() {
+            return {
+                cpk: localStorage.getItem('yucarro_cpk_url') || DEFAULT_CPK_URL,
+                scrap: localStorage.getItem('yucarro_scrap_url') || DEFAULT_SCRAP_URL,
+                scrapCredit: localStorage.getItem('yucarro_scrap_credit_url') || DEFAULT_SCRAP_CREDIT_URL,
+                wash: localStorage.getItem('yucarro_wash_url') || DEFAULT_WASH_URL,
+                washHist: localStorage.getItem('yucarro_wash_hist_url') || DEFAULT_WASH_HISTORY_URL,
+                extra: localStorage.getItem('yucarro_extra_url') || DEFAULT_EXTRA_URL,
+                lossY: localStorage.getItem('yucarro_loss_y_url') || DEFAULT_LOSS_Y_URL,
+                lossT: localStorage.getItem('yucarro_loss_t_url') || DEFAULT_LOSS_T_URL,
+                lossC: localStorage.getItem('yucarro_loss_c_url') || DEFAULT_LOSS_C_URL
+            };
+        }
+
+        function setCloudInputs(urls) {
+            const iCpk = document.getElementById('inputUrlCpk'); if(iCpk) iCpk.value = urls.cpk;
+            const iScrap = document.getElementById('inputUrlScrap'); if(iScrap) iScrap.value = urls.scrap;
+            const iScrapCredit = document.getElementById('inputUrlScrapCredit'); if(iScrapCredit) iScrapCredit.value = urls.scrapCredit;
+            const iWash = document.getElementById('inputUrlWash'); if(iWash) iWash.value = urls.wash;
+            const iWashH = document.getElementById('inputUrlWashHistory'); if(iWashH) iWashH.value = urls.washHist;
+            const iExtra = document.getElementById('inputUrlExtra'); if(iExtra) iExtra.value = urls.extra;
+            const iLossY = document.getElementById('inputUrlLossY'); if(iLossY) iLossY.value = urls.lossY;
+            const iLossT = document.getElementById('inputUrlLossT'); if(iLossT) iLossT.value = urls.lossT;
+            const iLossC = document.getElementById('inputUrlLossC'); if(iLossC) iLossC.value = urls.lossC;
+        }
+
+        function updateCloudInputPermissions(user) {
+            const byInput = {};
+            const byRow = {};
+            MODULE_DEFS.forEach(def => {
+                if (!byInput[def.inputId]) byInput[def.inputId] = false;
+                if (!byRow[def.rowId]) byRow[def.rowId] = false;
+                if (userCanEditLink(user, def.key)) byInput[def.inputId] = true;
+                if (userCanEditLink(user, def.key)) byRow[def.rowId] = true;
+            });
+            Object.entries(byRow).forEach(([rowId, canView]) => {
+                const row = document.getElementById(rowId);
+                if (!row) return;
+                row.classList.toggle('hidden', !canView);
+            });
+            Object.entries(byInput).forEach(([inputId, canEdit]) => {
+                const input = document.getElementById(inputId);
+                if (!input) return;
+                input.disabled = !canEdit;
+                input.classList.toggle('bg-slate-100', !canEdit);
+                input.title = canEdit ? '' : 'Sin permiso para editar este enlace';
+            });
+        }
+
+        let linksClickCount = 0;
+        
+        function handleLinksClick() {
+            linksClickCount++;
+            if (linksClickCount >= 3) {
+                const targetUser = currentUser || getCurrentUser();
+                if (targetUser && userCanOpenLinksPanel(targetUser)) {
+                    linkSessionUser = targetUser;
+                    updateCloudInputPermissions(targetUser);
+                    window.toggleModal('cloudModal');
+                } else {
+                    window.toggleModal('loginModal');
+                }
+                linksClickCount = 0;
+            }
+        }
+
+        // --- LOGIN PRINCIPAL (CONFIGURADO POR ARCHIVO LOCAL auth.config.js) ---
+        async function attemptMainLogin() {
+            const u = document.getElementById('mainUser').value.trim();
+            const p = document.getElementById('mainPass').value.trim();
+            const err = document.getElementById('mainLoginError');
+            const users = getUsers();
+            if (users.length === 0) {
+                err.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Configura auth.config.js para inicializar el admin.';
+                err.classList.remove('hidden');
+                return;
+            }
+            const user = authenticateUser(u, p);
+            if (user) {
+                 setCurrentUser(user.username);
+                 linkSessionUser = null;
+                 applyUserAccessControl();
+                 hideLockScreen();
+            } else {
+                err.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Acceso denegado.';
+                err.classList.remove('hidden');
+                // Efecto visual de error
+                const box = err.parentElement;
+                box.classList.add('animate-pulse');
+                setTimeout(() => box.classList.remove('animate-pulse'), 500);
+            }
+        }
+        
+        // Exponer explicitamente a window para evitar errores de referencia
+        window.attemptMainLogin = attemptMainLogin;
+
+        // --- VALIDACIÓN DE ENLACES (CONFIGURADA EN auth.config.js) ---
+        function attemptLogin() {
+            const u = document.getElementById('loginUser').value.trim();
+            const p = document.getElementById('loginPass').value.trim();
+            const err = document.getElementById('loginError');
+            const user = authenticateUser(u, p);
+
+            if (user && userCanOpenLinksPanel(user)) {
+                linkSessionUser = user;
+                updateCloudInputPermissions(user);
+                window.toggleModal('loginModal'); 
+                setTimeout(() => window.toggleModal('cloudModal'), 300); 
+            } else {
+                err.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i> Sin permisos o credenciales incorrectas.';
+                err.classList.remove('hidden');
+                const container = document.querySelector('#loginModal .modal-container');
+                container.classList.add('animate-pulse');
+                setTimeout(() => container.classList.remove('animate-pulse'), 500);
+            }
+        }
+
+        // Permitir Enter en el input de contraseña del modal
+        document.getElementById('loginUser').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                attemptLogin();
+            }
+        });
+        document.getElementById('loginPass').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                attemptLogin();
+            }
+        });
+
+        function safeSetText(id, text) { 
+            const el = document.getElementById(id); 
+            if (el) {
+                if (typeof text === 'number') {
+                    el.innerText = text.toLocaleString('es-MX');
+                } else {
+                    el.innerText = text; 
+                }
+            } 
+        }
+
+        function toggleModal(id) { 
+            const m = document.getElementById(id); 
+            if(m) {
+                if(m.classList.contains('opacity-0')) {
+                    if (id === 'usersModal' && (!currentUser || currentUser.role !== 'admin')) {
+                        logStatus('Solo administradores pueden gestionar usuarios.', 'error');
+                        return;
+                    }
+                    if (id === 'changePasswordModal' && (!currentUser || (currentUser.role !== 'editor' && currentUser.role !== 'viewer'))) {
+                        logStatus('Solo usuarios Editor o Solo lectura pueden cambiar su contraseña.', 'error');
+                        return;
+                    }
+                    if (id === 'cpkGoalsModal' && (!currentUser || currentUser.role !== 'admin')) {
+                        logStatus('Solo administradores pueden editar metas CPK.', 'error');
+                        return;
+                    }
+                    if (id === 'usersModal') {
+                        renderUsersTable();
+                        resetUserForm();
+                    }
+                    if (id === 'changePasswordModal') {
+                        setChangePassError('');
+                    }
+                    m.classList.remove('opacity-0', 'pointer-events-none');
+                    document.body.classList.add('modal-active');
+                    if(m.querySelector('.modal-container')) {
+                        m.querySelector('.modal-container').classList.remove('scale-95', 'opacity-0');
+                        m.querySelector('.modal-container').classList.add('scale-100', 'opacity-100');
+                    }
+                } else {
+                    m.classList.add('opacity-0', 'pointer-events-none');
+                    document.body.classList.remove('modal-active');
+                    if(m.querySelector('.modal-container')) {
+                        m.querySelector('.modal-container').classList.add('scale-95', 'opacity-0');
+                        m.querySelector('.modal-container').classList.remove('scale-100', 'opacity-100');
+                    }
+                    if(id === 'loginModal') {
+                        // Al cerrar, limpiar campo contraseña
+                        document.getElementById('loginUser').value = '';
+                        document.getElementById('loginPass').value = '';
+                        document.getElementById('loginError').classList.add('hidden');
+                        linksClickCount = 0; 
+                    }
+                    if(id === 'cloudModal') linkSessionUser = null;
+                    if(id === 'usersModal') resetUserForm();
+                    if(id === 'changePasswordModal') resetChangePasswordForm();
+                    if(id === 'cpkGoalsModal') setCpkGoalsEditorError('');
+                }
+            } 
+        }
+
+        function safeFloat(val) { if(!val) return 0; if(typeof val === 'number') return val; const clean = val.toString().replace(/[^0-9.-]/g, ''); const num = parseFloat(clean); return isNaN(num) ? 0 : num; }
+        function logStatus(msg, type='info') { const el = document.getElementById('statusLog'); if(el) { const color = type==='error'?'text-red-400 font-bold':'text-green-400'; const prefix = type==='error' ? '❌' : '✅'; el.innerHTML = `<div class="mb-1 border-b border-slate-700 pb-1"><span class="mr-2">${prefix}</span><span class="${color}">${msg}</span></div>` + el.innerHTML; } }
+
+        function getUserByIndex(idx) {
+            const users = getUsers();
+            if (idx < 0 || idx >= users.length) return null;
+            return users[idx];
+        }
+
+        function showUsersError(msg) {
+            const el = document.getElementById('usersAdminError');
+            if (!el) return;
+            if (!msg) {
+                el.classList.add('hidden');
+                el.innerText = '';
+                return;
+            }
+            el.innerText = msg;
+            el.classList.remove('hidden');
+        }
+
+        function downloadTextFile(content, filename, mimeType) {
+            const blob = new Blob([content], { type: mimeType || 'application/octet-stream' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+        }
+
+        function nowStamp() {
+            const d = new Date();
+            const p = (n) => String(n).padStart(2, '0');
+            return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}_${p(d.getHours())}${p(d.getMinutes())}`;
+        }
+
+        async function downloadSecureUsersBackup() {
+            if (!currentUser || currentUser.role !== 'admin') {
+                showUsersError('Solo administrador puede descargar respaldos.');
+                return;
+            }
+            if (!window.UsersVault || !window.UsersVault.exportEncrypted) {
+                showUsersError('Módulo de cifrado no disponible.');
+                return;
+            }
+            const pass1 = prompt('Clave para cifrar respaldo (mínimo 8 caracteres):', '');
+            if (pass1 === null) return;
+            const pass2 = prompt('Confirma la clave de cifrado:', '');
+            if (pass2 === null) return;
+            if (pass1 !== pass2) {
+                showUsersError('Las claves no coinciden.');
+                return;
+            }
+
+            try {
+                const encrypted = await window.UsersVault.exportEncrypted(getUsers(), pass1);
+                const filename = `usuarios_yucarro_${nowStamp()}.yuvault`;
+                downloadTextFile(JSON.stringify(encrypted, null, 2), filename, 'application/json');
+                showUsersError('');
+                logStatus('Respaldo de usuarios descargado (cifrado).', 'info');
+            } catch (e) {
+                showUsersError(e && e.message ? e.message : 'No se pudo generar respaldo.');
+            }
+        }
+
+        function openUsersBackupImport() {
+            if (!currentUser || currentUser.role !== 'admin') {
+                showUsersError('Solo administrador puede importar respaldos.');
+                return;
+            }
+            const input = document.getElementById('usersBackupInput');
+            if (!input) return;
+            input.value = '';
+            input.click();
+        }
+
+        async function handleUsersBackupImport(event) {
+            if (!currentUser || currentUser.role !== 'admin') {
+                showUsersError('Solo administrador puede importar respaldos.');
+                return;
+            }
+            const file = event && event.target && event.target.files ? event.target.files[0] : null;
+            if (!file) return;
+            if (!window.UsersVault || !window.UsersVault.importEncrypted) {
+                showUsersError('Módulo de cifrado no disponible.');
+                return;
+            }
+
+            const pass = prompt('Clave del respaldo para descifrar:', '');
+            if (pass === null) return;
+
+            try {
+                const raw = await file.text();
+                const usersImported = await window.UsersVault.importEncrypted(raw, pass);
+                const sanitized = sanitizeImportedUsers(usersImported);
+                if (!sanitized.length) {
+                    showUsersError('Respaldo válido pero sin usuarios utilizables.');
+                    return;
+                }
+                saveUsers(sanitized);
+                initUserStore();
+                currentUser = getCurrentUser();
+                renderUsersTable();
+                resetUserForm();
+                applyUserAccessControl();
+                showUsersError('');
+                logStatus(`Respaldo importado: ${sanitized.length} usuario(s).`, 'info');
+            } catch (e) {
+                showUsersError(e && e.message ? e.message : 'No se pudo importar respaldo.');
+            }
+        }
+
+        function getCheckedValues(containerId) {
+            const c = document.getElementById(containerId);
+            if (!c) return [];
+            return Array.from(c.querySelectorAll('input[type="checkbox"]:checked')).map(x => x.value);
+        }
+
+        function setCheckedValues(containerId, values) {
+            const c = document.getElementById(containerId);
+            if (!c) return;
+            c.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                cb.checked = values.includes(cb.value);
+            });
+        }
+
+        function buildAccessCheckboxes() {
+            const mod = document.getElementById('userFormModuleAccess');
+            const link = document.getElementById('userFormLinkAccess');
+            if (!mod || !link) return;
+
+            mod.innerHTML = '';
+            link.innerHTML = '';
+            const moduleList = [
+                { key: 'performance', label: 'CPK Llantas' },
+                { key: 'scrap', label: 'Desecho' },
+                { key: 'washing', label: 'Lavadero' },
+                { key: 'extra', label: 'Combustible' },
+                { key: 'loss', label: 'Faltante Producto' },
+                { key: 'colorblind', label: 'Modo Contraste' }
+            ];
+            moduleList.forEach(def => {
+                const mLabel = document.createElement('label');
+                mLabel.className = 'flex items-center gap-2';
+                mLabel.innerHTML = `<input type="checkbox" value="${def.key}" class="rounded border-slate-300"> <span>${def.label}</span>`;
+                mod.appendChild(mLabel);
+            });
+
+            LINK_ACCESS_DEFS.forEach(def => {
+                const lLabel = document.createElement('label');
+                lLabel.className = 'flex items-center gap-2';
+                lLabel.innerHTML = `<input type="checkbox" value="${def.key}" class="rounded border-slate-300"> <span>${def.label}</span>`;
+                link.appendChild(lLabel);
+            });
+            handleUserRoleChange();
+        }
+
+        function handleUserRoleChange() {
+            const role = normalizeStr(document.getElementById('userFormRole')?.value) || 'editor';
+            const linkBlock = document.getElementById('userFormLinkAccessBlock');
+            const linkContainer = document.getElementById('userFormLinkAccess');
+            if (!linkContainer) return;
+            const linkChecks = linkContainer.querySelectorAll('input[type="checkbox"]');
+            if (role === 'viewer') {
+                if (linkBlock) linkBlock.classList.add('opacity-60');
+                linkChecks.forEach(cb => { cb.checked = false; cb.disabled = true; });
+            } else {
+                if (linkBlock) linkBlock.classList.remove('opacity-60');
+                linkChecks.forEach(cb => { cb.disabled = false; });
+            }
+        }
+
+        function resetUserForm() {
+            const edit = document.getElementById('userEditIndex');
+            const title = document.getElementById('usersFormTitle');
+            const u = document.getElementById('userFormUsername');
+            const p = document.getElementById('userFormPassword');
+            const r = document.getElementById('userFormRole');
+            if (edit) edit.value = '';
+            if (title) title.innerText = 'Nuevo usuario';
+            if (u) u.value = '';
+            if (p) p.value = '';
+            if (r) r.value = 'editor';
+            setCheckedValues('userFormModuleAccess', []);
+            setCheckedValues('userFormLinkAccess', []);
+            handleUserRoleChange();
+            showUsersError('');
+        }
+
+        function editUserFromTable(idx) {
+            const user = getUserByIndex(idx);
+            if (!user) return;
+            const edit = document.getElementById('userEditIndex');
+            const title = document.getElementById('usersFormTitle');
+            const u = document.getElementById('userFormUsername');
+            const p = document.getElementById('userFormPassword');
+            const r = document.getElementById('userFormRole');
+            if (edit) edit.value = String(idx);
+            if (title) title.innerText = `Editar usuario: ${user.username}`;
+            if (u) u.value = user.username;
+            if (p) p.value = user.password;
+            if (r) r.value = user.role || 'editor';
+            setCheckedValues('userFormModuleAccess', user.modules || []);
+            setCheckedValues('userFormLinkAccess', user.linkAccess || []);
+            handleUserRoleChange();
+            showUsersError('');
+        }
+
+        function deleteUserFromTable(idx) {
+            const users = getUsers();
+            const target = users[idx];
+            if (!target) return;
+            if (target.role === 'admin') {
+                showUsersError('No puedes eliminar al usuario administrador.');
+                return;
+            }
+            if (!confirm(`¿Eliminar usuario ${target.username}?`)) return;
+            users.splice(idx, 1);
+            saveUsers(users);
+            renderUsersTable();
+            resetUserForm();
+        }
+
+        function saveUserFromForm() {
+            const idxRaw = normalizeStr(document.getElementById('userEditIndex').value);
+            const username = normalizeStr(document.getElementById('userFormUsername').value);
+            const password = normalizeStr(document.getElementById('userFormPassword').value);
+            const role = normalizeStr(document.getElementById('userFormRole').value) || 'editor';
+            const modules = getCheckedValues('userFormModuleAccess');
+            const links = getCheckedValues('userFormLinkAccess');
+            const users = getUsers();
+            showUsersError('');
+
+            if (!username || !password) {
+                showUsersError('Usuario y contraseña son obligatorios.');
+                return;
+            }
+
+            if (role !== 'admin' && modules.length === 0) {
+                showUsersError('Selecciona al menos un módulo visible para el usuario.');
+                return;
+            }
+
+            const idx = idxRaw === '' ? -1 : parseInt(idxRaw, 10);
+            const existing = users.findIndex((u, i) => u.username === username && i !== idx);
+            if (existing >= 0) {
+                showUsersError('Ya existe un usuario con ese nombre.');
+                return;
+            }
+
+            const payload = {
+                username,
+                password,
+                role: role === 'admin' ? 'admin' : (role === 'viewer' ? 'viewer' : 'editor'),
+                modules: role === 'admin' ? ['performance', 'scrap', 'strategy', 'washing', 'extra', 'loss', 'colorblind'] : modules,
+                linkAccess: role === 'admin' ? LINK_ACCESS_DEFS.map(def => def.key) : (role === 'viewer' ? [] : links)
+            };
+
+            if (idx >= 0 && idx < users.length) users[idx] = payload;
+            else users.push(payload);
+            saveUsers(users);
+            renderUsersTable();
+            resetUserForm();
+        }
+
+        function renderUsersTable() {
+            const tbody = document.getElementById('usersTableBody');
+            if (!tbody) return;
+            const users = getUsers();
+            tbody.innerHTML = '';
+            users.forEach((u, idx) => {
+                const isAdmin = u.role === 'admin';
+                const actions = isAdmin
+                    ? `<button onclick="window.editUserFromTable(${idx})" class="text-slate-600 hover:text-slate-900">Editar</button>`
+                    : `<button onclick="window.editUserFromTable(${idx})" class="text-slate-600 hover:text-slate-900 mr-2">Editar</button><button onclick="window.deleteUserFromTable(${idx})" class="text-red-500 hover:text-red-700">Eliminar</button>`;
+                tbody.innerHTML += `<tr class="border-t border-slate-100"><td class="p-2 font-semibold text-slate-700">${escapeHtml(u.username)}</td><td class="p-2 text-slate-500 uppercase">${escapeHtml(u.role)}</td><td class="p-2 text-right">${actions}</td></tr>`;
+            });
+        }
+        
+        // --- 7. INIT (ZERO-CLICK AUTO-LOAD) ---
+        function startSystem() {
+            console.log("Iniciando secuencia de arranque prioritaria...");
+            if (typeof Chart !== 'undefined') {
+                if(window['chartjs-plugin-annotation']) Chart.register(window['chartjs-plugin-annotation']);
+                if(window['ChartDataLabels']) Chart.register(window['ChartDataLabels']);
+            } else {
+                console.error("Chart.js failed to load.");
+            }
+
+            initUserStore();
+            currentUser = getCurrentUser();
+            applyUserAccessControl();
+            if (currentUser) hideLockScreen();
+            else showLockScreen();
+
+            const masterUrls = getCloudUrls();
+            setCloudInputs(masterUrls);
+            if (!localStorage.getItem('yucarro_cpk_url')) localStorage.setItem('yucarro_cpk_url', masterUrls.cpk);
+            if (!localStorage.getItem('yucarro_scrap_url')) localStorage.setItem('yucarro_scrap_url', masterUrls.scrap);
+            if (!localStorage.getItem('yucarro_scrap_credit_url')) localStorage.setItem('yucarro_scrap_credit_url', masterUrls.scrapCredit);
+            if (!localStorage.getItem('yucarro_wash_url')) localStorage.setItem('yucarro_wash_url', masterUrls.wash);
+            if (!localStorage.getItem('yucarro_wash_hist_url')) localStorage.setItem('yucarro_wash_hist_url', masterUrls.washHist);
+            if (!localStorage.getItem('yucarro_extra_url')) localStorage.setItem('yucarro_extra_url', masterUrls.extra);
+            if (!localStorage.getItem('yucarro_loss_y_url')) localStorage.setItem('yucarro_loss_y_url', masterUrls.lossY);
+            if (!localStorage.getItem('yucarro_loss_t_url')) localStorage.setItem('yucarro_loss_t_url', masterUrls.lossT);
+            if (!localStorage.getItem('yucarro_loss_c_url')) localStorage.setItem('yucarro_loss_c_url', masterUrls.lossC);
+            loadLocalCpkGoals();
+
+            // 3. EJECUTAR CARGA INMEDIATA
+            console.log("🚀 Disparando descarga de datos...");
+            fetchAllFromCloud(
+                masterUrls.cpk, 
+                masterUrls.scrap, 
+                masterUrls.scrapCredit,
+                masterUrls.wash, 
+                masterUrls.washHist, 
+                masterUrls.extra,
+                masterUrls.lossY,
+                masterUrls.lossT,
+                masterUrls.lossC
+            );
+
+            // Listeners
+            const opFilter = document.getElementById('operatorGroupFilter');
+            if(opFilter) {
+                opFilter.addEventListener('change', () => {
+                    console.log("Filter changed to:", opFilter.value);
+                });
+            }
+            const washUnit = document.getElementById('washFilterUnit');
+            if (washUnit && !washUnit.dataset.boundEnter) {
+                washUnit.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') applyWashSearchFilters();
+                });
+                washUnit.dataset.boundEnter = '1';
+            }
+            const fuelUnit = document.getElementById('fuelFilterUnit');
+            if (fuelUnit && !fuelUnit.dataset.boundEnter) {
+                fuelUnit.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') applyFuelSearchFilters();
+                });
+                fuelUnit.dataset.boundEnter = '1';
+            }
+            const fuelOp = document.getElementById('fuelFilterOperator');
+            if (fuelOp && !fuelOp.dataset.boundEnter) {
+                fuelOp.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') applyFuelSearchFilters();
+                });
+                fuelOp.dataset.boundEnter = '1';
+            }
+            const lossTu = document.getElementById('lossFilterTU');
+            if (lossTu && !lossTu.dataset.boundEnter) {
+                lossTu.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') applyLossSearchFilters();
+                });
+                lossTu.dataset.boundEnter = '1';
+            }
+            const lossOp = document.getElementById('lossFilterOperator');
+            if (lossOp && !lossOp.dataset.boundEnter) {
+                lossOp.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') applyLossSearchFilters();
+                });
+                lossOp.dataset.boundEnter = '1';
+            }
+            const backupInput = document.getElementById('usersBackupInput');
+            if (backupInput && !backupInput.dataset.boundChange) {
+                backupInput.addEventListener('change', handleUsersBackupImport);
+                backupInput.dataset.boundChange = '1';
+            }
+            ['changePassCurrent', 'changePassNew', 'changePassConfirm'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el && !el.dataset.boundEnter) {
+                    el.addEventListener('keypress', (e) => {
+                        if (e.key === 'Enter') submitPasswordChange();
+                    });
+                    el.dataset.boundEnter = '1';
+                }
+            });
+            buildAccessCheckboxes();
+            const roleEl = document.getElementById('userFormRole');
+            if (roleEl && !roleEl.dataset.boundRoleChange) {
+                roleEl.addEventListener('change', handleUserRoleChange);
+                roleEl.dataset.boundRoleChange = '1';
+            }
+            updatePerformanceStatusButtons();
+            updateLossCompanyButtons();
+            updateLossLitersModeButtons();
+            syncWashSelectedInfo();
+            syncFuelExclusiveFilterState();
+            syncLossExclusiveFilterState();
+            renderUsersTable();
+            resetUserForm();
+        };
+
+        // EJECUCIÓN INMEDIATA (NO ESPERAR WINDOW.ONLOAD)
+        if (document.readyState === 'loading') {  
+            document.addEventListener('DOMContentLoaded', startSystem);
+        } else {  
+            startSystem();
+        }
+
+        // --- 2. DATA LOADERS ---
+        function fetchCsv(url) { return new Promise((resolve, reject) => { Papa.parse(url, { download: true, header: true, skipEmptyLines: true, complete: (results) => resolve(results.data), error: (err) => reject(err) }); }); }
+        
+        function loadWithFallback(url, name, mockData) { 
+            if(!url) return Promise.resolve(mockData); 
+            const cleanUrl = url.trim();
+            
+            // Función auxiliar para intentar la descarga y validar que no venga vacía
+            const tryFetch = (u) => fetchCsv(u).then(res => {
+                if(res && res.length > 0) return res;
+                throw new Error("El archivo CSV está vacío o ilegible.");
+            });
+
+            return new Promise((resolve) => {
+                // INTENTO 1: Conexión Directa
+                tryFetch(cleanUrl)
+                .then(data => { 
+                    logStatus(`${name}: Conexión Directa OK (${data.length} reg.)`); 
+                    resolve(data); 
+                })
+                .catch(e1 => {
+                    console.warn(`${name}: Falló conexión directa. Intentando Proxy 1...`);
+                    
+                    // INTENTO 2: Proxy corsproxy.io
+                    const p1 = 'https://corsproxy.io/?' + encodeURIComponent(cleanUrl) + '&_t=' + Date.now();
+                    tryFetch(p1)
+                    .then(data => { 
+                        logStatus(`${name}: Proxy 1 OK (${data.length} reg.)`); 
+                        resolve(data); 
+                    })
+                    .catch(e2 => {
+                        console.warn(`${name}: Falló Proxy 1. Intentando Proxy 2...`);
+                        
+                        // INTENTO 3: Proxy allorigins.win (Respaldo robusto)
+                        const p2 = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(cleanUrl);
+                        tryFetch(p2)
+                        .then(data => { 
+                            logStatus(`${name}: Proxy 2 OK (${data.length} reg.)`); 
+                            resolve(data); 
+                        })
+                        .catch(e3 => {
+                            logStatus(`${name} ERROR FATAL: No se pudo cargar.`, 'error');
+                            // No mostramos alert, solo log
+                            resolve(mockData);
+                        });
+                    });
+                });
+            });
+        }
+
+        function manualRefresh() {
+            const cpk = document.getElementById('inputUrlCpk').value;
+            const scrap = document.getElementById('inputUrlScrap').value;
+            const scrapCredit = document.getElementById('inputUrlScrapCredit').value;
+            const wash = document.getElementById('inputUrlWash').value;
+            const washHist = document.getElementById('inputUrlWashHistory').value;
+            const extra = document.getElementById('inputUrlExtra').value;
+            const lossY = document.getElementById('inputUrlLossY').value;
+            const lossT = document.getElementById('inputUrlLossT').value;
+            const lossC = document.getElementById('inputUrlLossC').value;
+            logStatus('Refrescando datos manualmente...', 'info');
+            fetchAllFromCloud(cpk, scrap, scrapCredit, wash, washHist, extra, lossY, lossT, lossC);
+        }
+
+        function resetToDefaults() {
+            const actor = linkSessionUser || currentUser;
+            if (!actor || !userCanOpenLinksPanel(actor)) {
+                logStatus('No tienes permisos para restaurar enlaces.', 'error');
+                return;
+            }
+            if(confirm("¿Seguro que deseas borrar las URLs personalizadas y usar las por defecto?")) {
+                MODULE_DEFS.forEach(def => {
+                    if (userCanEditLink(actor, def.key)) localStorage.removeItem(def.storageKey);
+                });
+                const urls = getCloudUrls();
+                setCloudInputs(urls);
+                fetchAllFromCloud(urls.cpk, urls.scrap, urls.scrapCredit, urls.wash, urls.washHist, urls.extra, urls.lossY, urls.lossT, urls.lossC);
+            }
+        }
+
+        function saveCloudConfig() {
+            const actor = linkSessionUser || currentUser;
+            if (!actor || !userCanOpenLinksPanel(actor)) {
+                logStatus('No tienes permisos para guardar enlaces.', 'error');
+                return;
+            }
+
+            MODULE_DEFS.forEach(def => {
+                const input = document.getElementById(def.inputId);
+                if (!input) return;
+                if (userCanEditLink(actor, def.key)) {
+                    localStorage.setItem(def.storageKey, input.value.trim());
+                }
+            });
+
+            const urls = getCloudUrls();
+            setCloudInputs(urls);
+            window.toggleModal('cloudModal');
+            logStatus('Configuración guardada. Recargando...', 'info');
+            fetchAllFromCloud(urls.cpk, urls.scrap, urls.scrapCredit, urls.wash, urls.washHist, urls.extra, urls.lossY, urls.lossT, urls.lossC);
+        }
+        
+        function fetchAllFromCloud(cpkUrl, scrapUrl, scrapCreditUrl, washUrl, washHistUrl, extraUrl, lossYUrl, lossTUrl, lossCUrl) { 
+            const btn = document.getElementById('btnRefreshCloud'); if(btn) btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>'; 
+            
+            // Actualizar status en Login Screen
+            const bootText = document.getElementById('bootStatusText');
+            if(bootText) bootText.innerText = "Sincronizando módulos...";
+
+            const hasLocalGoals = loadLocalCpkGoals();
+            const needsGoalBootstrap = !hasLocalGoals;
+            const needsGoalBrandBootstrap = hasLocalGoals && dbCpkGoals.length > 0 && dbCpkGoals.every(g => !normalizeStr(g.brand));
+            const requests = [ 
+                loadWithFallback(cpkUrl, 'CPK', MOCK_CPK_DATA), 
+                loadWithFallback(scrapUrl, 'Desecho', MOCK_SCRAP_DATA), 
+                loadWithFallback(scrapCreditUrl, 'Desecho Notas Crédito', MOCK_SCRAP_CREDIT_DATA),
+                loadWithFallback(washUrl, 'Lavado (Status)', MOCK_WASH_DATA), 
+                loadWithFallback(washHistUrl, 'Lavado (Hist)', []),
+                loadWithFallback(extraUrl, 'Combustible', []),
+                loadWithFallback(lossYUrl, 'Faltante Yucarro', []),
+                loadWithFallback(lossTUrl, 'Faltante T2020', []),
+                loadWithFallback(lossCUrl, 'Faltante Corpored', [])
+            ];
+            if (needsGoalBootstrap || needsGoalBrandBootstrap) {
+                requests.push(loadWithFallback(DEFAULT_CPK_GOALS_URL, 'Resumen CPK Objetivo (Migración Inicial)', []));
+            }
+
+            Promise.all(requests).then((results) => { 
+                const [cpkData, scrapData, scrapCreditData, washData, washHistData, extraData, lossYData, lossTData, lossCData] = results;
+                const cpkGoalData = results[9];
+                try { processCPKData(cpkData); } catch(e) { logStatus('Error CPK: '+e.message, 'error'); } 
+                try { processScrapData(scrapData); } catch(e) { logStatus('Error Scrap: '+e.message, 'error'); } 
+                try { processScrapCreditData(scrapCreditData); } catch(e) { logStatus('Error Notas Crédito: '+e.message, 'error'); } 
+                try { processWashData(washData); } catch(e) { logStatus('Error Wash: '+e.message, 'error'); } 
+                try { processWashHistoryData(washHistData); } catch(e) { logStatus('Error Wash Hist: '+e.message, 'error'); } 
+                try { processFuelData(extraData); } catch(e) { logStatus('Error Combustible: '+e.message, 'error'); } 
+                try { processLossData(lossYData, lossTData, lossCData); } catch(e) { logStatus('Error Faltante: '+e.message, 'error'); } 
+                try {
+                    if (needsGoalBootstrap || needsGoalBrandBootstrap) {
+                        processCpkGoalsData(cpkGoalData);
+                        if (dbCpkGoals.length > 0) saveLocalCpkGoals(dbCpkGoals);
+                    } else {
+                        loadLocalCpkGoals();
+                    }
+                } catch(e) { logStatus('Error Resumen CPK: '+e.message, 'error'); } 
+                
+                if(btn) btn.innerHTML = '<i class="fa-solid fa-sync"></i>'; 
+                
+                // Actualizar status final
+                if(bootText) {
+                    bootText.innerText = "Sistema Sincronizado";
+                    bootText.classList.remove('text-indigo-700');
+                    bootText.classList.add('text-green-600');
+                    document.getElementById('bootSpinner').classList.remove('fa-spin', 'fa-circle-notch');
+                    document.getElementById('bootSpinner').classList.add('fa-check-circle', 'text-green-500');
+                }
+
+                window.switchTab('performance'); 
+            }); 
+        }
+
+        // --- 3. UI FUNCTIONS ---
+        function setCategoryFilter(type) {
+            currentFilter = type;
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            const btn = document.getElementById(`filter-${type}`); if(btn) btn.classList.add('active');
+            if(document.getElementById('strategySegmentLabel')) document.getElementById('strategySegmentLabel').innerText = type.toUpperCase();
+            if(dbPerformance.length > 0) runCPKAnalysis();
+        }
+
+        function toggleYearDropdown(e) { e.stopPropagation(); document.getElementById('yearDropdown').classList.toggle('show'); }
+        function hideAllCheckboxDropdowns() {
+            const dropdowns = document.getElementsByClassName('checkbox-dropdown');
+            for (let i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].classList.remove('show');
+            }
+        }
+        function closeDropdowns(e) {
+            const target = e && e.target ? e.target : null;
+            if (!target) {
+                hideAllCheckboxDropdowns();
+                return;
+            }
+            const keepOpen = target.closest('.checkbox-dropdown')
+                || target.closest('#washFilterUnit')
+                || target.closest('#lossFilterTU')
+                || target.closest('#lossFilterOperator')
+                || target.closest('#fuelFilterUnit')
+                || target.closest('#fuelFilterOperator')
+                || target.closest('button[onclick*="toggleYearDropdown"]')
+                || target.closest('button[onclick*="toggleFilterDropdown"]');
+            if (keepOpen) return;
+            hideAllCheckboxDropdowns();
+        }
+
+        // CORRECCIÓN: Función auxiliar para parseo de fechas (usada en varios lugares)
+        // MEJORA CRÍTICA: Soporte Universal (Texto Español, Timestamps, Seriales Excel, ISO)
+        function parseFlexibleDate(dateStr) {
+            if (!dateStr) return null;
+            if (dateStr instanceof Date) return dateStr;
+            
+            let cleanStr = dateStr.toString().trim();
+            
+            // 1. Detección de Excel Serial Date (ej: 45321)
+            if (/^\d{5}$/.test(cleanStr)) {
+                const serial = parseInt(cleanStr, 10);
+                // Fecha base Excel (aprox para web)
+                return new Date(Math.round((serial - 25569) * 86400 * 1000));
+            }
+
+            // 2. Limpieza de Timestamp (Hora)
+            // Solo cortamos si detectamos el separador de hora "T" o un espacio seguido de dígitos y dos puntos (ej: " 14:")
+            if (cleanStr.includes('T')) cleanStr = cleanStr.split('T')[0];
+            
+            // Regex para separar fecha de hora (ej: "2024-01-01 14:00") pero NO romper "01 Ene 2024"
+            // Buscamos espacio seguido de dígito y dos puntos
+            if (/\s\d{1,2}:/.test(cleanStr)) {
+                cleanStr = cleanStr.split(/\s\d{1,2}:/)[0]; 
+            }
+
+            // 3. Diccionario de Meses en Español e Inglés
+            const monthMap = {
+                'ene': 0, 'feb': 1, 'mar': 2, 'abr': 3, 'may': 4, 'jun': 5,
+                'jul': 6, 'ago': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dic': 11,
+                'enero': 0, 'febrero': 1, 'marzo': 2, 'abril': 3, 'mayo': 4, 'junio': 5,
+                'julio': 6, 'agosto': 7, 'septiembre': 8, 'octubre': 9, 'noviembre': 10, 'diciembre': 11,
+                'jan': 0, 'feb': 1, 'apr': 3, 'aug': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dec': 11
+            };
+
+            // 4. Normalizar separadores a slashes y dividir
+            // Aceptamos: / - . y espacios
+            const parts = cleanStr.replace(/[-.]/g, '/').split(/[\/\s]+/);
+
+            if (parts.length >= 3) {
+                let p1 = parts[0];
+                let p2 = parts[1];
+                let p3 = parts[2];
+                
+                // Función para obtener valor numérico o de mes
+                const getVal = (p) => {
+                    const low = p.toLowerCase();
+                    if (monthMap[low] !== undefined) return { type: 'month', val: monthMap[low] };
+                    const n = parseInt(p, 10);
+                    if (!isNaN(n)) return { type: 'num', val: n };
+                    return { type: 'nan' };
+                };
+
+                const v1 = getVal(p1);
+                const v2 = getVal(p2);
+                const v3 = getVal(p3);
+
+                let day, month, year;
+
+                // Caso A: Día MesTexto Año (15 Ene 2024) o Año MesTexto Día
+                if (v2.type === 'month') {
+                    month = v2.val;
+                    if (v1.val > 31) { year = v1.val; day = v3.val; } // 2024 Ene 15
+                    else { day = v1.val; year = v3.val; }             // 15 Ene 2024
+                }
+                // Caso B: Todo Numérico
+                else if (v1.type === 'num' && v2.type === 'num' && v3.type === 'num') {
+                    // Detectar Año al inicio (YYYY-MM-DD)
+                    if (v1.val > 31) { 
+                        year = v1.val;
+                        month = v2.val - 1; // Mes 0-indexado
+                        day = v3.val;
+                    } else { 
+                        // Asumir DD-MM-YYYY (Formato Latino)
+                        day = v1.val;
+                        month = v2.val - 1;
+                        year = v3.val;
+                    }
+                } else {
+                    // Fallback nativo si la estructura no cuadra
+                    let d = new Date(dateStr); 
+                    if (!isNaN(d.getTime())) return d;
+                    return null;
+                }
+
+                // Corrección de año corto (ej: 24 -> 2024)
+                if (year < 100) year += 2000;
+
+                // Validación final de rangos
+                if (year > 1900 && year < 2100 && month >= 0 && month <= 11 && day >= 1 && day <= 31) {
+                    return new Date(year, month, day);
+                }
+            }
+
+            // 5. Último intento: Parseo nativo JS
+            let d = new Date(dateStr); 
+            if (!isNaN(d.getTime())) return d;
+
+            return null;
+        }
+
+        function updatePeriodSelection(periodKey) {
+            const currentPeriods = moduleState[moduleState.currentTab].periods;
+            if (periodKey === 'ALL') { if (currentPeriods.length > 0) { moduleState[moduleState.currentTab].periods = []; } else { moduleState[moduleState.currentTab].periods = []; } } 
+            else { const index = currentPeriods.indexOf(periodKey); if (index > -1) { currentPeriods.splice(index, 1); } else { currentPeriods.push(periodKey); } }
+            updateTopBarUI(moduleState.currentTab);
+            
+            try {
+                if(moduleState.currentTab === 'performance') runCPKAnalysis();
+                else if(moduleState.currentTab === 'scrap') runScrapAnalysis();
+                else if(moduleState.currentTab === 'washing') window.runWashAnalysis();
+                else if(moduleState.currentTab === 'strategy') runStrategyAnalysis();
+                else if(moduleState.currentTab === 'loss') runLossAnalysis();
+            } catch(e) { console.warn("Analysis not ready yet", e); }
+        }
+
+        function updateTopBarUI(tabId) {
+            const container = document.getElementById('categoryFilterContainer');
+            const dropdown = document.getElementById('yearDropdown');
+            const label = document.getElementById('yearFilterLabel');
+            
+            if (!container || !dropdown || !label) return;
+            if (tabId === 'performance' || tabId === 'washing' || tabId === 'extra' || tabId === 'loss') {
+                container.classList.add('hidden');
+                return; 
+            } else {
+                container.classList.remove('hidden');
+            }
+            
+            let availableYears = new Set();
+            let dataSrc = [];
+            
+            if (tabId === 'scrap') dataSrc = dbScrap.map(x => x.date).concat(dbScrapCredits.map(x => x.date));
+            else if (tabId === 'strategy') dataSrc = dbScrap.map(x => x.date);
+
+            dataSrc.forEach(ds => { const d = parseFlexibleDate(ds); if(d) availableYears.add(`${d.getFullYear()}-${d.getMonth()}`); });
+            
+            if(availableYears.size === 0) { dropdown.innerHTML = '<div class="px-2 py-1 text-xs text-slate-400 italic">Datos Actuales (Sin fecha)</div>'; label.innerText = "Periodo: Actual"; return; }
+            const sortedPeriods = Array.from(availableYears).sort((a,b) => { const [y1, m1] = a.split('-').map(Number); const [y2, m2] = b.split('-').map(Number); if(y1 !== y2) return y2 - y1; return m2 - m1; });
+            const grouped = {};
+            sortedPeriods.forEach(p => { const [y, m] = p.split('-'); if(!grouped[y]) grouped[y] = []; grouped[y].push({ key: p, monthName: monthNamesFull[parseInt(m)] }); });
+            let html = `<div class="cursor-pointer px-2 py-2 hover:bg-slate-100 flex items-center border-b border-slate-100" onclick="updatePeriodSelection('ALL')"><input type="checkbox" class="mr-2" ${moduleState[tabId].periods.length === 0 ? 'checked' : ''}> <span class="font-bold text-slate-700">Todos los Periodos</span></div>`;
+            Object.keys(grouped).sort((a,b) => b - a).forEach(year => { html += `<div class="year-group-title">${year}</div>`; grouped[year].forEach(item => { const isChecked = moduleState[tabId].periods.includes(item.key); html += `<div class="cursor-pointer px-2 py-1 pl-4 hover:bg-slate-50 flex items-center text-sm text-slate-600" onclick="updatePeriodSelection('${item.key}')"><input type="checkbox" class="mr-2" ${isChecked ? 'checked' : ''}> ${item.monthName}</div>`; }); });
+            dropdown.innerHTML = html;
+            if(moduleState[tabId].periods.length === 0) label.innerText = "Periodo: Todos"; else if(moduleState[tabId].periods.length === 1) { const [y, m] = moduleState[tabId].periods[0].split('-'); label.innerText = `${monthNamesFull[parseInt(m)].substring(0,3)} ${y}`; } else label.innerText = `${moduleState[tabId].periods.length} Seleccionados`;
+        }
+
+        function switchTab(tabId) {
+            if (MERGE_STRATEGY_IN_SCRAP && tabId === 'strategy') tabId = 'scrap';
+            if (currentUser && !userHasModule(currentUser, tabId)) {
+                logStatus('No tienes acceso a ese módulo.', 'error');
+                return;
+            }
+            moduleState.currentTab = tabId;
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active-blue', 'active-slate', 'active-purple', 'active-cyan', 'active-teal', 'active-amber'));
+            ['performance', 'scrap', 'strategy', 'washing', 'extra', 'loss'].forEach(id => { const el = document.getElementById(`view-${id}`); if(el) el.classList.add('hidden'); });
+            const btn = document.getElementById(`tab-${tabId}`);
+            const view = document.getElementById(`view-${tabId}`);
+            if(view) view.classList.remove('hidden');
+            
+            if(tabId === 'performance') btn.classList.add('active-blue'); 
+            else if(tabId === 'scrap') btn.classList.add('active-slate'); 
+            else if(tabId === 'strategy') btn.classList.add('active-purple'); 
+            else if(tabId === 'washing') btn.classList.add('active-cyan');
+            else if(tabId === 'extra') btn.classList.add('active-teal');
+            else if(tabId === 'loss') btn.classList.add('active-amber');
+            
+            updateTopBarUI(tabId);
+            
+            try {
+                if(tabId === 'performance' && dbPerformance.length) runCPKAnalysis(); 
+                else if(tabId === 'scrap' && (dbScrap.length || dbScrapCredits.length)) runScrapAnalysis(); 
+                else if(tabId === 'washing' && (dbWashing.length || dbWashHistory.length)) window.runWashAnalysis(); 
+                else if(tabId === 'strategy' && dbPerformance.length) runStrategyAnalysis();
+                else if(tabId === 'extra' && dbExtra.length) window.runFuelAnalysis();
+                else if(tabId === 'loss' && dbLoss.length) runLossAnalysis();
+            } catch(e) { console.log("Tab switch pending data load."); }
+        }
+
+        // --- 4. PROCESSING ---
+        function getValue(row, field, moduleName, ...fallbacks) {
+            const config = MODULE_CONFIGS[moduleName];
+            if (!config || !config.mapping) return null;
+
+            let candidates = [];
+            if (config.mapping[field]) {
+                candidates = config.mapping[field];
+            }
+            if (fallbacks && fallbacks.length > 0) {
+                 candidates = [...candidates, ...fallbacks];
+            }
+
+            const rowKeys = Object.keys(row);
+            
+            for (let candidate of candidates) {
+                let match = rowKeys.find(rk => rk.toUpperCase().trim() === candidate.toUpperCase().trim());
+                if (match && row[match] !== undefined) return row[match];
+
+                if (candidate.length > 2) {
+                     match = rowKeys.find(rk => rk.toUpperCase().includes(candidate.toUpperCase()));
+                     if (field === 'id' && match && match.toUpperCase().includes('ANTERIOR')) continue;
+                     if (match && row[match] !== undefined) return row[match];
+                }
+            }
+            return null;
+        }
+
+        function processCPKData(data) {
+            if(!data || !data.length) return;
+            let totalKmDetected = 0;
+
+            dbPerformance = data.map((row, idx) => {
+                const unitVal = getValue(row, 'unit', 'cpk') || '-'; 
+                const folioVal = getValue(row, 'folio', 'cpk') || '-'; 
+                const idVal = unitVal !== '-' ? unitVal : (folioVal !== '-' ? folioVal : `F${idx}`); 
+                const mmO = safeFloat(getValue(row, 'mmOrig', 'cpk')) || 24; 
+                const cost = safeFloat(getValue(row, 'cost', 'cpk')); 
+                const km = safeFloat(getValue(row, 'km', 'cpk')); 
+                const mmN = safeFloat(getValue(row, 'mmNow', 'cpk')); 
+                const dateStr = getValue(row, 'date', 'cpk') || ''; 
+                
+                // NUEVO: Extraer articulación para el KPI
+                const artVal = getValue(row, 'articulation', 'cpk') || '';
+                const statusRaw = getValue(row, 'status', 'cpk') || '';
+                const statusNorm = normalizeCpkStatus(statusRaw);
+
+                let cpk = safeFloat(getValue(row, 'cpk_value', 'cpk')); 
+                if ((cpk === 0) && km > 0 && cost > 0) {
+                    cpk = cost / km;
+                }
+                
+                totalKmDetected += km;
+
+                let typeRaw = getValue(row, 'segment', 'cpk'); 
+                let t = 'Sin Clasificar';
+                
+                if (typeRaw) { 
+                    const tr = String(typeRaw).toUpperCase(); 
+                    if (tr.includes('TODA') || tr.includes('TP')) t = 'Toda Posición'; 
+                    else if (tr.includes('DELANTERA') || tr.includes('FRONT')) t = 'Delanteras'; 
+                    else if (tr.includes('TRACCION') || tr.includes('DRIVE')) t = 'Tracción'; 
+                    else if (tr.includes('ARRASTRE')) t = 'Toda Posición'; 
+                } 
+                
+                const isTrailer = (typeRaw && (String(typeRaw).toUpperCase().includes('ARRASTRE') || String(typeRaw).toUpperCase().includes('REMOLQUE'))) ? true : false;
+                let eff = 0;
+                if ((mmO - mmN) > 0) eff = km / (mmO - mmN);
+                
+                const brand = (getValue(row, 'brand', 'cpk') || 'GEN').toString().trim().toUpperCase();
+                const model = (getValue(row, 'model', 'cpk') || 'STD').toString().trim().toUpperCase();
+                
+                return { id: idVal, unit: unitVal, folio: folioVal, brand: brand, model: model, mm: mmN, originalMm: mmO, type: t, km: km, efficiency: eff, cost: cost, cpk: cpk, isTrailer: isTrailer, date: dateStr, articulation: artVal, status: statusNorm, statusRaw: statusRaw };
+            }); 
+            safeSetText('perfCount', dbPerformance.length);
+        }
+
+        function normalizeDesignToken(value) {
+            return normalizeStr(value)
+                .toUpperCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/[^A-Z0-9]/g, '');
+        }
+
+        function getRowValueByIndex(row, index) {
+            const values = Object.values(row || {});
+            if (index < 0 || index >= values.length) return '';
+            return values[index];
+        }
+
+        function getGoalCell(row, candidates, indexFallback) {
+            const keys = Object.keys(row || {});
+            const normalizeHeader = (h) => normalizeDesignToken(h).replace(/\s+/g, '');
+            const normalizedCandidates = (Array.isArray(candidates) ? candidates : []).map(c => normalizeHeader(c));
+
+            for (const key of keys) {
+                const normalizedKey = normalizeHeader(key);
+                if (normalizedCandidates.includes(normalizedKey)) return row[key];
+            }
+
+            for (const key of keys) {
+                const normalizedKey = normalizeHeader(key);
+                if (normalizedCandidates.some(c => c && (normalizedKey.includes(c) || c.includes(normalizedKey)))) return row[key];
+            }
+
+            return getRowValueByIndex(row, indexFallback);
+        }
+
+        function normalizeGoalTireType(rawType) {
+            const t = normalizeDesignToken(rawType);
+            if (t.includes('DELANT') || t.includes('DIRECC') || t.includes('FRONT') || t.includes('STEER')) return 'DELANTERA';
+            if (t.includes('TRAC')) return 'TRACCION';
+            if (t.includes('TODA') || t.includes('POSICION') || t.includes('ARRASTRE') || t.includes('REMOLQUE') || t === 'TP' || t.includes('TRAILER')) return 'TODA_ARRASTRE';
+            return 'TODA_ARRASTRE';
+        }
+
+        function goalTireTypeLabel(goalType) {
+            if (goalType === 'DELANTERA') return 'Delantera';
+            if (goalType === 'TRACCION') return 'Tracción';
+            return 'Toda Posición / Arrastre';
+        }
+
+        function mapPerformanceSegmentToGoalType(segment) {
+            if (segment === 'Delanteras') return 'DELANTERA';
+            if (segment === 'Tracción') return 'TRACCION';
+            return 'TODA_ARRASTRE';
+        }
+
+        function normalizeGoalBrandKey(rawBrand) {
+            const base = normalizeDesignToken(rawBrand);
+            if (!base) return '';
+            const aliases = {
+                BFG: 'BFGOODRICH',
+                BFGOODRICH: 'BFGOODRICH'
+            };
+            return aliases[base] || base;
+        }
+
+        function buildGoalBrandCandidates(rawBrand) {
+            const base = normalizeGoalBrandKey(rawBrand);
+            if (!base) return [];
+            const keys = new Set([base]);
+            if (base === 'BFGOODRICH') keys.add('BFG');
+            if (base === 'BFG') keys.add('BFGOODRICH');
+            return Array.from(keys);
+        }
+
+        function goalTireTypeAllowedByFilter(goalType) {
+            if (currentFilter === 'ALL') return true;
+            if (currentFilter === 'Delanteras') return goalType === 'DELANTERA';
+            if (currentFilter === 'Tracción') return goalType === 'TRACCION';
+            if (currentFilter === 'Toda Posición') return goalType === 'TODA_ARRASTRE';
+            return false;
+        }
+
+        function normalizeCpkGoalRecord(raw) {
+            const tireTypeText = normalizeStr((raw && raw.tireTypeText) != null ? raw.tireTypeText : (raw && raw.tireType));
+            const brandText = normalizeStr((raw && raw.brandText) != null ? raw.brandText : (raw && raw.brand));
+            const design = normalizeStr(raw && raw.design).toUpperCase();
+            const kmExpected = safeFloat(raw && raw.kmExpected);
+            const kpkExpected = safeFloat(raw && raw.kpkExpected);
+            const tireType = normalizeGoalTireType(tireTypeText);
+            const brandKey = normalizeGoalBrandKey(brandText);
+
+            if (!design) return null;
+            if (kmExpected <= 0 && kpkExpected <= 0) return null;
+
+            return {
+                tireType,
+                tireTypeLabel: goalTireTypeLabel(tireType),
+                tireTypeText: tireTypeText || goalTireTypeLabel(tireType),
+                brand: brandText.toUpperCase(),
+                brandKey,
+                design,
+                matchKey: normalizeDesignToken(design),
+                kmExpected,
+                kpkExpected
+            };
+        }
+
+        function processCpkGoalsData(data) {
+            if (!Array.isArray(data) || !data.length) {
+                dbCpkGoals = [];
+                return;
+            }
+
+            const typeHeaders = ['TIPO DE LLANTA', 'TIPO', 'GRUPO', 'B'];
+            const brandHeaders = ['MARCA', 'BRAND', 'FABRICANTE', 'C'];
+            const designHeaders = ['DISEÑO', 'DISENO', 'DISEÑO LLANTA', 'DISENO LLANTA', 'MODELO', 'LLANTA', 'D'];
+            const kmExpectedHeaders = ['KM X MM ESPERADO', 'KM X MM ESP', "KM'S ESPERADOS", 'KMS ESPERADOS', 'KM ESPERADOS', 'F'];
+            const kpkExpectedHeaders = ['$ X KM ESPERADO', '$ X KM ESP', 'CPK ESPERADO', 'K P K ESP', 'KPK ESP', 'G'];
+
+            dbCpkGoals = data.map(row => {
+                const typeRaw = getGoalCell(row, typeHeaders, 1);
+                const brandRaw = getGoalCell(row, brandHeaders, 2);
+                const designRaw = getGoalCell(row, designHeaders, 3);
+                const kmExpectedRaw = getGoalCell(row, kmExpectedHeaders, 5);
+                const kpkExpectedRaw = getGoalCell(row, kpkExpectedHeaders, 6);
+                return normalizeCpkGoalRecord({
+                    tireTypeText: typeRaw,
+                    brandText: brandRaw,
+                    design: designRaw,
+                    kmExpected: kmExpectedRaw,
+                    kpkExpected: kpkExpectedRaw
+                });
+            }).filter(x => x !== null);
+        }
+
+        function exportGoalRows(goals) {
+            return (Array.isArray(goals) ? goals : []).map(g => ({
+                tireTypeText: g.tireTypeText,
+                brand: g.brand,
+                design: g.design,
+                kmExpected: g.kmExpected,
+                kpkExpected: g.kpkExpected
+            }));
+        }
+
+        function saveLocalCpkGoals(goals) {
+            const normalized = (Array.isArray(goals) ? goals : []).map(normalizeCpkGoalRecord).filter(Boolean);
+            dbCpkGoals = normalized;
+            localStorage.setItem(CPK_GOALS_STORAGE_KEY, JSON.stringify(exportGoalRows(normalized)));
+        }
+
+        function loadLocalCpkGoals() {
+            let parsed = null;
+            try {
+                parsed = JSON.parse(localStorage.getItem(CPK_GOALS_STORAGE_KEY) || 'null');
+            } catch (_) {
+                parsed = null;
+            }
+
+            if (Array.isArray(parsed) && parsed.length > 0) {
+                const normalizedStored = parsed.map(normalizeCpkGoalRecord).filter(Boolean);
+                if (normalizedStored.length > 0) {
+                    dbCpkGoals = normalizedStored;
+                    return true;
+                }
+            }
+
+            const defaults = (Array.isArray(DEFAULT_CPK_GOALS_LOCAL) ? DEFAULT_CPK_GOALS_LOCAL : []).map(normalizeCpkGoalRecord).filter(Boolean);
+            dbCpkGoals = defaults;
+            if (defaults.length > 0) {
+                localStorage.setItem(CPK_GOALS_STORAGE_KEY, JSON.stringify(exportGoalRows(defaults)));
+                return true;
+            }
+            return false;
+        }
+
+        function setCpkGoalsEditorError(msg) {
+            const el = document.getElementById('cpkGoalsEditorError');
+            if (!el) return;
+            if (!msg) {
+                el.classList.add('hidden');
+                el.innerText = '';
+                return;
+            }
+            el.classList.remove('hidden');
+            el.innerText = msg;
+        }
+
+        function goalsToEditorText(goals) {
+            const rows = Array.isArray(goals) ? goals : [];
+            const header = 'Tipo|Marca|Diseño|Km x Mm Esp.|$ x Km Esp.';
+            if (!rows.length) return header;
+            const lines = rows.map(r => `${normalizeStr(r.tireTypeText || goalTireTypeLabel(r.tireType))}|${normalizeStr(r.brand)}|${normalizeStr(r.design)}|${r.kmExpected}|${r.kpkExpected}`);
+            return [header, ...lines].join('\n');
+        }
+
+        function parseCpkGoalsEditorText(text) {
+            const lines = (text || '').split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+            if (lines.length === 0) return [];
+
+            const rows = [];
+            lines.forEach((line, idx) => {
+                const normalizedLine = normalizeDesignToken(line);
+                if (idx === 0 && normalizedLine.includes('TIPO') && normalizedLine.includes('DISENO')) return;
+
+                let parts = line.split('|').map(p => p.trim());
+                if (parts.length < 4) parts = line.split('\t').map(p => p.trim());
+                if (parts.length < 4) parts = line.split(',').map(p => p.trim());
+                if (parts.length < 4) throw new Error(`Línea ${idx + 1}: formato inválido.`);
+
+                let typeRaw = '';
+                let brandRaw = '';
+                let designRaw = '';
+                let kmRaw = '';
+                let kpkRaw = '';
+                if (parts.length >= 5) {
+                    [typeRaw, brandRaw, designRaw, kmRaw, kpkRaw] = parts;
+                } else {
+                    [typeRaw, designRaw, kmRaw, kpkRaw] = parts;
+                }
+                const row = normalizeCpkGoalRecord({
+                    tireTypeText: typeRaw,
+                    brandText: brandRaw,
+                    design: designRaw,
+                    kmExpected: kmRaw,
+                    kpkExpected: kpkRaw
+                });
+                if (!row) throw new Error(`Línea ${idx + 1}: diseño vacío o metas inválidas.`);
+                rows.push(row);
+            });
+            return rows;
+        }
+
+        function openCpkGoalsModal() {
+            if (!currentUser || currentUser.role !== 'admin') {
+                logStatus('Solo administradores pueden editar metas CPK.', 'error');
+                return;
+            }
+            loadLocalCpkGoals();
+            const textarea = document.getElementById('cpkGoalsEditorText');
+            if (textarea) textarea.value = goalsToEditorText(dbCpkGoals);
+            setCpkGoalsEditorError('');
+
+            const modal = document.getElementById('cpkGoalsModal');
+            if (modal && modal.classList.contains('opacity-0')) {
+                window.toggleModal('cpkGoalsModal');
+            }
+        }
+
+        function saveCpkGoalsFromEditor() {
+            if (!currentUser || currentUser.role !== 'admin') {
+                logStatus('Solo administradores pueden editar metas CPK.', 'error');
+                return;
+            }
+            const textarea = document.getElementById('cpkGoalsEditorText');
+            if (!textarea) return;
+
+            try {
+                const rows = parseCpkGoalsEditorText(textarea.value);
+                if (!rows.length) {
+                    setCpkGoalsEditorError('Debes capturar al menos una meta válida.');
+                    return;
+                }
+                saveLocalCpkGoals(rows);
+                setCpkGoalsEditorError('');
+                logStatus(`Metas CPK guardadas localmente (${rows.length} filas).`, 'info');
+                if (moduleState.currentTab === 'performance') runCPKAnalysis();
+                window.toggleModal('cpkGoalsModal');
+            } catch (e) {
+                setCpkGoalsEditorError(e.message || 'No se pudo guardar las metas.');
+            }
+        }
+
+        function restoreDefaultCpkGoals() {
+            if (!currentUser || currentUser.role !== 'admin') {
+                logStatus('Solo administradores pueden editar metas CPK.', 'error');
+                return;
+            }
+            localStorage.removeItem(CPK_GOALS_STORAGE_KEY);
+            const hasDefaults = loadLocalCpkGoals();
+            const textarea = document.getElementById('cpkGoalsEditorText');
+            if (textarea) textarea.value = goalsToEditorText(dbCpkGoals);
+            setCpkGoalsEditorError('');
+            if (moduleState.currentTab === 'performance') runCPKAnalysis();
+            if (!hasDefaults) {
+                logStatus('Plantilla limpia. Puedes pegar tus metas manualmente.', 'info');
+            }
+        }
+
+        function processScrapData(data) {
+            if(!data || !data.length) {
+                dbScrap = [];
+                safeSetText('scrapCountDisplay', 0);
+                return;
+            }
+            
+            let validDateCount = 0; // Contador interno para depuración
+
+            dbScrap = data.map(row => {
+                 const brand = (getValue(row, 'brand', 'scrap') || 'GEN').toString().trim().toUpperCase();
+                 const model = (getValue(row, 'model', 'scrap') || 'STD').toString().trim().toUpperCase();
+                 
+                 // Validamos fecha aquí para loguear, aunque el análisis la procesa después
+                 const rawDate = getValue(row, 'date', 'scrap');
+                 if (parseFlexibleDate(rawDate)) validDateCount++;
+
+                 // ACTUALIZADO: Lógica para sustituir "Sin Asignar" por "Recolección Pend."
+                 let providerRaw = getValue(row, 'scrapProvider', 'scrap');
+                 if (!providerRaw || providerRaw.trim() === '' || providerRaw === 'Sin Asignar') {
+                     providerRaw = 'Recolección Pend.';
+                 }
+
+                 return { 
+                     id: getValue(row, 'id', 'scrap')||'S/N', 
+                     brand: brand, 
+                     model: model, 
+                     mm: safeFloat(getValue(row, 'mmNow', 'scrap')), 
+                     originalMm: safeFloat(getValue(row, 'mmOrig', 'scrap'))||24, 
+                     cost: safeFloat(getValue(row, 'cost', 'scrap')), 
+                     status: 'Scrapped', 
+                     reason: getValue(row, 'scrapReason', 'scrap')||'Desc', 
+                     provider: providerRaw, 
+                     date: rawDate
+                };
+            }).filter(x => x !== null);
+            
+            safeSetText('scrapCountDisplay', dbScrap.length);
+            logStatus(`Desecho: ${dbScrap.length} items. Fechas legibles: ${validDateCount}`, 'info');
+        }
+
+        function processScrapCreditData(data) {
+            if (!data || !data.length) {
+                dbScrapCredits = [];
+                return;
+            }
+
+            let validDateCount = 0;
+            dbScrapCredits = data.map((row, idx) => {
+                const rawDate = getValue(row, 'date', 'scrapCredit');
+                if (parseFlexibleDate(rawDate)) validDateCount++;
+
+                const providerRaw = normalizeStr(getValue(row, 'provider', 'scrapCredit')) || 'Sin proveedor';
+                const legalName = normalizeStr(getValue(row, 'legalName', 'scrapCredit')) || '-';
+                const description = normalizeStr(getValue(row, 'description', 'scrapCredit')) || 'Sin descripción';
+                const qty = Math.abs(safeFloat(getValue(row, 'qty', 'scrapCredit')));
+                const amount = Math.abs(safeFloat(getValue(row, 'amount', 'scrapCredit')));
+
+                return {
+                    id: `NC-${idx + 1}`,
+                    date: rawDate,
+                    provider: providerRaw,
+                    legalName,
+                    description,
+                    qty,
+                    amount
+                };
+            }).filter(r => (r.amount > 0) || (r.qty > 0) || normalizeStr(r.description) !== 'Sin descripción');
+
+            logStatus(`Notas Crédito: ${dbScrapCredits.length} registros. Fechas legibles: ${validDateCount}`, 'info');
+        }
+
+        function processWashData(data) {
+            if(!data || !data.length) {
+                dbWashing = [];
+                safeSetText('washCount', 0);
+                sanitizeWashSelectedOptions();
+                return;
+            }
+            const today = new Date();
+            // Ajustamos 'today' al final del día para evitar falsos positivos por horas
+            today.setHours(23, 59, 59, 999);
+
+            let mapped = data.map(row => {
+                 const unit = getValue(row, 'unit', 'wash') || 'S/N'; 
+                 const company = getValue(row, 'washCompany', 'wash') || 'Sin Asignar'; 
+                 const dateStr = getValue(row, 'washDate', 'wash'); 
+                 const daysVal = getValue(row, 'washDays', 'wash'); 
+                 let days = 0; 
+                 let isoDate = '-'; 
+                 let monthIdx = -1; 
+                 let year = 0;
+                 
+                 let d = parseFlexibleDate(dateStr); 
+                 
+                 // --- AUTOCORRECCIÓN DE FECHAS FUTURAS (Fix para formato MM/DD vs DD/MM) ---
+                 if (d && d > today) {
+                     // Si la fecha está en el futuro, es probable que el formato esté invertido (USA style)
+                     // Ejemplo: Leímos 02/05/2026 como 2 de Mayo (Futuro), pero era 5 de Febrero (Pasado).
+                     // Lógica de inversión: El mes leído (4 = Mayo) debería ser el día (5). El día leído (2) debería ser el mes (1 = Feb).
+                     
+                     // Verificamos si es matemáticamente posible invertirlo (Día leído <= 12)
+                     if (d.getDate() <= 12) {
+                         const potentialMonth = d.getDate() - 1; // JS meses son 0-11
+                         const potentialDay = d.getMonth() + 1;  // JS meses son 0-11, recuperamos el número visual
+                         
+                         const fixedDate = new Date(d.getFullYear(), potentialMonth, potentialDay);
+                         
+                         // Si al invertirla cae en el pasado (o hoy), asumimos que esa era la correcta
+                         if (fixedDate <= today) {
+                             d = fixedDate;
+                             // console.log(`Autocorrección aplicada para ${unit}: ${dateStr} -> ${d.toLocaleDateString()}`);
+                         }
+                     }
+                 }
+                 // --------------------------------------------------------------------------
+
+                 if (d) { 
+                      // Recalcular diferencia de días con la fecha (corregida o no)
+                      // Usamos Math.abs para evitar negativos si hay desfases horarios menores
+                      const diffTime = today.getTime() - d.getTime();
+                      days = Math.floor(diffTime / (1000 * 60 * 60 * 24)); 
+                      
+                      // Seguridad visual: Si por alguna razón sigue siendo negativo (muy futuro), lo ponemos en 0
+                      if (days < 0) days = 0;
+
+                      const dd = String(d.getDate()).padStart(2, '0');
+                      const mm = String(d.getMonth() + 1).padStart(2, '0');
+                      const yyyy = d.getFullYear();
+                      isoDate = `${dd}-${mm}-${yyyy}`;
+                      monthIdx = d.getMonth(); 
+                      year = d.getFullYear(); 
+                 } else if (daysVal) { days = parseInt(daysVal); }
+                 // ACTUALIZADO: Se añade 'rawDate: d' al objeto retornado para permitir ordenamiento por fecha
+                 return { unit, company, days, monthIdx, year, lastWashDate: isoDate, daysWithoutWash: days, rawDate: d };
+            });
+            dbWashing = mapped.filter(row => row.daysWithoutWash <= 500);
+            safeSetText('washCount', dbWashing.length);
+            sanitizeWashSelectedOptions();
+        }
+        
+        function processWashHistoryData(data) {
+             if(!data || !data.length) {
+                dbWashHistory = [];
+                if(document.getElementById('washHistoryCount')) safeSetText('washHistoryCount', 0);
+                sanitizeWashSelectedOptions();
+                return;
+             }
+             
+             let validCount = 0;
+             let invalidCount = 0;
+
+             dbWashHistory = data.map(row => {
+                 const unit = getValue(row, 'unit', 'wash') || 'S/N'; 
+                 // Normalización de la compañía: Intentar mapear si es un código
+                 let rawCompany = getValue(row, 'washCompany', 'wash') || 'Sin Asignar';
+                 let company = rawCompany;
+                 if (COMPANY_MAP[rawCompany]) {
+                     company = COMPANY_MAP[rawCompany];
+                 }
+
+                 const dateStr = getValue(row, 'washDate', 'wash');
+                 let isoDate = '-'; let monthIdx = -1; let year = 0;
+                 
+                 // Usamos el nuevo parser robusto
+                 const d = parseFlexibleDate(dateStr); 
+                 
+                 if (d) {
+                    const dd = String(d.getDate()).padStart(2, '0');
+                    const mm = String(d.getMonth() + 1).padStart(2, '0');
+                    const yyyy = d.getFullYear();
+                    isoDate = `${dd}-${mm}-${yyyy}`;
+                    monthIdx = d.getMonth();
+                    year = d.getFullYear();
+                    validCount++;
+                 } else { 
+                    invalidCount++;
+                    // Opcional: Descomentar para ver en consola del navegador qué falla
+                    // console.warn("Fecha inválida en Histórico Lavado:", dateStr, row);
+                    return null; 
+                 }
+                 // ACTUALIZADO: Guardamos 'rawDate' (objeto Date real) para poder ordenar cronológicamente después
+                 return { unit, company, dateStr: isoDate, monthIdx, year, rawDate: d };
+             }).filter(x => x !== null);
+             
+             if(document.getElementById('washHistoryCount')) safeSetText('washHistoryCount', dbWashHistory.length);
+             
+             // Feedback visual en el log
+             if (invalidCount > 0) {
+                 logStatus(`Lavado Histórico: ${validCount} cargados. ⚠️ ${invalidCount} fechas ilegibles.`, 'info');
+             } else {
+                 logStatus(`Lavado Histórico: ${validCount} registros cargados correctamente.`);
+             }
+             sanitizeWashSelectedOptions();
+        }
+
+        function processFuelData(data) {
+            if(!data || !data.length) { dbExtra = []; safeSetText('fuelCount', 0); return; }
+            
+            dbExtra = data.map(row => {
+                const monthRaw = getValue(row, 'fuelMonth', 'fuel') || '-';
+                let companyRaw = getValue(row, 'fuelCompany', 'fuel') || 'Sin Asignar';
+                let unit = getValue(row, 'unit', 'fuel') || 'S/N';
+                let company = companyRaw.toString().trim();
+                
+                if (COMPANY_MAP[company]) company = COMPANY_MAP[company];
+                if (LA_PAZ_UNITS.includes(unit.toUpperCase())) company = 'La Paz';
+
+                const engine = getValue(row, 'fuelEngine', 'fuel') || 'Desconocido';
+                const manufacturer = getValue(row, 'fuelManufacturer', 'fuel') || 'Desconocido';
+                const segment = getValue(row, 'fuelSegment', 'fuel') || 'General';
+                
+                if (engine.toUpperCase().includes('EURO 5')) company = 'Pipitas';
+                
+                const operator = getValue(row, 'fuelOperator', 'fuel') || 'Desconocido';
+                const km = safeFloat(getValue(row, 'fuelKm', 'fuel'));
+                const liters = safeFloat(getValue(row, 'fuelLiters', 'fuel'));
+                let yieldVal = safeFloat(getValue(row, 'fuelYield', 'fuel'));
+                
+                if (yieldVal === 0 && liters > 0) yieldVal = km / liters;
+                
+                let mIdx = 0; 
+                let year = new Date().getFullYear(); // Default
+                
+                // Intentar obtener fecha completa para sacar el año
+                const d = parseFlexibleDate(monthRaw);
+                if (d) {
+                    mIdx = d.getMonth();
+                    year = d.getFullYear();
+                } else {
+                    // Si solo es nombre del mes, buscar indice
+                    let found = monthNamesFull.findIndex(m => m.toUpperCase().includes(monthRaw.toString().toUpperCase().substring(0,3)));
+                    if (found !== -1) mIdx = found;
+                    
+                    // Buscar si hay un año en el string (ej: "Enero 2024")
+                    const yMatch = monthRaw.toString().match(/20\d{2}/);
+                    if(yMatch) year = parseInt(yMatch[0]);
+                }
+
+                return { month: monthRaw, mIdx, year, company, engine, manufacturer, operator, km, liters, yield: yieldVal, unit: unit, segment: segment };
+            }).filter(x => x.km > 0 && x.liters > 0); 
+            
+            safeSetText('fuelCount', dbExtra.length);
+            sanitizeFuelSelectedOptions();
+        }
+
+        function getFuelSuggestionOptions(kind) {
+            const values = new Set();
+            (Array.isArray(dbExtra) ? dbExtra : []).forEach(r => {
+                if (kind === 'UNIT') {
+                    const unit = normalizeStr(r.unit).toUpperCase();
+                    if (unit) values.add(unit);
+                } else {
+                    const op = normalizeStr(r.operator).toUpperCase();
+                    if (op) values.add(op);
+                }
+            });
+            return Array.from(values).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+        }
+
+        function syncFuelSelectedInfo() {
+            const unitInfo = document.getElementById('fuelSelectedUnitInfo');
+            const opInfo = document.getElementById('fuelSelectedOperatorInfo');
+            if (unitInfo) unitInfo.innerText = currentFuelSelectedUnit.length ? `${currentFuelSelectedUnit.length} seleccionados` : '';
+            if (opInfo) opInfo.innerText = currentFuelSelectedOperator.length ? `${currentFuelSelectedOperator.length} seleccionados` : '';
+        }
+
+        function syncFuelExclusiveFilterState() {
+            const unitInput = document.getElementById('fuelFilterUnit');
+            const opInput = document.getElementById('fuelFilterOperator');
+            const unitBox = document.getElementById('fuelSuggestUnit');
+            const opBox = document.getElementById('fuelSuggestOperator');
+
+            if (currentFuelSelectedUnit.length > 0 && currentFuelSelectedOperator.length > 0) {
+                currentFuelSelectedOperator = [];
+            }
+
+            const lockUnit = currentFuelSelectedOperator.length > 0;
+            const lockOp = currentFuelSelectedUnit.length > 0;
+
+            if (lockUnit) {
+                currentFuelSelectedUnit = [];
+                currentFuelSearchUnit = '';
+                if (unitInput) unitInput.value = '';
+                if (unitBox) unitBox.classList.remove('show');
+            }
+            if (lockOp) {
+                currentFuelSelectedOperator = [];
+                currentFuelSearchOperator = '';
+                if (opInput) opInput.value = '';
+                if (opBox) opBox.classList.remove('show');
+            }
+
+            if (unitInput) {
+                unitInput.disabled = lockUnit;
+                unitInput.classList.toggle('bg-slate-100', lockUnit);
+                unitInput.classList.toggle('text-slate-400', lockUnit);
+                unitInput.classList.toggle('cursor-not-allowed', lockUnit);
+                unitInput.placeholder = lockUnit ? 'Unidad (deshabilitado)' : 'Unidad';
+            }
+            if (opInput) {
+                opInput.disabled = lockOp;
+                opInput.classList.toggle('bg-slate-100', lockOp);
+                opInput.classList.toggle('text-slate-400', lockOp);
+                opInput.classList.toggle('cursor-not-allowed', lockOp);
+                opInput.placeholder = lockOp ? 'Operador (deshabilitado)' : 'Operador';
+            }
+            syncFuelSelectedInfo();
+        }
+
+        function sanitizeFuelSelectedOptions() {
+            const unitSet = new Set(getFuelSuggestionOptions('UNIT'));
+            const opSet = new Set(getFuelSuggestionOptions('OP'));
+            currentFuelSelectedUnit = currentFuelSelectedUnit.filter(v => unitSet.has(v));
+            currentFuelSelectedOperator = currentFuelSelectedOperator.filter(v => opSet.has(v));
+            syncFuelExclusiveFilterState();
+        }
+
+        function renderFuelSuggestions(kind) {
+            const inputId = kind === 'UNIT' ? 'fuelFilterUnit' : 'fuelFilterOperator';
+            const boxId = kind === 'UNIT' ? 'fuelSuggestUnit' : 'fuelSuggestOperator';
+            const selected = kind === 'UNIT' ? currentFuelSelectedUnit : currentFuelSelectedOperator;
+            const input = document.getElementById(inputId);
+            const box = document.getElementById(boxId);
+            if (!input || !box) return;
+            if (input.disabled) {
+                box.classList.remove('show');
+                return;
+            }
+
+            const query = normalizeStr(input.value).toUpperCase();
+            const options = getFuelSuggestionOptions(kind)
+                .filter(v => !query || v.includes(query))
+                .slice(0, 80);
+
+            if (!options.length) {
+                box.innerHTML = '<div class="px-2 py-2 text-xs text-slate-400">Sin coincidencias</div>';
+                box.classList.add('show');
+                return;
+            }
+
+            box.innerHTML = `
+                <div class="px-2 py-1 border-b border-slate-100 flex items-center justify-between text-[10px] text-slate-500">
+                    <span>${kind === 'UNIT' ? 'Unidad' : 'Operador'}</span>
+                    <button class="text-indigo-600 hover:text-indigo-800 font-bold" onclick="window.clearFuelSuggestionSelection('${kind}')">Limpiar</button>
+                </div>
+                ${options.map(v => {
+                    const enc = encodeURIComponent(v);
+                    const checked = selected.includes(v) ? 'checked' : '';
+                    return `<label class="cursor-pointer px-2 py-1 hover:bg-slate-50 flex items-center gap-2 text-xs text-slate-700"><input type="checkbox" ${checked} onchange="window.toggleFuelSuggestionSelection('${kind}','${enc}',this.checked)"> <span>${escapeHtml(v)}</span></label>`;
+                }).join('')}
+            `;
+            box.classList.add('show');
+        }
+
+        function toggleFuelSuggestionSelection(kind, encodedValue, checked) {
+            const value = decodeURIComponent(encodedValue || '');
+            if (!value) return;
+            if (checked && kind === 'UNIT') {
+                currentFuelSelectedOperator = [];
+                currentFuelSearchOperator = '';
+                const opEl = document.getElementById('fuelFilterOperator');
+                if (opEl) opEl.value = '';
+            } else if (checked && kind === 'OP') {
+                currentFuelSelectedUnit = [];
+                currentFuelSearchUnit = '';
+                const unitEl = document.getElementById('fuelFilterUnit');
+                if (unitEl) unitEl.value = '';
+            }
+            const target = kind === 'UNIT' ? currentFuelSelectedUnit : currentFuelSelectedOperator;
+            const idx = target.indexOf(value);
+            if (checked && idx === -1) target.push(value);
+            if (!checked && idx >= 0) target.splice(idx, 1);
+            syncFuelExclusiveFilterState();
+        }
+
+        function clearFuelSuggestionSelection(kind) {
+            if (kind === 'UNIT') currentFuelSelectedUnit = [];
+            else currentFuelSelectedOperator = [];
+            syncFuelExclusiveFilterState();
+            renderFuelSuggestions(kind);
+        }
+
+        function applyFuelSearchFilters() {
+            const unitEl = document.getElementById('fuelFilterUnit');
+            const opEl = document.getElementById('fuelFilterOperator');
+            currentFuelSearchUnit = normalizeStr(unitEl ? unitEl.value : '').toUpperCase();
+            currentFuelSearchOperator = normalizeStr(opEl ? opEl.value : '').toUpperCase();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'extra') runFuelAnalysis();
+        }
+
+        function clearFuelSearchFilters() {
+            currentFuelSearchUnit = '';
+            currentFuelSearchOperator = '';
+            currentFuelSelectedUnit = [];
+            currentFuelSelectedOperator = [];
+            const unitEl = document.getElementById('fuelFilterUnit');
+            const opEl = document.getElementById('fuelFilterOperator');
+            if (unitEl) unitEl.value = '';
+            if (opEl) opEl.value = '';
+            syncFuelExclusiveFilterState();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'extra') runFuelAnalysis();
+        }
+
+        function getFuelSearchScopedRows() {
+            if (!Array.isArray(dbExtra) || !dbExtra.length) return [];
+            const selectedUnitSet = new Set(currentFuelSelectedUnit);
+            const selectedOpSet = new Set(currentFuelSelectedOperator);
+            return dbExtra.filter(r => {
+                const unit = normalizeStr(r.unit).toUpperCase();
+                const op = normalizeStr(r.operator).toUpperCase();
+                const unitOk = selectedUnitSet.size > 0
+                    ? selectedUnitSet.has(unit)
+                    : (!currentFuelSearchUnit || unit.includes(currentFuelSearchUnit));
+                const opOk = selectedOpSet.size > 0
+                    ? selectedOpSet.has(op)
+                    : (!currentFuelSearchOperator || op.includes(currentFuelSearchOperator));
+                return unitOk && opOk;
+            });
+        }
+
+        function isExcludedWashFilterUnit(row) {
+            const unit = normalizeStr(row && row.unit).toUpperCase();
+            const company = normalizeStr(row && row.company).toUpperCase();
+            return unit.includes('EXTERN') || unit.includes('CCM') || company.includes('EXTERN') || company.includes('CCM');
+        }
+
+        function getWashSuggestionOptions() {
+            const values = new Set();
+            (Array.isArray(dbWashing) ? dbWashing : []).forEach(r => {
+                if (isExcludedWashFilterUnit(r)) return;
+                const unit = normalizeStr(r.unit).toUpperCase();
+                if (unit) values.add(unit);
+            });
+            (Array.isArray(dbWashHistory) ? dbWashHistory : []).forEach(r => {
+                if (isExcludedWashFilterUnit(r)) return;
+                const unit = normalizeStr(r.unit).toUpperCase();
+                if (unit) values.add(unit);
+            });
+            return Array.from(values).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+        }
+
+        function syncWashSelectedInfo() {
+            const info = document.getElementById('washSelectedUnitInfo');
+            if (!info) return;
+            info.innerText = currentWashSelectedUnit.length ? `${currentWashSelectedUnit.length} seleccionados` : '';
+        }
+
+        function sanitizeWashSelectedOptions() {
+            const valid = new Set(getWashSuggestionOptions());
+            currentWashSelectedUnit = currentWashSelectedUnit.filter(v => valid.has(v));
+            syncWashSelectedInfo();
+        }
+
+        function renderWashSuggestions() {
+            const input = document.getElementById('washFilterUnit');
+            const box = document.getElementById('washSuggestUnit');
+            if (!input || !box) return;
+            const query = normalizeStr(input.value).toUpperCase();
+            const options = getWashSuggestionOptions()
+                .filter(v => !query || v.includes(query))
+                .slice(0, 80);
+
+            if (!options.length) {
+                box.innerHTML = '<div class="px-2 py-2 text-xs text-slate-400">Sin coincidencias</div>';
+                box.classList.add('show');
+                return;
+            }
+
+            box.innerHTML = `
+                <div class="px-2 py-1 border-b border-slate-100 flex items-center justify-between text-[10px] text-slate-500">
+                    <span>Unidad</span>
+                    <button class="text-indigo-600 hover:text-indigo-800 font-bold" onclick="window.clearWashSuggestionSelection()">Limpiar</button>
+                </div>
+                ${options.map(v => {
+                    const enc = encodeURIComponent(v);
+                    const checked = currentWashSelectedUnit.includes(v) ? 'checked' : '';
+                    return `<label class="cursor-pointer px-2 py-1 hover:bg-slate-50 flex items-center gap-2 text-xs text-slate-700"><input type="checkbox" ${checked} onchange="window.toggleWashSuggestionSelection('${enc}',this.checked)"> <span>${escapeHtml(v)}</span></label>`;
+                }).join('')}
+            `;
+            box.classList.add('show');
+        }
+
+        function toggleWashSuggestionSelection(encodedValue, checked) {
+            const value = decodeURIComponent(encodedValue || '');
+            if (!value) return;
+            const idx = currentWashSelectedUnit.indexOf(value);
+            if (checked && idx === -1) currentWashSelectedUnit.push(value);
+            if (!checked && idx >= 0) currentWashSelectedUnit.splice(idx, 1);
+            syncWashSelectedInfo();
+        }
+
+        function clearWashSuggestionSelection() {
+            currentWashSelectedUnit = [];
+            syncWashSelectedInfo();
+            renderWashSuggestions();
+        }
+
+        function applyWashSearchFilters() {
+            const unitEl = document.getElementById('washFilterUnit');
+            currentWashSearchUnit = normalizeStr(unitEl ? unitEl.value : '').toUpperCase();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'washing') runWashAnalysis();
+        }
+
+        function clearWashSearchFilters() {
+            currentWashSearchUnit = '';
+            currentWashSelectedUnit = [];
+            const unitEl = document.getElementById('washFilterUnit');
+            if (unitEl) unitEl.value = '';
+            syncWashSelectedInfo();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'washing') runWashAnalysis();
+        }
+
+        function getWashScopedCurrentRows() {
+            if (!Array.isArray(dbWashing) || !dbWashing.length) return [];
+            const selectedSet = new Set(currentWashSelectedUnit);
+            const hasFilter = selectedSet.size > 0 || !!currentWashSearchUnit;
+            return dbWashing.filter(r => {
+                if (hasFilter && isExcludedWashFilterUnit(r)) return false;
+                const unit = normalizeStr(r.unit).toUpperCase();
+                return selectedSet.size > 0
+                    ? selectedSet.has(unit)
+                    : (!currentWashSearchUnit || unit.includes(currentWashSearchUnit));
+            });
+        }
+
+        function getWashScopedHistoryRows() {
+            if (!Array.isArray(dbWashHistory) || !dbWashHistory.length) return [];
+            const selectedSet = new Set(currentWashSelectedUnit);
+            const hasFilter = selectedSet.size > 0 || !!currentWashSearchUnit;
+            return dbWashHistory.filter(r => {
+                if (hasFilter && isExcludedWashFilterUnit(r)) return false;
+                const unit = normalizeStr(r.unit).toUpperCase();
+                return selectedSet.size > 0
+                    ? selectedSet.has(unit)
+                    : (!currentWashSearchUnit || unit.includes(currentWashSearchUnit));
+            });
+        }
+
+        function hasWashSpecificSelection() {
+            return currentWashSelectedUnit.length > 0 || !!currentWashSearchUnit;
+        }
+
+        function toggleWashSummaryMode(showSummary) {
+            const topWrap = document.getElementById('washTopDirtyContainer');
+            const summaryWrap = document.getElementById('washHistorySummaryContainer');
+            if (topWrap) topWrap.classList.toggle('hidden', showSummary);
+            if (summaryWrap) summaryWrap.classList.toggle('hidden', !showSummary);
+        }
+
+        function renderWashHistorySummaryRows(historyRows) {
+            const titleEl = document.getElementById('washHistorySummaryTitle');
+            const bodyEl = document.getElementById('washHistorySummaryBody');
+            if (!titleEl || !bodyEl) return;
+
+            const selectedText = currentWashSelectedUnit.length
+                ? currentWashSelectedUnit.join(', ')
+                : (currentWashSearchUnit || 'Unidad filtrada');
+            titleEl.innerText = `Selección: ${selectedText}`;
+
+            const rows = Array.isArray(historyRows) ? [...historyRows] : [];
+            rows.sort((a, b) => {
+                if (a.rawDate && b.rawDate) return b.rawDate - a.rawDate;
+                return normalizeStr(b.dateStr).localeCompare(normalizeStr(a.dateStr), 'es');
+            });
+
+            if (!rows.length) {
+                bodyEl.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-slate-400">Sin histórico para la selección actual.</td></tr>';
+                return;
+            }
+
+            bodyEl.innerHTML = rows.slice(0, 200).map(r => `
+                <tr class="hover:bg-cyan-50 transition">
+                    <td class="p-3 font-bold text-slate-700">${escapeHtml(normalizeStr(r.unit))}</td>
+                    <td class="p-3 text-slate-600">${escapeHtml(normalizeStr(r.company))}</td>
+                    <td class="p-3 text-slate-600 font-mono">${escapeHtml(normalizeStr(r.dateStr))}</td>
+                    <td class="p-3 text-center text-slate-500">${escapeHtml(monthNamesFull[r.monthIdx] || '-')}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderWashHighFrequencyTable(historyRows) {
+            const tbody = document.getElementById('washHighFreqBody');
+            const countEl = document.getElementById('washHighFreqCount');
+            if (!tbody || !countEl) return;
+
+            const rows = (Array.isArray(historyRows) ? historyRows : []).filter(r => !isExcludedWashFilterUnit(r));
+            const grouped = {};
+            rows.forEach(r => {
+                const unitKey = normalizeStr(r.unit).toUpperCase();
+                if (!unitKey) return;
+                if (!grouped[unitKey]) grouped[unitKey] = { unit: normalizeStr(r.unit), rows: [] };
+                grouped[unitKey].rows.push(r);
+            });
+
+            const stats = Object.values(grouped).map(group => {
+                const sorted = group.rows
+                    .filter(r => r.rawDate instanceof Date)
+                    .sort((a, b) => a.rawDate - b.rawDate);
+
+                let shortCycleCount = 0;
+                let shortCycleSum = 0;
+                let lastGap = null;
+
+                for (let i = 1; i < sorted.length; i++) {
+                    const prev = sorted[i - 1].rawDate;
+                    const curr = sorted[i].rawDate;
+                    const diffDays = Math.floor((curr - prev) / (1000 * 60 * 60 * 24));
+                    if (diffDays < 0) continue;
+                    lastGap = diffDays;
+                    if (diffDays < 30) {
+                        shortCycleCount++;
+                        shortCycleSum += diffDays;
+                    }
+                }
+
+                if (shortCycleCount <= 0) return null;
+                const latestRow = sorted.length ? sorted[sorted.length - 1] : (group.rows[group.rows.length - 1] || null);
+                return {
+                    unit: normalizeStr(group.unit),
+                    company: normalizeStr(latestRow && latestRow.company) || '-',
+                    shortCycleCount,
+                    avgShortCycle: shortCycleCount > 0 ? (shortCycleSum / shortCycleCount) : 0,
+                    lastGap: lastGap == null ? '-' : `${lastGap} d`,
+                    totalWashes: sorted.length
+                };
+            }).filter(Boolean);
+
+            stats.sort((a, b) => {
+                if (b.shortCycleCount !== a.shortCycleCount) return b.shortCycleCount - a.shortCycleCount;
+                if (a.avgShortCycle !== b.avgShortCycle) return a.avgShortCycle - b.avgShortCycle;
+                return b.totalWashes - a.totalWashes;
+            });
+
+            countEl.innerText = stats.length.toLocaleString('es-MX');
+            if (!stats.length) {
+                tbody.innerHTML = '<tr><td colspan="7" class="p-3 text-center text-slate-400">Sin unidades con frecuencia &lt; 30 días en el periodo.</td></tr>';
+                return;
+            }
+
+            const getFreqLevel = (row) => {
+                if (row.shortCycleCount >= 8 || row.avgShortCycle <= 14) {
+                    return { label: 'ALTO', css: 'bg-red-100 text-red-700' };
+                }
+                if (row.shortCycleCount >= 4 || row.avgShortCycle <= 21) {
+                    return { label: 'MEDIO', css: 'bg-amber-100 text-amber-700' };
+                }
+                return { label: 'BAJO', css: 'bg-green-100 text-green-700' };
+            };
+
+            tbody.innerHTML = stats.slice(0, 20).map(r => `
+                <tr class="hover:bg-amber-50 transition">
+                    <td class="p-2 text-center"><span class="px-2 py-0.5 rounded text-[10px] font-bold ${getFreqLevel(r).css}">${getFreqLevel(r).label}</span></td>
+                    <td class="p-2 font-bold text-slate-700">${escapeHtml(r.unit)}</td>
+                    <td class="p-2 text-slate-600">${escapeHtml(r.company)}</td>
+                    <td class="p-2 text-center font-mono font-bold text-rose-600">${r.shortCycleCount.toLocaleString('es-MX')}</td>
+                    <td class="p-2 text-center font-mono text-slate-600">${r.avgShortCycle.toFixed(1)} d</td>
+                    <td class="p-2 text-center font-mono text-slate-500">${r.lastGap}</td>
+                    <td class="p-2 text-center font-mono text-slate-500">${r.totalWashes.toLocaleString('es-MX')}</td>
+                </tr>
+            `).join('');
+        }
+
+        function hasFuelSpecificSelection() {
+            return currentFuelSelectedUnit.length > 0
+                || currentFuelSelectedOperator.length > 0
+                || !!currentFuelSearchUnit
+                || !!currentFuelSearchOperator;
+        }
+
+        function toggleFuelRankingMode(showSummary) {
+            const topWrap = document.getElementById('fuelTopRankingsContainer');
+            const summaryWrap = document.getElementById('fuelSpecificSummaryContainer');
+            if (topWrap) topWrap.classList.toggle('hidden', showSummary);
+            if (summaryWrap) summaryWrap.classList.toggle('hidden', !showSummary);
+        }
+
+        function renderFuelSpecificSummaryRows(rows, mode) {
+            const titleEl = document.getElementById('fuelSpecificSummaryTitle');
+            const subtitleEl = document.getElementById('fuelSpecificSummarySubtitle');
+            const headerEl = document.getElementById('fuelSpecificHeaderEntity');
+            const bodyEl = document.getElementById('fuelSpecificSummaryBody');
+            if (!titleEl || !subtitleEl || !headerEl || !bodyEl) return;
+
+            const isUnitMode = mode === 'UNIT';
+            const selectedItems = isUnitMode
+                ? (currentFuelSelectedUnit.length ? currentFuelSelectedUnit : [currentFuelSearchUnit])
+                : (currentFuelSelectedOperator.length ? currentFuelSelectedOperator : [currentFuelSearchOperator]);
+            const selectedText = selectedItems.filter(Boolean).join(', ');
+
+            titleEl.innerText = isUnitMode
+                ? 'Operadores por Unidad Seleccionada'
+                : 'Unidades por Operador Seleccionado';
+            subtitleEl.innerText = selectedText ? `Selección: ${selectedText}` : '';
+            headerEl.innerText = isUnitMode ? 'Operador' : 'Unidad';
+
+            const entityMap = {};
+            rows.forEach(r => {
+                const key = isUnitMode
+                    ? normalizeStr(r.operator || 'SIN OPERADOR').toUpperCase()
+                    : normalizeStr(r.unit || 'SIN UNIDAD').toUpperCase();
+                if (!entityMap[key]) entityMap[key] = { km: 0, liters: 0, count: 0 };
+                entityMap[key].km += r.km || 0;
+                entityMap[key].liters += r.liters || 0;
+                entityMap[key].count += 1;
+            });
+
+            const summary = Object.entries(entityMap)
+                .map(([name, v]) => ({
+                    name,
+                    km: v.km,
+                    liters: v.liters,
+                    yield: v.liters > 0 ? (v.km / v.liters) : 0,
+                    count: v.count
+                }))
+                .sort((a, b) => b.yield - a.yield);
+
+            if (!summary.length) {
+                bodyEl.innerHTML = '<tr><td colspan="5" class="p-3 text-center text-slate-400 italic">Sin datos para la selección</td></tr>';
+                return;
+            }
+
+            bodyEl.innerHTML = summary.map((x, idx) => `
+                <tr class="hover:bg-slate-50 border-b border-slate-100">
+                    <td class="p-3 font-semibold text-slate-700">${idx + 1}. ${escapeHtml(x.name)}</td>
+                    <td class="p-3 text-right text-slate-500 font-mono">${x.km.toLocaleString('es-MX', { maximumFractionDigits: 0 })}</td>
+                    <td class="p-3 text-right text-slate-500 font-mono">${x.liters.toLocaleString('es-MX', { maximumFractionDigits: 0 })}</td>
+                    <td class="p-3 text-center font-bold text-teal-700">${x.yield.toFixed(2)}</td>
+                    <td class="p-3 text-center text-slate-500">${x.count.toLocaleString('es-MX')}</td>
+                </tr>
+            `).join('');
+        }
+
+        function getLossCompanyScopedRows() {
+            if (!Array.isArray(dbLoss) || !dbLoss.length) return [];
+            if (currentLossCompanyFilter === 'ALL') return dbLoss;
+            return dbLoss.filter(r => r.company === currentLossCompanyFilter);
+        }
+
+        function getLossSuggestionOptions(kind) {
+            const rows = getLossCompanyScopedRows();
+            const values = new Set();
+            rows.forEach(r => {
+                if (kind === 'TU') {
+                    if (r.tractor) values.add(r.tractor);
+                    if (r.unit) values.add(r.unit);
+                } else {
+                    if (r.operator) values.add(r.operator);
+                }
+            });
+            return Array.from(values).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+        }
+
+        function syncLossSelectedInfo() {
+            const tuInfo = document.getElementById('lossSelectedTUInfo');
+            const opInfo = document.getElementById('lossSelectedOperatorInfo');
+            if (tuInfo) {
+                if (currentLossSelectedTU.length) tuInfo.innerText = `${currentLossSelectedTU.length} seleccionados`;
+                else tuInfo.innerText = '';
+            }
+            if (opInfo) {
+                if (currentLossSelectedOperator.length) opInfo.innerText = `${currentLossSelectedOperator.length} seleccionados`;
+                else opInfo.innerText = '';
+            }
+        }
+
+        function syncLossExclusiveFilterState() {
+            const tuInput = document.getElementById('lossFilterTU');
+            const opInput = document.getElementById('lossFilterOperator');
+            const tuBox = document.getElementById('lossSuggestTU');
+            const opBox = document.getElementById('lossSuggestOperator');
+
+            if (currentLossSelectedTU.length > 0 && currentLossSelectedOperator.length > 0) {
+                currentLossSelectedOperator = [];
+            }
+
+            const lockTU = currentLossSelectedOperator.length > 0;
+            const lockOP = currentLossSelectedTU.length > 0;
+
+            if (lockTU) {
+                currentLossSelectedTU = [];
+                currentLossSearchTU = '';
+                if (tuInput) tuInput.value = '';
+                if (tuBox) tuBox.classList.remove('show');
+            }
+            if (lockOP) {
+                currentLossSelectedOperator = [];
+                currentLossSearchOperator = '';
+                if (opInput) opInput.value = '';
+                if (opBox) opBox.classList.remove('show');
+            }
+
+            if (tuInput) {
+                tuInput.disabled = lockTU;
+                tuInput.classList.toggle('bg-slate-100', lockTU);
+                tuInput.classList.toggle('text-slate-400', lockTU);
+                tuInput.classList.toggle('cursor-not-allowed', lockTU);
+                tuInput.placeholder = lockTU ? 'Tractor o Unidad (deshabilitado)' : 'Tractor o Unidad';
+            }
+            if (opInput) {
+                opInput.disabled = lockOP;
+                opInput.classList.toggle('bg-slate-100', lockOP);
+                opInput.classList.toggle('text-slate-400', lockOP);
+                opInput.classList.toggle('cursor-not-allowed', lockOP);
+                opInput.placeholder = lockOP ? 'Operador (deshabilitado)' : 'Operador';
+            }
+
+            syncLossSelectedInfo();
+        }
+
+        function sanitizeLossSelectedOptions() {
+            const tuSet = new Set(getLossSuggestionOptions('TU'));
+            const opSet = new Set(getLossSuggestionOptions('OP'));
+            currentLossSelectedTU = currentLossSelectedTU.filter(v => tuSet.has(v));
+            currentLossSelectedOperator = currentLossSelectedOperator.filter(v => opSet.has(v));
+            syncLossExclusiveFilterState();
+        }
+
+        function renderLossSuggestions(kind) {
+            const inputId = kind === 'TU' ? 'lossFilterTU' : 'lossFilterOperator';
+            const boxId = kind === 'TU' ? 'lossSuggestTU' : 'lossSuggestOperator';
+            const selected = kind === 'TU' ? currentLossSelectedTU : currentLossSelectedOperator;
+            const input = document.getElementById(inputId);
+            const box = document.getElementById(boxId);
+            if (!input || !box) return;
+            if (input.disabled) {
+                box.classList.remove('show');
+                return;
+            }
+
+            const query = normalizeStr(input.value).toUpperCase();
+            const options = getLossSuggestionOptions(kind)
+                .filter(v => !query || v.includes(query))
+                .slice(0, 80);
+
+            if (!options.length) {
+                box.innerHTML = '<div class="px-2 py-2 text-xs text-slate-400">Sin coincidencias</div>';
+                box.classList.add('show');
+                return;
+            }
+
+            box.innerHTML = `
+                <div class="px-2 py-1 border-b border-slate-100 flex items-center justify-between text-[10px] text-slate-500">
+                    <span>${kind === 'TU' ? 'Tractor / Unidad' : 'Operador'}</span>
+                    <button class="text-indigo-600 hover:text-indigo-800 font-bold" onclick="window.clearLossSuggestionSelection('${kind}')">Limpiar</button>
+                </div>
+                ${options.map(v => {
+                    const enc = encodeURIComponent(v);
+                    const checked = selected.includes(v) ? 'checked' : '';
+                    return `<label class="cursor-pointer px-2 py-1 hover:bg-slate-50 flex items-center gap-2 text-xs text-slate-700"><input type="checkbox" ${checked} onchange="window.toggleLossSuggestionSelection('${kind}','${enc}',this.checked)"> <span>${escapeHtml(v)}</span></label>`;
+                }).join('')}
+            `;
+            box.classList.add('show');
+        }
+
+        function toggleLossSuggestionSelection(kind, encodedValue, checked) {
+            const value = decodeURIComponent(encodedValue || '');
+            if (!value) return;
+            if (checked && kind === 'TU') {
+                currentLossSelectedOperator = [];
+                currentLossSearchOperator = '';
+                const opEl = document.getElementById('lossFilterOperator');
+                if (opEl) opEl.value = '';
+            } else if (checked && kind === 'OP') {
+                currentLossSelectedTU = [];
+                currentLossSearchTU = '';
+                const tuEl = document.getElementById('lossFilterTU');
+                if (tuEl) tuEl.value = '';
+            }
+            const target = kind === 'TU' ? currentLossSelectedTU : currentLossSelectedOperator;
+            const idx = target.indexOf(value);
+            if (checked && idx === -1) target.push(value);
+            if (!checked && idx >= 0) target.splice(idx, 1);
+            syncLossExclusiveFilterState();
+        }
+
+        function clearLossSuggestionSelection(kind) {
+            if (kind === 'TU') currentLossSelectedTU = [];
+            else currentLossSelectedOperator = [];
+            syncLossExclusiveFilterState();
+            renderLossSuggestions(kind);
+        }
+
+        function updateLossCompanyButtons() {
+            const map = {
+                ALL: 'loss-company-ALL',
+                Yucarro: 'loss-company-YUCARRO',
+                T2020: 'loss-company-T2020',
+                'CR MID': 'loss-company-CRMID',
+                'CR LPZ': 'loss-company-CRLPZ'
+            };
+            Object.entries(map).forEach(([key, id]) => {
+                const btn = document.getElementById(id);
+                if (!btn) return;
+                btn.classList.toggle('active', currentLossCompanyFilter === key);
+            });
+        }
+
+        function updateLossLitersModeButtons() {
+            const map = { ABS: 'loss-liters-mode-ABS', PCT: 'loss-liters-mode-PCT' };
+            Object.entries(map).forEach(([key, id]) => {
+                const btn = document.getElementById(id);
+                if (!btn) return;
+                btn.classList.toggle('active', currentLossLitersMode === key);
+            });
+        }
+
+        function setLossLitersMode(mode) {
+            const allowed = ['ABS', 'PCT'];
+            currentLossLitersMode = allowed.includes(mode) ? mode : 'PCT';
+            updateLossLitersModeButtons();
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function setLossLowRankBy(value) {
+            const allowed = ['OPERADOR', 'UNIDAD'];
+            currentLossLowRankBy = allowed.includes(value) ? value : 'OPERADOR';
+            const rankEl = document.getElementById('lossLowRankBy');
+            if (rankEl && rankEl.value !== currentLossLowRankBy) rankEl.value = currentLossLowRankBy;
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function setLossTopOrder(value) {
+            const allowed = ['MENOR', 'MAYOR'];
+            currentLossTopOrder = allowed.includes(value) ? value : 'MENOR';
+            const orderEl = document.getElementById('lossTopOrder');
+            if (orderEl && orderEl.value !== currentLossTopOrder) orderEl.value = currentLossTopOrder;
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function setLossCompanyFilter(company) {
+            const allowed = ['ALL', 'Yucarro', 'T2020', 'CR MID', 'CR LPZ'];
+            currentLossCompanyFilter = allowed.includes(company) ? company : 'ALL';
+            updateLossCompanyButtons();
+            sanitizeLossSelectedOptions();
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function applyLossSearchFilters() {
+            const tuEl = document.getElementById('lossFilterTU');
+            const opEl = document.getElementById('lossFilterOperator');
+            currentLossSearchTU = normalizeStr(tuEl ? tuEl.value : '').toUpperCase();
+            currentLossSearchOperator = normalizeStr(opEl ? opEl.value : '').toUpperCase();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function clearLossSearchFilters() {
+            currentLossSearchTU = '';
+            currentLossSearchOperator = '';
+            currentLossSelectedTU = [];
+            currentLossSelectedOperator = [];
+            const tuEl = document.getElementById('lossFilterTU');
+            const opEl = document.getElementById('lossFilterOperator');
+            if (tuEl) tuEl.value = '';
+            if (opEl) opEl.value = '';
+            syncLossExclusiveFilterState();
+            hideAllCheckboxDropdowns();
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function processLossData(yucarroRows, t2020Rows, corporedRows) {
+            const requiredFields = ['date', 'tractor', 'unit', 'operator', 'origin', 'destination'];
+            const parseRows = (rows, company) => {
+                if (!Array.isArray(rows) || !rows.length) return [];
+                return rows.map(row => {
+                    const dateRaw = getValue(row, 'date', 'loss');
+                    const tractorRaw = getValue(row, 'tractor', 'loss');
+                    const unitRaw = getValue(row, 'unit', 'loss');
+                    const operatorRaw = getValue(row, 'operator', 'loss');
+                    const originRaw = getValue(row, 'origin', 'loss');
+                    const destinationRaw = getValue(row, 'destination', 'loss');
+
+                    const basic = {
+                        date: normalizeStr(dateRaw),
+                        tractor: normalizeStr(tractorRaw).toUpperCase(),
+                        unit: normalizeStr(unitRaw).toUpperCase(),
+                        operator: normalizeStr(operatorRaw).toUpperCase(),
+                        origin: normalizeStr(originRaw).toUpperCase(),
+                        destination: normalizeStr(destinationRaw).toUpperCase()
+                    };
+                    const missing = requiredFields.some(k => !basic[k]);
+                    const dateObj = parseFlexibleDate(basic.date);
+                    if (missing || !dateObj) return null;
+
+                    const year = dateObj.getFullYear();
+                    const month = dateObj.getMonth();
+                    let effectiveCompany = company;
+                    if (company === 'Corpored') {
+                        const originNorm = basic.origin
+                            .replace(/[^A-Z0-9 ]+/g, ' ')
+                            .replace(/\s+/g, ' ')
+                            .trim();
+                        effectiveCompany = originNorm.includes('TAD LA PAZ') ? 'CR LPZ' : 'CR MID';
+                    }
+                    return {
+                        company: effectiveCompany,
+                        date: basic.date,
+                        dateObj,
+                        year,
+                        month,
+                        monthKey: `${year}-${String(month + 1).padStart(2, '0')}`,
+                        tractor: basic.tractor,
+                        unit: basic.unit,
+                        operator: basic.operator,
+                        origin: basic.origin,
+                        destination: basic.destination,
+                        ingresos: safeFloat(getValue(row, 'ingresos', 'loss')),
+                        ingresosPeajes: safeFloat(getValue(row, 'ingresosPeajes', 'loss')),
+                        litersTransported: safeFloat(getValue(row, 'litersTransported', 'loss')),
+                        litersFaltSabana: safeFloat(getValue(row, 'litersFaltSabana', 'loss')),
+                        diffSiic: safeFloat(getValue(row, 'diffSiic', 'loss')),
+                        importeSiic: safeFloat(getValue(row, 'importeSiic', 'loss')),
+                        litersFaltSiic: safeFloat(getValue(row, 'litersFaltSiic', 'loss')),
+                        litersCondonaPemex: safeFloat(getValue(row, 'litersCondonaPemex', 'loss')),
+                        litersDescPemex: safeFloat(getValue(row, 'litersDescPemex', 'loss')),
+                        importeDescPemex: safeFloat(getValue(row, 'importeDescPemex', 'loss')),
+                        litersAbsTyuc: safeFloat(getValue(row, 'litersAbsTyuc', 'loss')),
+                        importeAbsTyuc: safeFloat(getValue(row, 'importeAbsTyuc', 'loss')),
+                        litersDescOperador: safeFloat(getValue(row, 'litersDescOperador', 'loss')),
+                        importeDescOperador: safeFloat(getValue(row, 'importeDescOperador', 'loss')),
+                        viajes: safeFloat(getValue(row, 'viajes', 'loss')) || 0
+                    };
+                }).filter(x => x !== null);
+            };
+
+            const yRows = parseRows(yucarroRows, 'Yucarro');
+            const tRows = parseRows(t2020Rows, 'T2020');
+            const cRows = parseRows(corporedRows, 'Corpored');
+            dbLoss = [...yRows, ...tRows, ...cRows];
+            sanitizeLossSelectedOptions();
+            const cMidRows = cRows.filter(r => r.company === 'CR MID').length;
+            const cLpzRows = cRows.filter(r => r.company === 'CR LPZ').length;
+            safeSetText('lossCount', dbLoss.length);
+            logStatus(`Faltante: ${dbLoss.length} registros consolidados (${yRows.length} YUC, ${tRows.length} T2020, ${cMidRows} CR MID, ${cLpzRows} CR LPZ).`, 'info');
+            if (moduleState.currentTab === 'loss') runLossAnalysis();
+        }
+
+        function runLossAnalysis() {
+            if (!Array.isArray(dbLoss) || dbLoss.length === 0) {
+                safeSetText('lossCount', 0);
+                safeSetText('lossKpiTransported', '0');
+                safeSetText('lossKpiSiic', '0');
+                safeSetText('lossKpiPct', '0.000%');
+                safeSetText('lossKpiDescPemex', '0');
+                safeSetText('lossKpiDescOper', '0');
+                safeSetText('lossKpiImporte', '$0');
+                const routesBody = document.getElementById('lossRoutesBody');
+                if (routesBody) routesBody.innerHTML = '<tr><td colspan="4" class="p-3 text-center text-slate-400">Sin datos</td></tr>';
+                updateLossCompanyButtons();
+                updateLossLitersModeButtons();
+                return;
+            }
+
+            const data = currentLossCompanyFilter === 'ALL'
+                ? dbLoss.slice()
+                : dbLoss.filter(r => r.company === currentLossCompanyFilter);
+            const selectedTUSet = new Set(currentLossSelectedTU);
+            const selectedOpSet = new Set(currentLossSelectedOperator);
+            const filteredData = data.filter(r => {
+                const tuOk = selectedTUSet.size > 0
+                    ? selectedTUSet.has(r.tractor) || selectedTUSet.has(r.unit)
+                    : (!currentLossSearchTU || r.tractor.includes(currentLossSearchTU) || r.unit.includes(currentLossSearchTU));
+                const opOk = selectedOpSet.size > 0
+                    ? selectedOpSet.has(r.operator)
+                    : (!currentLossSearchOperator || r.operator.includes(currentLossSearchOperator));
+                return tuOk && opOk;
+            });
+            const litersAsPct = currentLossLitersMode === 'PCT';
+
+            const totalTransported = filteredData.reduce((s, r) => s + r.litersTransported, 0);
+            const totalSiic = filteredData.reduce((s, r) => s + r.litersFaltSiic, 0);
+            const totalDescPemex = filteredData.reduce((s, r) => s + r.litersDescPemex, 0);
+            const totalDescOper = filteredData.reduce((s, r) => s + r.litersDescOperador, 0);
+            const totalImporte = filteredData.reduce((s, r) => s + r.importeDescPemex + r.importeDescOperador, 0);
+            const pctSiic = totalTransported > 0 ? (totalSiic / totalTransported) * 100 : 0;
+
+            safeSetText('lossCount', filteredData.length);
+            safeSetText('lossKpiTransported', totalTransported.toLocaleString('es-MX', { maximumFractionDigits: 0 }));
+            safeSetText('lossKpiSiic', totalSiic.toLocaleString('es-MX', { maximumFractionDigits: 0 }));
+            safeSetText('lossKpiPct', `${pctSiic.toFixed(3)}%`);
+            safeSetText('lossKpiDescPemex', totalDescPemex.toLocaleString('es-MX', { maximumFractionDigits: 0 }));
+            safeSetText('lossKpiDescOper', totalDescOper.toLocaleString('es-MX', { maximumFractionDigits: 0 }));
+            safeSetText('lossKpiImporte', `$${totalImporte.toLocaleString('es-MX', { maximumFractionDigits: 0 })}`);
+            safeSetText('lossCompanyChartTitle', litersAsPct ? 'Comparativo por Empresa (% + Importe)' : 'Comparativo por Empresa (LTS + Importe)');
+            safeSetText('lossMonthlyChartTitle', litersAsPct ? 'Tendencia Mensual % Faltante SIIC' : 'Tendencia Mensual LTS Faltante SIIC');
+            safeSetText('lossLitersBreakdownTitle', litersAsPct ? 'Desglose de Litros (% sobre transportado)' : 'Desglose de Litros (Pemex / Absorción / Operador)');
+            const lowRankLabel = currentLossLowRankBy === 'UNIDAD' ? 'Unidades' : 'Operadores';
+            const topOrderLabel = currentLossTopOrder === 'MAYOR' ? 'Mayor' : 'Menor';
+            safeSetText('lossOperatorChartTitle', `Top ${lowRankLabel} con ${topOrderLabel} LTS Faltante SIIC`);
+            const lowRankEl = document.getElementById('lossLowRankBy');
+            if (lowRankEl && lowRankEl.value !== currentLossLowRankBy) lowRankEl.value = currentLossLowRankBy;
+            const topOrderEl = document.getElementById('lossTopOrder');
+            if (topOrderEl && topOrderEl.value !== currentLossTopOrder) topOrderEl.value = currentLossTopOrder;
+
+            const companyOrder = ['Yucarro', 'T2020', 'CR MID', 'CR LPZ'];
+            const lossPrefixColors = isColorblind
+                ? { DESC_PEMEX: '#009E73', ABS_TRANSP: '#F0E442', DESC_OPERADOR: '#D55E00' }
+                : LOSS_PREFIX_COLORS;
+            const companyColorblindMap = {
+                Yucarro: '#0072B2',
+                T2020: '#E69F00',
+                'CR MID': '#009E73',
+                'CR LPZ': '#CC79A7',
+                Corpored: '#009E73',
+                'La Paz': '#CC79A7'
+            };
+            const companyMeta = {
+                Yucarro: { short: 'YUC', color: isColorblind ? companyColorblindMap.Yucarro : (COMPANY_COLORS['YUC'] || COMPANY_COLORS['YUCARRO'] || '#00B0F0') },
+                T2020: { short: 'T2020', color: isColorblind ? companyColorblindMap.T2020 : (COMPANY_COLORS['T2020'] || '#4472C4') },
+                'CR MID': { short: 'CR MID', color: isColorblind ? companyColorblindMap['CR MID'] : (COMPANY_COLORS['CR'] || COMPANY_COLORS['CORPORED'] || '#ED7D31') },
+                'CR LPZ': { short: 'CR LPZ', color: isColorblind ? companyColorblindMap['CR LPZ'] : (COMPANY_COLORS['CR LPZ'] || COMPANY_COLORS['LA PAZ'] || '#DAA0FA') },
+                Corpored: { short: 'CR', color: isColorblind ? companyColorblindMap.Corpored : (COMPANY_COLORS['CR'] || COMPANY_COLORS['CORPORED'] || '#ED7D31') },
+                'La Paz': { short: 'CR LPZ', color: isColorblind ? companyColorblindMap['La Paz'] : (COMPANY_COLORS['CR LPZ'] || COMPANY_COLORS['LA PAZ'] || '#DAA0FA') }
+            };
+            const companyData = companyOrder
+                .map(company => {
+                    const rows = filteredData.filter(r => r.company === company);
+                    const transported = rows.reduce((s, r) => s + r.litersTransported, 0);
+                    const siic = rows.reduce((s, r) => s + r.litersFaltSiic, 0);
+                    const importe = rows.reduce((s, r) => s + r.importeDescPemex + r.importeDescOperador, 0);
+                    const meta = companyMeta[company] || { short: company, color: '#334155' };
+                    return {
+                        company,
+                        short: meta.short,
+                        color: meta.color,
+                        transported,
+                        siic,
+                        pct: transported > 0 ? (siic / transported) * 100 : 0,
+                        importe
+                    };
+                })
+                .filter(x => currentLossCompanyFilter === 'ALL' ? true : x.company === currentLossCompanyFilter);
+
+            initChart('lossCompanyChart', 'bar', {
+                labels: companyData.map(x => x.short),
+                datasets: [
+                    {
+                        type: 'bar',
+                        label: litersAsPct ? '% Faltante SIIC' : 'LTS Faltante SIIC',
+                        data: companyData.map(x => litersAsPct ? x.pct : x.siic),
+                        backgroundColor: companyData.map(x => x.color),
+                        yAxisID: 'y'
+                    },
+                    { type: 'line', label: 'Importe Desc. Total', data: companyData.map(x => x.importe), borderColor: isColorblind ? '#111827' : '#0f172a', pointBackgroundColor: '#ffffff', pointBorderColor: isColorblind ? '#111827' : '#0f172a', pointBorderWidth: 2, yAxisID: 'y1', tension: 0.25 }
+                ]
+            }, {
+                scales: {
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        title: { display: true, text: litersAsPct ? '% Faltante' : 'Litros' },
+                        ticks: {
+                            callback: (v) => litersAsPct
+                                ? `${Number(v).toFixed(2)}%`
+                                : Number(v).toLocaleString('es-MX')
+                        }
+                    },
+                    y1: { type: 'linear', position: 'right', title: { display: true, text: 'Importe ($)' }, grid: { drawOnChartArea: false }, ticks: { callback: (v) => `$${Number(v).toLocaleString('es-MX')}` } }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const label = context.dataset?.label ? `${context.dataset.label}: ` : '';
+                                const raw = context.raw;
+                                const value = raw && typeof raw === 'object' && raw !== null && raw.y !== undefined ? raw.y : raw;
+                                if (context.dataset?.yAxisID === 'y1' || /importe/i.test(context.dataset?.label || '')) {
+                                    return `${label}${formatCurrencyMX(value)}`;
+                                }
+                                if (litersAsPct) return `${label}${Number(value).toFixed(2)}%`;
+                                return `${label}${Number(value).toLocaleString('es-MX', { maximumFractionDigits: 0 })}`;
+                            }
+                        }
+                    },
+                    datalabels: { display: false }
+                }
+            });
+
+            const trendCompanies = currentLossCompanyFilter === 'ALL' ? companyOrder : [currentLossCompanyFilter];
+            const allMonthKeys = [...new Set(data.map(r => r.monthKey))].sort();
+            const trendLabels = allMonthKeys.map(k => {
+                const [y, m] = k.split('-').map(Number);
+                return `${monthNamesFull[m - 1].substring(0,3)} ${String(y).substring(2)}`;
+            });
+            const trendDatasets = trendCompanies.map(company => {
+                const monthMap = {};
+                filteredData.filter(r => r.company === company).forEach(r => {
+                    if (!monthMap[r.monthKey]) monthMap[r.monthKey] = { trans: 0, siic: 0 };
+                    monthMap[r.monthKey].trans += r.litersTransported;
+                    monthMap[r.monthKey].siic += r.litersFaltSiic;
+                });
+                return {
+                    label: (companyMeta[company]?.short || company),
+                    data: allMonthKeys.map(k => {
+                        const obj = monthMap[k] || { trans: 0, siic: 0 };
+                        if (!litersAsPct) return obj.siic;
+                        return obj.trans > 0 ? (obj.siic / obj.trans) * 100 : 0;
+                    }),
+                    borderColor: companyMeta[company]?.color || '#334155',
+                    backgroundColor: 'transparent',
+                    tension: 0.25
+                };
+            });
+
+            initChart('lossMonthlyChart', 'line', {
+                labels: trendLabels,
+                datasets: trendDatasets
+            }, {
+                scales: {
+                    y: {
+                        title: { display: true, text: litersAsPct ? '% Faltante SIIC' : 'LTS Faltante SIIC' },
+                        ticks: {
+                            callback: (v) => litersAsPct
+                                ? `${Number(v).toFixed(2)}%`
+                                : Number(v).toLocaleString('es-MX')
+                        }
+                    }
+                },
+                plugins: { datalabels: { display: false } }
+            });
+
+            const breakdownByCompany = companyOrder
+                .map(company => {
+                    const rows = filteredData.filter(r => r.company === company);
+                    return {
+                        company,
+                        short: (companyMeta[company]?.short || company),
+                        transported: rows.reduce((s, r) => s + r.litersTransported, 0),
+                        litersDescPemex: rows.reduce((s, r) => s + r.litersDescPemex, 0),
+                        litersAbsTyuc: rows.reduce((s, r) => s + r.litersAbsTyuc, 0),
+                        litersDescOperador: rows.reduce((s, r) => s + r.litersDescOperador, 0),
+                        importeDescPemex: rows.reduce((s, r) => s + r.importeDescPemex, 0),
+                        importeAbsTyuc: rows.reduce((s, r) => s + r.importeAbsTyuc, 0),
+                        importeDescOperador: rows.reduce((s, r) => s + r.importeDescOperador, 0)
+                    };
+                })
+                .filter(x => currentLossCompanyFilter === 'ALL' ? true : x.company === currentLossCompanyFilter);
+
+            const breakdownLabels = breakdownByCompany.map(x => x.short);
+            const litersValue = (part, total) => {
+                if (!litersAsPct) return part;
+                if (total <= 0) return 0;
+                return (part / total) * 100;
+            };
+            initChart('lossLitersBreakdownChart', 'bar', {
+                labels: breakdownLabels,
+                datasets: [
+                    {
+                        label: litersAsPct ? 'DESC PEMEX (%)' : 'LTS FALTANTE DESC PEMEX',
+                        data: breakdownByCompany.map(x => litersValue(x.litersDescPemex, x.transported)),
+                        backgroundColor: lossPrefixColors.DESC_PEMEX,
+                        stack: 'lit'
+                    },
+                    {
+                        label: litersAsPct ? 'ABS TRANSP. (%)' : 'LTS FALTANTE ABS TRANSP.',
+                        data: breakdownByCompany.map(x => litersValue(x.litersAbsTyuc, x.transported)),
+                        backgroundColor: lossPrefixColors.ABS_TRANSP,
+                        stack: 'lit'
+                    },
+                    {
+                        label: litersAsPct ? 'DESC OPERADOR (%)' : 'LTS FALTANTE DESC OPERADOR',
+                        data: breakdownByCompany.map(x => litersValue(x.litersDescOperador, x.transported)),
+                        backgroundColor: lossPrefixColors.DESC_OPERADOR,
+                        stack: 'lit'
+                    }
+                ]
+            }, {
+                scales: {
+                    x: { stacked: true },
+                    y: {
+                        stacked: true,
+                        title: { display: true, text: litersAsPct ? '% sobre transportado' : 'Litros' },
+                        ticks: {
+                            callback: (v) => litersAsPct
+                                ? `${Number(v).toFixed(2)}%`
+                                : Number(v).toLocaleString('es-MX')
+                        }
+                    }
+                },
+                plugins: { datalabels: { display: false } }
+            });
+
+            initChart('lossAmountBreakdownChart', 'bar', {
+                labels: breakdownLabels,
+                datasets: [
+                    { label: 'IMPORTE FALTANTE DESC PEMEX', data: breakdownByCompany.map(x => x.importeDescPemex), backgroundColor: lossPrefixColors.DESC_PEMEX, stack: 'amt' },
+                    { label: 'IMP. FALT ABS TRANSP.', data: breakdownByCompany.map(x => x.importeAbsTyuc), backgroundColor: lossPrefixColors.ABS_TRANSP, stack: 'amt' },
+                    { label: 'IMPORTE FALTANTE DESC OPERADOR', data: breakdownByCompany.map(x => x.importeDescOperador), backgroundColor: lossPrefixColors.DESC_OPERADOR, stack: 'amt' }
+                ]
+            }, {
+                scales: {
+                    x: { stacked: true },
+                    y: {
+                        stacked: true,
+                        title: { display: true, text: 'Importe ($)' },
+                        ticks: { callback: (v) => formatCurrencyMX(v) }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const label = context.dataset?.label ? `${context.dataset.label}: ` : '';
+                                return `${label}${formatCurrencyMX(context.raw)}`;
+                            }
+                        }
+                    },
+                    datalabels: { display: false }
+                }
+            });
+
+            const monthAmountMap = {};
+            filteredData.forEach(r => {
+                if (!monthAmountMap[r.monthKey]) {
+                    monthAmountMap[r.monthKey] = { pemex: 0, abs: 0, oper: 0 };
+                }
+                monthAmountMap[r.monthKey].pemex += r.importeDescPemex;
+                monthAmountMap[r.monthKey].abs += r.importeAbsTyuc;
+                monthAmountMap[r.monthKey].oper += r.importeDescOperador;
+            });
+            initChart('lossMonthlyAmountChart', 'bar', {
+                labels: trendLabels,
+                datasets: [
+                    { label: 'Imp. Desc Pemex', data: allMonthKeys.map(k => (monthAmountMap[k]?.pemex || 0)), backgroundColor: lossPrefixColors.DESC_PEMEX, stack: 'mamt' },
+                    { label: 'Imp. Abs Transp.', data: allMonthKeys.map(k => (monthAmountMap[k]?.abs || 0)), backgroundColor: lossPrefixColors.ABS_TRANSP, stack: 'mamt' },
+                    { label: 'Imp. Desc Operador', data: allMonthKeys.map(k => (monthAmountMap[k]?.oper || 0)), backgroundColor: lossPrefixColors.DESC_OPERADOR, stack: 'mamt' }
+                ]
+            }, {
+                scales: {
+                    x: { stacked: true },
+                    y: {
+                        stacked: true,
+                        title: { display: true, text: 'Importe ($)' },
+                        ticks: { callback: (v) => formatCurrencyMX(v) }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const label = context.dataset?.label ? `${context.dataset.label}: ` : '';
+                                return `${label}${formatCurrencyMX(context.raw)}`;
+                            }
+                        }
+                    },
+                    datalabels: { display: false }
+                }
+            });
+
+            const opMap = {};
+            filteredData.forEach(r => {
+                const key = currentLossLowRankBy === 'UNIDAD'
+                    ? (r.unit || 'SIN UNIDAD')
+                    : (r.operator || 'SIN OPERADOR');
+                if (!opMap[key]) opMap[key] = { siic: 0, transported: 0, trips: 0 };
+                opMap[key].siic += r.litersFaltSiic;
+                opMap[key].transported += r.litersTransported;
+                opMap[key].trips += r.viajes > 0 ? r.viajes : 1;
+            });
+            const sortAsc = currentLossTopOrder === 'MENOR';
+            const topOps = Object.entries(opMap)
+                .map(([name, v]) => ({
+                    name,
+                    siic: v.siic,
+                    pct: v.transported > 0 ? (v.siic / v.transported) * 100 : 0,
+                    trips: v.trips,
+                    avgPerTrip: v.trips > 0 ? (v.siic / v.trips) : 0
+                }))
+                .sort((a, b) => sortAsc ? (a.siic - b.siic) : (b.siic - a.siic))
+                .slice(0, 10);
+
+            initChart('lossOperatorChart', 'bar', {
+                indexAxis: 'y',
+                labels: topOps.map(x => x.name),
+                datasets: [{
+                    label: 'LTS Faltante SIIC',
+                    data: topOps.map(x => x.siic),
+                    backgroundColor: sortAsc
+                        ? (isColorblind ? '#0072B2' : '#16a34a')
+                        : (isColorblind ? '#D55E00' : '#dc2626'),
+                    pcts: topOps.map(x => x.pct),
+                    siicVals: topOps.map(x => x.siic),
+                    tripsVals: topOps.map(x => x.trips),
+                    avgVals: topOps.map(x => x.avgPerTrip)
+                }]
+            }, {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => {
+                                const lts = ctx.dataset.siicVals[ctx.dataIndex];
+                                return `LTS Faltante: ${Number(lts).toLocaleString('es-MX', { maximumFractionDigits: 0 })}`;
+                            },
+                            afterLabel: (ctx) => {
+                                const pct = ctx.dataset.pcts[ctx.dataIndex];
+                                const trips = ctx.dataset.tripsVals[ctx.dataIndex];
+                                const avg = ctx.dataset.avgVals[ctx.dataIndex];
+                                return [
+                                    `Viajes: ${Number(trips).toLocaleString('es-MX', { maximumFractionDigits: 2 })}`,
+                                    `Promedio LTS/viaje: ${Number(avg).toLocaleString('es-MX', { maximumFractionDigits: 2 })}`,
+                                    `Porcentaje: ${Number(pct).toFixed(3)}%`
+                                ];
+                            }
+                        }
+                    },
+                    datalabels: { color: '#ffffff', anchor: 'end', align: 'start', font: { weight: 'bold', size: 10 } }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            callback: (v) => Number(v).toLocaleString('es-MX')
+                        }
+                    }
+                }
+            });
+
+            const routeMap = {};
+            filteredData.forEach(r => {
+                const key = `${r.origin} -> ${r.destination}`;
+                if (!routeMap[key]) routeMap[key] = { count: 0, siic: 0, transported: 0 };
+                routeMap[key].count += 1;
+                routeMap[key].siic += r.litersFaltSiic;
+                routeMap[key].transported += r.litersTransported;
+            });
+            const topRoutes = Object.entries(routeMap)
+                .map(([route, v]) => ({ route, count: v.count, siic: v.siic, pct: v.transported > 0 ? (v.siic / v.transported) * 100 : 0 }))
+                .sort((a, b) => b.siic - a.siic)
+                .slice(0, 12);
+
+            const routesBody = document.getElementById('lossRoutesBody');
+            if (routesBody) {
+                if (!topRoutes.length) {
+                    routesBody.innerHTML = '<tr><td colspan="4" class="p-3 text-center text-slate-400">Sin datos</td></tr>';
+                } else {
+                    routesBody.innerHTML = topRoutes.map(r => `
+                        <tr class="hover:bg-amber-50 border-b border-slate-100">
+                            <td class="p-3 font-semibold text-slate-700">${escapeHtml(normalizeStr(r.route))}</td>
+                            <td class="p-3 text-center text-slate-500">${r.count.toLocaleString('es-MX')}</td>
+                            <td class="p-3 text-right font-mono text-red-600">${r.siic.toLocaleString('es-MX', { maximumFractionDigits: 0 })}</td>
+                            <td class="p-3 text-right font-mono text-amber-700">${r.pct.toFixed(3)}%</td>
+                        </tr>
+                    `).join('');
+                }
+            }
+            updateLossCompanyButtons();
+            updateLossLitersModeButtons();
+        }
+
+        // --- 5. RENDERERS & LOGIC ---
+        function formatChartNumber(val) {
+            if (val === null || val === undefined || val === '') return '-';
+            if (typeof val !== 'number') return String(val);
+            if (!isFinite(val)) return '-';
+            if (Math.abs(val) >= 1000) return val.toLocaleString('es-MX', { maximumFractionDigits: 0 });
+            if (Math.abs(val) >= 100) return val.toLocaleString('es-MX', { maximumFractionDigits: 1 });
+            return val.toLocaleString('es-MX', { maximumFractionDigits: 2 });
+        }
+
+        function formatCurrencyMX(val) {
+            const num = Number(val || 0);
+            return `$${num.toLocaleString('es-MX', { maximumFractionDigits: 0 })}`;
+        }
+
+        function initChart(id,type,cfg,extraOpts){ const ctx=document.getElementById(id); if(!ctx)return; if(charts[id])charts[id].destroy(); 
+            const opts={
+                responsive:true, maintainAspectRatio:false, resizeDelay:120, indexAxis:cfg.indexAxis||'x', onClick:cfg.onClick,
+                interaction: { mode: type === 'line' ? 'index' : 'nearest', intersect: type === 'line' ? false : true },
+                animation: { duration: 450, easing: 'easeOutCubic' },
+                plugins:{
+                    legend:{
+                        display:type!=='bar'||cfg.scales?.x?.stacked,
+                        labels: { usePointStyle: true, pointStyle: 'circle', padding: 12, boxWidth: 10 }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => {
+                                const label = context.dataset?.label ? `${context.dataset.label}: ` : '';
+                                const raw = context.raw;
+                                if (raw && typeof raw === 'object' && raw !== null && raw.y !== undefined) {
+                                    return `${label}${formatChartNumber(raw.y)}`;
+                                }
+                                return `${label}${formatChartNumber(raw)}`;
+                            }
+                        }
+                    },
+                    annotation:cfg.annotation,
+                    datalabels: {
+                        color: type === 'doughnut' ? '#ffffff' : '#475569',
+                        font: { weight: 'bold', size: 11 },
+                        clamp: true,
+                        display: (context) => {
+                            if (window.innerWidth < 768) return false;
+                            const len = context.chart?.data?.labels?.length || context.dataset?.data?.length || 0;
+                            if (len > 18) return false;
+                            const v = context.dataset?.data?.[context.dataIndex];
+                            if (typeof v === 'number') return v !== 0;
+                            return !!v;
+                        },
+                        formatter: (value, ctx) => {
+                            if(ctx.chart.canvas.id === 'strategyChart') { return value.model ? value.model : ''; }
+                            if(type === 'doughnut' && ctx.chart.canvas.id === 'providerChart') return value;
+                            if(type === 'doughnut' && ctx.chart.canvas.id === 'scrapReasonChart') { let sum = 0; let dataArr = ctx.chart.data.datasets[0].data; dataArr.map(data => { sum += data; }); let percentage = (value*100 / sum).toFixed(1)+"%"; return percentage; }
+                            if(cfg.scales?.x?.stacked) return value > 0 ? value : '';
+                            if(ctx.chart.canvas.id === 'wasteChart') return '';
+                            return '';
+                        }
+                    }
+                },
+                scales:cfg.scales||{}
+            }; 
+            if (cfg.plugins) { opts.plugins = { ...opts.plugins, ...cfg.plugins }; }
+            
+            if (extraOpts) { 
+                const { plugins: extraPlugins, ...restOpts } = extraOpts;
+                if (extraPlugins) { opts.plugins = { ...opts.plugins, ...extraPlugins }; }
+                Object.assign(opts, restOpts); 
+            }
+
+            if (opts.scales?.x && !opts.scales.x.ticks) {
+                opts.scales.x.ticks = { autoSkip: true, maxRotation: 45, minRotation: 0 };
+            }
+            if (opts.scales?.y && !opts.scales.y.ticks) {
+                opts.scales.y.ticks = { callback: (value) => formatChartNumber(value) };
+            }
+            
+            charts[id]=new Chart(ctx,{type:type,data:cfg,options:opts}); 
+        }
+
+        function renderDrillDownTable(modelName, segment) {
+             const container = document.getElementById('drillDownContainer'); const tbody = document.getElementById('drillDownBody'); const title = document.getElementById('drillDownTitle'); if(!container || !tbody) return;
+             
+             const baseData = getFilteredPerformanceData(true);
+             const allTires = baseData.filter(t => `${t.brand} ${t.model}` === modelName && t.type === segment);
+             
+             const rule = RANKING_RULES[segment];
+             let validTires = allTires;
+             
+             if (rule) {
+                 validTires = allTires.filter(tire => {
+                    if (tire.km <= rule.minKm) return false;
+                    // Check for infinite efficiency (div by zero)
+                    if (!isFinite(tire.efficiency)) return false;
+                    if (tire.efficiency <= rule.minEff || tire.efficiency >= rule.maxEff) return false;
+                    return true;
+                 });
+             }
+
+             const diff = allTires.length - validTires.length;
+             let subText = `Total: ${validTires.length.toLocaleString('es-MX')} llantas`;
+             if (diff > 0) {
+                 subText += ` <span class="text-orange-500 font-normal ml-1">(${diff} ocultas por filtros)</span>`;
+             }
+             
+             // Escape model name for display
+             title.innerHTML = `<span class="font-bold">${escapeHtml(normalizeStr(modelName))}</span> (${escapeHtml(normalizeStr(segment))}) - ${subText}`; 
+             
+             tbody.innerHTML = '';
+             
+             if (validTires.length === 0) {
+                 tbody.innerHTML = `<tr><td colspan="9" class="p-4 text-center text-slate-400">Ninguna llanta de este modelo cumple con los criterios estrictos del segmento (${rule ? rule.label : 'Sin Reglas'}).</td></tr>`;
+             } else {
+                 validTires.forEach((t, index) => { 
+                     tbody.innerHTML += `<tr class="hover:bg-indigo-50 border-b border-indigo-50"><td class="p-3 text-center text-slate-400 font-bold text-xs">${index + 1}</td><td class="p-3 text-center text-indigo-900 font-bold">${escapeHtml(normalizeStr(t.unit))}</td><td class="p-3 text-center">${escapeHtml(normalizeStr(t.folio))}</td><td class="p-3">${escapeHtml(normalizeStr(t.brand))}</td><td class="p-3">${escapeHtml(normalizeStr(t.model))}</td><td class="p-3 text-center font-mono">${t.mm}</td><td class="p-3 text-center font-mono">${t.km.toLocaleString('es-MX')}</td><td class="p-3 text-center font-mono text-blue-600">${t.efficiency.toLocaleString('es-MX', {maximumFractionDigits: 0})}</td><td class="p-3 text-right font-bold text-slate-800">$${t.cpk.toFixed(4)}</td></tr>`; 
+                 });
+             }
+             container.classList.remove('hidden'); container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        function renderDynamicPerformanceCharts(stats) {
+            const container = document.getElementById('dynamicChartsContainer'); 
+            let htmlBuffer = '';
+            const activeSegments = currentFilter === 'ALL' ? ['Delanteras', 'Tracción', 'Toda Posición'] : [currentFilter];
+            const unclassifiedCount = stats.filter(s => s.type === 'Sin Clasificar').length;
+            if (unclassifiedCount > 0 && currentFilter === 'ALL') {
+                activeSegments.push('Sin Clasificar');
+            }
+
+            activeSegments.forEach(segment => {
+                const chartId = `cpkChart${segment.replace(/\s/g, '')}`;
+                const widthClass = 'lg:col-span-2'; 
+                htmlBuffer += `<div class="${widthClass} bg-white p-6 rounded-xl shadow-sm border border-slate-200 cursor-pointer hover:shadow-md transition-shadow"><h3 class="text-xs font-bold text-slate-500 uppercase mb-4">${segment}</h3><div class="h-64 w-full"><canvas id="${chartId}"></canvas></div><p class="text-[10px] text-center text-slate-400 mt-2 italic">Haz clic en una barra para ver detalle</p></div>`;
+            });
+            
+            container.innerHTML = htmlBuffer;
+
+            setTimeout(() => {
+                activeSegments.forEach(segment => {
+                    const chartId = `cpkChart${segment.replace(/\s/g, '')}`;
+                    const segData = stats.filter(s => s.type === segment);
+                    
+                    segData.sort((a,b) => (b.avgKm||0) - (a.avgKm||0));
+
+                    const avg = segData.reduce((acc, i) => acc + (i.avgCPK||0), 0) / (segData.length || 1);
+                    const safeAvg = isNaN(avg) || !isFinite(avg) ? 0 : avg; 
+                    const top = segData.slice(0, 10);
+                    
+                    const cGood = isColorblind ? '#56B4E9' : '#22c55e';
+                    const cBad = isColorblind ? '#D55E00' : '#ef4444';
+                    const cMid = isColorblind ? '#E69F00' : '#eab308';
+                    const colors = top.map(i => i.avgCPK < (safeAvg*0.9) ? cGood : (i.avgCPK > (safeAvg*1.1) ? cBad : cMid)); 
+                    const labels = top.map(s => s.isTrailer ? `${s.name} 🚛` : s.name);
+                    
+                    const annotationObj = {
+                        annotations: {
+                            avgLine: { type: 'line', yMin: safeAvg, yMax: safeAvg, borderColor: cBad, borderWidth: 2, borderDash: [5, 5], label: { content: `Prom: $${safeAvg.toFixed(2)}`, display: true, position: 'end', backgroundColor: 'rgba(239, 68, 68, 0.8)', color: 'white', font: { size: 10, weight: 'bold' } } }
+                        }
+                    };
+
+                    initChart(chartId, 'bar', { 
+                        labels: labels, 
+                        datasets: [{ 
+                            label: 'CPK ($)', 
+                            data: top.map(s => s.avgCPK), 
+                            backgroundColor: colors, 
+                            borderRadius: 4,
+                            avgKms: top.map(s => s.avgKm)
+                        }],
+                        annotation: annotationObj
+                    }, {
+                        plugins: { 
+                            datalabels: { 
+                                display: true, 
+                                anchor: 'end', 
+                                align: 'end',  
+                                color: '#64748b', 
+                                font: { size: 10, weight: 'bold' },
+                                formatter: (value, ctx) => {
+                                    if(ctx.dataset.avgKms && ctx.dataset.avgKms[ctx.dataIndex]) {
+                                        const kms = ctx.dataset.avgKms[ctx.dataIndex];
+                                        return (kms / 1000).toFixed(0) + 'k';
+                                    }
+                                    return '';
+                                }
+                            } 
+                        }, 
+                        onClick: (e, elements, chart) => { if (elements.length) { const idx = elements[0].index; const modelLabel = chart.data.labels[idx]; const modelName = modelLabel.replace(' 🚛', ''); renderDrillDownTable(modelName, segment); } } 
+                    });
+                });
+            }, 100); 
+        }
+
+        function buildDesignCandidateKeys(value) {
+            const base = normalizeDesignToken(value);
+            if (!base) return [];
+            const keys = new Set([base]);
+            if (base.endsWith('S') && base.length > 3) keys.add(base.slice(0, -1));
+            if (!base.endsWith('S')) keys.add(base + 'S');
+            return Array.from(keys);
+        }
+
+        function renderCpkGoalSummaryDrillDown(summaryRow) {
+            const container = document.getElementById('cpkGoalSummaryDrillContainer');
+            const titleEl = document.getElementById('cpkGoalSummaryDrillTitle');
+            const bodyEl = document.getElementById('cpkGoalSummaryDrillBody');
+            if (!container || !titleEl || !bodyEl) return;
+
+            const detailRows = Array.isArray(summaryRow && summaryRow.detailRows) ? summaryRow.detailRows : [];
+            const list = [...detailRows].sort((a, b) => (Number(b.km) || 0) - (Number(a.km) || 0));
+
+            const usedCount = list.length;
+            const avgKm = summaryRow && summaryRow.kmAct ? summaryRow.kmAct : 0;
+            const avgKpk = summaryRow && summaryRow.kpkAct ? summaryRow.kpkAct : 0;
+            titleEl.innerText = `${normalizeStr(summaryRow.design)} | ${normalizeStr(summaryRow.brand)} | ${normalizeStr(summaryRow.tireTypeText)} | ${usedCount} llantas usadas | Km Prom: ${avgKm.toLocaleString('es-MX', { maximumFractionDigits: 0 })} | KPK: $${avgKpk.toFixed(4)}`;
+
+            if (!list.length) {
+                bodyEl.innerHTML = '<tr><td colspan="9" class="p-4 text-center text-slate-400">Sin detalle disponible para este diseño.</td></tr>';
+                container.classList.remove('hidden');
+                return;
+            }
+
+            bodyEl.innerHTML = list.map((r, idx) => `
+                <tr class="hover:bg-indigo-50">
+                    <td class="p-3 text-center text-slate-400 font-bold text-xs">${idx + 1}</td>
+                    <td class="p-3 text-center text-indigo-900 font-bold">${escapeHtml(normalizeStr(r.unit || '-'))}</td>
+                    <td class="p-3 text-center">${escapeHtml(normalizeStr(r.folio || '-'))}</td>
+                    <td class="p-3">${escapeHtml(normalizeStr(r.brand || '-'))}</td>
+                    <td class="p-3 font-semibold text-slate-700">${escapeHtml(normalizeStr(r.model || '-'))}</td>
+                    <td class="p-3 text-center">${escapeHtml(normalizeStr(r.type || '-'))}</td>
+                    <td class="p-3 text-center font-mono">${(Number(r.km) || 0).toLocaleString('es-MX')}</td>
+                    <td class="p-3 text-center font-mono text-blue-600">${(Number(r.efficiency) || 0).toLocaleString('es-MX', { maximumFractionDigits: 0 })}</td>
+                    <td class="p-3 text-right font-bold text-slate-800">$${(Number(r.cpk) || 0).toFixed(4)}</td>
+                </tr>
+            `).join('');
+
+            container.classList.remove('hidden');
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function renderCpkGoalSummary(activeRows) {
+            const container = document.getElementById('cpkGoalSummaryContainer');
+            const head = document.getElementById('cpkGoalSummaryHead');
+            const body = document.getElementById('cpkGoalSummaryBody');
+            const empty = document.getElementById('cpkGoalSummaryEmpty');
+            const countEl = document.getElementById('cpkGoalSummaryCount');
+            const kpiKmEl = document.getElementById('cpkGoalKpiMetaKm');
+            const kpiKpkEl = document.getElementById('cpkGoalKpiMetaKpk');
+            const kpiRiskEl = document.getElementById('cpkGoalKpiRiskHigh');
+            const drillContainer = document.getElementById('cpkGoalSummaryDrillContainer');
+            if (!container || !head || !body || !empty || !countEl || !kpiKmEl || !kpiKpkEl || !kpiRiskEl) return;
+
+            if (currentPerformanceStatusFilter === 'CONCLUIDA') {
+                container.classList.add('hidden');
+                if (drillContainer) drillContainer.classList.add('hidden');
+                return;
+            }
+            container.classList.remove('hidden');
+
+            const rulesInfoEl = document.getElementById('cpkGoalSummaryRuleText');
+            if (rulesInfoEl) {
+                rulesInfoEl.innerText = 'Filtros aplicados: Se excluyen Delanteras. Tracción: Km > 280k (Top 30 por diseño). Toda Posición: Km > 300k (Top 30 por diseño).';
+            }
+
+            const validSegments = new Set(['Tracción', 'Toda Posición']);
+            const rows = (Array.isArray(activeRows) ? activeRows : []).filter(r =>
+                r.status === 'ACTIVA' &&
+                validSegments.has(r.type)
+            );
+
+            const perfRowsByModel = {};
+            const perfRowsByBrand = {};
+            rows.forEach((r, idx) => {
+                const keys = buildDesignCandidateKeys(r.model);
+                const brandCandidates = buildGoalBrandCandidates(r.brand);
+                keys.forEach(k => {
+                    if (!perfRowsByModel[k]) perfRowsByModel[k] = new Set();
+                    perfRowsByModel[k].add(idx);
+                    brandCandidates.forEach(bk => {
+                        const brandMapKey = `${bk}|${k}`;
+                        if (!perfRowsByBrand[brandMapKey]) perfRowsByBrand[brandMapKey] = new Set();
+                        perfRowsByBrand[brandMapKey].add(idx);
+                    });
+                });
+            });
+
+            const addSetValues = (target, source) => {
+                if (!source || !(source instanceof Set)) return;
+                source.forEach(v => target.add(v));
+            };
+
+            const findGoalRowIndexes = (goal) => {
+                const keys = buildDesignCandidateKeys(goal.design);
+                const brandCandidates = buildGoalBrandCandidates(goal.brand);
+                const matchedIdx = new Set();
+
+                if (brandCandidates.length > 0) {
+                    brandCandidates.forEach(bk => {
+                        keys.forEach(k => addSetValues(matchedIdx, perfRowsByBrand[`${bk}|${k}`]));
+                    });
+                }
+
+                if (matchedIdx.size === 0) {
+                    keys.forEach(k => addSetValues(matchedIdx, perfRowsByModel[k]));
+                }
+
+                if (matchedIdx.size === 0) {
+                    const baseDesign = normalizeDesignToken(goal.design);
+                    if (baseDesign.length >= 5) {
+                        Object.entries(perfRowsByBrand).forEach(([mapKey, setVals]) => {
+                            if (!setVals || !setVals.size) return;
+                            const sepIdx = mapKey.indexOf('|');
+                            if (sepIdx < 0) return;
+                            const brandKey = mapKey.slice(0, sepIdx);
+                            const modelKey = mapKey.slice(sepIdx + 1);
+                            if (brandCandidates.length > 0 && !brandCandidates.includes(brandKey)) return;
+                            const startsMatch = modelKey.startsWith(baseDesign) || baseDesign.startsWith(modelKey);
+                            if (!startsMatch) return;
+                            addSetValues(matchedIdx, setVals);
+                        });
+                    }
+                }
+
+                if (matchedIdx.size === 0) {
+                    const baseDesign = normalizeDesignToken(goal.design);
+                    if (baseDesign.length >= 5) {
+                        Object.entries(perfRowsByModel).forEach(([modelKey, setVals]) => {
+                            if (!setVals || !setVals.size) return;
+                            const startsMatch = modelKey.startsWith(baseDesign) || baseDesign.startsWith(modelKey);
+                            if (!startsMatch) return;
+                            addSetValues(matchedIdx, setVals);
+                        });
+                    }
+                }
+
+                return Array.from(matchedIdx);
+            };
+
+            const summaryRows = (Array.isArray(dbCpkGoals) ? dbCpkGoals : [])
+                .filter(goal => goal && goal.tireType !== 'DELANTERA')
+                .map(goal => {
+                    const rule = CPK_GOAL_SUMMARY_RULES[goal.tireType];
+                    if (!rule) return null;
+
+                    const selectedRows = findGoalRowIndexes(goal)
+                        .map(idx => rows[idx])
+                        .filter(r => r && r.type === rule.segment && (Number(r.km) || 0) > rule.minKm)
+                        .sort((a, b) => (Number(b.km) || 0) - (Number(a.km) || 0))
+                        .slice(0, rule.topN);
+
+                    const agg = selectedRows.reduce((acc, r) => {
+                        acc.sumKm += Number(r.km) || 0;
+                        acc.sumCost += Number(r.cost) || 0;
+                        acc.count += 1;
+                        return acc;
+                    }, { sumKm: 0, sumCost: 0, count: 0 });
+
+                    const kmAct = agg.count > 0 ? (agg.sumKm / agg.count) : 0;
+                    const kpkAct = agg.sumKm > 0 ? (agg.sumCost / agg.sumKm) : 0;
+                    const kmDiffPct = goal.kmExpected > 0 ? ((kmAct - goal.kmExpected) / goal.kmExpected) * 100 : null;
+                    const kpkDiffPct = goal.kpkExpected > 0 ? ((kpkAct - goal.kpkExpected) / goal.kpkExpected) * 100 : null;
+
+                    return {
+                        tireType: goal.tireType,
+                        tireTypeLabel: goalTireTypeLabel(goal.tireType),
+                        tireTypeText: goal.tireTypeText || goalTireTypeLabel(goal.tireType),
+                        brand: goal.brand || '',
+                        design: goal.design,
+                        kmExpected: goal.kmExpected,
+                        kmAct,
+                        kmDiffPct,
+                        kpkExpected: goal.kpkExpected,
+                        kpkAct,
+                        kpkDiffPct,
+                        activeCount: agg.count,
+                        detailRows: selectedRows
+                    };
+                })
+                .filter(r => r && (r.kmExpected > 0 || r.kpkExpected > 0) && (r.activeCount || 0) > 0);
+
+            const withMeta = summaryRows.map(r => {
+                const kmGood = r.kmDiffPct != null && isFinite(r.kmDiffPct) && r.kmDiffPct >= 0;
+                const kpkGood = r.kpkDiffPct != null && isFinite(r.kpkDiffPct) && r.kpkDiffPct <= 0;
+                return { ...r, kmGood, kpkGood };
+            });
+
+            countEl.innerText = withMeta.length.toLocaleString('es-MX');
+            if (!withMeta.length) {
+                body.innerHTML = '';
+                empty.classList.remove('hidden');
+                kpiKmEl.innerText = '0/0 (0%)';
+                kpiKpkEl.innerText = '0/0 (0%)';
+                kpiRiskEl.innerText = '0';
+                if (drillContainer) drillContainer.classList.add('hidden');
+                return;
+            }
+            empty.classList.add('hidden');
+
+            const fmtPct = (v) => (v == null || !isFinite(v)) ? '-' : `${v > 0 ? '+' : ''}${v.toFixed(1)}%`;
+            const pctClass = (v, invertGood) => {
+                if (v == null || !isFinite(v)) return 'text-slate-400';
+                if (invertGood) return v <= 0 ? 'text-emerald-600 font-bold' : 'text-red-600 font-bold';
+                return v >= 0 ? 'text-emerald-600 font-bold' : 'text-red-600 font-bold';
+            };
+
+            const total = withMeta.length;
+            const kmOnTarget = withMeta.filter(x => x.kmGood).length;
+            const kpkOnTarget = withMeta.filter(x => x.kpkGood).length;
+            const riskHigh = withMeta.filter(x => !x.kmGood && !x.kpkGood).length;
+            const kmPct = total > 0 ? (kmOnTarget / total) * 100 : 0;
+            const kpkPct = total > 0 ? (kpkOnTarget / total) * 100 : 0;
+            kpiKmEl.innerText = `${kmOnTarget}/${total} (${kmPct.toFixed(0)}%)`;
+            kpiKpkEl.innerText = `${kpkOnTarget}/${total} (${kpkPct.toFixed(0)}%)`;
+            kpiRiskEl.innerText = riskHigh.toLocaleString('es-MX');
+
+            head.innerHTML = `
+                <tr>
+                    <th class="p-2">Tipo de llanta</th>
+                    <th class="p-2">Marca</th>
+                    <th class="p-2">Diseño</th>
+                    <th class="p-2 text-right">Km x Mm Esp.</th>
+                    <th class="p-2 text-right">Km Prom. Act.</th>
+                    <th class="p-2 text-right">Diferencia Km (%)</th>
+                    <th class="p-2 text-right">$ x Km Esp.</th>
+                    <th class="p-2 text-right">K P K Act.</th>
+                    <th class="p-2 text-right">Diferencia $/Km (%)</th>
+                    <th class="p-2 text-right">Activas</th>
+                </tr>
+            `;
+            const sortedByName = [...withMeta].sort((a, b) => {
+                const typeCmp = normalizeStr(a.tireTypeText).localeCompare(normalizeStr(b.tireTypeText), 'es', { sensitivity: 'base' });
+                if (typeCmp !== 0) return typeCmp;
+                const brandCmp = normalizeStr(a.brand).localeCompare(normalizeStr(b.brand), 'es', { sensitivity: 'base' });
+                if (brandCmp !== 0) return brandCmp;
+                return normalizeStr(a.design).localeCompare(normalizeStr(b.design), 'es', { sensitivity: 'base' });
+            });
+            body.innerHTML = sortedByName.map((r, idx) => `
+                <tr class="hover:bg-slate-50 cursor-pointer transition" data-summary-row-idx="${idx}">
+                    <td class="p-2 font-semibold text-slate-600">${escapeHtml(normalizeStr(r.tireTypeText))}</td>
+                    <td class="p-2 font-semibold text-slate-600">${escapeHtml(normalizeStr(r.brand || '-'))}</td>
+                    <td class="p-2 font-bold text-slate-700">${escapeHtml(normalizeStr(r.design))}</td>
+                    <td class="p-2 text-right font-mono text-slate-600">${r.kmExpected > 0 ? r.kmExpected.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : '-'}</td>
+                    <td class="p-2 text-right font-mono text-indigo-700">${r.kmAct > 0 ? r.kmAct.toLocaleString('es-MX', { maximumFractionDigits: 0 }) : '-'}</td>
+                    <td class="p-2 text-right font-mono ${pctClass(r.kmDiffPct, false)}">${fmtPct(r.kmDiffPct)}</td>
+                    <td class="p-2 text-right font-mono text-slate-600">${r.kpkExpected > 0 ? '$' + r.kpkExpected.toFixed(4) : '-'}</td>
+                    <td class="p-2 text-right font-mono text-indigo-700">${r.kpkAct > 0 ? '$' + r.kpkAct.toFixed(4) : '-'}</td>
+                    <td class="p-2 text-right font-mono ${pctClass(r.kpkDiffPct, true)}">${fmtPct(r.kpkDiffPct)}</td>
+                    <td class="p-2 text-right font-mono text-slate-700">${(r.activeCount || 0).toLocaleString('es-MX')}</td>
+                </tr>
+            `).join('');
+
+            const clickableRows = body.querySelectorAll('tr[data-summary-row-idx]');
+            clickableRows.forEach(rowEl => {
+                rowEl.addEventListener('click', () => {
+                    clickableRows.forEach(el => el.classList.remove('bg-indigo-50'));
+                    rowEl.classList.add('bg-indigo-50');
+                    const idx = Number(rowEl.getAttribute('data-summary-row-idx'));
+                    const selected = sortedByName[idx];
+                    if (!selected) return;
+                    renderCpkGoalSummaryDrillDown(selected);
+                });
+            });
+        }
+
+        // --- 6. LOGIC & ANALYSIS FUNCTIONS ---
+        function runCPKAnalysis() {
+            let data = getFilteredPerformanceData(true);
+            
+            // --- NEW: UNIVERSE CALCS ---
+            const totalTires = data.length;
+            const brands = [...new Set(data.map(d => d.brand))];
+            const models = [...new Set(data.map(d => d.model))];
+            const totalKm = data.reduce((s, r) => s + r.km, 0);
+            
+            // KPI 1 - % Cobertura
+            const rollingBase = 4999;
+            const coveragePct = (totalTires / rollingBase) * 100;
+            safeSetText('kpiTotalTires', totalTires.toLocaleString('es-MX'));
+            safeSetText('kpiUnivPct', coveragePct.toFixed(1) + '%');
+
+            safeSetText('kpiUnivBrands', brands.length);
+            safeSetText('kpiUnivModels', models.length);
+            safeSetText('kpiUnivKm', (totalKm / 1000000).toFixed(2) + 'M');
+
+            // KPI CPK por Segmento
+            const dataTraction = data.filter(d => d.type === 'Tracción');
+            const sumCostTrac = dataTraction.reduce((acc, r) => acc + r.cost, 0);
+            const sumKmTrac = dataTraction.reduce((acc, r) => acc + r.km, 0);
+            const avgCpkTrac = sumKmTrac > 0 ? sumCostTrac / sumKmTrac : 0;
+            safeSetText('kpiCpkTraction', '$' + avgCpkTrac.toFixed(4));
+
+            const dataTP = data.filter(d => d.type === 'Toda Posición');
+            const sumCostTP = dataTP.reduce((acc, r) => acc + r.cost, 0);
+            const sumKmTP = dataTP.reduce((acc, r) => acc + r.km, 0);
+            const avgCpkTP = sumKmTP > 0 ? sumCostTP / sumKmTP : 0;
+            safeSetText('kpiCpkAllPos', '$' + avgCpkTP.toFixed(4));
+
+            // --- NUEVOS KPIS SOLICITADOS ---
+
+            // 1. Km/mm Promedio Global (Solo Tracción y Toda Posición)
+            const globalEffData = data.filter(d => d.type === 'Tracción' || d.type === 'Toda Posición');
+            const sumEffGlobal = globalEffData.reduce((acc, r) => acc + r.efficiency, 0);
+            const avgEffGlobal = globalEffData.length > 0 ? sumEffGlobal / globalEffData.length : 0;
+            safeSetText('kpiGlobalEff', avgEffGlobal.toLocaleString('es-MX', {maximumFractionDigits: 0}));
+
+            // 2. Conteo de Unidades (ECO Nuevo) Únicas
+            const uniqueUnits = new Set(data.map(d => d.unit));
+            const countUnits = uniqueUnits.size;
+            safeSetText('kpiUniqueUnits', countUnits.toLocaleString());
+
+            // ELIMINADO: Lógica de Total Articulación
+
+            // --- NEW: UNIVERSE CHART ---
+            const brandCounts = {};
+            data.forEach(r => {
+                brandCounts[r.brand] = (brandCounts[r.brand] || 0) + 1;
+            });
+            
+            const sortedBrands = Object.entries(brandCounts).sort((a,b) => b[1] - a[1]);
+            // Limit to top 6 + Others
+            const topBrands = sortedBrands.slice(0, 6);
+            const otherBrands = sortedBrands.slice(6);
+            const otherCount = otherBrands.reduce((s, b) => s + b[1], 0);
+            
+            if(otherCount > 0) topBrands.push(['OTRAS', otherCount]);
+            
+            const uLabels = topBrands.map(b => b[0]);
+            const uData = topBrands.map(b => b[1]);
+            const uColors = isColorblind ? 
+                ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442', '#56B4E9', '#999999'] :
+                uLabels.map((_, i) => FALLBACK_COLORS[i % FALLBACK_COLORS.length]);
+
+            initChart('cpkUniverseChart', 'doughnut', {
+                labels: uLabels,
+                datasets: [{
+                    data: uData,
+                    backgroundColor: uColors,
+                    borderWidth: 0,
+                    // Store other brands data for tooltip
+                    otherBrandsData: otherBrands
+                }]
+            }, {
+                cutout: '60%',
+                plugins: {
+                    legend: { position: 'right', labels: { boxWidth: 10, font: { size: 10 } } },
+                    datalabels: { color: 'white', font: { weight: 'bold', size: 10 }, formatter: (val, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => { sum += data; });
+                        let percentage = (val*100 / sum).toFixed(0)+"%";
+                        return percentage;
+                    }},
+                    tooltip: {
+                        callbacks: {
+                            afterBody: (context) => {
+                                if (context[0].label === 'OTRAS') {
+                                    const dataset = context[0].chart.data.datasets[0];
+                                    const others = dataset.otherBrandsData;
+                                    if (!others || others.length === 0) return [];
+                                    
+                                    const totalOther = others.reduce((a, b) => a + b[1], 0);
+                                    // Show top 10 from others list
+                                    const displayList = others.slice(0, 10).map(b => `• ${b[0]}: ${b[1]} (${(b[1]/totalOther*100).toFixed(0)}%)`);
+                                    
+                                    if (others.length > 10) {
+                                        displayList.push(`... y ${others.length - 10} más.`);
+                                    }
+                                    return [' ', 'DESGLOSE OTRAS:', ...displayList];
+                                }
+                            }
+                        }
+                    }
+                },
+                onClick: (e, elements, chart) => {
+                    if (elements.length) {
+                        const idx = elements[0].index;
+                        const brandName = chart.data.labels[idx];
+                        
+                        if(brandName === 'OTRAS') {
+                            const dataset = chart.data.datasets[0];
+                            const others = dataset.otherBrandsData;
+                            showCPKOthersDrillDown(others);
+                        } else {
+                            showCPKBrandDrillDown(brandName);
+                        }
+                    }
+                }
+            });
+
+            renderCpkGoalSummary(data);
+
+            // --- EXISTING LOGIC ---
+            const statsMap = {};
+            data.forEach(r => {
+                const key = `${r.brand}|${r.model}|${r.type}`;
+                if (!statsMap[key]) statsMap[key] = { brand: r.brand, model: r.model, type: r.type, count: 0, sumKm: 0, sumCost: 0, sumEff: 0, sumOrigMm: 0, isTrailer: r.isTrailer };
+                statsMap[key].count++;
+                statsMap[key].sumKm += r.km;
+                statsMap[key].sumCost += r.cost;
+                statsMap[key].sumEff += r.efficiency;
+                statsMap[key].sumOrigMm += r.originalMm; 
+            });
+            const stats = Object.values(statsMap).map(s => {
+                const avgOrigMm = s.count > 0 ? s.sumOrigMm / s.count : 0;
+                const avgEfficiency = s.count > 0 ? s.sumEff / s.count : 0;
+                
+                const usableDepth = Math.max(0, avgOrigMm - 3.5);
+
+                const estimatedLife = avgEfficiency > 0 ? (avgEfficiency * usableDepth) : (s.sumKm / s.count);
+
+                return {
+                    name: `${s.brand} ${s.model}`,
+                    type: s.type,
+                    count: s.count,
+                    avgKm: s.sumKm / s.count,
+                    avgCPK: s.sumCost / s.sumKm,
+                    efficiency: avgEfficiency,
+                    estimatedLife: estimatedLife, 
+                    isTrailer: s.isTrailer
+                };
+            });
+            safeSetText('perfCount', data.length);
+            renderDynamicPerformanceCharts(stats);
+            
+            // Pasar RAW DATA (data) para que el ranking pueda filtrar llanta por llanta
+            renderEfficiencyRanking(data); 
+        }
+
+        // --- NEW HELPER: SHOW BRAND DRILL DOWN FOR CPK ---
+        function showCPKBrandDrillDown(brand) {
+            const container = document.getElementById('drillDownContainer'); 
+            const tbody = document.getElementById('drillDownBody'); 
+            const title = document.getElementById('drillDownTitle'); 
+            const thead = document.getElementById('drillDownHead'); // GET THEAD
+            
+            if(!container || !tbody) return;
+            
+            // RESET HEADER FOR NORMAL TIRES
+            if (thead) {
+                thead.innerHTML = `<tr><th class="p-3 text-center">#</th><th class="p-3 text-center">1. ECO Nuevo</th><th class="p-3 text-center">2. Folio</th><th class="p-3">3. Marca</th><th class="p-3">4. Modelo</th><th class="p-3 text-center">5. MM Actual</th><th class="p-3 text-center">6. KM Rec.</th><th class="p-3 text-center">7. Km/mm</th><th class="p-3 text-right">8. CPK Indiv.</th></tr>`;
+            }
+
+            // USE FILTERED DATA (periodo + status del módulo CPK)
+            let data = getFilteredPerformanceData(true);
+
+            const validTires = data.filter(t => t.brand === brand);
+            
+            title.innerHTML = `<span class="font-bold text-indigo-700">MARCA: ${escapeHtml(normalizeStr(brand))}</span> - Detalle de ${validTires.length} llantas`;
+            
+            tbody.innerHTML = '';
+            
+            if (validTires.length === 0) {
+                 tbody.innerHTML = `<tr><td colspan="9" class="p-4 text-center text-slate-400">Sin registros.</td></tr>`;
+            } else {
+                 // Sort by KM descending
+                 validTires.sort((a,b) => b.km - a.km);
+                 
+                 validTires.forEach((t, index) => { 
+                     tbody.innerHTML += `<tr class="hover:bg-indigo-50 border-b border-indigo-50"><td class="p-3 text-center text-slate-400 font-bold text-xs">${index + 1}</td><td class="p-3 text-center text-indigo-900 font-bold">${escapeHtml(normalizeStr(t.unit))}</td><td class="p-3 text-center">${escapeHtml(normalizeStr(t.folio))}</td><td class="p-3 font-bold text-slate-600">${escapeHtml(normalizeStr(t.brand))}</td><td class="p-3">${escapeHtml(normalizeStr(t.model))}</td><td class="p-3 text-center font-mono">${t.mm}</td><td class="p-3 text-center font-mono">${t.km.toLocaleString('es-MX')}</td><td class="p-3 text-center font-mono text-blue-600">${t.efficiency.toLocaleString('es-MX', {maximumFractionDigits: 0})}</td><td class="p-3 text-right font-bold text-slate-800">$${t.cpk.toFixed(4)}</td></tr>`; 
+                 });
+            }
+            container.classList.remove('hidden'); 
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // --- NEW HELPER: SHOW OTHERS DRILL DOWN FOR CPK ---
+        function showCPKOthersDrillDown(othersList) {
+            const container = document.getElementById('drillDownContainer'); 
+            const tbody = document.getElementById('drillDownBody'); 
+            const title = document.getElementById('drillDownTitle'); 
+            const thead = document.getElementById('drillDownHead');
+            
+            if(!container || !tbody) return;
+
+            // CHANGE HEADER FOR BRAND SUMMARY
+            if (thead) {
+                thead.innerHTML = `<tr><th class="p-3 text-center">#</th><th class="p-3">Marca</th><th class="p-3 text-center">Cantidad Llantas</th><th class="p-3 text-right">% Participación (Universo)</th></tr>`;
+            }
+
+            // Calculate total universe count from current filtered set (to show meaningful %)
+            // Note: othersList is just [Brand, Count]. We need total to calc %.
+            // We can approximate or recalc. Let's recalc sum of this list + top brands? 
+            // Better to sum up all counts from othersList if we treat it as "part of others". 
+            // Or use the total from runCPKAnalysis.
+            // Let's just sum the othersList for now as base, or just show raw counts.
+            // To be accurate, let's sum the counts in othersList.
+            const totalOthers = othersList.reduce((acc, curr) => acc + curr[1], 0);
+
+            title.innerHTML = `<span class="font-bold text-indigo-700">OTRAS MARCAS</span> - Desglose Agrupado (${othersList.length} marcas)`;
+            
+            tbody.innerHTML = '';
+            
+            if (!othersList || othersList.length === 0) {
+                 tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-slate-400">Sin registros.</td></tr>`;
+            } else {
+                 othersList.forEach((item, index) => { 
+                     const brand = item[0];
+                     const count = item[1];
+                     // Using totalOthers as base for %, or could be total fleet. Let's use totalOthers context.
+                     const pct = (count / totalOthers * 100).toFixed(1);
+
+                     tbody.innerHTML += `
+                        <tr class="hover:bg-indigo-50 border-b border-indigo-50">
+                            <td class="p-3 text-center text-slate-400 font-bold text-xs">${index + 1}</td>
+                            <td class="p-3 font-bold text-indigo-900">${escapeHtml(normalizeStr(brand))}</td>
+                            <td class="p-3 text-center font-mono font-bold text-slate-700">${count}</td>
+                            <td class="p-3 text-right text-slate-500 text-xs">${pct}% (del grupo Otras)</td>
+                        </tr>`; 
+                 });
+            }
+            container.classList.remove('hidden'); 
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function renderEfficiencyRanking(rawData) {
+            const container = document.getElementById('efficiencyRankingGrid');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const segments = ['Delanteras', 'Tracción', 'Toda Posición'];
+            
+            segments.forEach(seg => {
+                const rule = RANKING_RULES[seg];
+
+                // 1. Filtrar llanta por llanta (Raw Data)
+                const validTires = rawData.filter(tire => {
+                    if (tire.type !== seg) return false;
+                    // Aplicar regla estricta
+                    if (rule) {
+                        if (tire.km <= rule.minKm) return false;
+                        // Evitar divisiones por cero o infinitos
+                        if (!isFinite(tire.efficiency)) return false;
+                        if (tire.efficiency <= rule.minEff || tire.efficiency >= rule.maxEff) return false;
+                    }
+                    return true;
+                });
+
+                // 2. Agrupar por Modelo
+                const modelMap = {};
+                validTires.forEach(tire => {
+                    const key = `${tire.brand} ${tire.model}`;
+                    if(!modelMap[key]) {
+                        modelMap[key] = { name: key, count: 0, sumEff: 0 };
+                    }
+                    modelMap[key].count++;
+                    modelMap[key].sumEff += tire.efficiency;
+                });
+
+                // 3. Calcular Promedios y Ordenar
+                const models = Object.values(modelMap).map(m => ({
+                    name: m.name,
+                    count: m.count,
+                    efficiency: m.sumEff / m.count
+                })).sort((a,b) => b.efficiency - a.efficiency).slice(0, 5); // Top 5
+                
+                let rows = '';
+                if (models.length === 0) {
+                    rows = `<tr><td colspan="4" class="p-4 text-center text-slate-400 text-xs italic">Sin datos. Criterio: ${escapeHtml(normalizeStr(rule ? rule.label : 'N/A'))}</td></tr>`;
+                } else {
+                    models.forEach((m, i) => {
+                        let rankColor = i === 0 ? 'text-amber-500' : (i === 1 ? 'text-slate-400' : (i===2 ? 'text-amber-700' : 'text-slate-500'));
+                        let rankIcon = i < 3 ? '<i class="fa-solid fa-trophy"></i>' : `<span class="font-bold text-[10px]">#${i+1}</span>`;
+                        let bgClass = i === 0 ? 'bg-indigo-50' : '';
+                        
+                        const encodedName = encodeURIComponent(normalizeStr(m.name));
+                        const encodedSeg = encodeURIComponent(normalizeStr(seg));
+                        const safeName = escapeHtml(normalizeStr(m.name));
+
+                        rows += `
+                            <tr data-model="${encodedName}" data-segment="${encodedSeg}" class="js-drill-row cursor-pointer border-b border-slate-50 last:border-0 hover:bg-slate-100 transition ${bgClass}">
+                                <!-- COL 1: CONTEO (NUEVO) -->
+                                <td class="py-2 pl-3 text-center w-14 border-r border-slate-100">
+                                    <div class="font-mono font-bold text-slate-600 text-sm">${m.count.toLocaleString('es-MX')}</div>
+                                    <div class="text-[8px] text-slate-400 uppercase leading-none">Llantas</div>
+                                </td>
+                                <!-- COL 2: RANK -->
+                                <td class="py-2 pl-2 text-center ${rankColor} w-8 text-sm">${rankIcon}</td>
+                                <!-- COL 3: MODELO -->
+                                <td class="py-2 px-2">
+                                    <div class="font-bold text-slate-700 text-xs truncate" title="${safeName}">${safeName}</div>
+                                </td>
+                                <!-- COL 4: EFICIENCIA -->
+                                <td class="py-2 pr-3 text-right">
+                                    <div class="font-mono font-bold text-indigo-600 text-sm">${m.efficiency.toLocaleString('es-MX', {maximumFractionDigits: 0})}</div>
+                                    <div class="text-[9px] text-slate-400">km/mm</div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                }
+
+                container.innerHTML += `
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-full">
+                        <div class="bg-slate-50 border-b border-slate-100 p-3 text-center">
+                            <h4 class="font-bold text-slate-600 text-xs uppercase tracking-wide">${escapeHtml(normalizeStr(seg))}</h4>
+                            ${rule ? `<p class="text-[10px] text-indigo-700 mt-1 bg-indigo-50 inline-block px-2 py-0.5 rounded-full border border-indigo-200 font-semibold shadow-sm">Filtro: ${escapeHtml(normalizeStr(rule.label))}</p>` : ''}
+                        </div>
+                        <div class="overflow-y-auto max-h-64 scrollbar-thin flex-grow">
+                            <table class="w-full">
+                                <tbody class="divide-y divide-slate-50">
+                                    ${rows}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.querySelectorAll('.js-drill-row').forEach((row) => {
+                row.addEventListener('click', () => {
+                    const model = decodeURIComponent(row.dataset.model || '');
+                    const segment = decodeURIComponent(row.dataset.segment || '');
+                    renderDrillDownTable(model, segment);
+                });
+            });
+        }
+
+        function runScrapAnalysis() {
+            let data = dbScrap;
+            let creditData = dbScrapCredits;
+            const periods = moduleState.scrap.periods;
+
+            if (periods.length > 0) {
+                const byPeriod = (d) => {
+                    const date = parseFlexibleDate(d.date);
+                    if (!date) return false;
+                    const key = `${date.getFullYear()}-${date.getMonth()}`;
+                    return periods.includes(key);
+                };
+                data = data.filter(byPeriod);
+                creditData = creditData.filter(byPeriod);
+            }
+
+            const total = data.length;
+            const wastedMm = data.reduce((a, b) => a + Math.max(0, (b.mm || 0) - 3), 0);
+            const wastedMoney = wastedMm * 400;
+
+            const provs = {};
+            const reasons = {};
+            const brandWaste = {};
+            const brandCount = {};
+            const exitDates = [];
+
+            const creditByProvider = {};
+            const creditByLegalName = {};
+            const creditByDescription = {};
+            const creditTotalMoney = creditData.reduce((a, b) => a + (b.amount || 0), 0);
+            const creditTotalQty = creditData.reduce((a, b) => a + (b.qty || 0), 0);
+
+            const today = new Date();
+            const trendKeys = [];
+            const trendLabels = [];
+            const trendMap = {};
+            let trendTotalCount = 0;
+
+            for (let i = 12; i >= 1; i--) {
+                const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+                const y = d.getFullYear();
+                const m = d.getMonth();
+                trendKeys.push(`${y}-${m}`);
+                trendLabels.push(`${monthNamesFull[m].substring(0, 3)} ${y.toString().substr(2)}`);
+            }
+
+            dbScrap.forEach(r => {
+                const d = parseFlexibleDate(r.date);
+                if (!d) return;
+                const key = `${d.getFullYear()}-${d.getMonth()}`;
+                const idx = trendKeys.indexOf(key);
+                if (idx === -1) return;
+                const p = r.provider || 'Recolección Pend.';
+                if (!trendMap[p]) trendMap[p] = new Array(12).fill(0);
+                trendMap[p][idx]++;
+                trendTotalCount++;
+            });
+
+            const modelStats = {};
+            data.forEach(r => {
+                provs[r.provider] = (provs[r.provider] || 0) + 1;
+                reasons[r.reason] = (reasons[r.reason] || 0) + 1;
+                brandWaste[r.brand] = (brandWaste[r.brand] || 0) + Math.max(0, (r.mm || 0) - 3);
+                brandCount[r.brand] = (brandCount[r.brand] || 0) + 1;
+                const d = parseFlexibleDate(r.date);
+                if (d) exitDates.push(d);
+
+                const modelKey = `${r.brand} ${r.model}`;
+                if (!modelStats[modelKey]) modelStats[modelKey] = { count: 0, causes: {} };
+                modelStats[modelKey].count++;
+                const reason = r.reason || 'Desconocida';
+                modelStats[modelKey].causes[reason] = (modelStats[modelKey].causes[reason] || 0) + 1;
+            });
+
+            creditData.forEach(c => {
+                const p = normalizeStr(c.provider) || 'Sin proveedor';
+                const legal = normalizeStr(c.legalName) || 'Sin razón social';
+                const desc = normalizeStr(c.description) || 'Sin descripción';
+                creditByProvider[p] = (creditByProvider[p] || 0) + (c.amount || 0);
+                creditByLegalName[legal] = (creditByLegalName[legal] || 0) + (c.amount || 0);
+                creditByDescription[desc] = (creditByDescription[desc] || 0) + (c.amount || 0);
+                const d = parseFlexibleDate(c.date);
+                if (d) exitDates.push(d);
+            });
+
+            const modelArray = Object.keys(modelStats).map(key => {
+                const item = modelStats[key];
+                const sortedCauses = Object.entries(item.causes)
+                    .map(([r, c]) => ({ reason: r, count: c }))
+                    .sort((a, b) => b.count - a.count);
+                return { name: key, count: item.count, topCauses: sortedCauses.slice(0, 2) };
+            });
+            const top5 = modelArray.sort((a, b) => b.count - a.count).slice(0, 5);
+            const sortedReasons = Object.entries(reasons).sort((a, b) => b[1] - a[1]);
+            const topReason = sortedReasons.length > 0 ? { name: sortedReasons[0][0], count: sortedReasons[0][1] } : null;
+
+            const tbody = document.getElementById('topScrapModelsBody');
+            if (tbody) {
+                tbody.innerHTML = '';
+                if (top5.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-slate-400 italic">No hay datos disponibles para el periodo seleccionado.</td></tr>';
+                } else {
+                    top5.forEach((m, i) => {
+                        const rank = i + 1;
+                        let medal = `<span class="font-bold text-slate-400">#${rank}</span>`;
+                        if (rank === 1) medal = '🥇'; else if (rank === 2) medal = '🥈'; else if (rank === 3) medal = '🥉';
+                        let causesHtml = '';
+                        m.topCauses.forEach((c, idx) => {
+                            const pct = m.count > 0 ? Math.round((c.count / m.count) * 100) : 0;
+                            const colorClass = idx === 0 ? 'bg-orange-400' : 'bg-orange-200';
+                            causesHtml += `<div class="mb-2 last:mb-0"><div class="flex justify-between items-center text-[10px] mb-0.5"><span class="font-semibold text-slate-700 truncate pr-2" title="${escapeHtml(normalizeStr(c.reason))}">${escapeHtml(normalizeStr(c.reason))}</span><span class="text-slate-500 whitespace-nowrap">${pct}% (${c.count.toLocaleString('es-MX')})</span></div><div class="w-full bg-slate-100 rounded-full h-1.5"><div class="${colorClass} h-1.5 rounded-full" style="width: ${pct}%"></div></div></div>`;
+                        });
+                        tbody.innerHTML += `<tr class="hover:bg-orange-50 transition border-b border-slate-50 last:border-0"><td class="p-3 text-center text-lg align-middle">${medal}</td><td class="p-3 font-bold text-slate-700 align-middle text-xs">${escapeHtml(normalizeStr(m.name))}</td><td class="p-3 text-center align-middle"><span class="font-mono text-base font-bold text-orange-600 bg-orange-50 rounded-lg px-2 py-1 border border-orange-100">${m.count.toLocaleString('es-MX')}</span></td><td class="p-3 align-middle w-1/3"><div class="flex flex-col">${causesHtml}</div></td></tr>`;
+                    });
+                }
+            }
+
+            renderScrapView({
+                total,
+                mm: wastedMm,
+                money: wastedMoney,
+                provs,
+                reasons,
+                brandWaste,
+                brandCount,
+                exitDates,
+                topModel: top5.length > 0 ? top5[0] : null,
+                topReason,
+                trendLabels,
+                trendMap,
+                trendTotal: trendTotalCount,
+                creditMoney: creditTotalMoney,
+                creditQty: creditTotalQty,
+                creditEvents: creditData.length,
+                creditRows: creditData.slice(),
+                creditByProvider,
+                creditByLegalName,
+                creditByDescription
+            });
+
+            // Estrategia integrada: reutilizamos el motor de match CPK vs Desecho
+            // para mostrar el resumen ejecutivo dentro de este módulo.
+            runStrategyAnalysis({ compactOnly: true, periodsOverride: periods });
+        }
+
+        function renderScrapView(s) {
+            let monthsDiff = 1;
+            let periodText = "Periodo no definido";
+
+            if (s.exitDates.length > 0) {
+                const dates = s.exitDates.sort((a, b) => a - b);
+                const minDate = dates[0];
+                const maxDate = dates[dates.length - 1];
+                monthsDiff = (maxDate.getFullYear() - minDate.getFullYear()) * 12 + (maxDate.getMonth() - minDate.getMonth()) + 1;
+                monthsDiff = Math.max(1, monthsDiff);
+                const m1 = monthNamesFull[minDate.getMonth()].substring(0, 3);
+                const y1 = minDate.getFullYear();
+                const m2 = monthNamesFull[maxDate.getMonth()].substring(0, 3);
+                const y2 = maxDate.getFullYear();
+                periodText = `${m1} ${y1} - ${m2} ${y2} (${monthsDiff} meses)`;
+            }
+
+            const avgMonthlyMm = s.mm / monthsDiff;
+            const avgMonthlyMoney = s.money / monthsDiff;
+            const avgMonthlyQty = s.total / monthsDiff;
+            const avgMonthlyCredit = s.creditMoney / monthsDiff;
+            const avgMonthlyNetLoss = avgMonthlyMoney - avgMonthlyCredit;
+            const coveragePct = s.money > 0 ? (s.creditMoney / s.money) * 100 : 0;
+
+            safeSetText('scrapTotalCount', s.total);
+            safeSetText('scrapTotalPeriod', periodText);
+            safeSetText('monthlyRetireCount', s.trendTotal);
+            safeSetText('scrapWastedMm', avgMonthlyMm.toFixed(1) + ' mm/mes');
+            safeSetText('scrapWastedMoney', 'Est. $' + avgMonthlyMoney.toLocaleString('es-MX', { maximumFractionDigits: 0 }) + ' /mes');
+            safeSetText('monthlyScrapRate', avgMonthlyQty.toFixed(1));
+            safeSetText('scrapCreditMoney', '$' + avgMonthlyCredit.toLocaleString('es-MX', { maximumFractionDigits: 0 }) + ' /mes');
+            safeSetText('scrapCreditCount', `${(s.creditEvents || 0).toLocaleString('es-MX')} eventos | ${(s.creditQty || 0).toLocaleString('es-MX', { maximumFractionDigits: 1 })} pzas`);
+            safeSetText('scrapCreditCoverage', coveragePct.toFixed(2) + '%');
+            safeSetText('scrapNetLossMoney', `${avgMonthlyNetLoss < 0 ? '-' : ''}$${Math.abs(avgMonthlyNetLoss).toLocaleString('es-MX', { maximumFractionDigits: 0 })} /mes`);
+            safeSetText('creditLegalTotalAmount', '$' + (s.creditMoney || 0).toLocaleString('es-MX', { maximumFractionDigits: 2 }));
+            const providerTotalsEl = document.getElementById('creditProviderTotals');
+            if (providerTotalsEl) {
+                const providerEntries = Object.entries(s.creditByProvider || {})
+                    .sort((a, b) => (Number(b[1]) || 0) - (Number(a[1]) || 0));
+                if (!providerEntries.length) {
+                    providerTotalsEl.innerHTML = '<span class="text-slate-400">Sin ingresos por proveedor.</span>';
+                } else {
+                    const badgeList = providerEntries.map(([provider, amount], idx) => {
+                        const color = isColorblind
+                            ? ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442'][idx % 5]
+                            : (PROVIDER_COLORS[provider] || FALLBACK_COLORS[idx % FALLBACK_COLORS.length]);
+                        const money = '$' + (Number(amount) || 0).toLocaleString('es-MX', { maximumFractionDigits: 2 });
+                        return `<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700"><span class="inline-block w-2 h-2 rounded-full" style="background:${color}"></span><span class="font-semibold">${escapeHtml(provider)}</span><span class="font-mono">${money}</span></span>`;
+                    });
+                    providerTotalsEl.innerHTML = badgeList.join('');
+                }
+            }
+
+            const rollingTiresBase = 4999;
+            const pctRolling = (avgMonthlyQty / rollingTiresBase) * 100;
+            safeSetText('scrapRollingPct', pctRolling.toFixed(2) + '%');
+
+            if (s.topModel) {
+                const tmEl = document.getElementById('scrapTopModel');
+                if (tmEl) { tmEl.innerText = s.topModel.name; tmEl.title = s.topModel.name; }
+                safeSetText('scrapTopModelCount', s.topModel.count);
+            } else { safeSetText('scrapTopModel', '-'); safeSetText('scrapTopModelCount', '0'); }
+
+            if (s.topReason) {
+                const trEl = document.getElementById('scrapTopReason');
+                if (trEl) { trEl.innerText = s.topReason.name; trEl.title = s.topReason.name; }
+                safeSetText('scrapTopReasonCount', s.topReason.count);
+            } else { safeSetText('scrapTopReason', '-'); safeSetText('scrapTopReasonCount', '0'); }
+
+            const provLabels = Object.keys(s.provs);
+            const pColors = provLabels.map((prov, i) => {
+                if (isColorblind) return ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442'][i % 5];
+                return PROVIDER_COLORS[prov] || FALLBACK_COLORS[i % FALLBACK_COLORS.length];
+            });
+            initChart('providerChart', 'doughnut', { labels: provLabels, datasets: [{ data: Object.values(s.provs), backgroundColor: pColors }] }, {});
+
+            const reasonsSorted = Object.entries(s.reasons).sort((a, b) => b[1] - a[1]);
+            const topReasons = reasonsSorted.slice(0, 5);
+            const otherReasons = reasonsSorted.slice(5);
+            const otherCount = otherReasons.reduce((acc, curr) => acc + curr[1], 0);
+            if (otherCount > 0) topReasons.push(['Otros', otherCount]);
+            const reasLabels = topReasons.map(r => r[0]);
+            const reasData = topReasons.map(r => r[1]);
+            const rColors = isColorblind
+                ? ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442', '#56B4E9']
+                : reasLabels.map((_, i) => FALLBACK_COLORS[i % FALLBACK_COLORS.length]);
+            initChart('scrapReasonChart', 'doughnut', { labels: reasLabels, datasets: [{ data: reasData, backgroundColor: rColors }] }, {
+                onClick: (e, elements, chart) => {
+                    if (!elements.length) return;
+                    const idx = elements[0].index;
+                    const label = chart.data.labels[idx];
+                    if (label === 'Otros' && otherReasons.length > 0) showScrapDrillDown(otherReasons, s.total);
+                }
+            });
+
+            const brandLabels = Object.keys(s.brandWaste);
+            const wasteValues = Object.values(s.brandWaste);
+            const countValues = brandLabels.map(b => (s.brandCount && s.brandCount[b]) ? s.brandCount[b] : 0);
+            const wasteColor = isColorblind ? '#D55E00' : '#ef4444';
+            initChart('wasteChart', 'bar', { labels: brandLabels, datasets: [{ label: 'Desperdicio (mm)', data: wasteValues, backgroundColor: wasteColor, counts: countValues }] }, {
+                indexAxis: 'y',
+                onClick: (e, elements, chart) => {
+                    if (!elements.length) return;
+                    const idx = elements[0].index;
+                    const brand = chart.data.labels[idx];
+                    window.showScrapBrandDetail(brand);
+                },
+                onHover: (event, chartElement) => { event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default'; },
+                plugins: {
+                    datalabels: {
+                        color: '#ffffff',
+                        anchor: 'end',
+                        align: 'start',
+                        font: { weight: 'bold', size: 10 },
+                        formatter: (value, ctx) => {
+                            if (value > 1000) {
+                                const count = ctx.dataset.counts[ctx.dataIndex];
+                                return `${count} llantas`;
+                            }
+                            return '';
+                        }
+                    }
+                }
+            });
+
+            const trendProviders = Object.keys(s.trendMap);
+            const datasets = trendProviders.map((prov, i) => {
+                const color = isColorblind
+                    ? ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442'][i % 5]
+                    : (PROVIDER_COLORS[prov] || FALLBACK_COLORS[i % FALLBACK_COLORS.length]);
+                return { label: prov, data: s.trendMap[prov], backgroundColor: color, stack: 'S1' };
+            });
+            initChart('monthlyRetireChart', 'bar', {
+                labels: s.trendLabels,
+                datasets,
+                scales: { x: { stacked: true }, y: { stacked: true } }
+            });
+
+            const legalEntries = Object.entries(s.creditByLegalName || {}).sort((a, b) => b[1] - a[1]).slice(0, 12);
+            const legalLabels = legalEntries.length ? legalEntries.map(x => x[0]) : ['Sin datos'];
+            const creditRows = Array.isArray(s.creditRows) ? s.creditRows : [];
+            const resolveLegalColor = (name, idx) => {
+                const n = normalizeStr(name).toUpperCase();
+                if (n.includes('LA PAZ') || n.includes('LPZ')) return COMPANY_COLORS['CR LPZ'] || COMPANY_COLORS['LA PAZ'] || '#DAA0FA';
+                if (n.includes('CORPORED') || n === 'CR' || n.startsWith('CR ')) return COMPANY_COLORS['CR'] || COMPANY_COLORS['CORPORED'] || '#ED7D31';
+                if (n.includes('T2020')) return COMPANY_COLORS['T2020'] || '#4472C4';
+                if (n.includes('YUC')) return COMPANY_COLORS['YUC'] || COMPANY_COLORS['YUCARRO'] || '#00B0F0';
+                if (COMPANY_COLORS[n]) return COMPANY_COLORS[n];
+                return PALETTE_FALLBACK[idx % PALETTE_FALLBACK.length];
+            };
+            const legalProviderMap = {};
+            creditRows.forEach(r => {
+                const legal = normalizeStr(r.legalName) || 'Sin razón social';
+                const provider = normalizeStr(r.provider) || 'Sin proveedor';
+                const amount = Number(r.amount) || 0;
+                if (!legalProviderMap[legal]) legalProviderMap[legal] = {};
+                legalProviderMap[legal][provider] = (legalProviderMap[legal][provider] || 0) + amount;
+            });
+            const providerTotals = {};
+            Object.values(legalProviderMap).forEach(byProv => {
+                Object.entries(byProv).forEach(([prov, val]) => {
+                    providerTotals[prov] = (providerTotals[prov] || 0) + (Number(val) || 0);
+                });
+            });
+            const providerList = Object.entries(providerTotals)
+                .sort((a, b) => b[1] - a[1])
+                .map(x => x[0]);
+            const providerPalette = isColorblind
+                ? ['#0072B2', '#E69F00', '#009E73', '#CC79A7', '#F0E442', '#56B4E9', '#D55E00']
+                : null;
+            const stackedDatasets = providerList.map((provider, idx) => ({
+                label: provider,
+                data: legalLabels.map(legal => ((legalProviderMap[legal] && legalProviderMap[legal][provider]) || 0)),
+                backgroundColor: isColorblind
+                    ? providerPalette[idx % providerPalette.length]
+                    : (PROVIDER_COLORS[provider] || resolveLegalColor(provider, idx)),
+                borderRadius: 4,
+                stack: 'legal-provider'
+            }));
+            if (!stackedDatasets.length) {
+                stackedDatasets.push({
+                    label: 'Sin proveedor',
+                    data: legalLabels.map(() => 0),
+                    backgroundColor: '#cbd5e1',
+                    borderRadius: 4,
+                    stack: 'legal-provider'
+                });
+            }
+            const legalDrill = document.getElementById('creditLegalDrillDownContainer');
+            if (legalDrill) legalDrill.classList.add('hidden');
+            initChart('creditProviderChart', 'bar', {
+                labels: legalLabels,
+                datasets: stackedDatasets,
+                indexAxis: 'y',
+                scales: { x: { beginAtZero: true, stacked: true }, y: { stacked: true } }
+            }, {
+                onClick: (e, elements, chart) => {
+                    if (!elements || !elements.length) return;
+                    const idx = elements[0].index;
+                    const dsIdx = elements[0].datasetIndex;
+                    const label = chart.data.labels[idx];
+                    const provider = chart.data.datasets[dsIdx] ? chart.data.datasets[dsIdx].label : '';
+                    if (!label || label === 'Sin datos') return;
+                    showCreditLegalDrillDown(label, creditRows, provider);
+                },
+                onHover: (event, elements) => {
+                    if (event && event.native && event.native.target) {
+                        event.native.target.style.cursor = (elements && elements.length) ? 'pointer' : 'default';
+                    }
+                },
+                plugins: {
+                    tooltip: { callbacks: { label: (context) => `${context.dataset.label}: ${formatCurrencyMX(context.raw)}` } },
+                    datalabels: { display: false }
+                },
+                scales: {
+                    x: { beginAtZero: true, stacked: true, ticks: { callback: (value) => formatCurrencyMX(value) } },
+                    y: {
+                        stacked: true,
+                        ticks: {
+                            autoSkip: false,
+                            callback: function(value) {
+                                return this.getLabelForValue ? this.getLabelForValue(value) : value;
+                            }
+                        }
+                    }
+                }
+            });
+
+            const descEntries = Object.entries(s.creditByDescription || {}).sort((a, b) => b[1] - a[1]).slice(0, 10);
+            const descLabels = descEntries.length ? descEntries.map(x => x[0]) : ['Sin datos'];
+            const descValues = descEntries.length ? descEntries.map(x => x[1]) : [0];
+            initChart('creditDescriptionChart', 'bar', {
+                labels: descLabels,
+                datasets: [{ label: 'Reembolso', data: descValues, backgroundColor: '#14b8a6' }],
+                indexAxis: 'y',
+                scales: { x: { beginAtZero: true } }
+            }, {
+                plugins: {
+                    tooltip: { callbacks: { label: (context) => `${context.dataset.label}: ${formatCurrencyMX(context.raw)}` } },
+                    datalabels: { display: false }
+                },
+                scales: { x: { beginAtZero: true, ticks: { callback: (value) => formatCurrencyMX(value) } } }
+            });
+        }
+
+        function runStrategyAnalysis(options = {}) {
+            try {
+                // 1. Filtrar Datos según selección de periodo (igual que otros módulos)
+                let localPerf = dbPerformance;
+                let localScrap = dbScrap;
+                const periods = Array.isArray(options.periodsOverride) ? options.periodsOverride : moduleState.strategy.periods;
+
+                if (periods.length > 0) {
+                    const filterFn = (d) => {
+                        const date = parseFlexibleDate(d.date);
+                        if(!date) return false;
+                        const key = `${date.getFullYear()}-${date.getMonth()}`;
+                        return periods.includes(key);
+                    };
+                    localPerf = dbPerformance.filter(filterFn);
+                    localScrap = dbScrap.filter(filterFn);
+                }
+
+                // 2. Normalización para mejorar el match CPK vs Desecho
+                // Compactamos tokens para absorber variaciones comunes:
+                // ST244 == ST-244 == ST 244 y BF GOODRICH == BFGOODRICH.
+                const normalizeToken = (v) => normalizeStr(v)
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '')
+                    .toUpperCase()
+                    .replace(/[^A-Z0-9]+/g, ' ')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                const compactToken = (v) => normalizeToken(v).replace(/\s+/g, '');
+                const brandAliases = {
+                    BFG: 'BFGOODRICH',
+                    BFGOODRICH: 'BFGOODRICH'
+                };
+                const normalizeBrandKey = (brand) => {
+                    const b = compactToken(brand);
+                    return brandAliases[b] || b;
+                };
+                const normalizeModelKey = (model) => compactToken(model);
+                const buildModelKey = (brand, model) => `${normalizeBrandKey(brand)}|${normalizeModelKey(model)}`;
+                const parseModelKey = (k) => {
+                    const idx = k.indexOf('|');
+                    if (idx < 0) return { brand: '', model: k || '' };
+                    return { brand: k.slice(0, idx), model: k.slice(idx + 1) };
+                };
+                const oneEditDistanceLeq1 = (a, b) => {
+                    if (a === b) return true;
+                    const la = a.length, lb = b.length;
+                    if (Math.abs(la - lb) > 1) return false;
+                    let i = 0, j = 0, edits = 0;
+                    while (i < la && j < lb) {
+                        if (a[i] === b[j]) { i++; j++; continue; }
+                        edits++;
+                        if (edits > 1) return false;
+                        if (la > lb) i++;
+                        else if (lb > la) j++;
+                        else { i++; j++; }
+                    }
+                    if (i < la || j < lb) edits++;
+                    return edits <= 1;
+                };
+                const buildModelVariants = (model) => {
+                    const m = normalizeModelKey(model);
+                    const out = new Set([m]);
+                    // Caso común: singular/plural (ROUTECONTROL / ROUTECONTROLS)
+                    if (m.length > 3 && m.endsWith('S')) out.add(m.slice(0, -1));
+                    if (m.length > 2 && !m.endsWith('S')) out.add(`${m}S`);
+                    return [...out];
+                };
+                const buildCandidateKeys = (brand, model) => {
+                    const b = normalizeBrandKey(brand);
+                    return buildModelVariants(model).map(m => `${b}|${m}`);
+                };
+                const displayModel = (brand, model) => `${normalizeStr(brand).toUpperCase()} ${normalizeStr(model).toUpperCase()}`.trim();
+
+                // 3. Performance (CPK + km/mm)
+                const cpkMap = {};
+                const modelLabelMap = {};
+                const cpkAliasToCanonical = {};
+                const brandModelIndex = {};
+                const cpkRowCountMap = {};
+                let totalCost = 0, totalKm = 0;
+
+                localPerf.forEach(r => {
+                    const k = buildModelKey(r.brand, r.model);
+                    const p = parseModelKey(k);
+                    if(!cpkMap[k]) cpkMap[k] = { cost: 0, km: 0, sumEff: 0, effCount: 0, typeVotes: {}, name: displayModel(r.brand, r.model) };
+                    cpkMap[k].cost += r.cost;
+                    cpkMap[k].km += r.km;
+                    if (r.efficiency > 0 && isFinite(r.efficiency)) {
+                        cpkMap[k].sumEff += r.efficiency; // km/mm
+                        cpkMap[k].effCount++;
+                    }
+                    const t = r.type || 'Sin Clasificar';
+                    cpkMap[k].typeVotes[t] = (cpkMap[k].typeVotes[t] || 0) + 1;
+                    modelLabelMap[k] = modelLabelMap[k] || cpkMap[k].name;
+                    cpkRowCountMap[k] = (cpkRowCountMap[k] || 0) + 1;
+                    buildCandidateKeys(r.brand, r.model).forEach(aliasKey => {
+                        if (!(aliasKey in cpkAliasToCanonical)) cpkAliasToCanonical[aliasKey] = k;
+                        else if (cpkAliasToCanonical[aliasKey] !== k) cpkAliasToCanonical[aliasKey] = null; // ambiguo
+                    });
+                    if (!brandModelIndex[p.brand]) brandModelIndex[p.brand] = [];
+                    if (!brandModelIndex[p.brand].some(x => x.model === p.model && x.key === k)) {
+                        brandModelIndex[p.brand].push({ model: p.model, key: k });
+                    }
+
+                    totalCost += r.cost;
+                    totalKm += r.km;
+                });
+
+                const avgFleetCPK = totalKm > 0 ? totalCost / totalKm : 0;
+                const targetCPK = avgFleetCPK * 0.95;
+
+                // 4. Scrap (impacto + frecuencia)
+                const wasteMap = {};
+                const causeWaste = {};
+                const modelCountMap = {};
+                const scrapBrandModelIndex = {};
+                const unmatchedScrapMap = {};
+                const matchedCpkKeys = new Set();
+                let totalWasteMM = 0;
+                let totalScrapCount = 0;
+
+                localScrap.forEach(r => {
+                    const mm = Math.max(0, (r.mm || 0) - 3);
+                    const rawKey = buildModelKey(r.brand, r.model);
+                    const parsedRaw = parseModelKey(rawKey);
+                    const rawDisplay = displayModel(r.brand, r.model);
+                    let k = null;
+
+                    if (!scrapBrandModelIndex[parsedRaw.brand]) scrapBrandModelIndex[parsedRaw.brand] = [];
+                    if (!scrapBrandModelIndex[parsedRaw.brand].some(x => x.model === parsedRaw.model)) {
+                        scrapBrandModelIndex[parsedRaw.brand].push({ model: parsedRaw.model, name: rawDisplay });
+                    }
+
+                    // Prioridad 1: match directo por candidatos (incluye singular/plural y alias de marca)
+                    const candidates = buildCandidateKeys(r.brand, r.model);
+                    for (const ck of candidates) {
+                        const mapped = cpkAliasToCanonical[ck];
+                        if (mapped && cpkMap[mapped]) { k = mapped; break; }
+                    }
+                    // Prioridad 2: match difuso controlado (1 carácter) dentro de la misma marca
+                    if (!k && brandModelIndex[parsedRaw.brand] && parsedRaw.model.length >= 5) {
+                        const near = brandModelIndex[parsedRaw.brand]
+                            .filter(item => oneEditDistanceLeq1(parsedRaw.model, item.model));
+                        if (near.length === 1) k = near[0].key; // evitar empates ambiguos
+                    }
+                    if (!k) k = rawKey;
+                    const hasPerfMatch = !!(cpkMap[k] && cpkMap[k].km > 0);
+                    if (hasPerfMatch) matchedCpkKeys.add(k);
+                    else {
+                        if (!unmatchedScrapMap[rawKey]) unmatchedScrapMap[rawKey] = {
+                            key: rawKey,
+                            name: rawDisplay,
+                            count: 0,
+                            brand: parsedRaw.brand,
+                            model: parsedRaw.model
+                        };
+                        unmatchedScrapMap[rawKey].count++;
+                    }
+
+                    if(!wasteMap[k]) wasteMap[k] = { wasteMm: 0, count: 0 };
+                    wasteMap[k].wasteMm += mm;
+                    wasteMap[k].count++;
+
+                    causeWaste[r.reason] = (causeWaste[r.reason] || 0) + mm;
+                    modelCountMap[k] = (modelCountMap[k] || 0) + 1;
+                    modelLabelMap[k] = modelLabelMap[k] || rawDisplay;
+
+                    totalWasteMM += mm;
+                    totalScrapCount++;
+                });
+
+                // 5. Cobertura de match
+                const scrapKeys = Object.keys(modelCountMap);
+                const matchedKeys = scrapKeys.filter(k => cpkMap[k] && cpkMap[k].km > 0);
+                const matchedScrapCount = matchedKeys.reduce((acc, k) => acc + (modelCountMap[k] || 0), 0);
+                const unmatchedScrapCount = Math.max(0, totalScrapCount - matchedScrapCount);
+                const matchPct = totalScrapCount > 0 ? (matchedScrapCount / totalScrapCount) * 100 : 0;
+
+                const suggestFromCpk = (brand, model) => {
+                    const pool = brandModelIndex[brand] || [];
+                    const near = pool.filter(item => oneEditDistanceLeq1(model, item.model));
+                    if (near.length !== 1) return '';
+                    const key = near[0].key;
+                    return modelLabelMap[key] || cpkMap[key]?.name || '';
+                };
+                const suggestFromScrap = (brand, model) => {
+                    const pool = scrapBrandModelIndex[brand] || [];
+                    const near = pool.filter(item => oneEditDistanceLeq1(model, item.model));
+                    if (near.length !== 1) return '';
+                    return near[0].name || '';
+                };
+
+                const unmatchedScrapRows = Object.values(unmatchedScrapMap)
+                    .map(x => ({ name: x.name, count: x.count, possibleMatch: suggestFromCpk(x.brand, x.model) }))
+                    .sort((a,b) => b.count - a.count);
+
+                const unmatchedCpkRows = Object.keys(cpkMap)
+                    .filter(k => (cpkMap[k]?.km || 0) > 0 && !matchedCpkKeys.has(k))
+                    .map(k => {
+                        const p = parseModelKey(k);
+                        return {
+                            name: modelLabelMap[k] || cpkMap[k]?.name || k,
+                            count: cpkRowCountMap[k] || 0,
+                            possibleMatch: suggestFromScrap(p.brand, p.model)
+                        };
+                    })
+                    .sort((a,b) => b.count - a.count);
+
+                // 6. Construir modelos para matriz (solo modelos con match)
+                const models = matchedKeys.map(k => {
+                    const c = cpkMap[k];
+                    const w = wasteMap[k] || { wasteMm: 0, count: 0 };
+                    const avgCPK = c.km > 0 ? c.cost / c.km : 0;
+                    const avgEff = c.effCount > 0 ? c.sumEff / c.effCount : 0; // km/mm
+                    const wearMmPer10k = avgEff > 0 ? 10000 / avgEff : 0; // mm por 10k km (más alto = peor)
+                    const avgWaste = w.count > 0 ? w.wasteMm / w.count : 0;
+                    const topType = Object.entries(c.typeVotes).sort((a,b) => b[1] - a[1])[0]?.[0] || 'Sin Clasificar';
+                    return {
+                        key: k,
+                        name: modelLabelMap[k] || c.name,
+                        type: topType,
+                        avgCPK,
+                        avgWastedMm: avgWaste,
+                        wearMmPer10k,
+                        scrapCount: w.count
+                    };
+                }).filter(m => m.avgCPK > 0);
+
+                const minMax = (arr, getter) => {
+                    if (!arr.length) return { min: 0, max: 0 };
+                    const vals = arr.map(getter).filter(v => isFinite(v));
+                    if (!vals.length) return { min: 0, max: 0 };
+                    return { min: Math.min(...vals), max: Math.max(...vals) };
+                };
+                const norm = (v, mm) => (mm.max - mm.min) > 0 ? (v - mm.min) / (mm.max - mm.min) : 0.5;
+
+                const mmCpk = minMax(models, m => m.avgCPK);
+                const mmWear = minMax(models, m => m.wearMmPer10k);
+                const mmScrap = minMax(models, m => m.scrapCount);
+                const mmWaste = minMax(models, m => m.avgWastedMm);
+
+                models.forEach(m => {
+                    const nCpk = norm(m.avgCPK, mmCpk);
+                    const nWear = norm(m.wearMmPer10k, mmWear);
+                    const nScrap = norm(m.scrapCount, mmScrap);
+                    const nWaste = norm(m.avgWastedMm, mmWaste);
+                    m.priorityScore = (0.35 * nCpk + 0.35 * nWear + 0.20 * nScrap + 0.10 * nWaste) * 100;
+                });
+                models.sort((a,b) => b.priorityScore - a.priorityScore);
+                const topRisk = models[0] || null;
+
+                // 7. Enviar todo al renderizador
+                renderStrategy({
+                    models,
+                    avgFleetCPK,
+                    targetCPK,
+                    cpkMap,
+                    modelLabelMap,
+                    causeWaste,
+                    modelCountMap,
+                    totalWasteMM,
+                    totalScrapCount,
+                    matchPct,
+                    matchedModelCount: matchedKeys.length,
+                    unmatchedScrapCount,
+                    topRisk,
+                    unmatchedScrapRows,
+                    unmatchedCpkRows
+                }, options);
+            } catch (e) {
+                console.error("Error running Strategy Analysis:", e);
+                logStatus("Error en módulo Estrategia", "error");
+            }
+        }
+
+        function renderStrategy(s, options = {}) { 
+            if(!s) return;
+            const strategyModels = Array.isArray(s.models) ? s.models : [];
+            const compactOnly = !!options.compactOnly;
+            
+            // Actualizar KPIs de texto
+            safeSetText('targetCPK', '$'+s.targetCPK.toFixed(4)); 
+            safeSetText('currentAvgCPK', '$'+s.avgFleetCPK.toFixed(4)); 
+            safeSetText('strategyMatchPct', `${s.matchPct.toFixed(1)}%`);
+            safeSetText('strategyMatchModels', s.matchedModelCount || 0);
+            safeSetText('strategyUnmatchedScrap', s.unmatchedScrapCount || 0);
+            safeSetText('strategyTopRiskModel', s.topRisk ? s.topRisk.name : '-');
+            safeSetText('strategyTopRiskScore', s.topRisk ? `Score ${s.topRisk.priorityScore.toFixed(1)}` : 'Score 0');
+            safeSetText('scrapStrategyMatchPct', `${s.matchPct.toFixed(1)}%`);
+            safeSetText('scrapStrategyMatchModels', s.matchedModelCount || 0);
+            safeSetText('scrapStrategyUnmatchedScrap', s.unmatchedScrapCount || 0);
+            safeSetText('scrapStrategyTopRiskModel', s.topRisk ? s.topRisk.name : '-');
+            safeSetText('scrapStrategyTopRiskScore', s.topRisk ? `Score ${s.topRisk.priorityScore.toFixed(1)}` : 'Score 0');
+
+            const renderMismatchTable = (rows, bodyId, emptyId) => {
+                const body = document.getElementById(bodyId);
+                const empty = document.getElementById(emptyId);
+                if (!body || !empty) return;
+                const safeRows = Array.isArray(rows) ? rows : [];
+                if (!safeRows.length) {
+                    body.innerHTML = '';
+                    empty.classList.remove('hidden');
+                    return;
+                }
+                empty.classList.add('hidden');
+                body.innerHTML = safeRows.slice(0, 25).map(row => `
+                    <tr>
+                        <td class="p-2 text-slate-700">${escapeHtml(normalizeStr(row.name || '-'))}</td>
+                        <td class="p-2 text-center text-slate-500 font-mono">${(row.count || 0).toLocaleString('es-MX')}</td>
+                        <td class="p-2 text-indigo-700">${row.possibleMatch ? escapeHtml(normalizeStr(row.possibleMatch)) : '<span class="text-slate-300">-</span>'}</td>
+                    </tr>
+                `).join('');
+            };
+            renderMismatchTable(s.unmatchedScrapRows, 'strategyUnmatchedScrapBody', 'strategyUnmatchedScrapEmpty');
+            renderMismatchTable(s.unmatchedCpkRows, 'strategyUnmatchedCpkBody', 'strategyUnmatchedCpkEmpty');
+            renderMismatchTable(s.unmatchedScrapRows, 'scrapStrategyUnmatchedScrapBody', 'scrapStrategyUnmatchedScrapEmpty');
+            renderMismatchTable(s.unmatchedCpkRows, 'scrapStrategyUnmatchedCpkBody', 'scrapStrategyUnmatchedCpkEmpty');
+
+            const sortedModels = Object.entries(s.modelCountMap).sort((a,b) => b[1] - a[1]).slice(0, 10);
+            const modelLabels = sortedModels.map(x => s.modelLabelMap[x[0]] || x[0]);
+            const modelCounts = sortedModels.map(x => x[1]);
+            const modelCpkData = sortedModels.map(x => {
+                const modelKey = x[0];
+                const perfData = s.cpkMap[modelKey];
+                if (perfData && perfData.km > 0) return perfData.cost / perfData.km;
+                return null;
+            });
+            const cModelLine = isColorblind ? '#0072B2' : '#3b82f6';
+            const cModelBar = isColorblind ? '#D55E00' : '#6366f1';
+            initChart('scrapStrategyParetoModelsChart', 'bar', {
+                labels: modelLabels,
+                datasets: [
+                    { type: 'line', label: 'CPK Promedio ($)', data: modelCpkData, borderColor: cModelLine, yAxisID: 'y1', pointRadius: 4, pointBackgroundColor: '#fff', pointBorderColor: cModelLine, pointBorderWidth: 2 },
+                    { type: 'bar', label: 'Llantas Desechadas', data: modelCounts, backgroundColor: cModelBar, yAxisID: 'y', borderRadius: 4 }
+                ]
+            }, {
+                scales: {
+                    y: { type: 'linear', display: true, position: 'left', title: { display: true, text: 'Unidades' } },
+                    y1: { type: 'linear', display: true, position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: 'CPK ($)' }, ticks: { callback: (v) => '$' + v.toFixed(3) }, beginAtZero: true }
+                },
+                plugins: {
+                    datalabels: { display: ctx => ctx.dataset.type === 'bar', color: 'white', font: { size: 10, weight: 'bold' }, anchor: 'center', align: 'center' },
+                    tooltip: {
+                        callbacks: { label: (ctx) => {
+                            let label = ctx.dataset.label + ': ';
+                            if (ctx.dataset.type === 'line') label += (ctx.raw == null ? 'Sin match CPK' : '$' + (ctx.raw || 0).toFixed(4));
+                            else label += (ctx.raw || 0) + ' un.';
+                            return label;
+                        }}
+                    }
+                }
+            });
+            if (compactOnly) return;
+            
+            // --- GRÁFICOS DE BURBUJAS (MATRICES) ---
+            const dataTraction = strategyModels.filter(m => m.type.includes('Tracción') || m.type.includes('TRACCIÓN'));
+            const dataTrailer = strategyModels.filter(m => !m.type.includes('Tracción') && !m.type.includes('TRACCIÓN'));
+            const topLabelNames = new Set(strategyModels.slice(0, 8).map(m => m.name));
+            
+            const bubbleDataTraction = dataTraction.map(m => ({ x: m.avgCPK, y: m.wearMmPer10k, r: Math.min(22, 4 + Math.sqrt(Math.max(1, m.scrapCount)) * 2.5), model: m.name, waste: m.avgWastedMm, scrapCount: m.scrapCount, score: m.priorityScore }));
+            const bubbleDataTrailer = dataTrailer.map(m => ({ x: m.avgCPK, y: m.wearMmPer10k, r: Math.min(22, 4 + Math.sqrt(Math.max(1, m.scrapCount)) * 2.5), model: m.name, waste: m.avgWastedMm, scrapCount: m.scrapCount, score: m.priorityScore }));
+            
+            // Colores modo daltónico
+            const cTraction = isColorblind ? '#0072B2' : '#3b82f6'; 
+            const cTrailer = isColorblind ? '#CC79A7' : '#8b5cf6';
+            
+            // Configuración común para burbujas
+            const bubbleOptions = {
+                scales: { 
+                    x: { title: { display: true, text: 'CPK ($)' } }, 
+                    y: { title: { display: true, text: 'mm / 10k km (desgaste)' } } 
+                }, 
+                plugins: { 
+                    tooltip: { 
+                        callbacks: { 
+                            label: (ctx) => `${ctx.raw.model}: CPK $${ctx.raw.x.toFixed(4)} | ${ctx.raw.y.toFixed(2)} mm/10k | Scrap ${ctx.raw.scrapCount} | Score ${ctx.raw.score.toFixed(1)}`
+                        } 
+                    }, 
+                    datalabels: { 
+                        color: '#475569',
+                        align: 'top',
+                        font: { weight: 'bold', size: 10 },
+                        formatter: (v) => topLabelNames.has(v.model) ? v.model : ''
+                    } 
+                }
+            };
+
+            initChart('strategyChartTraction', 'bubble', { 
+                datasets: [{ label: 'Tracción', data: bubbleDataTraction, backgroundColor: cTraction }] 
+            }, bubbleOptions);
+            
+            initChart('strategyChartTrailer', 'bubble', { 
+                datasets: [{ label: 'Arrastre / TP / Sin Clasificar', data: bubbleDataTrailer, backgroundColor: cTrailer }] 
+            }, bubbleOptions);
+            
+            // --- PARETO 1: CAUSAS (Impacto MM) ---
+            const sortedCauses = Object.entries(s.causeWaste).sort((a,b) => b[1] - a[1]).slice(0, 10);
+            const paretoLabels = sortedCauses.map(x => x[0]);
+            const paretoData = sortedCauses.map(x => x[1]);
+
+            let accum = 0;
+            const paretoLine = paretoData.map(v => {
+                accum += v;
+                return s.totalWasteMM > 0 ? (accum / s.totalWasteMM) * 100 : 0;
+            });
+
+            const cLine = isColorblind ? '#E69F00' : '#eab308';
+            const cBar = isColorblind ? '#009E73' : '#9333ea';
+
+            initChart('strategyParetoChart', 'bar', {
+                labels: paretoLabels,
+                datasets: [
+                    { type: 'line', label: '% Acumulado', data: paretoLine, borderColor: cLine, yAxisID: 'y1', pointRadius: 3, pointBackgroundColor: cLine },
+                    { type: 'bar', label: 'Desperdicio Total (mm)', data: paretoData, backgroundColor: cBar, yAxisID: 'y' }
+                ]
+            }, {
+                scales: {
+                    y: { type: 'linear', display: true, position: 'left', title: { display: true, text: 'Milímetros (mm)' } },
+                    y1: { type: 'linear', display: true, position: 'right', min: 0, max: 100, grid: { drawOnChartArea: false }, ticks: { callback: (v) => v + '%' } }
+                },
+                plugins: {
+                    datalabels: { display: ctx => ctx.dataset.type === 'bar', color: 'white', font: { size: 10, weight: 'bold' }, anchor: 'end', align: 'start', formatter: Math.round }
+                }
+            });
+
+            // --- PARETO 2: MODELOS (Frecuencia vs CPK) ---
+            initChart('strategyParetoModelsChart', 'bar', {
+                labels: modelLabels,
+                datasets: [
+                    {
+                        type: 'line', label: 'CPK Promedio ($)', data: modelCpkData, borderColor: cModelLine, yAxisID: 'y1', pointRadius: 4, pointBackgroundColor: '#fff', pointBorderColor: cModelLine, pointBorderWidth: 2
+                    },
+                    {
+                        type: 'bar', label: 'Llantas Desechadas', data: modelCounts, backgroundColor: cModelBar, yAxisID: 'y', borderRadius: 4
+                    }
+                ]
+            }, {
+                scales: {
+                    y: { type: 'linear', display: true, position: 'left', title: { display: true, text: 'Unidades' } },
+                    y1: { type: 'linear', display: true, position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: 'CPK ($)' }, ticks: { callback: (v) => '$' + v.toFixed(3) }, beginAtZero: true }
+                },
+                plugins: {
+                    datalabels: { display: ctx => ctx.dataset.type === 'bar', color: 'white', font: { size: 10, weight: 'bold' }, anchor: 'center', align: 'center' },
+                    tooltip: {
+                        callbacks: { label: (ctx) => {
+                            let label = ctx.dataset.label + ': ';
+                            if (ctx.dataset.type === 'line') label += (ctx.raw == null ? 'Sin match CPK' : '$' + (ctx.raw || 0).toFixed(4));
+                            else label += (ctx.raw || 0) + ' un.';
+                            return label;
+                        }}
+                    }
+                }
+            });
+        }
+        
+        // --- BLINDADO: RUN WASH ANALYSIS ---
+        function runWashAnalysis() {
+            try {
+                logStatus('Generando gráficos de Lavadero...');
+                const data = getWashScopedCurrentRows();
+                const periods = moduleState.washing.periods;
+                const drillContainer = document.getElementById('washDrillDownContainer');
+                const monthlyDetailContainer = document.getElementById('washMonthlyDetailContainer');
+                if (drillContainer) drillContainer.classList.add('hidden');
+                if (monthlyDetailContainer) monthlyDetailContainer.classList.add('hidden');
+                
+                // Basic counters
+                const clean = data.filter(r => r.daysWithoutWash <= 45).length;
+                const alert = data.filter(r => r.daysWithoutWash > 45 && r.daysWithoutWash < 100).length;
+                const critical = data.filter(r => r.daysWithoutWash >= 100).length;
+                
+                safeSetText('washCleanCount', clean);
+                safeSetText('washAlertCount', alert);
+                safeSetText('washCriticalCount', critical);
+                
+                // Helpers
+                const getStatusFilter = (idx) => {
+                    if (idx === 0) return (r) => r.daysWithoutWash <= 45;
+                    if (idx === 1) return (r) => r.daysWithoutWash > 45 && r.daysWithoutWash < 100;
+                    if (idx === 2) return (r) => r.daysWithoutWash >= 100;
+                    return () => false;
+                };
+                const statusLabels = ['Limpias', 'Alerta', 'Críticas'];
+                const safeData = [clean || 0, alert || 0, critical || 0];
+
+                // COLORBLIND COLORS LOCAL
+                const cClean = isColorblind ? '#56B4E9' : '#22c55e';
+                const cAlert = isColorblind ? '#E69F00' : '#eab308';
+                const cCrit = isColorblind ? '#D55E00' : '#ef4444';
+
+                // CHART 1: STATUS
+                try {
+                    initChart('washStatusChart', 'doughnut', {
+                        labels: statusLabels,
+                        datasets: [{ data: safeData, backgroundColor: [cClean, cAlert, cCrit] }]
+                    }, {
+                        onClick: (e, elements, chart) => {
+                            if (elements.length) {
+                                const idx = elements[0].index;
+                                const statusName = chart.data.labels[idx];
+                                const filtered = data.filter(getStatusFilter(idx));
+                                showWashDrillDown(filtered, `Estatus General: <strong>${statusName}</strong> (${filtered.length} unidades)`);
+                            }
+                        },
+                        onHover: (event, chartElement) => { event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default'; }
+                    });
+                } catch(e1) { console.warn("Error chart 1 wash", e1); logStatus("Error chart 1 wash", "error"); }
+                
+                // CHART 2: COMPANY STACKED
+                try {
+                    const compMap = {};
+                    data.forEach(r => {
+                        if (!compMap[r.company]) compMap[r.company] = { clean: 0, alert: 0, critical: 0 };
+                        if (r.daysWithoutWash <= 45) compMap[r.company].clean++;
+                        else if (r.daysWithoutWash < 100) compMap[r.company].alert++;
+                        else compMap[r.company].critical++;
+                    });
+
+                    const companies = Object.keys(compMap).sort();
+                    initChart('washCompanyChart', 'bar', {
+                        labels: companies,
+                        datasets: [
+                            { label: 'Limpias', data: companies.map(c => compMap[c].clean), backgroundColor: cClean, stack: 'S1' },
+                            { label: 'Alerta', data: companies.map(c => compMap[c].alert), backgroundColor: cAlert, stack: 'S1' },
+                            { label: 'Críticas', data: companies.map(c => compMap[c].critical), backgroundColor: cCrit, stack: 'S1' }
+                        ]
+                    }, {
+                        scales: { x: { stacked: true }, y: { stacked: true } },
+                        plugins: {
+                            datalabels: { color: 'white', font: { weight: 'bold', size: 10 }, display: ctx => ctx.dataset.data[ctx.dataIndex] > 0 },
+                            tooltip: { mode: 'index', intersect: false }
+                        },
+                        onClick: (e, elements, chart) => {
+                            if (elements.length) {
+                                const el = elements[0];
+                                const companyName = chart.data.labels[el.index];
+                                const statusName = statusLabels[el.datasetIndex];
+                                const filterFn = getStatusFilter(el.datasetIndex);
+                                const filtered = data.filter(r => r.company === companyName && filterFn(r));
+                                showWashDrillDown(filtered, `Detalle: <strong>${companyName}</strong> - ${statusName} (${filtered.length} unidades)`);
+                            }
+                        },
+                        onHover: (event, chartElement) => { event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default'; }
+                    });
+                } catch(e2) { console.warn("Error chart 2 wash", e2); logStatus("Error chart 2 wash", "error"); }
+                
+                // TABLE
+                const tbody = document.getElementById('washCriticalTableBody');
+                const hasSpecificUnit = hasWashSpecificSelection();
+                toggleWashSummaryMode(hasSpecificUnit);
+                if (hasSpecificUnit) {
+                    renderWashHistorySummaryRows(getWashScopedHistoryRows());
+                } else if (tbody) {
+                    tbody.innerHTML = '';
+                    const sorted = [...data].sort((a,b) => b.daysWithoutWash - a.daysWithoutWash).slice(0, 10);
+                    sorted.forEach(r => {
+                        tbody.innerHTML += `<tr class="hover:bg-red-50"><td class="p-3 font-bold text-slate-700">${r.unit}</td><td class="p-3">${r.company}</td><td class="p-3 text-center font-bold text-red-600">${r.daysWithoutWash}</td></tr>`;
+                    });
+                }
+
+                // Restaurada: llamada a la funcion que renderiza el grafico historico
+                window.renderWashMonthlyChart();
+                
+            } catch(fatal) {
+                console.error(fatal);
+                logStatus("Error FATAL Lavadero: " + fatal.message, "error");
+            }
+        }
+        
+        // --- RESTORED: renderWashMonthlyChart ---
+        function renderWashMonthlyChart() {
+            // Histórico de lavados
+             const filterEl = document.getElementById('localWashHistoryFilter');
+             const filterVal = filterEl ? filterEl.value : 'L12M';
+             const scopedHistory = getWashScopedHistoryRows();
+             let data = [...scopedHistory];
+             if(document.getElementById('washHistoryCount')) safeSetText('washHistoryCount', scopedHistory.length);
+             
+             // --- LOGICA DE EJES (DINAMICO VS ESTATICO) ---
+             let chartLabels = [];
+             let timeKeys = []; // Usado para mapear la data al índice correcto
+             
+             if (filterVal === 'L12M') {
+                 // MODO VENTANA MOVIL
+                 const today = new Date();
+                 for (let i = 11; i >= 0; i--) {
+                     const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+                     const m = d.getMonth();
+                     const y = d.getFullYear();
+                     chartLabels.push(`${monthNamesFull[m].substring(0,3)} ${y.toString().substr(2)}`);
+                     timeKeys.push(`${y}-${m}`);
+                 }
+                 data = data.filter(d => timeKeys.includes(`${d.year}-${d.monthIdx}`));
+             } else {
+                 // MODO AÑO CALENDARIO
+                 if (filterVal !== 'ALL') {
+                     data = data.filter(d => d.year.toString() === filterVal);
+                 }
+                 chartLabels = monthNamesFull.map(m => m.substring(0,3));
+                 timeKeys = [0,1,2,3,4,5,6,7,8,9,10,11]; 
+             }
+
+             // Tabla auxiliar: unidades con ciclos de lavado < 30 días (periodo activo)
+             renderWashHighFrequencyTable(data);
+
+             // --- PREPARAR DATASETS APILADOS ---
+             const uniqueCompanies = [...new Set(data.map(d => d.company))].sort();
+             const companyData = {};
+             uniqueCompanies.forEach(c => {
+                 companyData[c] = new Array(chartLabels.length).fill(0);
+             });
+             
+             // Array para guardar totales por mes (para la etiqueta superior y promedio)
+             const monthlyTotals = new Array(chartLabels.length).fill(0);
+
+             data.forEach(d => {
+                 let xIndex = -1;
+                 if (filterVal === 'L12M') {
+                     xIndex = timeKeys.indexOf(`${d.year}-${d.monthIdx}`);
+                 } else {
+                     xIndex = d.monthIdx;
+                 }
+
+                 if(xIndex >= 0 && xIndex < chartLabels.length && companyData[d.company]) {
+                     companyData[d.company][xIndex]++;
+                     monthlyTotals[xIndex]++; // Acumular para el total
+                 }
+             });
+
+             // CÁLCULO DE PROMEDIO
+             const sumTotals = monthlyTotals.reduce((a, b) => a + b, 0);
+             const avgMonthly = chartLabels.length > 0 ? sumTotals / chartLabels.length : 0;
+
+             // --- PALETA DE COLORES (PASTEL / TENUES) - COMO RESPALDO ---
+             const PASTEL_PALETTE = [
+                '#93c5fd', '#86efac', '#fca5a5', '#fde047', '#d8b4fe', 
+                '#fdba74', '#67e8f9', '#f9a8d4', '#cbd5e1', '#a5b4fc', '#818cf8'
+             ];
+
+             const datasets = uniqueCompanies.map((c, i) => {
+                 // MODIFICACIÓN: Priorizar color corporativo (buscando directo o en mayúsculas)
+                 let color = COMPANY_COLORS[c] || COMPANY_COLORS[c.toUpperCase()] || PASTEL_PALETTE[i % PASTEL_PALETTE.length];
+                 
+                 return {
+                     label: c,
+                     data: companyData[c],
+                     backgroundColor: color,
+                     stack: 'S1',
+                     // Etiqueta en el centro de la barra (Conteo individual)
+                     datalabels: {
+                         color: '#ffffff', // Blanco para mejor contraste
+                         textShadowBlur: 2,
+                         textShadowColor: 'rgba(0,0,0,0.3)',
+                         align: 'center',
+                         anchor: 'center',
+                         font: { weight: 'bold', size: 10 },
+                         formatter: (value) => value > 0 ? value : ''
+                     }
+                 };
+             });
+
+             // DATASET FANTASMA PARA EL TOTAL SUPERIOR
+             datasets.push({
+                 label: 'Total',
+                 data: monthlyTotals,
+                 type: 'line',
+                 borderColor: 'transparent',
+                 backgroundColor: 'transparent',
+                 pointRadius: 0,
+                 datalabels: {
+                     align: 'end',
+                     anchor: 'end',
+                     color: '#64748b',
+                     font: { weight: 'bold', size: 11 },
+                     formatter: (value) => value > 0 ? value : ''
+                 },
+                 order: 0 // Dibujar al frente
+             });
+
+             initChart('washMonthlyChart', 'bar', {
+                 labels: chartLabels,
+                 datasets: datasets
+             }, {
+                 scales: {
+                     x: { stacked: true },
+                     y: { stacked: true }
+                 },
+                 plugins: {
+                     legend: { 
+                         display: true, 
+                         position: 'bottom', 
+                         labels: { 
+                             boxWidth: 10, 
+                             font: { size: 10 },
+                             filter: (legendItem, data) => legendItem.text !== 'Total' // Ocultar "Total" de la leyenda
+                         } 
+                     },
+                     tooltip: { 
+                         mode: 'index', 
+                         intersect: false,
+                         filter: (tooltipItem) => tooltipItem.dataset.label !== 'Total' // Ocultar tooltip del total fantasma
+                     },
+                     datalabels: { display: true }, // Habilitar globalmente para este gráfico
+                     annotation: {
+                         annotations: {
+                             avgLine: {
+                                 type: 'line',
+                                 yMin: avgMonthly,
+                                 yMax: avgMonthly,
+                                 borderColor: '#94a3b8',
+                                 borderWidth: 2,
+                                 borderDash: [5, 5],
+                                 label: {
+                                     content: `Prom: ${avgMonthly.toFixed(1)}`,
+                                     display: true,
+                                     position: 'end',
+                                     backgroundColor: 'rgba(241, 245, 249, 0.9)',
+                                     color: '#475569',
+                                     font: { size: 9, weight: 'bold' },
+                                     yAdjust: -10
+                                 }
+                             }
+                         }
+                     }
+                 },
+                 // ACTUALIZADO: EVENTO ONCLICK PARA DETALLE MENSUAL (todas las unidades del mes)
+                 onClick: (e, elements, chart) => {
+                     if (elements.length > 0) {
+                         // Obtener elemento clickeado
+                         const el = elements[0];
+                         const dataIdx = el.index;
+
+                         // Determinar mes y año basado en el modo (L12M o Año Fijo)
+                         let targetMonthIdx = -1;
+                         let targetYear = -1;
+                         let labelText = chart.data.labels[dataIdx] || '-'; // ej: "Ene 24"
+
+                         if (filterVal === 'L12M') {
+                             if (timeKeys && timeKeys[dataIdx]) {
+                                 const parts = timeKeys[dataIdx].split('-'); // "2024-0"
+                                 targetYear = parseInt(parts[0]);
+                                 targetMonthIdx = parseInt(parts[1]);
+                             }
+                         } else {
+                             // Modo Año Fijo: dataIdx ES el índice del mes (0=Ene, 11=Dic)
+                             targetMonthIdx = dataIdx;
+                             targetYear = parseInt(filterVal);
+                         }
+
+                         // Filtrar los datos del mes completo (todas las empresas)
+                         const filtered = scopedHistory.filter(r => 
+                             r.monthIdx === targetMonthIdx && 
+                             r.year === targetYear
+                         );
+
+                         // Mostrar detalle
+                         showWashMonthlyDetail(filtered, `Detalle Histórico: <strong>${labelText}</strong> (${filtered.length} lavados)`);
+                     }
+                 },
+                 onHover: (event, chartElement) => { event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default'; }
+             });
+
+             // --- POBLAR DROPDOWN ---
+             const select = document.getElementById('localWashHistoryFilter');
+             if(select && select.options.length <= 2) {
+                 const years = [...new Set(dbWashHistory.map(d => d.year))].sort().reverse();
+                 years.forEach(y => {
+                     let exists = false;
+                     for(let i=0; i<select.options.length; i++) if(select.options[i].value === y.toString()) exists = true;
+                     if (!exists) {
+                         const opt = document.createElement('option');
+                         opt.value = y;
+                         opt.innerText = y;
+                         select.appendChild(opt);
+                     }
+                 });
+             }
+        }
+        
+        // --- BLINDADO: RUN FUEL ANALYSIS ---
+        function runFuelAnalysis() {
+            try {
+                logStatus('Generando análisis de combustible...');
+                
+                if (!dbExtra || dbExtra.length === 0) {
+                    console.warn("No hay datos de combustible para procesar");
+                    return;
+                }
+
+                const fuelScoped = getFuelSearchScopedRows();
+                // SPLIT DATA
+                const heavyDuty = fuelScoped.filter(r => r.company !== 'Pipitas');
+                const mediumDuty = fuelScoped.filter(r => r.company === 'Pipitas');
+
+                // --- PART 1: KPI CALCS ---
+                try {
+                    const totalKm = heavyDuty.reduce((s, r) => s + r.km, 0);
+                    const totalLiters = heavyDuty.reduce((s, r) => s + r.liters, 0);
+                    const globalYield = totalLiters > 0 ? totalKm / totalLiters : 0;
+                    safeSetText('fuelGlobalYield', `${globalYield.toFixed(2)} km/L`);
+
+                    const pipTotalKm = mediumDuty.reduce((s, r) => s + r.km, 0);
+                    const pipTotalLit = mediumDuty.reduce((s, r) => s + r.liters, 0);
+                    const pipYield = pipTotalLit > 0 ? pipTotalKm / pipTotalLit : 0;
+                    safeSetText('pipitasYieldTop', `${pipYield.toFixed(2)} km/L`);
+
+                    // Best/Worst Logic
+                    const engineGroups = {};
+                    const companyGroups = {};
+                    heavyDuty.forEach(r => {
+                        if(!engineGroups[r.engine]) engineGroups[r.engine] = { km:0, liters:0, name: r.engine };
+                        engineGroups[r.engine].km += r.km;
+                        engineGroups[r.engine].liters += r.liters;
+
+                        if(!companyGroups[r.company]) companyGroups[r.company] = { km:0, liters:0, name: r.company };
+                        companyGroups[r.company].km += r.km;
+                        companyGroups[r.company].liters += r.liters;
+                    });
+
+                    const engineStats = Object.values(engineGroups).map(e => ({ name: e.name, yield: e.liters>0?e.km/e.liters:0 }));
+                    const bestEngine = engineStats.sort((a,b) => b.yield - a.yield)[0];
+                    if(bestEngine) {
+                        safeSetText('fuelBestEngine', bestEngine.name);
+                        safeSetText('fuelBestEngineVal', `${bestEngine.yield.toFixed(2)} km/L`);
+                    }
+
+                    const companyStats = Object.values(companyGroups).map(c => ({ name: c.name, yield: c.liters>0?c.km/c.liters:0 }));
+                    const worstCompany = companyStats.sort((a,b) => a.yield - b.yield)[0];
+                    if(worstCompany) {
+                        safeSetText('fuelWorstCompany', worstCompany.name);
+                        safeSetText('fuelWorstCompanyVal', `${worstCompany.yield.toFixed(2)} km/L`);
+                    }
+                    
+                    // --- PART 2: MAIN CHARTS ---
+                    // NEW: Filter Logic for Trend Chart
+                    const filterEl = document.getElementById('fuelTrendFilter');
+                    const filterVal = filterEl ? filterEl.value : 'L12M';
+                    
+                    let chartLabels = [];
+                    let mappingKeys = [];
+                    
+                    if (filterVal === 'L12M') {
+                        const today = new Date();
+                        // MODIFICADO: i comienza en 12 y termina en 1 para excluir el mes actual y mostrar solo meses concluidos
+                        for(let i=12; i>=1; i--) {
+                             const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+                             chartLabels.push(`${monthNamesFull[d.getMonth()].substring(0,3)} ${d.getFullYear().toString().substr(2)}`);
+                             mappingKeys.push(`${d.getFullYear()}-${d.getMonth()}`);
+                        }
+                    } else {
+                        // Standard Year View (or ALL)
+                        chartLabels = monthNamesFull.map(m => m.substring(0,3));
+                        mappingKeys = [0,1,2,3,4,5,6,7,8,9,10,11].map(i => i.toString()); // Just indices
+                    }
+
+                    // Populate Dropdown if empty
+                    if(filterEl && filterEl.options.length <= 2) {
+                        const years = [...new Set(dbExtra.map(r => r.year))].sort().reverse();
+                        years.forEach(y => {
+                            let exists = false;
+                            for(let i=0; i<filterEl.options.length; i++) if(filterEl.options[i].value === y.toString()) exists = true;
+                            if(!exists) {
+                                const opt = document.createElement('option');
+                                opt.value = y;
+                                opt.innerText = y;
+                                filterEl.appendChild(opt);
+                            }
+                        });
+                    }
+
+                    const trendData = {}; 
+                    heavyDuty.forEach(r => {
+                        // Apply Filter
+                        if(filterVal !== 'L12M' && filterVal !== 'ALL' && r.year.toString() !== filterVal) return;
+
+                        if(!trendData[r.engine]) trendData[r.engine] = new Array(chartLabels.length).fill(null).map(()=>({km:0, lit:0}));
+                        
+                        let idx = -1;
+                        if(filterVal === 'L12M') {
+                            idx = mappingKeys.indexOf(`${r.year}-${r.mIdx}`);
+                        } else {
+                            idx = r.mIdx; // 0-11
+                        }
+
+                        if(idx >= 0 && idx < chartLabels.length) {
+                            trendData[r.engine][idx].km += r.km;
+                            trendData[r.engine][idx].lit += r.liters;
+                        }
+                    });
+                    
+                    const lineDatasets = Object.keys(trendData).map((eng, idx) => {
+                        const data = trendData[eng].map(m => m.lit > 0 ? m.km / m.lit : null);
+                        let color = isColorblind
+                            ? COLORBLIND_PALETTE[idx % COLORBLIND_PALETTE.length]
+                            : FALLBACK_COLORS[idx % FALLBACK_COLORS.length];
+                        
+                        if (!isColorblind && (eng.toUpperCase().includes('EPA 04') || eng.toUpperCase().includes('EPA04'))) {
+                            color = '#1d4ed8'; // Azul intenso
+                        }
+
+                        return { label: eng, data: data, borderColor: color, backgroundColor: 'transparent', tension: 0.3 };
+                    });
+                    
+                    initChart('fuelEngineTrendChart', 'line', { 
+                        labels: chartLabels, // Use dynamic labels
+                        datasets: lineDatasets 
+                    }, {
+                        plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } }, datalabels: { display: false } },
+                        layout: { padding: { top: 10 } }
+                    });
+
+                    // Company Bar Chart
+                    const compNames = companyStats.map(c => c.name);
+                    const compYields = companyStats.map(c => c.yield);
+                    
+                    const bgColors = compNames.map((c, i) => {
+                        if (isColorblind) {
+                            const palette = ['#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7'];
+                            return palette[i % palette.length];
+                        }
+                        if (COMPANY_COLORS[c]) return COMPANY_COLORS[c];
+                        return PALETTE_FALLBACK[i % PALETTE_FALLBACK.length];
+                    });
+                    
+                    initChart('fuelCompanyBarChart', 'bar', { 
+                        labels: compNames, 
+                        datasets: [{ label: 'Rendimiento (Km/L)', data: compYields, backgroundColor: bgColors, borderRadius:4 }] 
+                    }, {
+                        onClick: (e, elements, chart) => {
+                            if (elements.length) {
+                                const idx = elements[0].index;
+                                const companyName = chart.data.labels[idx];
+                                window.showFuelDrillDown(companyName);
+                            }
+                        },
+                        plugins: {
+                            datalabels: { color: '#ffffff', anchor: 'center', align: 'center', font: { weight: 'bold', size: 11 }, formatter: (value) => value ? value.toFixed(2) : '' },
+                            tooltip: { callbacks: { footer: () => 'Click para ver desglose de unidades' } }
+                        }
+                    });
+
+                    // --- TABLE ---
+                    const tbodyHD = document.getElementById('fuelEngineTableBody');
+                    if(tbodyHD) {
+                        tbodyHD.innerHTML = '';
+                        engineStats.sort((a,b) => b.yield - a.yield).forEach((eng, index) => {
+                            const rank = index + 1;
+                            let rankDisplay = `<span class="font-bold text-slate-400">#${rank}</span>`;
+                            if (rank === 1) rankDisplay = '<span class="text-lg">🥇</span>';
+                            else if (rank === 2) rankDisplay = '<span class="text-lg">🥈</span>';
+                            else if (rank === 3) rankDisplay = '<span class="text-lg">🥉</span>';
+
+                            const raw = engineGroups[eng.name];
+                            tbodyHD.innerHTML += `<tr class="hover:bg-teal-50 border-b border-slate-100"><td class="p-3 font-bold text-slate-700">${eng.name}</td><td class="p-3 text-center text-slate-600">${raw.km.toLocaleString()}</td><td class="p-3 text-center text-slate-600">${raw.liters.toLocaleString()}</td><td class="p-3 text-center font-mono font-bold text-teal-700">${eng.yield.toFixed(2)}</td><td class="p-3 text-center">${rankDisplay}</td></tr>`;
+                        });
+                    }
+
+                } catch (e) {
+                    console.error("Error in Fuel KPI/Main Charts:", e);
+                }
+
+                // --- PART 3: MANUFACTURER (Try-Catch Block) ---
+                try {
+                    const unqEng = [...new Set(heavyDuty.map(r => r.engine))].sort();
+                    window.populateMultiSelect('dropdownManufEngine', unqEng, 'Motores');
+                    const unqComp = [...new Set(heavyDuty.map(r => r.company))].sort();
+                    window.populateMultiSelect('dropdownManufCompany', unqComp, 'Sociedades');
+                    const unqSeg = [...new Set(heavyDuty.map(r => r.segment))].sort();
+                    window.populateMultiSelect('dropdownManufSegment', unqSeg, 'Segmentos');
+                    
+                    window.updateManufacturerChart();
+                } catch(e) {
+                    console.warn("Manufacturer Chart Block Failed:", e);
+                }
+
+                // --- PART 4: OPERATORS (Try-Catch Block) ---
+                try {
+                     // OPERATORS RANKING LOGIC
+                    const selectedGroup = document.getElementById('operatorGroupFilter') ? document.getElementById('operatorGroupFilter').value : 'ALL';
+                    const labelEl = document.getElementById('activeFilterDisplay');
+                    if(labelEl) {
+                        if(selectedGroup !== 'ALL') {
+                            labelEl.innerText = selectedGroup;
+                            labelEl.classList.remove('hidden');
+                        } else {
+                            labelEl.classList.add('hidden');
+                        }
+                    }
+
+                    const hasSpecific = hasFuelSpecificSelection();
+                    if (hasSpecific) {
+                        const unitMode = currentFuelSelectedUnit.length > 0
+                            || (!!currentFuelSearchUnit && currentFuelSelectedOperator.length === 0 && !currentFuelSearchOperator);
+                        toggleFuelRankingMode(true);
+                        renderFuelSpecificSummaryRows(fuelScoped, unitMode ? 'UNIT' : 'OP');
+                        return;
+                    }
+                    toggleFuelRankingMode(false);
+
+                    const operatorEngineGroups = {};
+                    // NUEVO: Mapa para Unidades
+                    const unitEngineGroups = {};
+
+                    fuelScoped.forEach(r => {
+                        // --- Logica Operadores ---
+                        const opName = r.operator || 'Sin Nombre';
+                        const engName = r.engine || 'Desconocido';
+                        const opKey = `${opName}|${engName}`;
+                        
+                        // --- Logica Unidades ---
+                        const unitName = r.unit || 'S/N';
+                        // Asumimos que una unidad no cambia de motor, pero por seguridad agrupamos por unidad única
+                        // Si cambiara de motor, se consideraría como un registro distinto si quisiéramos, 
+                        // pero aquí acumularemos por unidad y tomaremos el último motor registrado o el más frecuente.
+                        // Para simplificar y dado que el motor es atributo del vehículo:
+                        
+                        let opGroup = 'Otros';
+                        const seg = (r.segment || '').toUpperCase();
+                        const comp = (r.company || '').toUpperCase();
+
+                        if (seg.includes('FZS')) opGroup = 'FZS';
+                        else if (seg.includes('VIAJE LOCAL')) opGroup = 'Viaje Local';
+                        else if (seg.includes('PR MID')) opGroup = 'PR MID';
+                        else if (seg.includes('CR LPZ')) opGroup = 'CR LPZ';
+                        else if (seg.includes('PIPAS') || comp.includes('PIPITAS')) opGroup = 'Pipas Chicas';
+
+                        // Agregación Operadores
+                        if(!operatorEngineGroups[opKey]) {
+                            operatorEngineGroups[opKey] = { 
+                                name: opName, engine: engName, km: 0, liters: 0, company: r.company, group: opGroup
+                            };
+                        }
+                        operatorEngineGroups[opKey].km += r.km;
+                        operatorEngineGroups[opKey].liters += r.liters;
+
+                        // Agregación Unidades (NUEVO)
+                        if(!unitEngineGroups[unitName]) {
+                            unitEngineGroups[unitName] = {
+                                name: unitName, engine: engName, km: 0, liters: 0, company: r.company, group: opGroup
+                            };
+                        }
+                        unitEngineGroups[unitName].km += r.km;
+                        unitEngineGroups[unitName].liters += r.liters;
+                    });
+
+                    // --- PROCESAMIENTO OPERADORES ---
+                    let opEngineStats = Object.values(operatorEngineGroups)
+                        .filter(o => o.km > 20000) 
+                        .filter(o => {
+                            if(selectedGroup === 'ALL') return true;
+                            return o.group === selectedGroup;
+                        })
+                        .map(o => ({
+                            name: o.name, engine: o.engine, km: o.km,
+                            yield: o.liters > 0 ? o.km / o.liters : 0,
+                            company: o.company, group: o.group
+                        }));
+
+                    const statsByEngine = {};
+                    opEngineStats.forEach(stat => {
+                        if(!statsByEngine[stat.engine]) statsByEngine[stat.engine] = [];
+                        statsByEngine[stat.engine].push(stat);
+                    });
+
+                    // --- PROCESAMIENTO UNIDADES (NUEVO) ---
+                    let unitEngineStats = Object.values(unitEngineGroups)
+                        // Filtro de kilometraje mínimo para unidades (ajustable, ej: 10,000 km para ser relevante)
+                        .filter(u => u.km > 5000) 
+                        .filter(u => {
+                            if(selectedGroup === 'ALL') return true;
+                            return u.group === selectedGroup;
+                        })
+                        .map(u => ({
+                            name: u.name, engine: u.engine, km: u.km,
+                            yield: u.liters > 0 ? u.km / u.liters : 0,
+                            company: u.company, group: u.group
+                        }));
+
+                    const unitStatsByEngine = {};
+                    unitEngineStats.forEach(stat => {
+                        if(!unitStatsByEngine[stat.engine]) unitStatsByEngine[stat.engine] = [];
+                        unitStatsByEngine[stat.engine].push(stat);
+                    });
+
+                    // Orden de Motores
+                    const enginePriority = ['EPA 04', 'EURO IV', 'EURO V', 'S13 E24'];
+                    const sortedEngines = Object.keys(statsByEngine).sort((a,b) => {
+                        const nameA = a.toUpperCase(); const nameB = b.toUpperCase();
+                        let indexA = enginePriority.findIndex(p => nameA.includes(p));
+                        let indexB = enginePriority.findIndex(p => nameB.includes(p));
+                        if (indexA === -1) indexA = 999; if (indexB === -1) indexB = 999;
+                        if (indexA !== indexB) return indexA - indexB;
+                        const kmA = statsByEngine[a].reduce((acc, curr) => acc + curr.km, 0);
+                        const kmB = statsByEngine[b].reduce((acc, curr) => acc + curr.km, 0);
+                        return kmB - kmA;
+                    });
+
+                    // --- RENDERIZADO OPERADORES ---
+                    const renderGroupedOpTable = (id, engineList, isBest) => {
+                        const tbody = document.getElementById(id);
+                        if(!tbody) return;
+                        tbody.innerHTML = '';
+                        let hasData = false;
+
+                        engineList.forEach(engine => {
+                            let ops = statsByEngine[engine];
+                            if (!isBest && selectedGroup === 'ALL') ops = ops.filter(op => op.group !== 'CR LPZ');
+                            if (ops.length === 0) return; 
+
+                            ops.sort((a,b) => b.yield - a.yield); 
+                            const displayOps = isBest ? ops.slice(0, 3) : ops.reverse().slice(0, 3);
+
+                            if (displayOps.length > 0) {
+                                hasData = true;
+                                tbody.innerHTML += `<tr class="bg-slate-200 border-y border-slate-300"><td colspan="3" class="px-3 py-1 text-[10px] font-bold text-slate-600 uppercase tracking-wider"><i class="fa-solid fa-cogs mr-1"></i> ${engine}</td></tr>`;
+                                displayOps.forEach((op, i) => {
+                                    let yieldColor = isBest ? 'text-green-600' : 'text-red-600';
+                                    let rankIcon = isBest ? (i===0 ? '🥇' : (i===1 ? '🥈' : '🥉')) : `<span class="text-xs font-bold text-red-400">#${i+1}</span>`;
+                                    tbody.innerHTML += `<tr class="hover:bg-slate-50 border-b border-slate-100"><td class="p-2 font-bold text-slate-700 flex items-center gap-2"><span class="w-4 text-center">${rankIcon}</span><div class="flex flex-col"><span>${op.name}</span><span class="text-[9px] text-slate-400 font-normal uppercase">${op.company} <span class="text-[8px] bg-slate-100 text-slate-500 px-1 rounded ml-1">${op.group}</span></span></div></td><td class="p-2 text-right text-slate-500 font-mono text-xs">${(op.km/1000).toFixed(1)}k</td><td class="p-2 text-center font-bold ${yieldColor}">${op.yield.toFixed(2)}</td></tr>`;
+                                });
+                            }
+                        });
+
+                        if (!hasData) tbody.innerHTML = '<tr><td colspan="3" class="p-3 text-center text-slate-400 italic text-xs">Sin datos para este grupo</td></tr>';
+                    };
+
+                    renderGroupedOpTable('topOperatorsBody', sortedEngines, true);
+                    renderGroupedOpTable('bottomOperatorsBody', sortedEngines, false);
+
+                    // --- RENDERIZADO UNIDADES (NUEVO) ---
+                    // Usamos la misma lista de motores ordenados, pero buscamos en unitStatsByEngine
+                    const renderGroupedUnitTable = (id, engineList, isBest) => {
+                        const tbody = document.getElementById(id);
+                        if(!tbody) return;
+                        tbody.innerHTML = '';
+                        let hasData = false;
+
+                        engineList.forEach(engine => {
+                            let units = unitStatsByEngine[engine] || [];
+                            // Filtro extra opcional para unidades criticas si se desea
+                            if (units.length === 0) return; 
+
+                            units.sort((a,b) => b.yield - a.yield); 
+                            const displayUnits = isBest ? units.slice(0, 3) : units.reverse().slice(0, 3);
+
+                            if (displayUnits.length > 0) {
+                                hasData = true;
+                                tbody.innerHTML += `<tr class="bg-slate-200 border-y border-slate-300"><td colspan="3" class="px-3 py-1 text-[10px] font-bold text-slate-600 uppercase tracking-wider"><i class="fa-solid fa-cogs mr-1"></i> ${engine}</td></tr>`;
+                                displayUnits.forEach((u, i) => {
+                                    let yieldColor = isBest ? 'text-blue-600' : 'text-orange-600'; // Azul/Naranja para diferenciar
+                                    let rankIcon = isBest ? (i===0 ? '🥇' : (i===1 ? '🥈' : '🥉')) : `<span class="text-xs font-bold text-orange-400">#${i+1}</span>`;
+                                    tbody.innerHTML += `<tr class="hover:bg-slate-50 border-b border-slate-100"><td class="p-2 font-bold text-slate-700 flex items-center gap-2"><span class="w-4 text-center">${rankIcon}</span><div class="flex flex-col"><span>${u.name}</span><span class="text-[9px] text-slate-400 font-normal uppercase">${u.company} <span class="text-[8px] bg-slate-100 text-slate-500 px-1 rounded ml-1">${u.group}</span></span></div></td><td class="p-2 text-right text-slate-500 font-mono text-xs">${(u.km/1000).toFixed(1)}k</td><td class="p-2 text-center font-bold ${yieldColor}">${u.yield.toFixed(2)}</td></tr>`;
+                                });
+                            }
+                        });
+
+                        if (!hasData) tbody.innerHTML = '<tr><td colspan="3" class="p-3 text-center text-slate-400 italic text-xs">Sin datos para este grupo</td></tr>';
+                    };
+
+                    renderGroupedUnitTable('topUnitsBody', sortedEngines, true);
+                    renderGroupedUnitTable('bottomUnitsBody', sortedEngines, false);
+
+                } catch (e) {
+                    console.error("Error in Operator/Unit Ranking:", e);
+                }
+
+            } catch(fatal) {
+                console.error(fatal);
+                logStatus("Error FATAL Combustible: " + fatal.message, "error");
+            }
+        }
+        
+        function updateManufacturerChart() {
+            // Helper to get selected values (supports "ALL" logic)
+            const getVals = (id) => {
+                const container = document.getElementById(id);
+                if(!container) return ['ALL'];
+                const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+                const values = Array.from(checkboxes).map(cb => cb.value);
+                if(values.includes('ALL')) return ['ALL']; // If ALL is checked, return ALL
+                if(values.length === 0) return ['NONE'];
+                return values;
+            };
+
+            const engFilter = getVals('dropdownManufEngine');
+            const compFilter = getVals('dropdownManufCompany');
+            const segFilter = getVals('dropdownManufSegment');
+
+            // Use only heavy duty data (ignoring pipitas) and respect fuel Unit/Operator filters
+            const baseData = getFuelSearchScopedRows().filter(r => r.company !== 'Pipitas');
+
+            // Apply Filters (Multi-Select Logic)
+            const filteredData = baseData.filter(r => {
+                if (!engFilter.includes('ALL') && !engFilter.includes(r.engine)) return false;
+                if (!compFilter.includes('ALL') && !compFilter.includes(r.company)) return false;
+                if (!segFilter.includes('ALL') && !segFilter.includes(r.segment)) return false;
+                return true;
+            });
+
+            // --- LÓGICA DE VENTANA DE TIEMPO (Últimos 12 Meses Concluidos) ---
+            // Ejemplo: Si hoy es 23 de Febrero 2026
+            // Queremos mostrar desde Febrero 2025 hasta Enero 2026.
+            
+            const today = new Date();
+            const timeWindowKeys = [];
+            const chartLabels = [];
+
+            // Iteramos desde hace 12 meses (i=12) hasta hace 1 mes (i=1)
+            // Excluyendo i=0 que sería el mes actual.
+            for (let i = 12; i >= 1; i--) {
+                // Crear fecha restando 'i' meses a la fecha actual.
+                // Usamos el día 1 para evitar problemas con meses de distinta duración (ej. 30 vs 31 vs 28)
+                const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
+                
+                const y = d.getFullYear();
+                const m = d.getMonth(); // 0-11
+                
+                // Clave única para agrupar datos (Año-Mes)
+                timeWindowKeys.push(`${y}-${m}`);
+                
+                // Etiqueta visual para el eje X (Ej: "Ene 26")
+                const label = `${monthNamesFull[m].substring(0,3)} ${y.toString().substr(2)}`;
+                chartLabels.push(label);
+            }
+
+            // Group by Manufacturer -> Window Index
+            const manufacturers = [...new Set(filteredData.map(r => r.manufacturer))];
+            const manufData = {};
+            
+            // Inicializar estructura con 12 espacios (uno para cada mes de la ventana)
+            manufacturers.forEach(m => {
+                manufData[m] = new Array(12).fill(null).map(() => ({ km:0, lit:0 }));
+            });
+
+            filteredData.forEach(r => {
+                // Generar la clave del registro actual
+                const key = `${r.year}-${r.mIdx}`;
+                
+                // Verificar si esta clave existe en nuestra ventana de tiempo permitida
+                const windowIdx = timeWindowKeys.indexOf(key);
+
+                // Si existe (índice 0 a 11), sumamos los datos en la posición correspondiente
+                if (windowIdx !== -1) {
+                    manufData[r.manufacturer][windowIdx].km += r.km;
+                    manufData[r.manufacturer][windowIdx].lit += r.liters;
+                }
+            });
+
+            // Create Datasets
+            const datasets = manufacturers.map((man, idx) => {
+                // Convertir acumulados a Rendimiento (Km/L)
+                const dataPoints = manufData[man].map(m => m.lit > 0 ? m.km / m.lit : null);
+                
+                const color = isColorblind
+                    ? COLORBLIND_PALETTE[idx % COLORBLIND_PALETTE.length]
+                    : PALETTE_FALLBACK[idx % PALETTE_FALLBACK.length];
+                return {
+                    label: man,
+                    data: dataPoints,
+                    borderColor: color,
+                    backgroundColor: 'transparent',
+                    tension: 0.3
+                };
+            });
+
+            initChart('manufacturerTrendChart', 'line', {
+                labels: chartLabels, // Usamos las etiquetas generadas dinámicamente
+                datasets: datasets
+            }, {
+                plugins: {
+                    title: { display: false },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    datalabels: {
+                        display: true,
+                        align: 'top',
+                        anchor: 'end',
+                        offset: 4,
+                        color: function(context) {
+                            return context.dataset.borderColor;
+                        },
+                        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                        borderRadius: 3,
+                        font: { size: 9, weight: 'bold' },
+                        formatter: (value) => value ? value.toFixed(2) : ''
+                    }
+                },
+                scales: {
+                    y: { title: { display: true, text: 'Rendimiento (km/L)' } }
+                },
+                layout: {
+                    padding: { top: 20 }
+                }
+            });
+        }
+        
+        // --- EXPOSE GLOBAL FUNCTIONS (BULLETPROOF) ---
+        window.startSystem = startSystem;
+        window.manualRefresh = manualRefresh;
+        window.switchTab = switchTab;
+        window.updatePeriodSelection = updatePeriodSelection;
+        window.toggleYearDropdown = toggleYearDropdown;
+        window.setCategoryFilter = setCategoryFilter;
+        window.setPerformanceStatusFilter = setPerformanceStatusFilter;
+        window.handleLinksClick = handleLinksClick;
+        window.attemptMainLogin = attemptMainLogin;
+        window.attemptLogin = attemptLogin;
+        window.logoutSession = logoutSession;
+        window.toggleModal = toggleModal;
+        window.saveCloudConfig = saveCloudConfig;
+        window.resetToDefaults = resetToDefaults;
+        window.openCpkGoalsModal = openCpkGoalsModal;
+        window.saveCpkGoalsFromEditor = saveCpkGoalsFromEditor;
+        window.restoreDefaultCpkGoals = restoreDefaultCpkGoals;
+        window.renderWashMonthlyChart = renderWashMonthlyChart;
+        // --- FIXED EXPORTS FOR MISSING MODULES ---
+        window.runCPKAnalysis = runCPKAnalysis;
+        window.runScrapAnalysis = runScrapAnalysis;
+        window.runStrategyAnalysis = runStrategyAnalysis;
+        window.runWashAnalysis = runWashAnalysis;
+        // --- END FIXED EXPORTS ---
+        window.runFuelAnalysis = runFuelAnalysis; // FIXED
+        window.runLossAnalysis = runLossAnalysis;
+        window.updateManufacturerChart = updateManufacturerChart;
+        window.toggleColorblindMode = toggleColorblindMode;
+        window.setLossCompanyFilter = setLossCompanyFilter;
+        window.setLossLitersMode = setLossLitersMode;
+        window.setLossLowRankBy = setLossLowRankBy;
+        window.setLossTopOrder = setLossTopOrder;
+        window.renderFuelSuggestions = renderFuelSuggestions;
+        window.toggleFuelSuggestionSelection = toggleFuelSuggestionSelection;
+        window.clearFuelSuggestionSelection = clearFuelSuggestionSelection;
+        window.applyFuelSearchFilters = applyFuelSearchFilters;
+        window.clearFuelSearchFilters = clearFuelSearchFilters;
+        window.applyLossSearchFilters = applyLossSearchFilters;
+        window.clearLossSearchFilters = clearLossSearchFilters;
+        window.renderLossSuggestions = renderLossSuggestions;
+        window.toggleLossSuggestionSelection = toggleLossSuggestionSelection;
+        window.clearLossSuggestionSelection = clearLossSuggestionSelection;
+        window.renderWashSuggestions = renderWashSuggestions;
+        window.toggleWashSuggestionSelection = toggleWashSuggestionSelection;
+        window.clearWashSuggestionSelection = clearWashSuggestionSelection;
+        window.applyWashSearchFilters = applyWashSearchFilters;
+        window.clearWashSearchFilters = clearWashSearchFilters;
+        window.renderWashDrillDownRows = renderWashDrillDownRows;
+        window.setWashDrillSort = setWashDrillSort;
+        window.renderWashMonthlyDetailRows = renderWashMonthlyDetailRows;
+        window.setWashMonthlyDetailSort = setWashMonthlyDetailSort;
+        window.populateMultiSelect = populateMultiSelect;
+        window.showWashDrillDown = showWashDrillDown;
+        window.showWashMonthlyDetail = showWashMonthlyDetail;
+        window.showFuelDrillDown = showFuelDrillDown;
+        window.showScrapBrandDetail = showScrapBrandDetail; // NEW EXPORT
+        window.showCPKBrandDrillDown = showCPKBrandDrillDown; // NEW EXPORT
+        window.showCPKOthersDrillDown = showCPKOthersDrillDown; // NEW EXPORT FOR OTHERS
+        window.closeDropdowns = closeDropdowns;
+        window.renderUsersTable = renderUsersTable;
+        window.resetUserForm = resetUserForm;
+        window.saveUserFromForm = saveUserFromForm;
+        window.editUserFromTable = editUserFromTable;
+        window.deleteUserFromTable = deleteUserFromTable;
+        window.downloadSecureUsersBackup = downloadSecureUsersBackup;
+        window.openUsersBackupImport = openUsersBackupImport;
+        window.openChangePasswordModal = openChangePasswordModal;
+        window.submitPasswordChange = submitPasswordChange;
+    
