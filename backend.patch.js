@@ -69,13 +69,14 @@
 
   async function api(path, options) {
     const cfg = options || {};
-    const response = await fetch(path, {
+    const BASE_URL = 'https://dashyucarroback.fly.dev';
+    const response = await fetch(`${BASE_URL}${path}`, {
       method: cfg.method || 'GET',
       headers: {
         'Content-Type': 'application/json',
         ...(cfg.headers || {})
       },
-      credentials: 'same-origin',
+      credentials: 'include',
       body: cfg.body ? JSON.stringify(cfg.body) : undefined
     });
 
