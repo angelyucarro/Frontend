@@ -14,7 +14,16 @@
     extra: 'yucarro_extra_url',
     lossY: 'yucarro_loss_y_url',
     lossT: 'yucarro_loss_t_url',
-    lossC: 'yucarro_loss_c_url'
+    lossC: 'yucarro_loss_c_url',
+    fleetY: 'yucarro_fleet_y_url',
+    fleetT: 'yucarro_fleet_t_url',
+    fleetTlm: 'yucarro_fleet_tlm_url',
+    fleetLmr: 'yucarro_fleet_lmr_url',
+    fleetC: 'yucarro_fleet_c_url',
+    fleetCmc: 'yucarro_fleet_cmc_url',
+    fleetLorm: 'yucarro_fleet_lorm_url',
+    workshop: 'yucarro_workshop_url',
+    workshopOrders: 'yucarro_workshop_orders_url'
   };
 
   function normalizeUser(u) {
@@ -70,7 +79,8 @@
   async function api(path, options) {
     const cfg = options || {};
     const BASE_URL = 'https://dashyucarroback.fly.dev';
-    const response = await fetch(`${BASE_URL}${path}`, {
+    const targetUrl = `${BASE_URL}${path}`;
+    const response = await fetch(targetUrl, {
       method: cfg.method || 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -81,10 +91,18 @@
     });
 
     let data = {};
-    try { data = await response.json(); } catch (_) {}
+    let rawText = '';
+    try {
+      rawText = await response.text();
+      data = rawText ? JSON.parse(rawText) : {};
+    } catch (_) {
+      data = {};
+    }
 
     if (!response.ok || data.ok === false) {
-      throw new Error(data.error || `Error HTTP ${response.status}`);
+      const backendMsg = (data && data.error) ? String(data.error) : '';
+      const fallbackMsg = rawText ? String(rawText).slice(0, 180) : '';
+      throw new Error(backendMsg || fallbackMsg || `Error HTTP ${response.status} (${targetUrl})`);
     }
     return data;
   }
@@ -152,7 +170,16 @@
       extra: 'inputUrlExtra',
       lossY: 'inputUrlLossY',
       lossT: 'inputUrlLossT',
-      lossC: 'inputUrlLossC'
+      lossC: 'inputUrlLossC',
+      fleetY: 'inputUrlFleetY',
+      fleetT: 'inputUrlFleetT',
+      fleetTlm: 'inputUrlFleetTlm',
+      fleetLmr: 'inputUrlFleetLmr',
+      fleetC: 'inputUrlFleetC',
+      fleetCmc: 'inputUrlFleetCmc',
+      fleetLorm: 'inputUrlFleetLorm',
+      workshop: 'inputUrlWorkshop',
+      workshopOrders: 'inputUrlWorkshopOrders'
     };
     Object.entries(mapInput).forEach(([key, id]) => {
       const el = document.getElementById(id);
@@ -246,7 +273,16 @@
       extra: (document.getElementById('inputUrlExtra')?.value || '').trim(),
       lossY: (document.getElementById('inputUrlLossY')?.value || '').trim(),
       lossT: (document.getElementById('inputUrlLossT')?.value || '').trim(),
-      lossC: (document.getElementById('inputUrlLossC')?.value || '').trim()
+      lossC: (document.getElementById('inputUrlLossC')?.value || '').trim(),
+      fleetY: (document.getElementById('inputUrlFleetY')?.value || '').trim(),
+      fleetT: (document.getElementById('inputUrlFleetT')?.value || '').trim(),
+      fleetTlm: (document.getElementById('inputUrlFleetTlm')?.value || '').trim(),
+      fleetLmr: (document.getElementById('inputUrlFleetLmr')?.value || '').trim(),
+      fleetC: (document.getElementById('inputUrlFleetC')?.value || '').trim(),
+      fleetCmc: (document.getElementById('inputUrlFleetCmc')?.value || '').trim(),
+      fleetLorm: (document.getElementById('inputUrlFleetLorm')?.value || '').trim(),
+      workshop: (document.getElementById('inputUrlWorkshop')?.value || '').trim(),
+      workshopOrders: (document.getElementById('inputUrlWorkshopOrders')?.value || '').trim()
     };
 
     try {
@@ -419,12 +455,39 @@
     }
   };
 
-  window.downloadSecureUsersBackup = function () {
-    setUsersError('En modo backend, los usuarios se respaldan en servidor. Usa respaldo de base de datos.');
+  window.downloadSecureUsersBackup = async function () {
+    if (!currentUser || currentUser.role !== 'admin') {
+      setErr('Solo administrador puede descargar respaldos.');
+      return;
+    }
+    try {
+      const res = await api('/api/users/list');
+      if (!res.ok) throw new Error(res.error || 'No se pudo obtener usuarios del backend.');
+
+      // Respaldo directo en JSON sin contraseña requerida en modo Backend
+      const backupPayload = {
+        users: res.users,
+        createdAt: new Date().toISOString(),
+        format: 'yucarro-users-backend-raw'
+      };
+
+      const url = URL.createObjectURL(new Blob([JSON.stringify(backupPayload, null, 2)], { type: 'application/json' }));
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'usuarios_backend_' + new Date().getTime() + '.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      setErr('');
+      log('Respaldo de usuarios descargado correctamente sin cifrado.', 'info');
+    } catch (e) {
+      setErr(e.message || 'No se pudo generar respaldo.');
+    }
   };
 
   window.openUsersBackupImport = function () {
-    setUsersError('En modo backend, la importación local está deshabilitada.');
+    setErr('La importación de archivos de respaldo directos no reemplaza la base de datos backend. Asegúrate de pedir soporte para migración manual.');
   };
 
   // Sincronizar estado inicial por si el backend cambió entre cargas.

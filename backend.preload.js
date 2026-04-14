@@ -12,7 +12,16 @@
     extra: 'yucarro_extra_url',
     lossY: 'yucarro_loss_y_url',
     lossT: 'yucarro_loss_t_url',
-    lossC: 'yucarro_loss_c_url'
+    lossC: 'yucarro_loss_c_url',
+    fleetY: 'yucarro_fleet_y_url',
+    fleetT: 'yucarro_fleet_t_url',
+    fleetTlm: 'yucarro_fleet_tlm_url',
+    fleetLmr: 'yucarro_fleet_lmr_url',
+    fleetC: 'yucarro_fleet_c_url',
+    fleetCmc: 'yucarro_fleet_cmc_url',
+    fleetLorm: 'yucarro_fleet_lorm_url',
+    workshop: 'yucarro_workshop_url',
+    workshopOrders: 'yucarro_workshop_orders_url'
   };
 
   function normalizeUser(u) {
@@ -51,6 +60,7 @@
     try {
       const xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://dashyucarroback.fly.dev/api/bootstrap', false);
+      xhr.withCredentials = true; // Importante para enviar cookies cross-domain
       xhr.setRequestHeader('Accept', 'application/json');
       xhr.send();
       if (xhr.status >= 200 && xhr.status < 300) {
